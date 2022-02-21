@@ -1,40 +1,41 @@
 import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
-import { Button, ButtonToolbar, Modal } from 'react-bootstrap';
+import { Button, Modal } from 'react-bootstrap';
 import "./App.scss";
 function App() {
   const [modalShow, setModalShow] = React.useState(false);
+  const preciosFolios = [{ folio:25, precio:330.00 }, { folio:50, precio:445.00 }, { folio:100, precio:590.00 }, { folio:200, precio:1065.00 }, { folio:500, precio:2391.00 }, { folio:1000, precio:4305.00 }, { folio:2000, precio:7745.00 }, { folio:5000, precio:17430.00 }];
+  const preciosTimbre = [{ timbre:1000,  precio:1392.00 }, { timbre:3000,  precio:3480.00 }, { timbre:5000,  precio:4640.00 }, { timbre:10000,  precio:8120.00 }, { timbre:15000,  precio:12760.00 }, { timbre:20000,  precio:16820.00 }, { timbre:50000,  precio:31320.00 }, { timbre:100000,  precio:46400.00 }];
+ // const preciosFolios = 1;
   return (
     <div className="App">
 
       <header>
 
-        <nav class="navbar navbar-expand-lg fixed-top bg-dark m-0 p-0">
-          <div class="container">
-            {/* <a class="navbar-brand" target="_blank" href="#">
-              <img class="img-fluid" src="https://via.placeholder.com/180x45" />
-            </a> */}
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+        <nav className="navbar navbar-expand-lg fixed-top bg-dark m-0 p-0">
+          <div className="container">
+
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarText">
-              <ul class="navbar-nav justify-content-center">
-                <li class="nav-item active">
-                  <a class="nav-link m-2 p-0" href="#"> <p class="text-light underline h5 font-weight-bold">INICIO</p></a>
+            <div className="collapse navbar-collapse justify-content-center" id="navbarText">
+              <ul className="navbar-nav justify-content-center">
+                <li className="nav-item active">
+                  <a className="nav-link m-2 p-0" href="#"> <p className="text-light underline h5 font-weight-bold">INICIO</p></a>
                 </li>
-                <li class="nav-item ">
-                  <a class="nav-link m-2 p-0" href="#PRODUCTOS"><p class="text-light underline h5 font-weight-bold">PRODUCTOS</p></a>
+                <li className="nav-item ">
+                  <a className="nav-link m-2 p-0" href="#PRODUCTOS"><p className="text-light underline h5 font-weight-bold">PRODUCTOS</p></a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link m-2 p-0" href="#PRECIOS"><p class="text-light underline h5 font-weight-bold">PRECIOS</p></a>
+                <li className="nav-item">
+                  <a className="nav-link m-2 p-0" href="#PRECIOS"><p className="text-light underline h5 font-weight-bold">PRECIOS</p></a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link m-2 p-0" href="#PROMOCIONES"><p class=" text-light underline h5 font-weight-bold">PROMOCIONES
+                <li className="nav-item">
+                  <a className="nav-link m-2 p-0" href="#PROMOCIONES"><p className=" text-light underline h5 font-weight-bold">PROMOCIONES
                     ESPECIALES</p></a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link m-2 p-0" href="#CONTACTO"><p class="text-light underline h5 font-weight-bold">CONTACTO
+                <li className="nav-item">
+                  <a className="nav-link m-2 p-0" href="#CONTACTO"><p className="text-light underline h5 font-weight-bold">CONTACTO
                     SOPORTE</p></a>
                 </li>
               </ul>
@@ -43,35 +44,33 @@ function App() {
         </nav>
       </header>
 
-
-      {/*   <main class="bg-dark"> */}
       <section>
-        <div class="row" style={{ "margin-top": "69px" }}>
-          <div class="col-md-3 m-0 p-0">
-            <a class="flui.toDateString()" target="_blank" href="#">
-              <img src="https://via.placeholder.com/500x500" class="d-block w-100 h-100" alt="..." />
+        <div className="row carro">
+          <div className="col-md-3 m-0 p-0">
+            <a className="flui.toDateString()" target="_blank" href="#">
+              <img src="https://via.placeholder.com/500x500" className="d-block w-100 h-100" alt="..." />
             </a>
           </div>
-          <div class="col-md-9 m-0 p-0">
-            <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <a target="_blank" href="#"><img src="https://via.placeholder.com/1468x500" class="d-block w-100" alt="..." /></a>
+          <div className="col-md-9 m-0 p-0">
+            <div id="carouselExampleControls" className="carousel slide " data-bs-ride="carousel">
+              <div className="carousel-inner">
+                <div className="carousel-item active">
+                  <a target="_blank" href="#"><img src="https://via.placeholder.com/1468x500" className="d-block w-100" alt="..." /></a>
                 </div>
-                <div class="carousel-item">
-                  <a target="_blank" href="#"><img src="https://via.placeholder.com/1468x500" class="d-block w-100" alt="..." /></a>
+                <div className="carousel-item">
+                  <a target="_blank" href="#"><img src="https://via.placeholder.com/1468x500" className="d-block w-100" alt="..." /></a>
                 </div>
-                <div class="carousel-item">
-                  <a target="_blank" href="#"><img src="https://via.placeholder.com/1468x500" class="d-block w-100" alt="..." /></a>
+                <div className="carousel-item">
+                  <a target="_blank" href="#"><img src="https://via.placeholder.com/1468x500" className="d-block w-100" alt="..." /></a>
                 </div>
               </div>
-              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
+              <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span className="sr-only">Previous</span>
               </a>
-              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
+              <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                <span className="sr-only">Next</span>
               </a>
             </div>
           </div>
@@ -80,21 +79,21 @@ function App() {
 
       </section>
 
-      <section id="Servicios" class="py-5 bg-dark" >
-        <div class="container">
+      <section id="Servicios" className="py-5 bg-dark" >
+        <div className="container">
 
-          <div class="row">
-            <div class="col-md-3">
+          <div className="row">
+            <div className="col-md-3">
               <a target="_blank" href="#">
-                <img src="https://via.placeholder.com/250x250" class="d-block img-fluid" alt="..." />
+                <img src="https://via.placeholder.com/250x250" className="d-block img-fluid" alt="..." />
               </a>
             </div>
-            <div class="col-md-9">
-              <div class="text-left py-4">
-                <h1 class="text-success">Servicios integrales
+            <div className="col-md-9">
+              <div className="text-left py-4">
+                <h1 className="text-success">Servicios integrales
                   de Tecnologías de la Información</h1>
               </div>
-              <p class="lead text-light ">Como proveedor autorizado por el SAT (PAC con número de autorización: 57202) NTLINK Comunicaciones SA de CV.
+              <p className="lead text-light ">Como proveedor autorizado por el SAT (PAC con número de autorización: 57202) NTLINK Comunicaciones SA de CV.
                 Es una empresa mexicana fundada en diciembre de 2009 con la idea de proporcionar servicios integrales de Tecnologías
                 de la Información (venta-renta de equipo de cómputo, desarrollo de aplicaciones y páginas web, monitoreo de servicios
                 de misión crítica, análisis y desarrollo de sistemas, ingeniería y reingeniería de procesos entre otras.).</p>
@@ -103,22 +102,22 @@ function App() {
         </div>
       </section>
 
-      <div class="container justify-content-center bg-dark">
-        <div class="stripe stripe-1 m-0 p-0">
+      <div className="container justify-content-center bg-dark">
+        <div className="stripe stripe-1 m-0 p-0">
         </div>
       </div>
 
-      <div class="container justify-content-center gradeintBlack bg-dark">
-        <div class="row p-5">
-          <div class="col">
-            <div class="row">
-              <div class="col">
+      <div className="container justify-content-center gradeintBlack bg-dark">
+        <div className="row p-5">
+          <div className="col">
+            <div className="row">
+              <div className="col">
                 <a target="_blank" href="#">
-                  <img src="https://via.placeholder.com/250x250" class="d-block img-fluid" alt="..." />
+                  <img src="https://via.placeholder.com/250x250" className="d-block img-fluid" alt="..." />
                 </a>
               </div>
-              <div class="col d-flex align-items-center">
-                <p class="lead text-light ">Tras un largo proceso de certificación
+              <div className="col d-flex align-items-center">
+                <p className="lead text-light ">Tras un largo proceso de certificación
                   NTLINK se convierte en proveedor
                   autorizado de certificados digitales por
                   internet (PACFDI) en Julio de 2012 con
@@ -126,365 +125,365 @@ function App() {
               </div>
             </div>
           </div>
-          <div class="col d-flex align-items-center">
-            <h5 class="text-success " style={{ "font-style": "italic" }}>Nuestro compromiso es brindar servicios de excelencia, calidad
+          <div className="col d-flex align-items-center">
+            <h5 className="text-success italic">Nuestro compromiso es brindar servicios de excelencia, calidad
               y progreso continuo, garantizando la seguridad de la información
               durante los procesos relacionados y en el almacenamiento de la
               misma; así como la protección de los datos personales de nuestros
               clientes.</h5>
           </div>
         </div>
-        <div class="row p-3">
+        <div className="row p-3">
 
-          <div class="col-4">
-            <div class="row">
-              <div class="col-6">
+          <div className="col-4">
+            <div className="row">
+              <div className="col-6">
                 <a target="_blank" href="#">
-                  <img src="https://via.placeholder.com/250x250" class="d-block img-fluid" alt="..." />
+                  <img src="https://via.placeholder.com/250x250" className="d-block img-fluid" alt="..." />
                 </a>
               </div>
-              <div class="col-6 d-flex align-items-center">
-                <a href="#" class="btn btn-secondary my-2 border-gradient"><h5 class="mb-0">ACCESO CFDI</h5></a>
+              <div className="col-6 d-flex align-items-center">
+                <a href="#" className="btn btn-secondary my-2 border-gradient"><h5 className="mb-0">ACCESO CFDI</h5></a>
               </div>
             </div>
           </div>
-          <div class="col-4">
-            <div class="row">
-              <div class="col-6">
+          <div className="col-4">
+            <div className="row">
+              <div className="col-6">
                 <a target="_blank" href="#">
-                  <img src="https://via.placeholder.com/250x250" class="d-block img-fluid" alt="..." />
+                  <img src="https://via.placeholder.com/250x250" className="d-block img-fluid" alt="..." />
                 </a>
               </div>
-              <div class="col-6 d-flex align-items-center">
-                <a href="#" class="btn btn-secondary border-gradient"><h5 class="mb-0">ACCESO NÓMINA </h5></a>
+              <div className="col-6 d-flex align-items-center">
+                <a href="#" className="btn btn-secondary border-gradient"><h5 className="mb-0">ACCESO NÓMINA </h5></a>
               </div>
             </div>
           </div>
-          <div class="col-4">
-            <div class="row">
-              <div class="col-6">
+          <div className="col-4">
+            <div className="row">
+              <div className="col-6">
                 <a target="_blank" href="#">
-                  <img src="https://via.placeholder.com/250x250" class="d-block img-fluid" alt="..." />
+                  <img src="https://via.placeholder.com/250x250" className="d-block img-fluid" alt="..." />
                 </a>
               </div>
-              <div class="col-6 d-flex align-items-center">
-                <a href="#" class="btn btn-secondary my-2 border-gradient"><h5 class="mb-0">ACCESO GRATUITO</h5></a>
+              <div className="col-6 d-flex align-items-center">
+                <a href="#" className="btn btn-secondary my-2 border-gradient"><h5 className="mb-0">ACCESO GRATUITO</h5></a>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <section id="PRODUCTOS" class="py-5 bg-dark" >
-        <div class="container">
-          <h1 class="text-light" >PRODUCTOS</h1>
+      <section id="PRODUCTOS" className="py-5 bg-dark" >
+        <div className="container">
+          <h1 className="text-light" >PRODUCTOS</h1>
 
-          <div class="row align-items-center ">
-            <div class="col-md-2">
+          <div className="row align-items-center ">
+            <div className="col-md-2">
               <a target="_blank" href="#">
-                <img src="https://via.placeholder.com/200x200" class="d-block img-fluid" alt="..." />
+                <img src="https://via.placeholder.com/200x200" className="d-block img-fluid" alt="..." />
               </a>
             </div>
-            <div class="col-md-8 ">
-              <div class="col">
-                <h3 class="text-success">PORTAL CFDI</h3>
+            <div className="col-md-8 ">
+              <div className="col">
+                <h3 className="text-success">PORTAL CFDI</h3>
               </div>
-              <div class="col">
-                <p class="lead text-light ">Dentro del portal CFDI podrás generar las facturas de los productos o servicios que ofrezcas.
+              <div className="col">
+                <p className="lead text-light ">Dentro del portal CFDI podrás generar las facturas de los productos o servicios que ofrezcas.
                   Podrás llevar el control de tus clientes y empresas además de tener los reportes de todos los
                   movimientos que realices, contaras con todos los complementos, adendas y personalización
                   de facturas en caso de que así lo necesites.</p>
               </div>
             </div>
-            <div class="col-md-2">
-              <a href="#" class="btn btn-secondary my-2 border-gradient"><h5 class="mb-0">MÁS
+            <div className="col-md-2">
+              <a href="#" className="btn btn-secondary my-2 border-gradient"><h5 className="mb-0">MÁS
                 INFORMACIÓN</h5></a>
             </div>
           </div>
 
 
-          <div class="container justify-content-center bg-dark m-0 p-0">
-            <div class="stripe stripe-2 m-0 p-0">
+          <div className="container justify-content-center bg-dark m-0 p-0">
+            <div className="stripe stripe-2 m-0 p-0">
             </div>
           </div>
 
 
-          <div class="row align-items-center">
-            <div class="col-md-2">
+          <div className="row align-items-center">
+            <div className="col-md-2">
               <a target="_blank" href="#">
-                <img src="https://via.placeholder.com/200x200" class="d-block img-fluid" alt="..." />
+                <img src="https://via.placeholder.com/200x200" className="d-block img-fluid" alt="..." />
               </a>
             </div>
-            <div class="col-md-8 justify-content-center">
-              <div class="col">
-                <h3 class="text-success">PORTAL CFDI</h3>
+            <div className="col-md-8 justify-content-center">
+              <div className="col">
+                <h3 className="text-success">PORTAL CFDI</h3>
               </div>
-              <div class="col">
-                <p class="lead text-light ">Dentro del portal CFDI podrás generar las facturas de los productos o servicios que ofrezcas.
+              <div className="col">
+                <p className="lead text-light ">Dentro del portal CFDI podrás generar las facturas de los productos o servicios que ofrezcas.
                   Podrás llevar el control de tus clientes y empresas además de tener los reportes de todos los
                   movimientos que realices, contaras con todos los complementos, adendas y personalización
                   de facturas en caso de que así lo necesites.</p>
               </div>
             </div>
-            <div class="col-md-2 d-flex align-items-center">
-              <a href="#" class="btn btn-secondary my-2 border-gradient"><h5 class="mb-0">MÁS
+            <div className="col-md-2 d-flex align-items-center">
+              <a href="#" className="btn btn-secondary my-2 border-gradient"><h5 className="mb-0">MÁS
                 INFORMACIÓN</h5></a>
             </div>
           </div>
 
-          <div class="container justify-content-center bg-dark m-0 p-0">
-            <div class="stripe stripe-2 m-0 p-0">
+          <div className="container justify-content-center bg-dark m-0 p-0">
+            <div className="stripe stripe-2 m-0 p-0">
             </div>
           </div>
 
-          <div class="row align-items-center">
-            <div class="col-md-2">
+          <div className="row align-items-center">
+            <div className="col-md-2">
               <a target="_blank" href="#">
-                <img src="https://via.placeholder.com/200x200" class="d-block img-fluid" alt="..." />
+                <img src="https://via.placeholder.com/200x200" className="d-block img-fluid" alt="..." />
               </a>
             </div>
-            <div class="col-md-8 justify-content-center">
-              <div class="col">
-                <h3 class="text-success">COMPLEMENTOS CFDI</h3>
+            <div className="col-md-8 justify-content-center">
+              <div className="col">
+                <h3 className="text-success">COMPLEMENTOS CFDI</h3>
               </div>
-              <div class="col">
-                <p class="lead text-light ">Dentro del portal CFDI podrás generar las facturas de los productos o servicios que ofrezcas.
+              <div className="col">
+                <p className="lead text-light ">Dentro del portal CFDI podrás generar las facturas de los productos o servicios que ofrezcas.
                   Podrás llevar el control de tus clientes y empresas además de tener los reportes de todos los
                   movimientos que realices, contaras con todos los complementos, adendas y personalización
                   de facturas en caso de que así lo necesites.</p>
               </div>
-              <div class="col">
-                <div class="row">
-                  <h5 class="text-light" > ALGUNOS DE NUESTROS COMPLEMENTOS</h5>
+              <div className="col">
+                <div className="row">
+                  <h5 className="text-light" > ALGUNOS DE NUESTROS COMPLEMENTOS</h5>
                 </div>
-                <div class="row">
-                  <div class="col">
-                    <ul class="list-unstyled text-small">
-                      <li><span class="text-light" > • Instituciones Educativas Privadas
+                <div className="row">
+                  <div className="col">
+                    <ul className="list-unstyled text-small">
+                      <li><span className="text-light" > • Instituciones Educativas Privadas
                         (Complemento IEDU)</span></li>
-                      <li><span class="text-light" > • Complemento de Constancia
+                      <li><span className="text-light" > • Complemento de Constancia
                         de Retenciones (Intereses,
                         Dividendos, Arrendamiento
                         en Fideicomiso, Enajenación
                         de Acciones, Fideicomiso</span></li>
                     </ul>
                   </div>
-                  <div class="col">
-                    <ul class="list-unstyled text-small">
-                      <li><span class="text-light" >No Empresarial, Intereses
+                  <div className="col">
+                    <ul className="list-unstyled text-small">
+                      <li><span className="text-light" >No Empresarial, Intereses
                         hipotecarios, Operaciones con
                         derivados, Pago extranjeros,
                         Planes de retiro, Premios, Sector
                         Financiero)</span></li>
-                      <li><span class="text-light" >• Complemento INE</span></li>
-                      <li><span class="text-light" > • Complemento comercio exterior</span></li>
+                      <li><span className="text-light" >• Complemento INE</span></li>
+                      <li><span className="text-light" > • Complemento comercio exterior</span></li>
                     </ul>
                   </div>
-                  <div class="col">
-                    <ul class="list-unstyled text-small">
-                      <li><span class="text-light" > • Complemento servicio parcial de
+                  <div className="col">
+                    <ul className="list-unstyled text-small">
+                      <li><span className="text-light" > • Complemento servicio parcial de
                         construcción</span></li>
-                      <li><span class="text-light" > • Complemento vehículos usados</span></li>
-                      <li><span class="text-light" > • CFDI con Impuestos locales</span></li>
-                      <li><span class="text-light" > • Carta Porte Ver 2.0</span></li>
+                      <li><span className="text-light" > • Complemento vehículos usados</span></li>
+                      <li><span className="text-light" > • CFDI con Impuestos locales</span></li>
+                      <li><span className="text-light" > • Carta Porte Ver 2.0</span></li>
                     </ul>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-2 d-flex align-items-center">
-              <a href="#" class="btn btn-secondary my-2 border-gradient"><h5 class="mb-0">MÁS
+            <div className="col-md-2 d-flex align-items-center">
+              <a href="#" className="btn btn-secondary my-2 border-gradient"><h5 className="mb-0">MÁS
                 INFORMACIÓN</h5></a>
             </div>
           </div>
 
-          <div class="container justify-content-center bg-dark m-0 p-0">
-            <div class="stripe stripe-2 m-0 p-0">
+          <div className="container justify-content-center bg-dark m-0 p-0">
+            <div className="stripe stripe-2 m-0 p-0">
             </div>
           </div>
 
-          <div class="row align-items-center">
-            <div class="col-md-2">
+          <div className="row align-items-center">
+            <div className="col-md-2">
               <a target="_blank" href="#">
-                <img src="https://via.placeholder.com/200x200" class="d-block img-fluid" alt="..." />
+                <img src="https://via.placeholder.com/200x200" className="d-block img-fluid" alt="..." />
               </a>
             </div>
-            <div class="col-md-8 justify-content-center">
-              <div class="col">
-                <h3 class="text-success">ADENDAS</h3>
+            <div className="col-md-8 justify-content-center">
+              <div className="col">
+                <h3 className="text-success">ADENDAS</h3>
               </div>
-              <div class="col">
-                <p class="lead text-light ">Las adendas son complementos de facturación que permite generar integración con datos
+              <div className="col">
+                <p className="lead text-light ">Las adendas son complementos de facturación que permite generar integración con datos
                   específicos de compañías y/o servicios existentes en el mercado.</p>
               </div>
-              <div class="col">
-                <div class="row">
-                  <h5 class="text-light" > ALGUNAS DE NUESTRAS ADENDAS</h5>
+              <div className="col">
+                <div className="row">
+                  <h5 className="text-light" > ALGUNAS DE NUESTRAS ADENDAS</h5>
                 </div>
-                <div class="row">
-                  <div class="col">
-                    <ul class="list-unstyled text-small">
-                      <li><span class="text-light" >• Adenda 1888</span></li>
-                      <li><span class="text-light" >• Adenda ADO</span></li>
-                      <li><span class="text-light" >• Adenda Vallen</span></li>
-                      <li><span class="text-light" >• Adenda Asonioscoc</span></li>
-                      <li><span class="text-light" >• Adenda Asofarma</span></li>
-                      <li><span class="text-light" >• Adenda Cinépolis</span></li>
-                      <li><span class="text-light" >• Adenda Disney</span></li>
-                      <li><span class="text-light" >• Adenda Nadro</span></li>
-                      <li><span class="text-light" >• Adenda Neto</span></li>
-                      <li><span class="text-light" >• Adenda SKY</span></li>
-                      <li><span class="text-light" >• Adenda IUSACELL</span></li>
-                      <li><span class="text-light" >• Adenda BIC</span></li>
-                      <li><span class="text-light" ></span></li>
+                <div className="row">
+                  <div className="col">
+                    <ul className="list-unstyled text-small">
+                      <li><span className="text-light" >• Adenda 1888</span></li>
+                      <li><span className="text-light" >• Adenda ADO</span></li>
+                      <li><span className="text-light" >• Adenda Vallen</span></li>
+                      <li><span className="text-light" >• Adenda Asonioscoc</span></li>
+                      <li><span className="text-light" >• Adenda Asofarma</span></li>
+                      <li><span className="text-light" >• Adenda Cinépolis</span></li>
+                      <li><span className="text-light" >• Adenda Disney</span></li>
+                      <li><span className="text-light" >• Adenda Nadro</span></li>
+                      <li><span className="text-light" >• Adenda Neto</span></li>
+                      <li><span className="text-light" >• Adenda SKY</span></li>
+                      <li><span className="text-light" >• Adenda IUSACELL</span></li>
+                      <li><span className="text-light" >• Adenda BIC</span></li>
+                      <li><span className="text-light" ></span></li>
                     </ul>
                   </div>
-                  <div class="col">
-                    <ul class="list-unstyled text-small">
-                      <li><span class="text-light" >• Adenda Jumex</span></li>
-                      <li><span class="text-light" >• Adenda para Descripciones largas</span></li>
-                      <li><span class="text-light" >• Adenda Mabe</span></li>
-                      <li><span class="text-light" >• Adenda Pilgrims</span></li>
-                      <li><span class="text-light" >• Adenda Elektra</span></li>
-                      <li><span class="text-light" >• Adenda Pemex</span></li>
-                      <li><span class="text-light" >• Adenda Vallen</span></li>
-                      <li><span class="text-light" >• Adenda Súper Farmacia</span></li>
-                      <li><span class="text-light" >• Adenda Mondelez</span></li>
-                      <li><span class="text-light" >• Adenda Grupo Planeta</span></li>
-                      <li><span class="text-light" >• Adenda Liverpool</span></li>
-                      <li><span class="text-light" >• Adenda Jumex</span></li>
+                  <div className="col">
+                    <ul className="list-unstyled text-small">
+                      <li><span className="text-light" >• Adenda Jumex</span></li>
+                      <li><span className="text-light" >• Adenda para Descripciones largas</span></li>
+                      <li><span className="text-light" >• Adenda Mabe</span></li>
+                      <li><span className="text-light" >• Adenda Pilgrims</span></li>
+                      <li><span className="text-light" >• Adenda Elektra</span></li>
+                      <li><span className="text-light" >• Adenda Pemex</span></li>
+                      <li><span className="text-light" >• Adenda Vallen</span></li>
+                      <li><span className="text-light" >• Adenda Súper Farmacia</span></li>
+                      <li><span className="text-light" >• Adenda Mondelez</span></li>
+                      <li><span className="text-light" >• Adenda Grupo Planeta</span></li>
+                      <li><span className="text-light" >• Adenda Liverpool</span></li>
+                      <li><span className="text-light" >• Adenda Jumex</span></li>
                     </ul>
                   </div>
-                  <div class="col">
-                    <ul class="list-unstyled text-small">
-                      <li><span class="text-light" >• Adenda Honda</span></li>
-                      <li><span class="text-light" >• Adenda Nissan</span></li>
-                      <li><span class="text-light" >• Adenda Volkswagen</span></li>
-                      <li><span class="text-light" >• Adenda Chrysler</span></li>
-                      <li><span class="text-light" >• Adenda General Motors</span></li>
-                      <li><span class="text-light" >• Adenda Soriana</span></li>
-                      <li><span class="text-light" >• Adenda Tridomex</span></li>
-                      <li><span class="text-light" >• Adenda Copel</span></li>
-                      <li><span class="text-light" >• Adenda FEMSA</span></li>
-                      <li><span class="text-light" >• Adenda Sun Chemical</span></li>
+                  <div className="col">
+                    <ul className="list-unstyled text-small">
+                      <li><span className="text-light" >• Adenda Honda</span></li>
+                      <li><span className="text-light" >• Adenda Nissan</span></li>
+                      <li><span className="text-light" >• Adenda Volkswagen</span></li>
+                      <li><span className="text-light" >• Adenda Chrysler</span></li>
+                      <li><span className="text-light" >• Adenda General Motors</span></li>
+                      <li><span className="text-light" >• Adenda Soriana</span></li>
+                      <li><span className="text-light" >• Adenda Tridomex</span></li>
+                      <li><span className="text-light" >• Adenda Copel</span></li>
+                      <li><span className="text-light" >• Adenda FEMSA</span></li>
+                      <li><span className="text-light" >• Adenda Sun Chemical</span></li>
                     </ul>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-2 d-flex align-items-center">
-              <a href="#" class="btn btn-secondary my-2 border-gradient"><h5 class="mb-0">MÁS
+            <div className="col-md-2 d-flex align-items-center">
+              <a href="#" className="btn btn-secondary my-2 border-gradient"><h5 className="mb-0">MÁS
                 INFORMACIÓN</h5></a>
             </div>
           </div>
 
-          <div class="container justify-content-center bg-dark m-0 p-0">
-            <div class="stripe stripe-2 m-0 p-0">
+          <div className="container justify-content-center bg-dark m-0 p-0">
+            <div className="stripe stripe-2 m-0 p-0">
             </div>
           </div>
 
 
-          <div class="row align-items-center">
-            <div class="col-md-2">
+          <div className="row align-items-center">
+            <div className="col-md-2">
               <a target="_blank" href="#">
-                <img src="https://via.placeholder.com/200x200" class="d-block img-fluid" alt="..." />
+                <img src="https://via.placeholder.com/200x200" className="d-block img-fluid" alt="..." />
               </a>
             </div>
-            <div class="col-md-8 justify-content-center">
-              <div class="col">
-                <h3 class="text-success">CONVERTIDOR</h3>
+            <div className="col-md-8 justify-content-center">
+              <div className="col">
+                <h3 className="text-success">CONVERTIDOR</h3>
               </div>
-              <div class="col">
-                <p class="lead text-light ">Software diseñado para plataformas Windows desarrollado por ntlink mediante el cual podrás generar
+              <div className="col">
+                <p className="lead text-light ">Software diseñado para plataformas Windows desarrollado por ntlink mediante el cual podrás generar
                   la carga masiva de tu facturación, mediante archivos ya sea txt o xls podrás automatizar tu facturación,
                   obteniendo de respuesta los archivos xml y pdf sellados por el SAT</p>
 
-                <p class="lead text-light ">PRECIO CONVERTIDOR $1,200 MXN MAS IVA ANUAL</p>
+                <p className="lead text-light ">PRECIO CONVERTIDOR $1,200 MXN MAS IVA ANUAL</p>
               </div>
             </div>
-            <div class="col-md-2 d-flex align-items-center">
-              <a href="#" class="btn btn-secondary my-2 border-gradient"><h5 class="mb-0">MÁS
+            <div className="col-md-2 d-flex align-items-center">
+              <a href="#" className="btn btn-secondary my-2 border-gradient"><h5 className="mb-0">MÁS
                 INFORMACIÓN</h5></a>
             </div>
           </div>
 
-          <div class="container justify-content-center bg-dark m-0 p-0">
-            <div class="stripe stripe-2 m-0 p-0">
+          <div className="container justify-content-center bg-dark m-0 p-0">
+            <div className="stripe stripe-2 m-0 p-0">
             </div>
           </div>
 
         </div>
       </section>
 
-      <section id="PRECIOS" class="py-5 bg-dark" >
-        <div class="container bg-secondary">
-          <div class="row text-center ">
-            <div class="col-6 align-self-center ">
-              <div class="col "> <h1 class="text-light" >PRECIOS</h1></div>
-              <div class="col"><p>Conoce nuestros planes y costos</p></div>
-              <div class="col"><a onClick={() => setModalShow(true)} class="btn btn-secondary my-2 border-gradient"><h5 class="mb-0">MÁS
+      <section id="PRECIOS" className="py-5 bg-dark" >
+        <div className="container bg-secondary">
+          <div className="row text-center ">
+            <div className="col-6 align-self-center ">
+              <div className="col "> <h1 className="text-light" >PRECIOS</h1></div>
+              <div className="col"><p>Conoce nuestros planes y costos</p></div>
+              <div className="col"><a onClick={() => setModalShow(true)} className="btn btn-secondary my-2 border-gradient"><h5 className="mb-0">MÁS
                 INFORMACIÓN</h5></a></div>
             </div>
-            <div class="col-6">
+            <div className="col-6">
               <a target="_blank" href="#">
-                <img src="https://via.placeholder.com/700x500" class="d-block img-fluid" alt="..." />
+                <img src="https://via.placeholder.com/700x500" className="d-block img-fluid" alt="..." />
               </a>
             </div>
           </div>
-          <div class="container justify-content-center bg-dark m-0 p-0">
-            <div class="stripe stripe-2 m-0 p-0">
+          <div className="container justify-content-center bg-dark m-0 p-0">
+            <div className="stripe stripe-2 m-0 p-0">
             </div>
           </div>
         </div>
       </section>
 
-      <div class="container justify-content-center " >
-        <div class="row ">
-          <div class="col d-flex justify-content-end">
-            <a href="#" class="btn btn-secondary my-2 border-gradient" style={{ "width": "190px" }} ><h5 class="mb-0">BLOG</h5></a>
+      <div className="container justify-content-center " >
+        <div className="row ">
+          <div className="col d-flex justify-content-end">
+            <a href="#" className="btn btn-secondary my-2 border-gradient buttonexapnd"  ><h5 className="mb-0">BLOG</h5></a>
           </div>
-          <div class="col d-flex justify-content-start">
-            <a href="#" class="btn btn-secondary my-2 border-gradient" style={{ "width": "190px" }}><h5 class="mb-0">DOCUMENTACIÓN</h5></a>
+          <div className="col d-flex justify-content-start">
+            <a href="#" className="btn btn-secondary my-2 border-gradient buttonexapnd"  ><h5 className="mb-0">DOCUMENTACIÓN</h5></a>
           </div>
         </div>
       </div>
 
-      <section id="PROMOCIONES" class="py-5 bg-dark" >
-        <div class="container">
+      <section id="PROMOCIONES" className="py-5 bg-dark" >
+        <div className="container">
 
-          <div class="row">
-            <h1 class="text-light mb-5" >PROMOCIONES ESPECIALES</h1>
+          <div className="row">
+            <h1 className="text-light mb-5" >PROMOCIONES ESPECIALES</h1>
           </div>
-          <div class="row mb-5">
-            <div class="col">
-              <div class="row ">
-                <h2 class="text-success text-center">DISTRIBUIDORES</h2>
+          <div className="row mb-5">
+            <div className="col">
+              <div className="row ">
+                <h2 className="text-success text-center">DISTRIBUIDORES</h2>
               </div>
-              <div class="row">
-                <p class="text-light text-left" >Mediante nuestros planes y paquetes especiales para distribuidores,
+              <div className="row">
+                <p className="text-light text-left" >Mediante nuestros planes y paquetes especiales para distribuidores,
                   podrás generar un ingreso mediante la reventa de nuestros servicios de
                   timbrado.</p>
 
               </div>
-              <div class="row ">
-                <div class="col d-flex justify-content-center">
-                  <a href="#" class="btn btn-secondary border-gradient"><h5 class="mb-0">MÁS
-                INFORMACIÓN</h5></a></div>
+              <div className="row ">
+                <div className="col d-flex justify-content-center">
+                  <a href="#" className="btn btn-secondary border-gradient"><h5 className="mb-0">MÁS
+                    INFORMACIÓN</h5></a></div>
               </div>
             </div>
-            <div class="col">
-              <div class="row">
-                <h2 class="text-success text-center">PLANES DE TIMBRADO POST PAGO</h2>
+            <div className="col">
+              <div className="row">
+                <h2 className="text-success text-center">PLANES DE TIMBRADO POST PAGO</h2>
               </div>
-              <div class="row">
-                <p class="text-light text-left" >Mediante nuestros planes de timbrado post pago, podrás tener crédito a
+              <div className="row">
+                <p className="text-light text-left" >Mediante nuestros planes de timbrado post pago, podrás tener crédito a
                   mes vencido de tu consumo</p>
 
               </div>
-              <div class="row">
-                <div class="col d-flex justify-content-center">
-                  <a href="#" class="btn btn-secondary my-2 border-gradient"><h5 class="mb-0">MÁS
-                INFORMACIÓN</h5></a>
+              <div className="row">
+                <div className="col d-flex justify-content-center">
+                  <a href="#" className="btn btn-secondary my-2 border-gradient"><h5 className="mb-0">MÁS
+                    INFORMACIÓN</h5></a>
                 </div>
               </div>
             </div>
@@ -492,68 +491,67 @@ function App() {
         </div>
       </section>
 
-      <footer id="CONTACTO" class="pt-4 pt-md-5 border-top gradeintBlack bg-dark">
-        <div class="container  bg-trasparent">
-          <div class="row">
-            <div class="col-3 ">
+      <footer id="CONTACTO" className="pt-4 pt-md-5 border-top gradeintBlack bg-dark">
+        <div className="container  bg-trasparent">
+          <div className="row">
+            <div className="col-3 ">
               <a href="#">
-                <img class="img-fluid" src="https://via.placeholder.com/250x250" />
+                <img className="img-fluid" src="https://via.placeholder.com/250x250" />
               </a>
             </div>
-            <div class="col-9 ">
-              <div class="row">
-                <h1 class="text-light" >CONTACTO Y SOPORTE</h1>
+            <div className="col-9 ">
+              <div className="row">
+                <h1 className="text-light" >CONTACTO Y SOPORTE</h1>
               </div>
-              <div class="row">
-                <div class="col-2">
-                  <h5 class="text-light" >TELEFONOS</h5>
-                  <ul class="list-unstyled text-small">
-                    <li><span class="text-light" >+(55) 47 80 02 00</span></li>
-                    <li><span class="text-light" >+(55) 62 72 55 49</span></li>
-                    <li><span class="text-light" >+(55) 62 72 55 50</span></li>
-                    <li><span class="text-light" >+(55) 82 50 76 56</span></li>
+              <div className="row">
+                <div className="col-2">
+                  <h5 className="text-light" >TELEFONOS</h5>
+                  <ul className="list-unstyled text-small">
+                    <li><span className="text-light" >+(55) 47 80 02 00</span></li>
+                    <li><span className="text-light" >+(55) 62 72 55 49</span></li>
+                    <li><span className="text-light" >+(55) 62 72 55 50</span></li>
+                    <li><span className="text-light" >+(55) 82 50 76 56</span></li>
                   </ul>
                 </div>
-                <div class="col-3">
-                  <h5 class="text-light">CORREO ELECTRONICO</h5>
-                  <ul class="list-unstyled text-small">
-                    <li><span class="text-light" >ventas@ntlink.com.mx</span></li>
-                    <li><span class="text-light" >soporte_tecnico@ntlink.com.mx</span></li>
+                <div className="col-3">
+                  <h5 className="text-light">CORREO ELECTRONICO</h5>
+                  <ul className="list-unstyled text-small">
+                    <li><span className="text-light" >ventas@ntlink.com.mx</span></li>
+                    <li><span className="text-light" >soporte_tecnico@ntlink.com.mx</span></li>
                   </ul>
                 </div>
-                <div class="col-2">
-                  <h5 class="text-light">WHATS APP</h5>
-                  <ul class="list-unstyled text-small">
-                    <li><span class="text-light" >5591078187</span></li>
-                    <li><span class="text-light" >5524058190</span></li>
+                <div className="col-2">
+                  <h5 className="text-light">WHATS APP</h5>
+                  <ul className="list-unstyled text-small">
+                    <li><span className="text-light" >5591078187</span></li>
+                    <li><span className="text-light" >5524058190</span></li>
                   </ul>
                 </div>
-                <div class="col-3">
-                  <h5 class="text-light">DIRECCIÓN</h5>
-                  <ul class="list-unstyled text-small">
-                    <li><span class="text-light" >Calle Xicoténcatl 103BIS Del:, Del</span></li>
-                    <li><span class="text-light" >Carmen, Coyoacán, 04100 Ciudad de</span></li>
-                    <li><span class="text-light" >México, CDMX</span></li>
+                <div className="col-3">
+                  <h5 className="text-light">DIRECCIÓN</h5>
+                  <ul className="list-unstyled text-small">
+                    <li><span className="text-light" >Calle Xicoténcatl 103BIS Del:, Del</span></li>
+                    <li><span className="text-light" >Carmen, Coyoacán, 04100 Ciudad de</span></li>
+                    <li><span className="text-light" >México, CDMX</span></li>
                   </ul>
                 </div>
-                <div class="col-2">
-                  <h5 class="text-light">HORARIO</h5>
-                  <ul class="list-unstyled text-small">
-                    <li><span class="text-light" >LUNES A VIERNES 09:00 18:00</span></li>
-                    <li><span class="text-light" >SABADO 9 A 3 AM</span></li>
+                <div className="col-2">
+                  <h5 className="text-light">HORARIO</h5>
+                  <ul className="list-unstyled text-small">
+                    <li><span className="text-light" >LUNES A VIERNES 09:00 18:00</span></li>
+                    <li><span className="text-light" >SABADO 9 A 3 AM</span></li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
-          <div class="text-center py-4 text-light mt-4">Copyright © 2021 NTLINK COMUNICACIONES - Todos los derechos reservados | AVISO DE PRIVACIDAD</div>
+          <div className="text-center py-4 text-light mt-4">Copyright © 2021 NTLINK COMUNICACIONES - Todos los derechos reservados | AVISO DE PRIVACIDAD</div>
         </div>
 
-       {/*  <Button variant="primary" onClick={() => setModalShow(true)}>
-          Launch vertically centered modal
-        </Button>
- */}
+
         <MyVerticallyCenteredModal
+          preciosfolios={preciosFolios}
+          preciostimbre={preciosTimbre}
           show={modalShow}
           onHide={() => setModalShow(false)}
         />
@@ -574,14 +572,14 @@ function MyVerticallyCenteredModal(props) {
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <h1 class="text-light text-start">
+          <div className="container">
+            <div className="row">
+              <div className="col">
+                <h1 className="text-light text-start">
                   PRECIOS
                 </h1>
               </div>
-              <div class="col d-flex justify-content-end"><Button onClick={props.onHide}><h3 class="mb-0">Cerrar</h3> </Button></div>
+              <div className="col d-flex justify-content-end"><Button onClick={props.onHide}><h3 className="mb-0">Cerrar</h3> </Button></div>
 
 
             </div>
@@ -592,433 +590,433 @@ function MyVerticallyCenteredModal(props) {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <div class="row justify-content-center text-center">
-          <div class="col mb-4">
-            <h3 class="text-success text-start">Paquetes y costos FOLIOS (Portal CFDI / Portal Nómina)</h3>
+        <div className="row justify-content-center text-center">
+          <div className="col mb-4">
+            <h3 className="text-success text-start">Paquetes y costos FOLIOS (Portal CFDI / Portal Nómina)</h3>
           </div>
         </div>
-        <div class="row">
-          <div class="col d-flex align-items-center">
+        <div className="row">
+          <div className="col d-flex align-items-center">
             <a href="#">
-              <img class="img-fluid" src="https://via.placeholder.com/150x150" />
+              <img className="img-fluid" src="https://via.placeholder.com/150x150" />
             </a>
           </div>
-          <div class="col d-flex align-items-center">
+          <div className="col d-flex align-items-center">
             <a href="#">
-              <img class="img-fluid" src="https://via.placeholder.com/150x150" />
+              <img className="img-fluid" src="https://via.placeholder.com/150x150" />
             </a>
           </div>
-          <div class="col">
-            <div class="row mb-4">
+          <div className="col">
+            <div className="row mb-4">
 
-              <div class="card border-0 text-center">
-                <div class="card-header bg-info text-light">
-                  <h4 class="my-0 font-weight-normal">PAQUETE</h4>
+              <div className="card border-0 text-center">
+                <div className="card-header bg-info text-light">
+                  <h4 className="my-0 font-weight-normal">PAQUETE</h4>
                 </div>
-                <div class="card-body bg-white text-light">
-                  <h1 class="card-title text-info pricing-card-title">25</h1>
-                  <ul class="list-unstyled  text-info mt-0 mb-0">
+                <div className="card-body bg-white text-light">
+                  <h1 className="card-title text-info pricing-card-title">{props.preciosfolios[0].folio}</h1>
+                  <ul className="list-unstyled  text-info mt-0 mb-0">
                     <li>FOLIOS</li>
                   </ul>
                 </div>
-                <div class="card-footer bg-secondary text-light">
-                  <h4 class=" mt-0 mb-0 my-0 font-weight-normal">$330.00</h4>
+                <div className="card-footer bg-secondary text-light">
+                  <h4 className=" mt-0 mb-0 my-0 font-weight-normal">${props.preciosfolios[0].precio}.00</h4>
                 </div>
               </div>
 
             </div>
-            <div class="row mb-4">
-              <div class="card border-0 text-center">
-                <div class="card-header bg-info text-light">
-                  <h4 class="my-0 font-weight-normal">
+            <div className="row mb-4">
+              <div className="card border-0 text-center">
+                <div className="card-header bg-info text-light">
+                  <h4 className="my-0 font-weight-normal">
                     PAQUETE
                   </h4>
                 </div>
-                <div class="card-body bg-white text-light">
-                  <h1 class="card-title text-info pricing-card-title">
-                    25
+                <div className="card-body bg-white text-light">
+                  <h1 className="card-title text-info pricing-card-title">
+                    {props.preciosfolios[1].folio}
                   </h1>
-                  <ul class="list-unstyled  text-info mt-0 mb-0">
+                  <ul className="list-unstyled  text-info mt-0 mb-0">
                     <li>
                       FOLIOS
                     </li>
                   </ul>
                 </div>
-                <div class="card-footer bg-secondary text-light">
-                  <h4 class=" mt-0 mb-0 my-0 font-weight-normal">
-                    $330.00
+                <div className="card-footer bg-secondary text-light">
+                  <h4 className=" mt-0 mb-0 my-0 font-weight-normal">
+                    ${props.preciosfolios[1].precio}.00
                   </h4>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="row mb-4">
-              <div class="card border-0 text-center">
-                <div class="card-header bg-info text-light">
-                  <h4 class="my-0 font-weight-normal">
+          <div className="col">
+            <div className="row mb-4">
+              <div className="card border-0 text-center">
+                <div className="card-header bg-info text-light">
+                  <h4 className="my-0 font-weight-normal">
                     PAQUETE
                   </h4>
                 </div>
-                <div class="card-body bg-white text-light">
-                  <h1 class="card-title text-info pricing-card-title">
-                    25
+                <div className="card-body bg-white text-light">
+                  <h1 className="card-title text-info pricing-card-title">
+                  {props.preciosfolios[2].folio}
                   </h1>
-                  <ul class="list-unstyled  text-info mt-0 mb-0">
+                  <ul className="list-unstyled  text-info mt-0 mb-0">
                     <li>
                       FOLIOS
                     </li>
                   </ul>
                 </div>
-                <div class="card-footer bg-secondary text-light">
-                  <h4 class=" mt-0 mb-0 my-0 font-weight-normal">
-                    $330.00
+                <div className="card-footer bg-secondary text-light">
+                  <h4 className=" mt-0 mb-0 my-0 font-weight-normal">
+                    ${props.preciosfolios[2].precio}.00
                   </h4>
                 </div>
               </div>
             </div>
-            <div class="row mb-4">
-              <div class="card border-0 text-center">
-                <div class="card-header bg-info text-light">
-                  <h4 class="my-0 font-weight-normal">
+            <div className="row mb-4">
+              <div className="card border-0 text-center">
+                <div className="card-header bg-info text-light">
+                  <h4 className="my-0 font-weight-normal">
                     PAQUETE
                   </h4>
                 </div>
-                <div class="card-body bg-white text-light">
-                  <h1 class="card-title text-info pricing-card-title">
-                    25
+                <div className="card-body bg-white text-light">
+                  <h1 className="card-title text-info pricing-card-title">
+                  {props.preciosfolios[3].folio}
                   </h1>
-                  <ul class="list-unstyled  text-info mt-0 mb-0">
+                  <ul className="list-unstyled  text-info mt-0 mb-0">
                     <li>
                       FOLIOS
                     </li>
                   </ul>
                 </div>
-                <div class="card-footer bg-secondary text-light">
-                  <h4 class=" mt-0 mb-0 my-0 font-weight-normal">
-                    $330.00
-                  </h4>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="row mb-4">
-              <div class="card border-0 text-center">
-                <div class="card-header bg-info text-light">
-                  <h4 class="my-0 font-weight-normal">
-                    PAQUETE
-                  </h4>
-                </div>
-                <div class="card-body bg-white text-light">
-                  <h1 class="card-title text-info pricing-card-title">
-                    25
-                  </h1>
-                  <ul class="list-unstyled  text-info mt-0 mb-0">
-                    <li>
-                      FOLIOS
-                    </li>
-                  </ul>
-                </div>
-                <div class="card-footer bg-secondary text-light">
-                  <h4 class=" mt-0 mb-0 my-0 font-weight-normal">
-                    $330.00
-                  </h4>
-                </div>
-              </div>
-            </div>
-            <div class="row mb-4">
-              <div class="card border-0 text-center">
-                <div class="card-header bg-info text-light">
-                  <h4 class="my-0 font-weight-normal">
-                    PAQUETE
-                  </h4>
-                </div>
-                <div class="card-body bg-white text-light">
-                  <h1 class="card-title text-info pricing-card-title">
-                    25
-                  </h1>
-                  <ul class="list-unstyled  text-info mt-0 mb-0">
-                    <li>
-                      FOLIOS
-                    </li>
-                  </ul>
-                </div>
-                <div class="card-footer bg-secondary text-light">
-                  <h4 class=" mt-0 mb-0 my-0 font-weight-normal">
-                    $330.00
+                <div className="card-footer bg-secondary text-light">
+                  <h4 className=" mt-0 mb-0 my-0 font-weight-normal">
+                    ${props.preciosfolios[3].precio}.00
                   </h4>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="row mb-4">
-              <div class="card border-0 text-center">
-                <div class="card-header bg-info text-light">
-                  <h4 class="my-0 font-weight-normal">
+          <div className="col">
+            <div className="row mb-4">
+              <div className="card border-0 text-center">
+                <div className="card-header bg-info text-light">
+                  <h4 className="my-0 font-weight-normal">
                     PAQUETE
                   </h4>
                 </div>
-                <div class="card-body bg-white text-light">
-                  <h1 class="card-title text-info pricing-card-title">
-                    25
+                <div className="card-body bg-white text-light">
+                  <h1 className="card-title text-info pricing-card-title">
+                  {props.preciosfolios[4].folio}
                   </h1>
-                  <ul class="list-unstyled  text-info mt-0 mb-0">
+                  <ul className="list-unstyled  text-info mt-0 mb-0">
                     <li>
                       FOLIOS
                     </li>
                   </ul>
                 </div>
-                <div class="card-footer bg-secondary text-light">
-                  <h4 class=" mt-0 mb-0 my-0 font-weight-normal">
-                    $330.00
+                <div className="card-footer bg-secondary text-light">
+                  <h4 className=" mt-0 mb-0 my-0 font-weight-normal">
+                    ${props.preciosfolios[4].precio}.00
                   </h4>
                 </div>
               </div>
             </div>
-            <div class="row mb-4">
-              <div class="card border-0 text-center">
-                <div class="card-header bg-info text-light">
-                  <h4 class="my-0 font-weight-normal">
+            <div className="row mb-4">
+              <div className="card border-0 text-center">
+                <div className="card-header bg-info text-light">
+                  <h4 className="my-0 font-weight-normal">
                     PAQUETE
                   </h4>
                 </div>
-                <div class="card-body bg-white text-light">
-                  <h1 class="card-title text-info pricing-card-title">
-                    25
+                <div className="card-body bg-white text-light">
+                  <h1 className="card-title text-info pricing-card-title">
+                  {props.preciosfolios[5].folio}
                   </h1>
-                  <ul class="list-unstyled  text-info mt-0 mb-0">
+                  <ul className="list-unstyled  text-info mt-0 mb-0">
                     <li>
                       FOLIOS
                     </li>
                   </ul>
                 </div>
-                <div class="card-footer bg-secondary text-light">
-                  <h4 class=" mt-0 mb-0 my-0 font-weight-normal">
-                    $330.00
+                <div className="card-footer bg-secondary text-light">
+                  <h4 className=" mt-0 mb-0 my-0 font-weight-normal">
+                    ${props.preciosfolios[5].precio}.00
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="row mb-4">
+              <div className="card border-0 text-center">
+                <div className="card-header bg-info text-light">
+                  <h4 className="my-0 font-weight-normal">
+                    PAQUETE
+                  </h4>
+                </div>
+                <div className="card-body bg-white text-light">
+                  <h1 className="card-title text-info pricing-card-title">
+                  {props.preciosfolios[6].folio}
+                  </h1>
+                  <ul className="list-unstyled  text-info mt-0 mb-0">
+                    <li>
+                      FOLIOS
+                    </li>
+                  </ul>
+                </div>
+                <div className="card-footer bg-secondary text-light">
+                  <h4 className=" mt-0 mb-0 my-0 font-weight-normal">
+                    ${props.preciosfolios[6].precio}.00
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div className="row mb-4">
+              <div className="card border-0 text-center">
+                <div className="card-header bg-info text-light">
+                  <h4 className="my-0 font-weight-normal">
+                    PAQUETE
+                  </h4>
+                </div>
+                <div className="card-body bg-white text-light">
+                  <h1 className="card-title text-info pricing-card-title">
+                  {props.preciosfolios[7].folio}
+                  </h1>
+                  <ul className="list-unstyled  text-info mt-0 mb-0">
+                    <li>
+                      FOLIOS
+                    </li>
+                  </ul>
+                </div>
+                <div className="card-footer bg-secondary text-light">
+                  <h4 className=" mt-0 mb-0 my-0 font-weight-normal">
+                    ${props.preciosfolios[7].precio}.00
                   </h4>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="row justify-content-center text-center">
-          <div class="col mb-4">
-            <h3 class="text-success text-start">Paquetes y costos FOLIOS (Portal CFDI / Portal Nómina)</h3>
+        <div className="row justify-content-center text-center">
+          <div className="col mb-4">
+            <h3 className="text-success text-start">Paquetes y costos TIMBRES (WebService / Convertidor)</h3>
           </div>
         </div>
-        <div class="row">
-          <div class="col d-flex align-items-center">
+        <div className="row">
+          <div className="col d-flex align-items-center">
             <a href="#">
-              <img class="img-fluid" src="https://via.placeholder.com/150x150" />
+              <img className="img-fluid" src="https://via.placeholder.com/150x150" />
             </a>
           </div>
-          <div class="col d-flex align-items-center">
+          <div className="col d-flex align-items-center">
             <a href="#">
-              <img class="img-fluid" src="https://via.placeholder.com/150x150" />
+              <img className="img-fluid" src="https://via.placeholder.com/150x150" />
             </a>
           </div>
-          <div class="col">
-            <div class="row mb-4">
+          <div className="col">
+            <div className="row mb-4">
 
-              <div class="card border-0 text-center">
-                <div class="card-header bg-info text-light">
-                  <h4 class="my-0 font-weight-normal">PAQUETE</h4>
+              <div className="card border-0 text-center">
+                <div className="card-header bg-info text-light">
+                  <h4 className="my-0 font-weight-normal">PAQUETE</h4>
                 </div>
-                <div class="card-body bg-white text-light">
-                  <h1 class="card-title text-info pricing-card-title">25</h1>
-                  <ul class="list-unstyled  text-info mt-0 mb-0">
+                <div className="card-body bg-white text-light">
+                  <h1 className="card-title text-info pricing-card-title">{props.preciostimbre[0].timbre}</h1>
+                  <ul className="list-unstyled  text-info mt-0 mb-0">
                     <li>FOLIOS</li>
                   </ul>
                 </div>
-                <div class="card-footer bg-secondary text-light">
-                  <h4 class=" mt-0 mb-0 my-0 font-weight-normal">$330.00</h4>
+                <div className="card-footer bg-secondary text-light">
+                  <h4 className=" mt-0 mb-0 my-0 font-weight-normal">${props.preciostimbre[0].precio}.00</h4>
                 </div>
               </div>
 
             </div>
-            <div class="row mb-4">
-              <div class="card border-0 text-center">
-                <div class="card-header bg-info text-light">
-                  <h4 class="my-0 font-weight-normal">
+            <div className="row mb-4">
+              <div className="card border-0 text-center">
+                <div className="card-header bg-info text-light">
+                  <h4 className="my-0 font-weight-normal">
                     PAQUETE
                   </h4>
                 </div>
-                <div class="card-body bg-white text-light">
-                  <h1 class="card-title text-info pricing-card-title">
-                    25
+                <div className="card-body bg-white text-light">
+                  <h1 className="card-title text-info pricing-card-title">
+                  {props.preciostimbre[1].timbre}
                   </h1>
-                  <ul class="list-unstyled  text-info mt-0 mb-0">
+                  <ul className="list-unstyled  text-info mt-0 mb-0">
                     <li>
                       FOLIOS
                     </li>
                   </ul>
                 </div>
-                <div class="card-footer bg-secondary text-light">
-                  <h4 class=" mt-0 mb-0 my-0 font-weight-normal">
-                    $330.00
+                <div className="card-footer bg-secondary text-light">
+                  <h4 className=" mt-0 mb-0 my-0 font-weight-normal">
+                    ${props.preciostimbre[1].precio}.00
                   </h4>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="row mb-4">
-              <div class="card border-0 text-center">
-                <div class="card-header bg-info text-light">
-                  <h4 class="my-0 font-weight-normal">
+          <div className="col">
+            <div className="row mb-4">
+              <div className="card border-0 text-center">
+                <div className="card-header bg-info text-light">
+                  <h4 className="my-0 font-weight-normal">
                     PAQUETE
                   </h4>
                 </div>
-                <div class="card-body bg-white text-light">
-                  <h1 class="card-title text-info pricing-card-title">
-                    25
+                <div className="card-body bg-white text-light">
+                  <h1 className="card-title text-info pricing-card-title">
+                  {props.preciostimbre[2].timbre}
                   </h1>
-                  <ul class="list-unstyled  text-info mt-0 mb-0">
+                  <ul className="list-unstyled  text-info mt-0 mb-0">
                     <li>
                       FOLIOS
                     </li>
                   </ul>
                 </div>
-                <div class="card-footer bg-secondary text-light">
-                  <h4 class=" mt-0 mb-0 my-0 font-weight-normal">
-                    $330.00
+                <div className="card-footer bg-secondary text-light">
+                  <h4 className=" mt-0 mb-0 my-0 font-weight-normal">
+                    ${props.preciostimbre[2].precio}.00
                   </h4>
                 </div>
               </div>
             </div>
-            <div class="row mb-4">
-              <div class="card border-0 text-center">
-                <div class="card-header bg-info text-light">
-                  <h4 class="my-0 font-weight-normal">
+            <div className="row mb-4">
+              <div className="card border-0 text-center">
+                <div className="card-header bg-info text-light">
+                  <h4 className="my-0 font-weight-normal">
                     PAQUETE
                   </h4>
                 </div>
-                <div class="card-body bg-white text-light">
-                  <h1 class="card-title text-info pricing-card-title">
-                    25
+                <div className="card-body bg-white text-light">
+                  <h1 className="card-title text-info pricing-card-title">
+                  {props.preciostimbre[3].timbre}
                   </h1>
-                  <ul class="list-unstyled  text-info mt-0 mb-0">
+                  <ul className="list-unstyled  text-info mt-0 mb-0">
                     <li>
                       FOLIOS
                     </li>
                   </ul>
                 </div>
-                <div class="card-footer bg-secondary text-light">
-                  <h4 class=" mt-0 mb-0 my-0 font-weight-normal">
-                    $330.00
-                  </h4>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="row mb-4">
-              <div class="card border-0 text-center">
-                <div class="card-header bg-info text-light">
-                  <h4 class="my-0 font-weight-normal">
-                    PAQUETE
-                  </h4>
-                </div>
-                <div class="card-body bg-white text-light">
-                  <h1 class="card-title text-info pricing-card-title">
-                    25
-                  </h1>
-                  <ul class="list-unstyled  text-info mt-0 mb-0">
-                    <li>
-                      FOLIOS
-                    </li>
-                  </ul>
-                </div>
-                <div class="card-footer bg-secondary text-light">
-                  <h4 class=" mt-0 mb-0 my-0 font-weight-normal">
-                    $330.00
-                  </h4>
-                </div>
-              </div>
-            </div>
-            <div class="row mb-4">
-              <div class="card border-0 text-center">
-                <div class="card-header bg-info text-light">
-                  <h4 class="my-0 font-weight-normal">
-                    PAQUETE
-                  </h4>
-                </div>
-                <div class="card-body bg-white text-light">
-                  <h1 class="card-title text-info pricing-card-title">
-                    25
-                  </h1>
-                  <ul class="list-unstyled  text-info mt-0 mb-0">
-                    <li>
-                      FOLIOS
-                    </li>
-                  </ul>
-                </div>
-                <div class="card-footer bg-secondary text-light">
-                  <h4 class=" mt-0 mb-0 my-0 font-weight-normal">
-                    $330.00
+                <div className="card-footer bg-secondary text-light">
+                  <h4 className=" mt-0 mb-0 my-0 font-weight-normal">
+                    ${props.preciostimbre[3].precio}.00
                   </h4>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="row mb-4">
-              <div class="card border-0 text-center">
-                <div class="card-header bg-info text-light">
-                  <h4 class="my-0 font-weight-normal">
+          <div className="col">
+            <div className="row mb-4">
+              <div className="card border-0 text-center">
+                <div className="card-header bg-info text-light">
+                  <h4 className="my-0 font-weight-normal">
                     PAQUETE
                   </h4>
                 </div>
-                <div class="card-body bg-white text-light">
-                  <h1 class="card-title text-info pricing-card-title">
-                    25
+                <div className="card-body bg-white text-light">
+                  <h1 className="card-title text-info pricing-card-title">
+                  {props.preciostimbre[4].timbre}
                   </h1>
-                  <ul class="list-unstyled  text-info mt-0 mb-0">
+                  <ul className="list-unstyled  text-info mt-0 mb-0">
                     <li>
                       FOLIOS
                     </li>
                   </ul>
                 </div>
-                <div class="card-footer bg-secondary text-light">
-                  <h4 class=" mt-0 mb-0 my-0 font-weight-normal">
-                    $330.00
+                <div className="card-footer bg-secondary text-light">
+                  <h4 className=" mt-0 mb-0 my-0 font-weight-normal">
+                    ${props.preciostimbre[4].precio}.00
                   </h4>
                 </div>
               </div>
             </div>
-            <div class="row mb-4">
-              <div class="card border-0 text-center">
-                <div class="card-header bg-info text-light">
-                  <h4 class="my-0 font-weight-normal">
+            <div className="row mb-4">
+              <div className="card border-0 text-center">
+                <div className="card-header bg-info text-light">
+                  <h4 className="my-0 font-weight-normal">
                     PAQUETE
                   </h4>
                 </div>
-                <div class="card-body bg-white text-light">
-                  <h1 class="card-title text-info pricing-card-title">
-                    25
+                <div className="card-body bg-white text-light">
+                  <h1 className="card-title text-info pricing-card-title">
+                  {props.preciostimbre[5].timbre}
                   </h1>
-                  <ul class="list-unstyled  text-info mt-0 mb-0">
+                  <ul className="list-unstyled  text-info mt-0 mb-0">
                     <li>
                       FOLIOS
                     </li>
                   </ul>
                 </div>
-                <div class="card-footer bg-secondary text-light">
-                  <h4 class=" mt-0 mb-0 my-0 font-weight-normal">
-                    $330.00
+                <div className="card-footer bg-secondary text-light">
+                  <h4 className=" mt-0 mb-0 my-0 font-weight-normal">
+                    ${props.preciostimbre[5].precio}.00
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="row mb-4">
+              <div className="card border-0 text-center">
+                <div className="card-header bg-info text-light">
+                  <h4 className="my-0 font-weight-normal">
+                    PAQUETE
+                  </h4>
+                </div>
+                <div className="card-body bg-white text-light">
+                  <h1 className="card-title text-info pricing-card-title">
+                  {props.preciostimbre[6].timbre}
+                  </h1>
+                  <ul className="list-unstyled  text-info mt-0 mb-0">
+                    <li>
+                      FOLIOS
+                    </li>
+                  </ul>
+                </div>
+                <div className="card-footer bg-secondary text-light">
+                  <h4 className=" mt-0 mb-0 my-0 font-weight-normal">
+                    ${props.preciostimbre[6].precio}.00
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div className="row mb-4">
+              <div className="card border-0 text-center">
+                <div className="card-header bg-info text-light">
+                  <h4 className="my-0 font-weight-normal">
+                    PAQUETE
+                  </h4>
+                </div>
+                <div className="card-body bg-white text-light">
+                  <h1 className="card-title text-info pricing-card-title">
+                  {props.preciostimbre[7].timbre}
+                  </h1>
+                  <ul className="list-unstyled  text-info mt-0 mb-0">
+                    <li>
+                      FOLIOS
+                    </li>
+                  </ul>
+                </div>
+                <div className="card-footer bg-secondary text-light">
+                  <h4 className=" mt-0 mb-0 my-0 font-weight-normal">
+                    ${props.preciostimbre[7].precio}.00
                   </h4>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col"></div>
+        <div className="row">
+          <div className="col"></div>
         </div>
 
-        <p class="text-light">
+        <p className="text-light">
           Adendas, gratuitas en la compra de tu primer paquete de facturación (solo aplica para adendas existentes)
           Adendas bajo demanda (por definir dependiendo el caso)
         </p>
@@ -1026,7 +1024,7 @@ function MyVerticallyCenteredModal(props) {
       {/*  <Modal.Footer>
        
       </Modal.Footer> */}
-    </Modal>
+    </Modal >
   );
 }
 
