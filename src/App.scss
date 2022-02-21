@@ -1,0 +1,94 @@
+/* $primary: rebeccapurple;
+$danger: #dd0000;
+$success: lime;
+$warning: orange;
+$info: aqua; */
+$secondary: #414141;
+$success: #9ef029;
+$dark: rgb(8, 8, 8);
+$info: #005250;
+
+$body-bg: #f3f3f0;
+
+@import "bootstrap";
+
+/* p {
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+  } */
+
+.underline {
+  background-size: 1px 1em;
+  box-shadow: inset 0 -0.175em #005250, inset 0 -0.2em #000;
+  padding: 20px;
+}
+
+.colorVerde {
+  color: #9ef029 !important;
+  text-align: left;
+}
+
+html {
+  font-size: 13px;
+  background: black;
+  overflow-x: hidden;
+}
+
+.stripe {
+  height: 12px;
+  margin: 0 0 1rem 0;
+}
+.stripe-1 {
+  background: linear-gradient(to right, #00b3ff, #00b3ff 0%, #9cef2b 100%, #9cef2b);
+}
+.stripe-2 {
+  height: 6px;
+  background: #005250;
+}
+
+.gradeintBlack {
+  background: rgb(0, 0, 0);
+  background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(115, 115, 115, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.border-gradient {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  background: none;
+  border-image-source: linear-gradient(to left, #9cef2b, #00b3ff);
+}
+
+.border-top {
+  border-top: 14px solid #005250 !important;
+}
+
+.App {
+  background: black;
+}
+
+.modal-content {
+  background: black;
+  border: 4px solid rgb(0 82 80);
+}
+
+.card {
+  background-color: transparent;
+  background-clip: border-box;
+  border: none;
+  border-radius: 0px;
+}
+.modal-body{
+  padding-bottom: 0px;
+}
+.modal-title{
+  width: 100%;
+}
+
+
+.modal-header{
+  border-bottom: 0px solid #005250;
+}
+.modal-footer{
+  border-top: 0px solid #005250;
+}
