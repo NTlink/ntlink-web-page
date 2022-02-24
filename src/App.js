@@ -46,22 +46,22 @@ function App() {
 
       <section>
         <div className="row carro">
-          <div className="col-md-3 m-0 p-0">
-            <a className="flui.toDateString()" target="_blank" href="#">
-              <img src="https://via.placeholder.com/500x500" className="d-block w-100 h-100" alt="..." />
+          <div className="col-md-3 m-0 p-0 d-flex align-items-end justify-content-end">
+            <a className="flui.toDateString()" target="_blank" >
+              <img src={require('./assets/img/All/main-logo-arriba-izquierda.png')} className="d-block w-100 h-85" alt="..." />
             </a>
           </div>
           <div className="col-md-9 m-0 p-0">
             <div id="carouselExampleControls" className="carousel slide " data-bs-ride="carousel">
               <div className="carousel-inner">
                 <div className="carousel-item active">
-                  <a target="_blank" href="#"><img src="https://via.placeholder.com/1468x500" className="d-block w-100" alt="..." /></a>
+                  <a target="_blank" href="#"><img src={require('./assets/img/All/main-img-banneA.png')} className="d-block w-100" alt="..." /></a>
                 </div>
                 <div className="carousel-item">
-                  <a target="_blank" href="#"><img src="https://via.placeholder.com/1468x500" className="d-block w-100" alt="..." /></a>
+                  <a target="_blank" href="#"><img src={require('./assets/img/All/main-img-banneA.png')} className="d-block w-100" alt="..." /></a>
                 </div>
                 <div className="carousel-item">
-                  <a target="_blank" href="#"><img src="https://via.placeholder.com/1468x500" className="d-block w-100" alt="..." /></a>
+                  <a target="_blank" href="#"><img src={require('./assets/img/All/main-img-banneA.png')} className="d-block w-100" alt="..." /></a>
                 </div>
               </div>
               <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -82,10 +82,10 @@ function App() {
       <section id="Servicios" className="py-5 bg-dark" >
         <div className="container">
 
-          <div className="row">
-            <div className="col-md-3">
+          <div className="row d-flex justify-content-center">
+            <div className="col-md-3  text-center">
               <a target="_blank" href="#">
-                <img src="https://via.placeholder.com/250x250" className="d-block img-fluid" alt="..." />
+                <img src={require('./assets/img/All/main-icono-01.png')} className="d-block img-fluid" alt="..." />
               </a>
             </div>
             <div className="col-md-9">
@@ -111,9 +111,9 @@ function App() {
         <div className="row p-5">
           <div className="col">
             <div className="row">
-              <div className="col">
+              <div className="col d-flex justify-content-center">
                 <a target="_blank" href="#">
-                  <img src="https://via.placeholder.com/250x250" className="d-block img-fluid" alt="..." />
+                  <img src={require('./assets/img/All/main-icono-01.png')} className="d-block img-fluid" alt="..." />
                 </a>
               </div>
               <div className="col d-flex align-items-center">
@@ -137,9 +137,9 @@ function App() {
 
           <div className="col-4">
             <div className="row">
-              <div className="col-6">
+              <div className="col-6 d-flex justify-content-end">
                 <a target="_blank" href="#">
-                  <img src="https://via.placeholder.com/250x250" className="d-block img-fluid" alt="..." />
+                  <img src={require('./assets/img/All/main-icono-CFDI.png')} className="d-block img-fluid" alt="..." />
                 </a>
               </div>
               <div className="col-6 d-flex align-items-center">
@@ -149,9 +149,9 @@ function App() {
           </div>
           <div className="col-4">
             <div className="row">
-              <div className="col-6">
+              <div className="col-6 d-flex justify-content-end">
                 <a target="_blank" href="#">
-                  <img src="https://via.placeholder.com/250x250" className="d-block img-fluid" alt="..." />
+                  <img src={require('./assets/img/All/main-icono-nomina.png')} className="d-block img-fluid" alt="..." />
                 </a>
               </div>
               <div className="col-6 d-flex align-items-center">
@@ -161,9 +161,9 @@ function App() {
           </div>
           <div className="col-4">
             <div className="row">
-              <div className="col-6">
+              <div className="col-6 d-flex justify-content-end">
                 <a target="_blank" href="#">
-                  <img src="https://via.placeholder.com/250x250" className="d-block img-fluid" alt="..." />
+                  <img src={require('./assets/img/All/main-icono-agratuito.png')} className="d-block img-fluid" alt="..." />
                 </a>
               </div>
               <div className="col-6 d-flex align-items-center">
@@ -179,9 +179,9 @@ function App() {
           <h1 className="text-light" >PRODUCTOS</h1>
 
           <div className="row align-items-center ">
-            <div className="col-md-2">
+            <div className="col-md-2 d-flex justify-content-center">
               <a target="_blank" href="#">
-                <img src="https://via.placeholder.com/200x200" className="d-block img-fluid" alt="..." />
+                <img src={require('./assets/img/All/main-icono-CFDI.png')} className="d-block img-fluid" alt="..." />
               </a>
             </div>
             <div className="col-md-8 ">
@@ -209,9 +209,9 @@ function App() {
 
 
           <div className="row align-items-center">
-            <div className="col-md-2">
+            <div className="col-md-2 d-flex justify-content-center" >
               <a target="_blank" href="#">
-                <img src="https://via.placeholder.com/200x200" className="d-block img-fluid" alt="..." />
+                <img src={require('./assets/img/All/main-icono-nomina.png')} className="d-block img-fluid" alt="..." />
               </a>
             </div>
             <div className="col-md-8 justify-content-center">
@@ -237,9 +237,9 @@ function App() {
           </div>
 
           <div className="row align-items-center">
-            <div className="col-md-2">
+            <div className="col-md-2 d-flex justify-content-center">
               <a target="_blank" href="#">
-                <img src="https://via.placeholder.com/200x200" className="d-block img-fluid" alt="..." />
+                <img src={require('./assets/img/All/main-icono-compsCFDI.png')} className="d-block img-fluid" alt="..." />
               </a>
             </div>
             <div className="col-md-8 justify-content-center">
@@ -303,9 +303,9 @@ function App() {
           </div>
 
           <div className="row align-items-center">
-            <div className="col-md-2">
+            <div className="col-md-2 d-flex justify-content-center">
               <a target="_blank" href="#">
-                <img src="https://via.placeholder.com/200x200" className="d-block img-fluid" alt="..." />
+                <img src={require('./assets/img/All/main-icono-adendas.png')} className="d-block img-fluid" alt="..." />
               </a>
             </div>
             <div className="col-md-8 justify-content-center">
@@ -384,9 +384,9 @@ function App() {
 
 
           <div className="row align-items-center">
-            <div className="col-md-2">
+            <div className="col-md-2 d-flex justify-content-center">
               <a target="_blank" href="#">
-                <img src="https://via.placeholder.com/200x200" className="d-block img-fluid" alt="..." />
+                <img src={require('./assets/img/All/main-icono-convertidor.png')} className="d-block img-fluid" alt="..." />
               </a>
             </div>
             <div className="col-md-8 justify-content-center">
@@ -424,9 +424,9 @@ function App() {
               <div className="col"><a onClick={() => setModalShow(true)} className="btn btn-secondary my-2 border-gradient"><h5 className="mb-0">MÁS
                 INFORMACIÓN</h5></a></div>
             </div>
-            <div className="col-6">
+            <div className="col-6 d-flex justify-content-center">
               <a target="_blank" href="#">
-                <img src="https://via.placeholder.com/700x500" className="d-block img-fluid" alt="..." />
+                <img src={require('./assets/img/All/main-img-precios.png')} className="d-block img-fluid" alt="..." />
               </a>
             </div>
           </div>
@@ -494,9 +494,9 @@ function App() {
       <footer id="CONTACTO" className="pt-4 pt-md-5 border-top gradeintBlack bg-dark">
         <div className="container  bg-trasparent">
           <div className="row">
-            <div className="col-3 ">
+            <div className="col-3 d-flex justify-content-center">
               <a href="#">
-                <img className="img-fluid" src="https://via.placeholder.com/250x250" />
+                <img className="img-fluid" src={require('./assets/img/All/main-logo-contacto.png')} />
               </a>
             </div>
             <div className="col-9 ">
@@ -595,15 +595,15 @@ function MyVerticallyCenteredModal(props) {
             <h3 className="text-success text-start">Paquetes y costos FOLIOS (Portal CFDI / Portal Nómina)</h3>
           </div>
         </div>
-        <div className="row">
-          <div className="col d-flex align-items-center">
+        <div className="row d-flex align-items-center">
+          <div className="col d-flex justify-content-center">
             <a href="#">
-              <img className="img-fluid" src="https://via.placeholder.com/150x150" />
+              <img className="d-block img-fluid" src={require('./assets/img/All/main-icono-nomina.png')} />
             </a>
           </div>
-          <div className="col d-flex align-items-center">
+          <div className="col d-flex justify-content-center">
             <a href="#">
-              <img className="img-fluid" src="https://via.placeholder.com/150x150" />
+              <img className="d-block img-fluid" src={require('./assets/img/All/main-icono-CFDI.png')} />
             </a>
           </div>
           <div className="col">
@@ -806,17 +806,13 @@ function MyVerticallyCenteredModal(props) {
             <h3 className="text-success text-start">Paquetes y costos TIMBRES (WebService / Convertidor)</h3>
           </div>
         </div>
-        <div className="row">
-          <div className="col d-flex align-items-center">
+        <div className="row  d-flex align-items-center">
+          <div className="col-4 d-flex justify-content-center">
             <a href="#">
-              <img className="img-fluid" src="https://via.placeholder.com/150x150" />
+              <img className="d-block img-fluid" src={require('./assets/img/All/main-icono-convertidor.png')} />
             </a>
           </div>
-          <div className="col d-flex align-items-center">
-            <a href="#">
-              <img className="img-fluid" src="https://via.placeholder.com/150x150" />
-            </a>
-          </div>
+        
           <div className="col">
             <div className="row mb-4">
 
