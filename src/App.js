@@ -143,7 +143,7 @@ function App() {
                 </a>
               </div>
               <div className="col-6 d-flex align-items-center">
-                <a href="#" className="btn btn-secondary my-2 border-gradient"><h5 className="mb-0">ACCESO CFDI</h5></a>
+                <a href="https://cfdi33.ntlink.com.mx/Facturacion3.3/wfrLogin.aspx" className="btn btn-secondary my-2 border-gradient"><h5 className="mb-0">ACCESO CFDI</h5></a>
               </div>
             </div>
           </div>
@@ -155,7 +155,7 @@ function App() {
                 </a>
               </div>
               <div className="col-6 d-flex align-items-center">
-                <a href="#" className="btn btn-secondary border-gradient"><h5 className="mb-0">ACCESO NÓMINA </h5></a>
+                <a href="https://cfdi33.ntlink.com.mx/NominaLocal3.3/wfrLogin.aspx" className="btn btn-secondary border-gradient"><h5 className="mb-0">ACCESO NÓMINA </h5></a>
               </div>
             </div>
           </div>
@@ -167,7 +167,7 @@ function App() {
                 </a>
               </div>
               <div className="col-6 d-flex align-items-center">
-                <a href="#" className="btn btn-secondary my-2 border-gradient"><h5 className="mb-0">ACCESO GRATUITO</h5></a>
+                <a href="https://cfdi33.ntlink.com.mx/ntfacturacion/wfrLogin.aspx" className="btn btn-secondary my-2 border-gradient"><h5 className="mb-0">ACCESO GRATUITO</h5></a>
               </div>
             </div>
           </div>
@@ -196,7 +196,7 @@ function App() {
               </div>
             </div>
             <div className="col-md-2">
-              <a href="#" className="btn btn-secondary my-2 border-gradient"><h5 className="mb-0">MÁS
+              <a href="https://cfdi33.ntlink.com.mx/Facturacion3.3/wfrLogin.aspx" className="btn btn-secondary my-2 border-gradient"><h5 className="mb-0">MÁS
                 INFORMACIÓN</h5></a>
             </div>
           </div>
@@ -216,17 +216,16 @@ function App() {
             </div>
             <div className="col-md-8 justify-content-center">
               <div className="col">
-                <h3 className="text-success">PORTAL CFDI</h3>
+                <h3 className="text-success">PORTAL NOMINAS</h3>
               </div>
               <div className="col">
-                <p className="lead text-light ">Dentro del portal CFDI podrás generar las facturas de los productos o servicios que ofrezcas.
-                  Podrás llevar el control de tus clientes y empresas además de tener los reportes de todos los
-                  movimientos que realices, contaras con todos los complementos, adendas y personalización
-                  de facturas en caso de que así lo necesites.</p>
+                <p className="lead text-light ">Dentro del portal de nomina, podrás llevar el registro y control de tus empleados dados de alta, 
+                así como el control de sus días trabajados. Podrás generar el calculo de percepciones, deducciones, incapacidades, etc. 
+                Tendrás reportes listos para consultar, así como almacenar y descargar tus recibos de nomina, además de timbrarlos de manera sencilla o masiva.</p>
               </div>
             </div>
             <div className="col-md-2 d-flex align-items-center">
-              <a href="#" className="btn btn-secondary my-2 border-gradient"><h5 className="mb-0">MÁS
+              <a href="https://cfdi33.ntlink.com.mx/NominaLocal3.3/wfrLogin.aspx" className="btn btn-secondary my-2 border-gradient"><h5 className="mb-0">MÁS
                 INFORMACIÓN</h5></a>
             </div>
           </div>
@@ -443,7 +442,7 @@ function App() {
             <a href="#" className="btn btn-secondary my-2 border-gradient buttonexapnd"  ><h5 className="mb-0">BLOG</h5></a>
           </div>
           <div className="col d-flex justify-content-start">
-            <a href="#" className="btn btn-secondary my-2 border-gradient buttonexapnd"  ><h5 className="mb-0">DOCUMENTACIÓN</h5></a>
+            <a href="http://dev-cfdi4.ntlink.com.mx" className="btn btn-secondary my-2 border-gradient buttonexapnd"  ><h5 className="mb-0">DOCUMENTACIÓN</h5></a>
           </div>
         </div>
       </div>
@@ -521,7 +520,7 @@ function App() {
                   </ul>
                 </div>
                 <div className="col-2">
-                  <h5 className="text-light">WHATS APP</h5>
+                  <h5 className="text-light">WHATSAPP</h5>
                   <ul className="list-unstyled text-small">
                     <li><span className="text-light" >5591078187</span></li>
                     <li><span className="text-light" >5524058190</span></li>
