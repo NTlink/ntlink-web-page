@@ -5,9 +5,9 @@ import { Button, Modal } from 'react-bootstrap';
 import "./App.scss";
 function App() {
   const [modalShow, setModalShow] = React.useState(false);
-  const preciosFolios = [{ folio:25, precio:330.00 }, { folio:50, precio:445.00 }, { folio:100, precio:590.00 }, { folio:200, precio:1065.00 }, { folio:500, precio:2391.00 }, { folio:1000, precio:4305.00 }, { folio:2000, precio:7745.00 }, { folio:5000, precio:17430.00 }];
-  const preciosTimbre = [{ timbre:1000,  precio:1392.00 }, { timbre:3000,  precio:3480.00 }, { timbre:5000,  precio:4640.00 }, { timbre:10000,  precio:8120.00 }, { timbre:15000,  precio:12760.00 }, { timbre:20000,  precio:16820.00 }, { timbre:50000,  precio:31320.00 }, { timbre:100000,  precio:46400.00 }];
- // const preciosFolios = 1;
+  const preciosFolios = [{ folio: 25, precio: 330.00 }, { folio: 50, precio: 445.00 }, { folio: 100, precio: 590.00 }, { folio: 200, precio: 1065.00 }, { folio: 500, precio: 2391.00 }, { folio: 1000, precio: 4305.00 }, { folio: 2000, precio: 7745.00 }, { folio: 5000, precio: 17430.00 }];
+  const preciosTimbre = [{ timbre: 1000, precio: 1392.00 }, { timbre: 3000, precio: 3480.00 }, { timbre: 5000, precio: 4640.00 }, { timbre: 10000, precio: 8120.00 }, { timbre: 15000, precio: 12760.00 }, { timbre: 20000, precio: 16820.00 }, { timbre: 50000, precio: 31320.00 }, { timbre: 100000, precio: 46400.00 }];
+  // const preciosFolios = 1;
   return (
     <div className="App">
 
@@ -48,7 +48,7 @@ function App() {
         <div className="row carro">
           <div className="col-md-3 m-0 p-0 d-flex align-items-end justify-content-end">
             <a className="flui.toDateString()" target="_blank" >
-              <img src={require('./assets/img/All/main-logo-arriba-izquierda.png')} className="d-block w-100 h-85" alt="..." />
+              <img src={require('./assets/img/All/main-logo-arriba-izquierda-x3.png')} className="d-block w-100 h-100" alt="..." />
             </a>
           </div>
           <div className="col-md-9 m-0 p-0">
@@ -66,11 +66,11 @@ function App() {
               </div>
               <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span className="sr-only">Previous</span>
+                <span className="sr-only">{/* Previous */}</span>
               </a>
               <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="sr-only">Next</span>
+                <span className="sr-only">{/* Next */}</span>
               </a>
             </div>
           </div>
@@ -82,8 +82,8 @@ function App() {
       <section id="Servicios" className="py-5 bg-dark" >
         <div className="container">
 
-          <div className="row d-flex justify-content-center">
-            <div className="col-md-3  text-center">
+          <div className="row ">
+            <div className="col-md-3 d-flex justify-content-center text-center">
               <a target="_blank" href="#">
                 <img src={require('./assets/img/All/main-icono-01.png')} className="d-block img-fluid" alt="..." />
               </a>
@@ -109,23 +109,22 @@ function App() {
 
       <div className="container justify-content-center gradeintBlack bg-dark">
         <div className="row p-5">
-          <div className="col">
-            <div className="row">
-              <div className="col d-flex justify-content-center">
-                <a target="_blank" href="#">
-                  <img src={require('./assets/img/All/main-icono-01.png')} className="d-block img-fluid" alt="..." />
-                </a>
-              </div>
-              <div className="col d-flex align-items-center">
-                <p className="lead text-light ">Tras un largo proceso de certificación
-                  NTLINK se convierte en proveedor
-                  autorizado de certificados digitales por
-                  internet (PACFDI) en Julio de 2012 con
-                  el número de autorización 57202.</p>
-              </div>
-            </div>
+
+
+          <div className="col-md-3 d-flex justify-content-center h-50">
+            <a target="_blank" href="#">
+              <img src={require('./assets/img/All/PAC-logo.gif')} className="d-block img-fluid " alt="..." />
+            </a>
           </div>
-          <div className="col d-flex align-items-center">
+          <div className="col-md-3 d-flex align-items-center">
+            <p className="lead text-light ">Tras un largo proceso de certificación
+              NTLINK se convierte en proveedor
+              autorizado de certificados digitales por
+              internet (PACFDI) en Julio de 2012 con
+              el número de autorización 57202.</p>
+
+          </div>
+          <div className="col-md-6 d-flex align-items-center">
             <h5 className="text-success italic">Nuestro compromiso es brindar servicios de excelencia, calidad
               y progreso continuo, garantizando la seguridad de la información
               durante los procesos relacionados y en el almacenamiento de la
@@ -134,42 +133,30 @@ function App() {
           </div>
         </div>
         <div className="row p-3">
+          <div className="col-sm-2 d-flex justify-content-center">
+            <a target="_blank" href="#">
+              <img src={require('./assets/img/All/main-icono-CFDI.png')} className="d-block img-fluid" alt="..." />
+            </a>
+          </div>
+          <div className="col-sm-2 d-flex justify-content-center align-items-center">
+            <a href="https://cfdi33.ntlink.com.mx/Facturacion3.3/wfrLogin.aspx" className="btn btn-secondary my-2 border-gradient"><h5 className="mb-0">ACCESO CFDI</h5></a>
+          </div>
 
-          <div className="col-4">
-            <div className="row">
-              <div className="col-6 d-flex justify-content-end">
-                <a target="_blank" href="#">
-                  <img src={require('./assets/img/All/main-icono-CFDI.png')} className="d-block img-fluid" alt="..." />
-                </a>
-              </div>
-              <div className="col-6 d-flex align-items-center">
-                <a href="https://cfdi33.ntlink.com.mx/Facturacion3.3/wfrLogin.aspx" className="btn btn-secondary my-2 border-gradient"><h5 className="mb-0">ACCESO CFDI</h5></a>
-              </div>
-            </div>
+          <div className="col-sm-2 d-flex justify-content-center">
+            <a target="_blank" href="#">
+              <img src={require('./assets/img/All/main-icono-nomina.png')} className="d-block img-fluid" alt="..." />
+            </a>
           </div>
-          <div className="col-4">
-            <div className="row">
-              <div className="col-6 d-flex justify-content-end">
-                <a target="_blank" href="#">
-                  <img src={require('./assets/img/All/main-icono-nomina.png')} className="d-block img-fluid" alt="..." />
-                </a>
-              </div>
-              <div className="col-6 d-flex align-items-center">
-                <a href="https://cfdi33.ntlink.com.mx/NominaLocal3.3/wfrLogin.aspx" className="btn btn-secondary border-gradient"><h5 className="mb-0">ACCESO NÓMINA </h5></a>
-              </div>
-            </div>
+          <div className="col-sm-2 d-flex justify-content-center align-items-center">
+            <a href="https://cfdi33.ntlink.com.mx/NominaLocal3.3/wfrLogin.aspx" className="btn btn-secondary border-gradient"><h5 className="mb-0">ACCESO NÓMINA </h5></a>
           </div>
-          <div className="col-4">
-            <div className="row">
-              <div className="col-6 d-flex justify-content-end">
-                <a target="_blank" href="#">
-                  <img src={require('./assets/img/All/main-icono-agratuito.png')} className="d-block img-fluid" alt="..." />
-                </a>
-              </div>
-              <div className="col-6 d-flex align-items-center">
-                <a href="https://cfdi33.ntlink.com.mx/ntfacturacion/wfrLogin.aspx" className="btn btn-secondary my-2 border-gradient"><h5 className="mb-0">ACCESO GRATUITO</h5></a>
-              </div>
-            </div>
+          <div className="col-sm-2 d-flex justify-content-center">
+            <a target="_blank" href="#">
+              <img src={require('./assets/img/All/main-icono-agratuito.png')} className="d-block img-fluid" alt="..." />
+            </a>
+          </div>
+          <div className="col-sm-2 d-flex justify-content-center align-items-center">
+            <a href="https://cfdi33.ntlink.com.mx/ntfacturacion/wfrLogin.aspx" className="btn btn-secondary my-2 border-gradient"><h5 className="mb-0">ACCESO GRATUITO</h5></a>
           </div>
         </div>
       </div>
@@ -195,7 +182,7 @@ function App() {
                   de facturas en caso de que así lo necesites.</p>
               </div>
             </div>
-            <div className="col-md-2">
+            <div className="col-md-2 d-flex justify-content-center align-items-center">
               <a href="https://cfdi33.ntlink.com.mx/Facturacion3.3/wfrLogin.aspx" className="btn btn-secondary my-2 border-gradient"><h5 className="mb-0">MÁS
                 INFORMACIÓN</h5></a>
             </div>
@@ -203,7 +190,7 @@ function App() {
 
 
           <div className="container justify-content-center bg-dark m-0 p-0">
-            <div className="stripe stripe-2 m-0 p-0">
+            <div className="stripe stripe-2 m-2 p-0">
             </div>
           </div>
 
@@ -219,19 +206,19 @@ function App() {
                 <h3 className="text-success">PORTAL NOMINAS</h3>
               </div>
               <div className="col">
-                <p className="lead text-light ">Dentro del portal de nomina, podrás llevar el registro y control de tus empleados dados de alta, 
-                así como el control de sus días trabajados. Podrás generar el calculo de percepciones, deducciones, incapacidades, etc. 
-                Tendrás reportes listos para consultar, así como almacenar y descargar tus recibos de nomina, además de timbrarlos de manera sencilla o masiva.</p>
+                <p className="lead text-light ">Dentro del portal de nomina, podrás llevar el registro y control de tus empleados dados de alta,
+                  así como el control de sus días trabajados. Podrás generar el calculo de percepciones, deducciones, incapacidades, etc.
+                  Tendrás reportes listos para consultar, así como almacenar y descargar tus recibos de nomina, además de timbrarlos de manera sencilla o masiva.</p>
               </div>
             </div>
-            <div className="col-md-2 d-flex align-items-center">
+            <div className="col-md-2 d-flex justify-content-center align-items-center">
               <a href="https://cfdi33.ntlink.com.mx/NominaLocal3.3/wfrLogin.aspx" className="btn btn-secondary my-2 border-gradient"><h5 className="mb-0">MÁS
                 INFORMACIÓN</h5></a>
             </div>
           </div>
 
           <div className="container justify-content-center bg-dark m-0 p-0">
-            <div className="stripe stripe-2 m-0 p-0">
+            <div className="stripe stripe-2 m-2 p-0">
             </div>
           </div>
 
@@ -290,14 +277,14 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="col-md-2 d-flex align-items-center">
+            <div className="col-md-2 d-flex justify-content-center align-items-center">
               <a href="#" className="btn btn-secondary my-2 border-gradient"><h5 className="mb-0">MÁS
                 INFORMACIÓN</h5></a>
             </div>
           </div>
 
           <div className="container justify-content-center bg-dark m-0 p-0">
-            <div className="stripe stripe-2 m-0 p-0">
+            <div className="stripe stripe-2 m-2 p-0">
             </div>
           </div>
 
@@ -370,14 +357,14 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="col-md-2 d-flex align-items-center">
+            <div className="col-md-2 d-flex justify-content-center align-items-center">
               <a href="#" className="btn btn-secondary my-2 border-gradient"><h5 className="mb-0">MÁS
                 INFORMACIÓN</h5></a>
             </div>
           </div>
 
           <div className="container justify-content-center bg-dark m-0 p-0">
-            <div className="stripe stripe-2 m-0 p-0">
+            <div className="stripe stripe-2 m-2 p-0">
             </div>
           </div>
 
@@ -400,7 +387,7 @@ function App() {
                 <p className="lead text-light ">PRECIO CONVERTIDOR $1,200 MXN MAS IVA ANUAL</p>
               </div>
             </div>
-            <div className="col-md-2 d-flex align-items-center">
+            <div className="col-md-2 d-flex justify-content-center align-items-center">
               <a href="#" className="btn btn-secondary my-2 border-gradient"><h5 className="mb-0">MÁS
                 INFORMACIÓN</h5></a>
             </div>
@@ -438,10 +425,10 @@ function App() {
 
       <div className="container justify-content-center " >
         <div className="row ">
-          <div className="col d-flex justify-content-end">
+          <div className="col d-flex justify-content-center">
             <a href="#" className="btn btn-secondary my-2 border-gradient buttonexapnd"  ><h5 className="mb-0">BLOG</h5></a>
           </div>
-          <div className="col d-flex justify-content-start">
+          <div className="col d-flex justify-content-center">
             <a href="http://dev-cfdi4.ntlink.com.mx" className="btn btn-secondary my-2 border-gradient buttonexapnd"  ><h5 className="mb-0">DOCUMENTACIÓN</h5></a>
           </div>
         </div>
@@ -493,18 +480,19 @@ function App() {
       <footer id="CONTACTO" className="pt-4 pt-md-5 border-top gradeintBlack bg-dark">
         <div className="container  bg-trasparent">
           <div className="row">
-            <div className="col-3 d-flex justify-content-center">
-              <a href="#">
-                <img className="img-fluid" src={require('./assets/img/All/main-logo-contacto.png')} />
-              </a>
-            </div>
-            <div className="col-9 ">
+
+            <div className="col-md-12 text-center">
               <div className="row">
                 <h1 className="text-light" >CONTACTO Y SOPORTE</h1>
               </div>
               <div className="row">
-                <div className="col-2">
-                  <h5 className="text-light" >TELEFONOS</h5>
+                <div className="col-md-2 d-flex justify-content-center">
+                  <a href="#">
+                    <img className="img-fluid" src={require('./assets/img/All/main-logo-contacto.png')} />
+                  </a>
+                </div>
+                <div className="col-md-2 text-center">
+                  <h5 className="text-light " >TELEFONOS</h5>
                   <ul className="list-unstyled text-small">
                     <li><span className="text-light" >+(55) 47 80 02 00</span></li>
                     <li><span className="text-light" >+(55) 62 72 55 49</span></li>
@@ -512,21 +500,21 @@ function App() {
                     <li><span className="text-light" >+(55) 82 50 76 56</span></li>
                   </ul>
                 </div>
-                <div className="col-3">
+                <div className="col-md-2 text-center">
                   <h5 className="text-light">CORREO ELECTRONICO</h5>
                   <ul className="list-unstyled text-small">
                     <li><span className="text-light" >ventas@ntlink.com.mx</span></li>
                     <li><span className="text-light" >soporte_tecnico@ntlink.com.mx</span></li>
                   </ul>
                 </div>
-                <div className="col-2">
+                <div className="col-md-2 text-center">
                   <h5 className="text-light">WHATSAPP</h5>
                   <ul className="list-unstyled text-small">
                     <li><span className="text-light" >5591078187</span></li>
                     <li><span className="text-light" >5524058190</span></li>
                   </ul>
                 </div>
-                <div className="col-3">
+                <div className="col-md-2 text-center">
                   <h5 className="text-light">DIRECCIÓN</h5>
                   <ul className="list-unstyled text-small">
                     <li><span className="text-light" >Calle Xicoténcatl 103BIS Del:, Del</span></li>
@@ -534,7 +522,7 @@ function App() {
                     <li><span className="text-light" >México, CDMX</span></li>
                   </ul>
                 </div>
-                <div className="col-2">
+                <div className="col-md-2 text-center">
                   <h5 className="text-light">HORARIO</h5>
                   <ul className="list-unstyled text-small">
                     <li><span className="text-light" >LUNES A VIERNES 09:00 18:00</span></li>
@@ -659,7 +647,7 @@ function MyVerticallyCenteredModal(props) {
                 </div>
                 <div className="card-body bg-white text-light">
                   <h1 className="card-title text-info pricing-card-title">
-                  {props.preciosfolios[2].folio}
+                    {props.preciosfolios[2].folio}
                   </h1>
                   <ul className="list-unstyled  text-info mt-0 mb-0">
                     <li>
@@ -683,7 +671,7 @@ function MyVerticallyCenteredModal(props) {
                 </div>
                 <div className="card-body bg-white text-light">
                   <h1 className="card-title text-info pricing-card-title">
-                  {props.preciosfolios[3].folio}
+                    {props.preciosfolios[3].folio}
                   </h1>
                   <ul className="list-unstyled  text-info mt-0 mb-0">
                     <li>
@@ -709,7 +697,7 @@ function MyVerticallyCenteredModal(props) {
                 </div>
                 <div className="card-body bg-white text-light">
                   <h1 className="card-title text-info pricing-card-title">
-                  {props.preciosfolios[4].folio}
+                    {props.preciosfolios[4].folio}
                   </h1>
                   <ul className="list-unstyled  text-info mt-0 mb-0">
                     <li>
@@ -733,7 +721,7 @@ function MyVerticallyCenteredModal(props) {
                 </div>
                 <div className="card-body bg-white text-light">
                   <h1 className="card-title text-info pricing-card-title">
-                  {props.preciosfolios[5].folio}
+                    {props.preciosfolios[5].folio}
                   </h1>
                   <ul className="list-unstyled  text-info mt-0 mb-0">
                     <li>
@@ -759,7 +747,7 @@ function MyVerticallyCenteredModal(props) {
                 </div>
                 <div className="card-body bg-white text-light">
                   <h1 className="card-title text-info pricing-card-title">
-                  {props.preciosfolios[6].folio}
+                    {props.preciosfolios[6].folio}
                   </h1>
                   <ul className="list-unstyled  text-info mt-0 mb-0">
                     <li>
@@ -783,7 +771,7 @@ function MyVerticallyCenteredModal(props) {
                 </div>
                 <div className="card-body bg-white text-light">
                   <h1 className="card-title text-info pricing-card-title">
-                  {props.preciosfolios[7].folio}
+                    {props.preciosfolios[7].folio}
                   </h1>
                   <ul className="list-unstyled  text-info mt-0 mb-0">
                     <li>
@@ -811,7 +799,7 @@ function MyVerticallyCenteredModal(props) {
               <img className="d-block img-fluid" src={require('./assets/img/All/main-icono-convertidor.png')} />
             </a>
           </div>
-        
+
           <div className="col">
             <div className="row mb-4">
 
@@ -840,7 +828,7 @@ function MyVerticallyCenteredModal(props) {
                 </div>
                 <div className="card-body bg-white text-light">
                   <h1 className="card-title text-info pricing-card-title">
-                  {props.preciostimbre[1].timbre}
+                    {props.preciostimbre[1].timbre}
                   </h1>
                   <ul className="list-unstyled  text-info mt-0 mb-0">
                     <li>
@@ -866,7 +854,7 @@ function MyVerticallyCenteredModal(props) {
                 </div>
                 <div className="card-body bg-white text-light">
                   <h1 className="card-title text-info pricing-card-title">
-                  {props.preciostimbre[2].timbre}
+                    {props.preciostimbre[2].timbre}
                   </h1>
                   <ul className="list-unstyled  text-info mt-0 mb-0">
                     <li>
@@ -890,7 +878,7 @@ function MyVerticallyCenteredModal(props) {
                 </div>
                 <div className="card-body bg-white text-light">
                   <h1 className="card-title text-info pricing-card-title">
-                  {props.preciostimbre[3].timbre}
+                    {props.preciostimbre[3].timbre}
                   </h1>
                   <ul className="list-unstyled  text-info mt-0 mb-0">
                     <li>
@@ -916,7 +904,7 @@ function MyVerticallyCenteredModal(props) {
                 </div>
                 <div className="card-body bg-white text-light">
                   <h1 className="card-title text-info pricing-card-title">
-                  {props.preciostimbre[4].timbre}
+                    {props.preciostimbre[4].timbre}
                   </h1>
                   <ul className="list-unstyled  text-info mt-0 mb-0">
                     <li>
@@ -940,7 +928,7 @@ function MyVerticallyCenteredModal(props) {
                 </div>
                 <div className="card-body bg-white text-light">
                   <h1 className="card-title text-info pricing-card-title">
-                  {props.preciostimbre[5].timbre}
+                    {props.preciostimbre[5].timbre}
                   </h1>
                   <ul className="list-unstyled  text-info mt-0 mb-0">
                     <li>
@@ -966,7 +954,7 @@ function MyVerticallyCenteredModal(props) {
                 </div>
                 <div className="card-body bg-white text-light">
                   <h1 className="card-title text-info pricing-card-title">
-                  {props.preciostimbre[6].timbre}
+                    {props.preciostimbre[6].timbre}
                   </h1>
                   <ul className="list-unstyled  text-info mt-0 mb-0">
                     <li>
@@ -990,7 +978,7 @@ function MyVerticallyCenteredModal(props) {
                 </div>
                 <div className="card-body bg-white text-light">
                   <h1 className="card-title text-info pricing-card-title">
-                  {props.preciostimbre[7].timbre}
+                    {props.preciostimbre[7].timbre}
                   </h1>
                   <ul className="list-unstyled  text-info mt-0 mb-0">
                     <li>
