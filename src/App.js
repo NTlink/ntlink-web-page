@@ -13,11 +13,11 @@ function App() {
 
       <header>
 
-        <nav className="navbar navbar-expand-lg fixed-top bg-dark m-0 p-0">
-          <div className="container">
+        <nav className="navbar navbar-expand-lg fixed-top bg-dark m-0 p-0 a-t-2">
+          <div className="container justify-content-end">
 
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon"></span>
+            <button className="navbar-toggler custom-toggler ml-auto m-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon p-3"></span>
             </button>
             <div className="collapse navbar-collapse justify-content-center" id="navbarText">
               <ul className="navbar-nav justify-content-center">
@@ -46,12 +46,12 @@ function App() {
 
       <section>
         <div className="row carro">
-          <div className="col-md-3 m-0 p-0 d-flex align-items-end justify-content-end">
+          <div className="col-md-3 m-0 p-0 d-flex align-items-end justify-content-end a-l-2 ">
             <a className="flui.toDateString()" target="_blank" >
               <img src={require('./assets/img/All/main-logo-arriba-izquierda-x3.png')} className="d-block w-100 h-100" alt="..." />
             </a>
           </div>
-          <div className="col-md-9 m-0 p-0">
+          <div className="col-md-9 m-0 p-0 a-r-2 ">
             <div id="carouselExampleControls" className="carousel slide " data-bs-ride="carousel">
               <div className="carousel-inner">
                 <div className="carousel-item active">
@@ -79,21 +79,21 @@ function App() {
 
       </section>
 
-      <section id="Servicios" className="py-5 bg-dark" >
+      <section id="Servicios" className="py-5 bg-transparent" >
         <div className="container">
 
           <div className="row ">
             <div className="col-md-3 d-flex justify-content-center text-center">
               <a target="_blank" href="#">
-                <img src={require('./assets/img/All/main-icono-01.png')} className="d-block img-fluid" alt="..." />
+                <img src={require('./assets/img/All/main-icono-01.png')} className="d-block img-fluid a-l-2" alt="..." />
               </a>
             </div>
             <div className="col-md-9">
               <div className="text-left py-4">
-                <h1 className="text-success">Servicios integrales
+                <h1 className="text-success a-r">Servicios integrales
                   de Tecnologías de la Información</h1>
               </div>
-              <p className="lead text-light ">Como proveedor autorizado por el SAT (PAC con número de autorización: 57202) NTLINK Comunicaciones SA de CV.
+              <p className="lead text-light a-r-2">Como proveedor autorizado por el SAT (PAC con número de autorización: 57202) NTLINK Comunicaciones SA de CV.
                 Es una empresa mexicana fundada en diciembre de 2009 con la idea de proporcionar servicios integrales de Tecnologías
                 de la Información (venta-renta de equipo de cómputo, desarrollo de aplicaciones y páginas web, monitoreo de servicios
                 de misión crítica, análisis y desarrollo de sistemas, ingeniería y reingeniería de procesos entre otras.).</p>
@@ -107,11 +107,11 @@ function App() {
         </div>
       </div>
 
-      <div className="container justify-content-center gradeintBlack bg-dark">
-        <div className="row p-5">
+      <div className="container justify-content-center gradeintBlack bg-transparent a-b-2">
+        <div className="row p-5 ">
 
 
-          <div className="col-md-3 d-flex justify-content-center h-50">
+          <div className="col-md-3 d-flex justify-content-center h-50 ">
             <a target="_blank" href="#">
               <img src={require('./assets/img/All/PAC-logo.gif')} className="d-block img-fluid " alt="..." />
             </a>
@@ -125,7 +125,7 @@ function App() {
 
           </div>
           <div className="col-md-6 d-flex align-items-center">
-            <h5 className="text-success italic">Nuestro compromiso es brindar servicios de excelencia, calidad
+            <h5 className="text-success italic font-weight-bold h4">Nuestro compromiso es brindar servicios de excelencia, calidad
               y progreso continuo, garantizando la seguridad de la información
               durante los procesos relacionados y en el almacenamiento de la
               misma; así como la protección de los datos personales de nuestros
@@ -139,7 +139,7 @@ function App() {
             </a>
           </div>
           <div className="col-sm-2 d-flex justify-content-center align-items-center">
-            <a href="https://cfdi33.ntlink.com.mx/Facturacion3.3/wfrLogin.aspx" className="btn btn-secondary my-2 border-gradient"><h5 className="mb-0">ACCESO CFDI</h5></a>
+            <a href="https://cfdi33.ntlink.com.mx/Facturacion3.3/wfrLogin.aspx" className="mbtn"><span className="mb-0">ACCESO CFDI</span></a>
           </div>
 
           <div className="col-sm-2 d-flex justify-content-center">
@@ -148,7 +148,7 @@ function App() {
             </a>
           </div>
           <div className="col-sm-2 d-flex justify-content-center align-items-center">
-            <a href="https://cfdi33.ntlink.com.mx/NominaLocal3.3/wfrLogin.aspx" className="btn btn-secondary border-gradient"><h5 className="mb-0">ACCESO NÓMINA </h5></a>
+            <a href="https://cfdi33.ntlink.com.mx/NominaLocal3.3/wfrLogin.aspx" className="mbtn"><span className="mb-0">ACCESO NÓMINA </span></a>
           </div>
           <div className="col-sm-2 d-flex justify-content-center">
             <a target="_blank" href="#">
@@ -156,12 +156,12 @@ function App() {
             </a>
           </div>
           <div className="col-sm-2 d-flex justify-content-center align-items-center">
-            <a href="https://cfdi33.ntlink.com.mx/ntfacturacion/wfrLogin.aspx" className="btn btn-secondary my-2 border-gradient"><h5 className="mb-0">ACCESO GRATUITO</h5></a>
+            <a href="https://cfdi33.ntlink.com.mx/ntfacturacion/wfrLogin.aspx" className="mbtn"><span className="mb-0">ACCESO GRATUITO</span></a>
           </div>
         </div>
       </div>
 
-      <section id="PRODUCTOS" className="py-5 bg-dark" >
+      <section id="PRODUCTOS" className="py-5 bg-transparent a-b-2" >
         <div className="container">
           <h1 className="text-light" >PRODUCTOS</h1>
 
@@ -183,8 +183,8 @@ function App() {
               </div>
             </div>
             <div className="col-md-2 d-flex justify-content-center align-items-center">
-              <a href="https://cfdi33.ntlink.com.mx/Facturacion3.3/wfrLogin.aspx" className="btn btn-secondary my-2 border-gradient"><h5 className="mb-0">MÁS
-                INFORMACIÓN</h5></a>
+              <a href="https://cfdi33.ntlink.com.mx/Facturacion3.3/wfrLogin.aspx" className="mbtn"><span className="mb-0">MÁS
+                INFORMACIÓN</span></a>
             </div>
           </div>
 
@@ -212,8 +212,8 @@ function App() {
               </div>
             </div>
             <div className="col-md-2 d-flex justify-content-center align-items-center">
-              <a href="https://cfdi33.ntlink.com.mx/NominaLocal3.3/wfrLogin.aspx" className="btn btn-secondary my-2 border-gradient"><h5 className="mb-0">MÁS
-                INFORMACIÓN</h5></a>
+              <a href="https://cfdi33.ntlink.com.mx/NominaLocal3.3/wfrLogin.aspx" className="mbtn"><span className="mb-0">MÁS
+                INFORMACIÓN</span></a>
             </div>
           </div>
 
@@ -278,8 +278,8 @@ function App() {
               </div>
             </div>
             <div className="col-md-2 d-flex justify-content-center align-items-center">
-              <a href="#" className="btn btn-secondary my-2 border-gradient"><h5 className="mb-0">MÁS
-                INFORMACIÓN</h5></a>
+              <a href="#" className="mbtn"><span className="mb-0">MÁS
+                INFORMACIÓN</span></a>
             </div>
           </div>
 
@@ -358,8 +358,8 @@ function App() {
               </div>
             </div>
             <div className="col-md-2 d-flex justify-content-center align-items-center">
-              <a href="#" className="btn btn-secondary my-2 border-gradient"><h5 className="mb-0">MÁS
-                INFORMACIÓN</h5></a>
+              <a href="#" className="mbtn"><span className="mb-0">MÁS
+                INFORMACIÓN</span></a>
             </div>
           </div>
 
@@ -388,8 +388,8 @@ function App() {
               </div>
             </div>
             <div className="col-md-2 d-flex justify-content-center align-items-center">
-              <a href="#" className="btn btn-secondary my-2 border-gradient"><h5 className="mb-0">MÁS
-                INFORMACIÓN</h5></a>
+              <a href="#" className="mbtn"><span className="mb-0">MÁS
+                INFORMACIÓN</span></a>
             </div>
           </div>
 
@@ -401,16 +401,16 @@ function App() {
         </div>
       </section>
 
-      <section id="PRECIOS" className="py-5 bg-dark" >
+      <section id="PRECIOS" className="py-5 bg-transparent a-b-2" >
         <div className="container bg-secondary">
-          <div className="row text-center ">
-            <div className="col-6 align-self-center ">
+          <div className="row text-center align-self-center justify-content-center">
+            <div className="col-6 align-self-center justify-content-center">
               <div className="col "> <h1 className="text-light" >PRECIOS</h1></div>
-              <div className="col"><p>Conoce nuestros planes y costos</p></div>
-              <div className="col"><a onClick={() => setModalShow(true)} className="btn btn-secondary my-2 border-gradient"><h5 className="mb-0">MÁS
-                INFORMACIÓN</h5></a></div>
+              <div className="col"><p className="text-light">Conoce nuestros planes y costos</p></div>
+              <div className="col d-flex justify-content-center"><a onClick={() => setModalShow(true)} className="mbtn"><span className="mb-0">MÁS
+                INFORMACIÓN</span></a></div>
             </div>
-            <div className="col-6 d-flex justify-content-center">
+            <div className="col-6 d-flex justify-content-end p-0">
               <a target="_blank" href="#">
                 <img src={require('./assets/img/All/main-img-precios.png')} className="d-block img-fluid" alt="..." />
               </a>
@@ -423,18 +423,18 @@ function App() {
         </div>
       </section>
 
-      <div className="container justify-content-center " >
+      <div className="container justify-content-center a-b-2" >
         <div className="row ">
           <div className="col d-flex justify-content-center">
-            <a href="#" className="btn btn-secondary my-2 border-gradient buttonexapnd"  ><h5 className="mb-0">BLOG</h5></a>
+            <a href="#" className="mbtn buttonexapnd"  ><span className="mb-0">BLOG</span></a>
           </div>
           <div className="col d-flex justify-content-center">
-            <a href="http://dev-cfdi4.ntlink.com.mx" className="btn btn-secondary my-2 border-gradient buttonexapnd"  ><h5 className="mb-0">DOCUMENTACIÓN</h5></a>
+            <a href="http://dev-cfdi4.ntlink.com.mx" className="mbtn buttonexapnd"  ><span className="mb-0">DOCUMENTACIÓN</span></a>
           </div>
         </div>
       </div>
 
-      <section id="PROMOCIONES" className="py-5 bg-dark" >
+      <section id="PROMOCIONES" className="py-5 bg-transparent a-b-2" >
         <div className="container">
 
           <div className="row">
@@ -453,8 +453,8 @@ function App() {
               </div>
               <div className="row ">
                 <div className="col d-flex justify-content-center">
-                  <a href="#" className="btn btn-secondary border-gradient"><h5 className="mb-0">MÁS
-                    INFORMACIÓN</h5></a></div>
+                  <a href="#" className="mbtn"><span className="mb-0">MÁS
+                    INFORMACIÓN</span></a></div>
               </div>
             </div>
             <div className="col">
@@ -468,8 +468,8 @@ function App() {
               </div>
               <div className="row">
                 <div className="col d-flex justify-content-center">
-                  <a href="#" className="btn btn-secondary my-2 border-gradient"><h5 className="mb-0">MÁS
-                    INFORMACIÓN</h5></a>
+                  <a href="#" className="mbtn"><span className="mb-0">MÁS
+                    INFORMACIÓN</span></a>
                 </div>
               </div>
             </div>
@@ -477,7 +477,7 @@ function App() {
         </div>
       </section>
 
-      <footer id="CONTACTO" className="pt-4 pt-md-5 border-top gradeintBlack bg-dark">
+      <footer id="CONTACTO" className="pt-4 pt-md-5 border-top gradeintBlack bg-dark a-b-2">
         <div className="container  bg-trasparent">
           <div className="row">
 
