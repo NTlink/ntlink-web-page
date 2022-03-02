@@ -22,20 +22,20 @@ function App() {
             <div className="collapse navbar-collapse justify-content-center" id="navbarText">
               <ul className="navbar-nav justify-content-center">
                 <li className="nav-item active">
-                  <a className="nav-link m-2 p-0" href="#"> <p className="text-light underline h5 font-weight-bold">INICIO</p></a>
+                  <a className="nav-link m-2 p-0" href="#"> <p className="text-light underline h5 font-weight-bold weight">INICIO</p></a>
                 </li>
                 <li className="nav-item ">
-                  <a className="nav-link m-2 p-0" href="#PRODUCTOS"><p className="text-light underline h5 font-weight-bold">PRODUCTOS</p></a>
+                  <a className="nav-link m-2 p-0" href="#PRODUCTOS"><p className="text-light underline h5 font-weight-bold weight">PRODUCTOS</p></a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link m-2 p-0" href="#PRECIOS"><p className="text-light underline h5 font-weight-bold">PRECIOS</p></a>
+                  <a className="nav-link m-2 p-0" href="#PRECIOS"><p className="text-light underline h5 font-weight-bold weight">PRECIOS</p></a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link m-2 p-0" href="#PROMOCIONES"><p className=" text-light underline h5 font-weight-bold">PROMOCIONES
+                  <a className="nav-link m-2 p-0" href="#PROMOCIONES"><p className=" text-light underline h5 font-weight-bold weight">PROMOCIONES
                     ESPECIALES</p></a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link m-2 p-0" href="#CONTACTO"><p className="text-light underline h5 font-weight-bold">CONTACTO
+                  <a className="nav-link m-2 p-0" href="#CONTACTO"><p className="text-light underline h5 font-weight-bold weight">CONTACTO
                     SOPORTE</p></a>
                 </li>
               </ul>
