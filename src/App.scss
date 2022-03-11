@@ -246,3 +246,40 @@ body {
     transform: translateY(0);
   }
 }
+
+.cookie-disclaimer {
+  background: #000000;
+  color: #FFF;
+  opacity: 0.8;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  height: 150px;
+  position: fixed;
+}
+.cookie-disclaimer .container {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.cookie-disclaimer .cookie-close{
+  float: right;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.input-group-text {
+  border: 3px solid #9cef2b;
+  background-color: #141414;
+  border-radius: 20px;
+  font-size:large;
+}
+
+.col2{    margin-bottom: -30px;
+}
+
+.buttonchico{
+  height: 50px;
+}
