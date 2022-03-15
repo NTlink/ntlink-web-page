@@ -277,9 +277,26 @@ body {
   font-size:large;
 }
 
-.col2{    margin-bottom: -30px;
+.col2{    margin-bottom: -90px; 
 }
 
 .buttonchico{
   height: 50px;
+}
+
+.preciosBack{
+  background-image: url("./assets/img/All/main-img-precios.png") !important;
+  background-repeat: no-repeat;
+ /*  background-position: 0% 100%; */
+ width: 486px;
+ height: 356px;
+
+}
+
+.colmargin{
+ margin-top:  6rem;
+}
+
+.pb-6{
+  padding-bottom: 6rem !important;
 }

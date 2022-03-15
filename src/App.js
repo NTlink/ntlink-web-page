@@ -121,7 +121,7 @@ function App() {
         </div>
       </div>
 
-      <div className="container justify-content-center gradeintBlack bg-transparent a-b-2">
+      <div className="container justify-content-center gradeintBlack bg-transparent a-b-2 pb-6">
         <div className="row p-5 ">
 
 
@@ -169,15 +169,14 @@ function App() {
               <img src={require('./assets/img/All/main-icono-agratuito.png')} className="d-block img-fluid" alt="..." />
             </a>
           </div>
-          <div className="col-sm-2 d-block ">
+          <div className="col-sm-2 d-block col2">
 
 
             <div className="col d-flex justify-content-center align-items-center">
               <a href="https://cfdi33.ntlink.com.mx/ntfacturacion/wfrLogin.aspx" className="mbtn"><span className="mb-0">ACCESO GRATUITO</span></a>
             </div>
             <div className="col p-2 d-flex justify-content-center align-items-center">
-              <footer className="blockquote-footer text-light col2">Al darte de alta, obtén 20 folios,
-                gratis, de facturación.</footer>
+              <footer className="blockquote-footer text-light ">Al darte de alta en nuestro portal, recibe 5 folios para generar facturas de manera gratuita.</footer>
             </div>
             {/*   
                   
@@ -429,25 +428,25 @@ function App() {
         </div>
       </section>
 
-      <section id="PRECIOS" className="py-5 bg-transparent a-b-2" >
-        <div className="container bg-secondary">
-          <div className="row text-center align-self-center justify-content-center">
-            <div className="col-6 align-self-center justify-content-center">
+      <section id="PRECIOS" className="py-5 bg-transparent  a-b-2 " >
+        <div className="container preciosBack">
+          <div className="row text-center align-self-center justify-content-center mt-5">
+            <div className="col-12  colmargin">
               <div className="col "> <h1 className="text-light" >PRECIOS</h1></div>
               <div className="col"><p className="text-light">Conoce nuestros planes y costos</p></div>
               <div className="col d-flex justify-content-center"><a onClick={() => setModalShowPrecios(true)} className="mbtn"><span className="mb-0">MÁS
                 INFORMACIÓN</span></a></div>
             </div>
-            <div className="col-6 d-flex justify-content-end p-0">
+            {/* <div className="col-6 d-flex justify-content-end p-0">
               <a target="_blank" href="#">
                 <img src={require('./assets/img/All/main-img-precios.png')} className="d-block img-fluid" alt="..." />
               </a>
-            </div>
+            </div> */}
           </div>
-          <div className="container justify-content-center bg-dark m-0 p-0">
+         {/*  <div className="container justify-content-center bg-dark m-0 p-0">
             <div className="stripe stripe-2 m-0 p-0">
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
