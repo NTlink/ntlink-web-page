@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import axios from "axios";
 import CookieConsent, { Cookies, getCookieConsentValue } from "react-cookie-consent";
-import { Button, Modal } from 'react-bootstrap';
+import { Button, Modal, Alert } from 'react-bootstrap';
 import "./App.scss";
 function App() {
   const [modalShowPrecios, setModalShowPrecios] = React.useState(false);
@@ -15,6 +15,7 @@ function App() {
   const [modalShowContact, setModalShowContact] = React.useState(false);
   const [modalShowDistribuidores, setModalShowDistribuidores] = React.useState(false);
   const [modalShowPlanes, setModalShowPlanes] = React.useState(false);
+
   const preciosFolios = [{ folio: 25, precio: 330.00 }, { folio: 50, precio: 445.00 }, { folio: 100, precio: 590.00 }, { folio: 200, precio: 1065.00 }, { folio: 500, precio: 2391.00 }, { folio: 1000, precio: 4305.00 }, { folio: 2000, precio: 7745.00 }, { folio: 5000, precio: 17430.00 }];
   const preciosTimbre = [{ timbre: 1000, precio: 1392.00 }, { timbre: 3000, precio: 3480.00 }, { timbre: 5000, precio: 4640.00 }, { timbre: 10000, precio: 8120.00 }, { timbre: 15000, precio: 12760.00 }, { timbre: 20000, precio: 16820.00 }, { timbre: 50000, precio: 31320.00 }, { timbre: 100000, precio: 46400.00 }];
   const carruselPicturesURL = [{ href: '', urlImage: 'CRRSL_cont_01' }, { href: '', urlImage: 'CRRSL_cont_02' }, { href: '', urlImage: 'CRRSL_cont_03' }, { href: '', urlImage: 'CRRSL_cont_04' }, { href: '', urlImage: 'CRRSL_cont_05' }, { href: '', urlImage: 'CRRSL_cont_06' }];
@@ -430,18 +431,18 @@ function App() {
 
       <section id="PRECIOS" className="py-5 bg-transparent  a-b-2 " >
         <div className="container preciosBack">
-          <div className="row text-center align-self-center justify-content-center mt-5">
-            <div className="col-12  colmargin">
-              <div className="col "> <h1 className="text-light" >PRECIOS</h1></div>
+          <div className="row text-center align-self-center justify-content-center pbt-6">
+            <div className="col-md-3 ">
+              <div className="col ml-2"> <h1 className="text-light " >PRECIOS</h1></div>
               <div className="col"><p className="text-light">Conoce nuestros planes y costos</p></div>
               <div className="col d-flex justify-content-center"><a onClick={() => setModalShowPrecios(true)} className="mbtn"><span className="mb-0">MÁS
                 INFORMACIÓN</span></a></div>
             </div>
-            {/* <div className="col-6 d-flex justify-content-end p-0">
-              <a target="_blank" href="#">
+            <div className="col-md-9 d-flex justify-content-end p-0">
+              {/*   <a target="_blank" href="#">
                 <img src={require('./assets/img/All/main-img-precios.png')} className="d-block img-fluid" alt="..." />
-              </a>
-            </div> */}
+              </a> */}
+            </div>
           </div>
           {/*  <div className="container justify-content-center bg-dark m-0 p-0">
             <div className="stripe stripe-2 m-0 p-0">
@@ -723,7 +724,7 @@ function MyVerticallyCenteredModal(props) {
                 <div className="card-header bg-info text-light">
                   <h4 className="my-0 font-weight-normal">PAQUETE</h4>
                 </div>
-                <div className="card-body bg-white text-light">
+                <div className="card-body p-0 bg-white text-light">
                   <h1 className="card-title text-info pricing-card-title">{props.preciosfolios[0].folio}</h1>
                   <ul className="list-unstyled  text-info mt-0 mb-0">
                     <li>FOLIOS</li>
@@ -742,7 +743,7 @@ function MyVerticallyCenteredModal(props) {
                     PAQUETE
                   </h4>
                 </div>
-                <div className="card-body bg-white text-light">
+                <div className="card-body p-0 bg-white text-light">
                   <h1 className="card-title text-info pricing-card-title">
                     {props.preciosfolios[1].folio}
                   </h1>
@@ -768,7 +769,7 @@ function MyVerticallyCenteredModal(props) {
                     PAQUETE
                   </h4>
                 </div>
-                <div className="card-body bg-white text-light">
+                <div className="card-body p-0 bg-white text-light">
                   <h1 className="card-title text-info pricing-card-title">
                     {props.preciosfolios[2].folio}
                   </h1>
@@ -792,7 +793,7 @@ function MyVerticallyCenteredModal(props) {
                     PAQUETE
                   </h4>
                 </div>
-                <div className="card-body bg-white text-light">
+                <div className="card-body p-0 bg-white text-light">
                   <h1 className="card-title text-info pricing-card-title">
                     {props.preciosfolios[3].folio}
                   </h1>
@@ -818,7 +819,7 @@ function MyVerticallyCenteredModal(props) {
                     PAQUETE
                   </h4>
                 </div>
-                <div className="card-body bg-white text-light">
+                <div className="card-body p-0 bg-white text-light">
                   <h1 className="card-title text-info pricing-card-title">
                     {props.preciosfolios[4].folio}
                   </h1>
@@ -842,7 +843,7 @@ function MyVerticallyCenteredModal(props) {
                     PAQUETE
                   </h4>
                 </div>
-                <div className="card-body bg-white text-light">
+                <div className="card-body p-0 bg-white text-light">
                   <h1 className="card-title text-info pricing-card-title">
                     {props.preciosfolios[5].folio}
                   </h1>
@@ -868,7 +869,7 @@ function MyVerticallyCenteredModal(props) {
                     PAQUETE
                   </h4>
                 </div>
-                <div className="card-body bg-white text-light">
+                <div className="card-body p-0 bg-white text-light">
                   <h1 className="card-title text-info pricing-card-title">
                     {props.preciosfolios[6].folio}
                   </h1>
@@ -892,7 +893,7 @@ function MyVerticallyCenteredModal(props) {
                     PAQUETE
                   </h4>
                 </div>
-                <div className="card-body bg-white text-light">
+                <div className="card-body p-0 bg-white text-light">
                   <h1 className="card-title text-info pricing-card-title">
                     {props.preciosfolios[7].folio}
                   </h1>
@@ -930,7 +931,7 @@ function MyVerticallyCenteredModal(props) {
                 <div className="card-header bg-info text-light">
                   <h4 className="my-0 font-weight-normal">PAQUETE</h4>
                 </div>
-                <div className="card-body bg-white text-light">
+                <div className="card-body p-0 bg-white text-light">
                   <h1 className="card-title text-info pricing-card-title">{props.preciostimbre[0].timbre}</h1>
                   <ul className="list-unstyled  text-info mt-0 mb-0">
                     <li>TIMBRES</li>
@@ -949,7 +950,7 @@ function MyVerticallyCenteredModal(props) {
                     PAQUETE
                   </h4>
                 </div>
-                <div className="card-body bg-white text-light">
+                <div className="card-body p-0 bg-white text-light">
                   <h1 className="card-title text-info pricing-card-title">
                     {props.preciostimbre[1].timbre}
                   </h1>
@@ -975,7 +976,7 @@ function MyVerticallyCenteredModal(props) {
                     PAQUETE
                   </h4>
                 </div>
-                <div className="card-body bg-white text-light">
+                <div className="card-body p-0 bg-white text-light">
                   <h1 className="card-title text-info pricing-card-title">
                     {props.preciostimbre[2].timbre}
                   </h1>
@@ -999,7 +1000,7 @@ function MyVerticallyCenteredModal(props) {
                     PAQUETE
                   </h4>
                 </div>
-                <div className="card-body bg-white text-light">
+                <div className="card-body p-0 bg-white text-light">
                   <h1 className="card-title text-info pricing-card-title">
                     {props.preciostimbre[3].timbre}
                   </h1>
@@ -1025,7 +1026,7 @@ function MyVerticallyCenteredModal(props) {
                     PAQUETE
                   </h4>
                 </div>
-                <div className="card-body bg-white text-light">
+                <div className="card-body p-0 bg-white text-light">
                   <h1 className="card-title text-info pricing-card-title">
                     {props.preciostimbre[4].timbre}
                   </h1>
@@ -1049,7 +1050,7 @@ function MyVerticallyCenteredModal(props) {
                     PAQUETE
                   </h4>
                 </div>
-                <div className="card-body bg-white text-light">
+                <div className="card-body p-0 bg-white text-light">
                   <h1 className="card-title text-info pricing-card-title">
                     {props.preciostimbre[5].timbre}
                   </h1>
@@ -1075,7 +1076,7 @@ function MyVerticallyCenteredModal(props) {
                     PAQUETE
                   </h4>
                 </div>
-                <div className="card-body bg-white text-light">
+                <div className="card-body p-0 bg-white text-light">
                   <h1 className="card-title text-info pricing-card-title">
                     {props.preciostimbre[6].timbre}
                   </h1>
@@ -1099,7 +1100,7 @@ function MyVerticallyCenteredModal(props) {
                     PAQUETE
                   </h4>
                 </div>
-                <div className="card-body bg-white text-light">
+                <div className="card-body p-0 bg-white text-light">
                   <h1 className="card-title text-info pricing-card-title">
                     {props.preciostimbre[7].timbre}
                   </h1>
@@ -1495,7 +1496,7 @@ function MyVerticallyCenteredModalTERMINOS(props) {
 }
 function MyVerticallyCenteredModalContact(props) {
   /*  var handleChange =  */
-
+  const [emailSucces, setModalShowSucces] = React.useState(false);
   const [state, setname] = React.useState({ nombre: '', nombreEmpresa: '', email: '', telefono: '', comentarios: '' });
   return (
     <Modal
@@ -1517,8 +1518,23 @@ function MyVerticallyCenteredModalContact(props) {
             </div>
           </div>
         </Modal.Title>
+
+
       </Modal.Header>
       <Modal.Body>
+        {emailSucces &&
+          <Alert variant="success">
+            <Alert.Heading>Exito, Se ha enviado!</Alert.Heading>
+            <p>
+              Se ha enviado un correo de confirmacion al correo que has introducido.
+            </p>
+            <hr />
+            <p className="mb-0">
+            !Te responderemos lo antes posible!
+            </p>
+          </Alert>
+        }
+
 
         <div className="row m-3 ">
           <section className="author-area">
@@ -1537,6 +1553,7 @@ function MyVerticallyCenteredModalContact(props) {
                         'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
                       }
                     }).then(res => {
+                     {setModalShowSucces(true)}
                       console.log(res)
                     }).catch(err => {
                       console.log(err)
