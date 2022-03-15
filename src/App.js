@@ -17,7 +17,7 @@ function App() {
   const [modalShowPlanes, setModalShowPlanes] = React.useState(false);
   const preciosFolios = [{ folio: 25, precio: 330.00 }, { folio: 50, precio: 445.00 }, { folio: 100, precio: 590.00 }, { folio: 200, precio: 1065.00 }, { folio: 500, precio: 2391.00 }, { folio: 1000, precio: 4305.00 }, { folio: 2000, precio: 7745.00 }, { folio: 5000, precio: 17430.00 }];
   const preciosTimbre = [{ timbre: 1000, precio: 1392.00 }, { timbre: 3000, precio: 3480.00 }, { timbre: 5000, precio: 4640.00 }, { timbre: 10000, precio: 8120.00 }, { timbre: 15000, precio: 12760.00 }, { timbre: 20000, precio: 16820.00 }, { timbre: 50000, precio: 31320.00 }, { timbre: 100000, precio: 46400.00 }];
-  const carruselPicturesURL = [{ href: '', urlImage: 'main-img-banneA' }, { href: '', urlImage: 'main-img-banneA' }, { href: '', urlImage: 'main-img-banneA' }];
+  const carruselPicturesURL = [{ href: '', urlImage: 'CRRSL_cont_01' }, { href: '', urlImage: 'CRRSL_cont_02' }, { href: '', urlImage: 'CRRSL_cont_03' }, { href: '', urlImage: 'CRRSL_cont_04' }, { href: '', urlImage: 'CRRSL_cont_05' }, { href: '', urlImage: 'CRRSL_cont_06' }];
 
   return (
     <div className="App">
@@ -69,11 +69,11 @@ function App() {
                   Object.keys(carruselPicturesURL).map((picturesUrl, index) => (
                     index == 0 ?
                       <div key={`${carruselPicturesURL[index].urlImage}-${index}`} className="carousel-item active">
-                        <a target="_blank" href={carruselPicturesURL[index].href}><img src={require('./assets/img/All/' + carruselPicturesURL[index].urlImage + '.png')} className="d-block w-100" alt="..." /></a>
+                        <a target="_blank" href={carruselPicturesURL[index].href}><img src={require('./assets/img/All/' + carruselPicturesURL[index].urlImage + '.gif')} className="d-block w-100" alt="..." /></a>
                       </div>
                       :
                       <div key={`${carruselPicturesURL[index].urlImage}-${index}`} className="carousel-item">
-                        <a target="_blank" href={carruselPicturesURL[index].href}><img src={require('./assets/img/All/' + carruselPicturesURL[index].urlImage + '.png')} className="d-block w-100" alt="..." /></a>
+                        <a target="_blank" href={carruselPicturesURL[index].href}><img src={require('./assets/img/All/' + carruselPicturesURL[index].urlImage + '.gif')} className="d-block w-100" alt="..." /></a>
                       </div>
                   ))
                 }
@@ -443,7 +443,7 @@ function App() {
               </a>
             </div> */}
           </div>
-         {/*  <div className="container justify-content-center bg-dark m-0 p-0">
+          {/*  <div className="container justify-content-center bg-dark m-0 p-0">
             <div className="stripe stripe-2 m-0 p-0">
             </div>
           </div> */}
@@ -1529,8 +1529,8 @@ function MyVerticallyCenteredModalContact(props) {
                   </div>
                   {/* TODO mover esta wea a una funcion fuera del popup */}
                   <form id="contact-form" className="item-form card no-hover " action='' onSubmit={(e) => {
-                     e.preventDefault();
-                    axios.post(`http://nt-invoice.ntlink.com.mx/api/v1/contact/request`, state, {
+                    e.preventDefault();
+                    axios.post(`https://nt-invoice.ntlink.com.mx/api/v1/contact/request`, state, {
                       headers: {
                         'Content-Type': 'application/json',
                         'Access-Control-Allow-Origin': '*',
