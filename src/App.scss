@@ -285,18 +285,26 @@ body {
 }
 
 .preciosBack{
-  background-image: url("./assets/img/All/main-img-precios.png") !important;
-  background-repeat: no-repeat;
- /*  background-position: 0% 100%; */
- width: 486px;
- height: 356px;
-
+  background-image: url("./assets/img/All/main-precios-back.png") !important;
+ /*  background-repeat: no-repeat; */
+  background-position: 0% 50%;
+ 
+/*  height: 456px; */
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ background-size: cover;
+ -o-background-size: cover;
 }
 
 .colmargin{
- margin-top:  6rem;
+ margin-top:20rem;
 }
 
 .pb-6{
   padding-bottom: 6rem !important;
+}
+
+.pbt-6{
+  padding-top: 153px;
+  padding-bottom: 140px;
 }
