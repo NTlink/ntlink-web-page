@@ -1,10 +1,14 @@
-import React from 'react';
+import React,{ useEffect } from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import axios from "axios";
 import CookieConsent, { Cookies, getCookieConsentValue } from "react-cookie-consent";
+import ReactGA from 'react-ga';
 import { Button, Modal, Alert } from 'react-bootstrap';
 import "./App.scss";
+
+ReactGA.initialize('UA-223081313-1', { debug: false });
+
 function App() {
   const [modalShowPrecios, setModalShowPrecios] = React.useState(false);
   const [modalShowConvertidor, setModalShowConvertidor] = React.useState(false);
@@ -19,6 +23,10 @@ function App() {
   const preciosFolios = [{ folio: 25, precio: 330.00 }, { folio: 50, precio: 445.00 }, { folio: 100, precio: 590.00 }, { folio: 200, precio: 1065.00 }, { folio: 500, precio: 2391.00 }, { folio: 1000, precio: 4305.00 }, { folio: 2000, precio: 7745.00 }, { folio: 5000, precio: 17430.00 }];
   const preciosTimbre = [{ timbre: 1000, precio: 1392.00 }, { timbre: 3000, precio: 3480.00 }, { timbre: 5000, precio: 4640.00 }, { timbre: 10000, precio: 8120.00 }, { timbre: 15000, precio: 12760.00 }, { timbre: 20000, precio: 16820.00 }, { timbre: 50000, precio: 31320.00 }, { timbre: 100000, precio: 46400.00 }];
   const carruselPicturesURL = [{ href: '', urlImage: 'CRRSL_cont_01' }, { href: '', urlImage: 'CRRSL_cont_02' }, { href: '', urlImage: 'CRRSL_cont_03' }, { href: '', urlImage: 'CRRSL_cont_04' }, { href: '', urlImage: 'CRRSL_cont_05' }, { href: '', urlImage: 'CRRSL_cont_06' }];
+  
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  });
 
   return (
     <div className="App">
@@ -1530,7 +1538,7 @@ function MyVerticallyCenteredModalContact(props) {
             </p>
             <hr />
             <p className="mb-0">
-            !Te responderemos lo antes posible!
+              !Te responderemos lo antes posible!
             </p>
           </Alert>
         }
@@ -1553,7 +1561,7 @@ function MyVerticallyCenteredModalContact(props) {
                         'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
                       }
                     }).then(res => {
-                     {setModalShowSucces(true)}
+                      { setModalShowSucces(true) }
                       console.log(res)
                     }).catch(err => {
                       console.log(err)
