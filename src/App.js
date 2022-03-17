@@ -1,15 +1,18 @@
-import React,{ useEffect } from 'react';
+import React, { useEffect } from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import axios from "axios";
 import CookieConsent, { Cookies, getCookieConsentValue } from "react-cookie-consent";
 import ReactGA from 'react-ga';
+import TagManager from 'react-gtm-module'
 import { Button, Modal, Alert } from 'react-bootstrap';
 import "./App.scss";
 
+TagManager.initialize({ gtmId: 'GTM-MZ2ZVDV' })
 ReactGA.initialize('UA-223081313-1', { debug: false });
 
 function App() {
+  //#region fields
   const [modalShowPrecios, setModalShowPrecios] = React.useState(false);
   const [modalShowConvertidor, setModalShowConvertidor] = React.useState(false);
   const [modalShowComplementos, setModalShowComplementos] = React.useState(false);
@@ -19,20 +22,23 @@ function App() {
   const [modalShowContact, setModalShowContact] = React.useState(false);
   const [modalShowDistribuidores, setModalShowDistribuidores] = React.useState(false);
   const [modalShowPlanes, setModalShowPlanes] = React.useState(false);
+  const [modalShowNomina, setModalShowNomina] = React.useState(false);
 
   const preciosFolios = [{ folio: 25, precio: 330.00 }, { folio: 50, precio: 445.00 }, { folio: 100, precio: 590.00 }, { folio: 200, precio: 1065.00 }, { folio: 500, precio: 2391.00 }, { folio: 1000, precio: 4305.00 }, { folio: 2000, precio: 7745.00 }, { folio: 5000, precio: 17430.00 }];
   const preciosTimbre = [{ timbre: 1000, precio: 1392.00 }, { timbre: 3000, precio: 3480.00 }, { timbre: 5000, precio: 4640.00 }, { timbre: 10000, precio: 8120.00 }, { timbre: 15000, precio: 12760.00 }, { timbre: 20000, precio: 16820.00 }, { timbre: 50000, precio: 31320.00 }, { timbre: 100000, precio: 46400.00 }];
   const carruselPicturesURL = [{ href: '', urlImage: 'CRRSL_cont_01' }, { href: '', urlImage: 'CRRSL_cont_02' }, { href: '', urlImage: 'CRRSL_cont_03' }, { href: '', urlImage: 'CRRSL_cont_04' }, { href: '', urlImage: 'CRRSL_cont_05' }, { href: '', urlImage: 'CRRSL_cont_06' }];
-  
+  //#endregion
+  //#region methods
   useEffect(() => {
     ReactGA.pageview(window.location.pathname + window.location.search);
   });
-
+  //#endregion
   return (
     <div className="App">
-
+      {
+        //#region header
+      }
       <header>
-
         <nav className="navbar navbar-expand-lg fixed-top bg-dark m-0 p-0 a-t-2">
           <div className="container justify-content-end">
 
@@ -63,7 +69,12 @@ function App() {
           </div>
         </nav>
       </header>
-
+      {
+        //#endregion
+      }
+      {
+        //#region carrusel
+      }
       <section>
         <div className="row carro">
           <div className="col-md-3 m-0 p-0 d-flex align-items-end justify-content-end a-l-2 ">
@@ -101,7 +112,12 @@ function App() {
         </div>
 
       </section>
-
+      {
+        //#endregion
+      }
+      {
+        //#region servicios
+      }
       <section id="Servicios" className="py-5 bg-transparent" >
         <div className="container">
 
@@ -124,13 +140,17 @@ function App() {
           </div>
         </div>
       </section>
-
       <div className="container justify-content-center bg-dark">
         <div className="stripe stripe-1 m-0 p-0">
         </div>
       </div>
-
-      <div className="container justify-content-center gradeintBlack bg-transparent a-b-2 pb-6">
+      {
+        //#endregion
+      }
+      {
+        //#region certificación
+      }
+      < div className="container justify-content-center gradeintBlack bg-transparent a-b-2 pb-6">
         <div className="row p-5 ">
 
 
@@ -187,16 +207,17 @@ function App() {
             <div className="col p-2 d-flex justify-content-center align-items-center">
               <footer className="blockquote-footer text-light ">Al darte de alta en nuestro portal, recibe 5 folios para generar facturas de manera gratuita.</footer>
             </div>
-            {/*   
-                  
-         
-            
-            */}
+
 
           </div>
         </div>
       </div>
-
+      {
+        //#endregion
+      }
+      {
+        //#region productos
+      }
       <section id="PRODUCTOS" className="py-5 bg-transparent a-b-2" >
         <div className="container">
           <h1 className="text-light" >PRODUCTOS</h1>
@@ -223,14 +244,10 @@ function App() {
                 INFORMACIÓN</span></a>
             </div>
           </div>
-
-
           <div className="container justify-content-center bg-dark m-0 p-0">
             <div className="stripe stripe-2 m-2 p-0">
             </div>
           </div>
-
-
           <div className="row align-items-center">
             <div className="col-md-2 d-flex justify-content-center" >
               <a target="_blank" href="#">
@@ -248,7 +265,7 @@ function App() {
               </div>
             </div>
             <div className="col-md-2 d-flex justify-content-center align-items-center">
-              <a href="https://cfdi33.ntlink.com.mx/NominaLocal3.3/wfrLogin.aspx" className="mbtn"><span className="mb-0">MÁS
+              <a onClick={() => setModalShowNomina(true)} className="mbtn"><span className="mb-0">MÁS
                 INFORMACIÓN</span></a>
             </div>
           </div>
@@ -398,13 +415,10 @@ function App() {
                 INFORMACIÓN</span></a>
             </div>
           </div>
-
           <div className="container justify-content-center bg-dark m-0 p-0">
             <div className="stripe stripe-2 m-2 p-0">
             </div>
           </div>
-
-
           <div className="row align-items-center">
             <div className="col-md-2 d-flex justify-content-center">
               <a target="_blank" href="#">
@@ -436,7 +450,12 @@ function App() {
 
         </div>
       </section>
-
+      {
+        //#endregion
+      }
+      {
+        //#region precios
+      }
       <section id="PRECIOS" className="py-5 bg-transparent  a-b-2 " >
         <div className="container preciosBack">
           <div className="row text-center align-self-center justify-content-center pbt-6">
@@ -447,18 +466,18 @@ function App() {
                 INFORMACIÓN</span></a></div>
             </div>
             <div className="col-md-9 d-flex justify-content-end p-0">
-              {/*   <a target="_blank" href="#">
-                <img src={require('./assets/img/All/main-img-precios.png')} className="d-block img-fluid" alt="..." />
-              </a> */}
+
             </div>
           </div>
-          {/*  <div className="container justify-content-center bg-dark m-0 p-0">
-            <div className="stripe stripe-2 m-0 p-0">
-            </div>
-          </div> */}
+
         </div>
       </section>
-
+      {
+        //#endregion
+      }
+      {
+        //#region blogButton
+      }
       <div className="container justify-content-center a-b-2" >
         <div className="row ">
           <div className="col d-flex justify-content-center">
@@ -469,7 +488,12 @@ function App() {
           </div>
         </div>
       </div>
-
+      {
+        //#endregion
+      }
+      {
+        //#region promociones
+      }
       <section id="PROMOCIONES" className="py-5 bg-transparent a-b-2" >
         <div className="container">
 
@@ -512,7 +536,14 @@ function App() {
           </div>
         </div>
       </section>
-      {(getCookieConsentValue("myAwesomeCookieName2") === undefined) &&
+      {
+        //#endregion
+      }
+      {
+        //#region cookies
+      }
+      {
+        (getCookieConsentValue("myAwesomeCookieName2") === undefined) &&
         <div className="navbar fixed-bottom">
           <CookieConsent
 
@@ -527,9 +558,12 @@ function App() {
           </CookieConsent>
         </div>
       }
-
-
-
+      {
+        //#endregion
+      }
+      {
+        //#region contacto
+      }
       <footer id="CONTACTO" className="pt-4 pt-md-5 border-top gradeintBlack bg-dark a-b-2">
         <div className="container  bg-trasparent">
           <div className="row">
@@ -630,7 +664,12 @@ function App() {
           <div className="text-center py-4 text-light mt-4">Copyright © 2021 NTLINK COMUNICACIONES - Todos los derechos reservados | <a className='text-success' onClick={() => setModalShowPrivacidad(true)}>POLITICA DE PRIVACIDAD</a> | <a className='text-success' onClick={() => setModalShowTerminos(true)}> TERMINOS Y CONDICIONES</a> </div>
         </div>
       </footer>
-
+      {
+        //#endregion
+      }
+      {
+        //#region modalsfunc
+      }
       <MyVerticallyCenteredModal
         preciosfolios={preciosFolios}
         preciostimbre={preciosTimbre}
@@ -670,16 +709,19 @@ function App() {
       <MyVerticallyCenteredModalPLANESDETIMBRADO
         show={modalShowPlanes}
         onHide={() => setModalShowPlanes(false)}
-
       />
-
-    </div>
+      <MyVerticallyCenteredModalNomina
+        show={modalShowNomina}
+        onHide={() => setModalShowNomina(false)}
+      />
+      {
+        //#endregion
+      }
+    </div >
   );
-
-
 }
 
-
+//#region modals
 
 function MyVerticallyCenteredModal(props) {
   return (
@@ -1709,6 +1751,168 @@ function MyVerticallyCenteredModalPLANESDETIMBRADO(props) {
     </Modal >
   );
 }
+function MyVerticallyCenteredModalNomina(props) {
+  return (
+    <Modal
+      {...props}
+      size="xl"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-10">
+                <h1 className="text-light text-start">
+                  Portal de Nómina
+                </h1>
+              </div>
+              <div className="col-md-2 d-flex justify-content-end"><Button onClick={props.onHide}><h3 className="mb-0">Cerrar</h3> </Button></div>
+            </div>
+          </div>
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <div className="container">
+
+          <div className="row text-start text-light">
+            <p className="font-weight-normal">El portal de nómina 1.2 te permitirá realizar tu recibo cuando efectúes pagos a tus trabajadores por sueldos, salarios y en general por la prestación de un servicio personal, timbra tus recibos en minutos.
+              Te permite elaborar tus recibos desde cualquier equipo con acceso a internet y un navegador.
+            </p>
+            <p className="font-weight-normal">Podrás emitir, consultar, descargar, reenviar y cancelar tus recibos desde tu perfil.
+            </p>
+          </div>
+          <div className="row text-start text-light">
+            <h5 className="text-success">
+              Contratación.
+            </h5>
+            <p className="font-weight-normal">Para ingresar completa el registro, realiza el pago por un paquete de folios (Consulte nuestra lista de costos).
+              El correo que proporciones será tu usuario de ingreso a la plataforma, recibirás una contraseña temporal (esta debe ingresarse respetando números, mayúsculas, minúsculas y caracteres especiales) y liga de acceso. El sistema se bloqueará por seguridad después del tercer intento erróneo.
+            </p>
+            <p className="font-weight-normal">Siendo la primera vez que ingrese se solicita definir su contraseña y la confirmación de esta. La nueva contraseña debe ser mayor a 8 caracteres, tener mayúsculas, minúsculas, carácter especial y algún número.
+              Recuerda que es importante tener vigente ante hacienda el CSD (Certificado de Sello Digital).
+            </p>
+
+
+          </div>
+          <div className="row text-start text-light">
+            <h5 className="text-success">
+              Funcionamiento
+            </h5>
+            <p className="font-weight-normal">Una vez ya registrado y contando con tu usuario y contraseña comienza a configurar los datos de tu empresa. </p>
+            <p className="font-weight-normal">En el Menú de Empresas, selecciona la opción de Editar
+            </p>
+            <img src={require('./assets/img/All/PLACEHOLDER_image4.jpg')} className="d-block img-fluid" alt="..." />
+            <p className="font-weight-normal">
+              Aquí podremos actualizar o editar los datos de la empresa como el Régimen fiscal, direcciono fiscal y el logotipo de la empresa (debe pesar máximo 50Kb y ser un archivo *jpeg y *png) etc.
+            </p>
+            <p className="font-italic">También puedes consultar nuestro <a href='https://www.youtube.com/watch?v=EfpO8uumw2k&ab_channel=FACTURACI%C3%93NNTLINK'>video tutorial</a> en nuestro canal de YouTube.
+            </p>
+
+            <p className="font-weight-normal">
+              Dentro de este mismo menú podremos cargar el Certificado de Sello Digital el cual es indispensable tener vigente para generar nuestros recibos.
+
+            </p>
+
+
+            <ul className="list-unstyled">
+              <li>
+                <ul>
+                  <li> En el sistema deberemos cargar el archivo .CER, .KEY y la contraseña de la Llave. Seleccionamos el botón de Validar y Guardar
+                    <img src={require('./assets/img/All/PLACEHOLDER_image4.jpg')} className="d-block img-fluid" alt="..." />
+                  </li>
+                  <li>	los archivos son correctos nos arrojara el mensaje de CSD cargado Exitosamente y se actualizara la fecha de vigencia.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <p className="font-italic">También puedes consultar nuestro <a href='https://www.youtube.com/watch?v=EfpO8uumw2k&ab_channel=FACTURACI%C3%93NNTLINK'>video tutorial</a> en nuestro canal de YouTube.
+            </p>
+
+          </div>
+          <div className="row text-start text-light">
+
+            <p className="font-weight-normal">Otra sección que debemos completar son los Centros de Trabajo, lo podemos encontrar en el menú de empresas, seleccionando la opción de Centros de trabajo.
+              Aquí podremos agregar nuevos o editar los ya cargados.
+              Es importante completar los campos que tengan *
+            </p>
+            <img src={require('./assets/img/All/PLACEHOLDER_image1.jpg')} className="d-block img-fluid" alt="..." />
+
+            <p className="font-weight-normal">Una vez actualizada esta información solo deberemos seleccionar el botón de guardar.
+              La siguiente sección que debemos completar es el Catálogo de Empleados.
+            </p>
+            <p className="font-weight-normal">En esta registraremos los empleados de la empresa, podremos agregar, editar o eliminar la información del empleado en caso de ser necesario. </p>
+            <img src={require('./assets/img/All/PLACEHOLDER_image2.jpg')} className="d-block img-fluid" alt="..." />
+
+            <p className="font-weight-normal">Para el registro de un empleado nuevo comenzamos en la sección de Datos de empleado asegurándonos que los campos con * sean completados y seleccionamos agregar Subcontratación.</p>
+            <img src={require('./assets/img/All/PLACEHOLDER_image3.jpg')} className="d-block img-fluid" alt="..." />
+
+            <p className="font-weight-normal">Posteriormente completaremos los datos de Nómina del Empleado, también asegurándonos de completar los campos con * y al terminar seleccionamos guardar</p>
+            <p className="font-weight-normal">Una vez completada la información de la empresa y cargados los empleados podremos comenzar a realizar los recibos de Nómina.</p>
+            <p className="font-weight-normal">Comenzamos seleccionando el Centro de Trabajo, la Periodicidad, tipo de Nomina y el empleado al que se genera el recibo ya que estos son campos requeridos.
+              Posteriormente continuamos con el llenado de Datos de Nómina.
+              Fecha de pago, días pagados, fecha de inicio y final del pago.
+            </p>
+            <img src={require('./assets/img/All/PLACEHOLDER_image6.jpg')} className="d-block img-fluid" alt="..." />
+
+
+
+            <p className="font-weight-normal">
+              Agregamos las percepciones recordando completar los campos con * y seleccionamos agregar percepción.
+            </p>
+            <img src={require('./assets/img/All/PLACEHOLDER_image8.jpg')} className="d-block img-fluid" alt="..." />
+            <p className="font-weight-normal">
+              Agregamos las deducciones recordando completar los campos con * y seleccionamos agregar deducciones.
+            </p>
+            <img src={require('./assets/img/All/PLACEHOLDER_image5.jpg')} className="d-block img-fluid" alt="..." />
+            <p className="font-weight-normal">
+              Una vez agregado podemos generar la vista previa y/o generar el Recibo.
+              El sistema nos arrojara el mensaje de Comprobante generado correctamente y enviado por correo
+            </p>
+            <img src={require('./assets/img/All/PLACEHOLDER_image7.jpg')} className="d-block img-fluid" alt="..." />
+
+            <p className="font-weight-normal">
+              Uno de los beneficios del Portal de Nómina es que podremos Consultar Recibos, desde este menú se puede realizar la búsqueda de los recibos emitidos filtrando por:
+            </p>
+
+            <ul className="list-unstyled">
+              <li>
+                <ul>
+                  <li>
+                    Empleado
+                  </li>
+                  <li>
+                    Fecha (siempre y cuando la fecha de inicio y la fecha final no sea mayor a 93 días)
+                  </li>
+                  <li>
+                    Realizar Cancelaciones
+                  </li>
+                  <li>
+                    Descargar un reporte de la búsqueda en un archivo Excel.
+                  </li>
+                  <li>
+                    Descargar y/o renviar por correo los archivos PDF y XML.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <img src={require('./assets/img/All/PLACEHOLDER_image9.jpg')} className="d-block img-fluid" alt="..." />
+            <p className="font-weight-normal">
+              Otro beneficio es que es multiusuario, es decir que permite registrar diferentes correos para ingresar al perfil de la cuenta permitiendo editar el perfil del correo, agregar nuevos y cambiar la contraseña. </p>
+            <img src={require('./assets/img/All/PLACEHOLDER_image10.jpg')} className="d-block img-fluid" alt="..." />
+          </div>
+        </div>
+      </Modal.Body>
+      <Modal.Footer>
+        <div className="col-md-2 d-flex justify-content-end"><Button onClick={props.onHide}><h3 className="mb-0">Cerrar</h3> </Button></div>
+      </Modal.Footer>
+    </Modal >
+  );
+}
+
+//#endregion
 
 const code = '<?xml version="1.0" encoding="utf-8"?><cfdi:Comprobante xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd" Version="3.3" Folio="3873" Fecha="2022-01-14T09:54:32" FormaPago="03"  SubTotal="1.00" Descuento="0.00" Moneda="MXN" TipoCambio="1" Total="1.16" TipoDeComprobante="I" MetodoPago="PUE" LugarExpedicion="04100" xmlns:cfdi="http://www.sat.gob.mx/cfd/3"><cfdi:Emisor Rfc="NLC091211KC6" Nombre="PRUEBAS" RegimenFiscal="601" /><cfdi:Receptor Rfc="XAXX010101000" Nombre=" PRUEBA" UsoCFDI="G01" /><cfdi:Conceptos><cfdi:Concepto ClaveProdServ="84111506" NoIdentificacion="ANTICIPO" Cantidad="1.00" ClaveUnidad="ACT" Descripcion="PRUEBA" ValorUnitario="1.00" Importe="1.00" Descuento="0.00"><cfdi:Impuestos><cfdi:Traslados><cfdi:Traslado Base="1.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="0.16" /></cfdi:Traslados></cfdi:Impuestos></cfdi:Concepto></cfdi:Conceptos><cfdi:Impuestos TotalImpuestosTrasladados="0.16"><cfdi:Traslados><cfdi:Traslado Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="0.16" /></cfdi:Traslados></cfdi:Impuestos><cfdi:Complemento><tfd:TimbreFiscalDigital xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="AFAD91C2-1888-4BD8-8803-B5ED958F4122" FechaTimbrado="2022-01-14T09:54:35" RfcProvCertif="NLC091211KC6" SelloCFD="Af3lvLAQHiQYG25nFzfypWToHQ==" NoCertificadoSAT="00001000000504447535" SelloSAT="Jd2SF+ppPkQP2sodVFkhxg==" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" /></cfdi:Complemento></cfdi:Comprobante>';
 
