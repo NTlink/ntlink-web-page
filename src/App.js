@@ -23,6 +23,7 @@ function App() {
   const [modalShowDistribuidores, setModalShowDistribuidores] = React.useState(false);
   const [modalShowPlanes, setModalShowPlanes] = React.useState(false);
   const [modalShowNomina, setModalShowNomina] = React.useState(false);
+  const [modalShowCFDI, setModalShowCFDI] = React.useState(false);
 
   const preciosFolios = [{ folio: 25, precio: 330.00 }, { folio: 50, precio: 445.00 }, { folio: 100, precio: 590.00 }, { folio: 200, precio: 1065.00 }, { folio: 500, precio: 2391.00 }, { folio: 1000, precio: 4305.00 }, { folio: 2000, precio: 7745.00 }, { folio: 5000, precio: 17430.00 }];
   const preciosTimbre = [{ timbre: 1000, precio: 1392.00 }, { timbre: 3000, precio: 3480.00 }, { timbre: 5000, precio: 4640.00 }, { timbre: 10000, precio: 8120.00 }, { timbre: 15000, precio: 12760.00 }, { timbre: 20000, precio: 16820.00 }, { timbre: 50000, precio: 31320.00 }, { timbre: 100000, precio: 46400.00 }];
@@ -240,7 +241,7 @@ function App() {
               </div>
             </div>
             <div className="col-md-2 d-flex justify-content-center align-items-center">
-              <a href="https://cfdi33.ntlink.com.mx/Facturacion3.3/wfrLogin.aspx" className="mbtn"><span className="mb-0">MÁS
+              <a onClick={() => setModalShowCFDI(true)} className="mbtn"><span className="mb-0">MÁS
                 INFORMACIÓN</span></a>
             </div>
           </div>
@@ -713,6 +714,10 @@ function App() {
       <MyVerticallyCenteredModalNomina
         show={modalShowNomina}
         onHide={() => setModalShowNomina(false)}
+      />
+      <MyVerticallyCenteredModalCFDI
+        show={modalShowCFDI}
+        onHide={() => setModalShowCFDI(false)}
       />
       {
         //#endregion
@@ -1807,7 +1812,7 @@ function MyVerticallyCenteredModalNomina(props) {
             <p className="font-weight-normal">
               Aquí podremos actualizar o editar los datos de la empresa como el Régimen fiscal, direcciono fiscal y el logotipo de la empresa (debe pesar máximo 50Kb y ser un archivo *jpeg y *png) etc.
             </p>
-            <p className="font-italic">También puedes consultar nuestro <a href='https://www.youtube.com/watch?v=EfpO8uumw2k&ab_channel=FACTURACI%C3%93NNTLINK'>video tutorial</a> en nuestro canal de YouTube.
+            <p className="font-italic">También puedes consultar nuestro <a href='https://www.youtube.com/watch?v=iTdQAs_KAbE'>video tutorial</a> en nuestro canal de YouTube.
             </p>
 
             <p className="font-weight-normal">
@@ -1820,15 +1825,16 @@ function MyVerticallyCenteredModalNomina(props) {
               <li>
                 <ul>
                   <li> En el sistema deberemos cargar el archivo .CER, .KEY y la contraseña de la Llave. Seleccionamos el botón de Validar y Guardar
-                    <img src={require('./assets/img/All/PLACEHOLDER_image4.jpg')} className="d-block img-fluid" alt="..." />
+
                   </li>
                   <li>	los archivos son correctos nos arrojara el mensaje de CSD cargado Exitosamente y se actualizara la fecha de vigencia.
+                    <img src={require('./assets/img/All/image.1.png')} className="d-block img-fluid" alt="..." />
                   </li>
                 </ul>
               </li>
             </ul>
 
-            <p className="font-italic">También puedes consultar nuestro <a href='https://www.youtube.com/watch?v=EfpO8uumw2k&ab_channel=FACTURACI%C3%93NNTLINK'>video tutorial</a> en nuestro canal de YouTube.
+            <p className="font-italic">También puedes consultar nuestro <a href='https://www.youtube.com/watch?v=EfpO8uumw2k'>video tutorial</a> en nuestro canal de YouTube.
             </p>
 
           </div>
@@ -1836,20 +1842,21 @@ function MyVerticallyCenteredModalNomina(props) {
 
             <p className="font-weight-normal">Otra sección que debemos completar son los Centros de Trabajo, lo podemos encontrar en el menú de empresas, seleccionando la opción de Centros de trabajo.
               Aquí podremos agregar nuevos o editar los ya cargados.
-              Es importante completar los campos que tengan *
+              Es importante completar los campos que tengan * Una vez actualizada esta información solo deberemos seleccionar el botón de guardar.
             </p>
             <img src={require('./assets/img/All/PLACEHOLDER_image1.jpg')} className="d-block img-fluid" alt="..." />
 
-            <p className="font-weight-normal">Una vez actualizada esta información solo deberemos seleccionar el botón de guardar.
+            <p className="font-weight-normal">
               La siguiente sección que debemos completar es el Catálogo de Empleados.
             </p>
-            <p className="font-weight-normal">En esta registraremos los empleados de la empresa, podremos agregar, editar o eliminar la información del empleado en caso de ser necesario. </p>
+            <p className="font-weight-normal">En esta registraremos los empleados de la empresa, podremos agregar, editar o  eliminar la información del empleado en caso de ser necesario. Para el registro de un empleado nuevo comenzamos en la sección de Datos de  empleado asegurándonos que los campos con * sean completados y  seleccionamos agregar Subcontratación. </p>
             <img src={require('./assets/img/All/PLACEHOLDER_image2.jpg')} className="d-block img-fluid" alt="..." />
 
-            <p className="font-weight-normal">Para el registro de un empleado nuevo comenzamos en la sección de Datos de empleado asegurándonos que los campos con * sean completados y seleccionamos agregar Subcontratación.</p>
+            <p className="font-weight-normal">
+              Posteriormente completaremos los datos de Nómina del Empleado, también  asegurándonos de completar los campos con * y al terminar seleccionamos guardar
+            </p>
             <img src={require('./assets/img/All/PLACEHOLDER_image3.jpg')} className="d-block img-fluid" alt="..." />
 
-            <p className="font-weight-normal">Posteriormente completaremos los datos de Nómina del Empleado, también asegurándonos de completar los campos con * y al terminar seleccionamos guardar</p>
             <p className="font-weight-normal">Una vez completada la información de la empresa y cargados los empleados podremos comenzar a realizar los recibos de Nómina.</p>
             <p className="font-weight-normal">Comenzamos seleccionando el Centro de Trabajo, la Periodicidad, tipo de Nomina y el empleado al que se genera el recibo ya que estos son campos requeridos.
               Posteriormente continuamos con el llenado de Datos de Nómina.
@@ -1903,6 +1910,132 @@ function MyVerticallyCenteredModalNomina(props) {
               Otro beneficio es que es multiusuario, es decir que permite registrar diferentes correos para ingresar al perfil de la cuenta permitiendo editar el perfil del correo, agregar nuevos y cambiar la contraseña. </p>
             <img src={require('./assets/img/All/PLACEHOLDER_image10.jpg')} className="d-block img-fluid" alt="..." />
           </div>
+        </div>
+      </Modal.Body>
+      <Modal.Footer>
+        <div className="col-md-2 d-flex justify-content-end"><Button onClick={props.onHide}><h3 className="mb-0">Cerrar</h3> </Button></div>
+      </Modal.Footer>
+    </Modal >
+  );
+}
+function MyVerticallyCenteredModalCFDI(props) {
+  return (
+    <Modal
+      {...props}
+      size="xl"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-10">
+                <h1 className="text-light text-start">
+                  Introducción al portal de facturación NT link 3.3
+                </h1>
+              </div>
+              <div className="col-md-2 d-flex justify-content-end"><Button onClick={props.onHide}><h3 className="mb-0">Cerrar</h3> </Button></div>
+            </div>
+          </div>
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <div className="container">
+
+          <div className="row text-start text-light">
+            <p className="font-weight-normal">
+              Al iniciar sesión en el portal la primera sección que encontraremos es la de  “Empresas”. En esta sección se podrán modificar los datos de la empresa,  crear más empresas si es que se está a cargo de mas, crear sucursales e introducir los conceptos que serán usados en sus facturas.
+            </p>
+            <img src={require('./assets/img/All/image.0.png')} className="d-block img-fluid" alt="..." />
+            <h5 className="text-success">
+              Apartado “Editar”
+            </h5>
+            <p className="font-weight-normal">
+              En este apartado se pueden llenar todos los datos de la empresa que son  necesarios para poder facturar, aquí también se debe cargar el CSD (Sello  digital)
+            </p>
+            <img src={require('./assets/img/All/image.11.png')} className="d-block img-fluid" alt="..." />
+          </div>
+          <div className="row text-start text-light">
+
+            <p className="font-weight-normal">
+              Los archivos que se deben cargarse en el portal son los que tienen  terminacion .cer (certificado) y .key (llave privada). Los dos son archivos del  CSD (sello digital).
+
+
+            </p>
+            <h5 className="text-success">
+              Apartado “Sucursales”
+            </h5>
+            <p className="font-weight-normal">
+              Aqui se pueden crear nuevas sucursales o editar las ya existentes si es  necesario.
+            </p>
+            <img src={require('./assets/img/All/image.2.png')} className="d-block img-fluid" alt="..." />
+            <h5 className="text-success">
+              Seccion de “Clientes”
+            </h5>
+            <p className="font-weight-normal">
+              Aqui encontraremos a todos nuestros clientes a los que se les genera  factura. Se podran crear nuevos clientes y tambien eliminar a los que ya no  se necesiten.
+            </p>
+            <img src={require('./assets/img/All/image.3.png')} className="d-block img-fluid" alt="..." />
+            <p className="font-weight-normal">
+              En la opción "Editar" se deben introducir todos los datos del cliente para que  se pueda generar la factura correctamente.
+            </p>
+            <img src={require('./assets/img/All/image.4.png')} className="d-block img-fluid" alt="..." />
+            <h5 className="text-success">
+              Sección “Facturación”
+            </h5>
+            <p className="font-weight-normal">
+              Es donde podremos crear nuestra factura, al colocar el cursor se mostrarán  los tipos de factura que se hayan contratado.
+              Algunos complementos son:
+            </p>
+
+            <ul className="list-unstyled">
+              <li>
+                <ul>
+                  <li> 
+                  Complemento Carta Porte
+                  </li>
+                  <li> 
+                  Complemento de pago
+                  </li>
+                  <li> 
+                  Complemento INE
+                  </li>
+                  <li> 
+                  Complemento Comercio exterior
+                  </li>
+                  
+                </ul>
+              </li>
+            </ul>
+            <img src={require('./assets/img/All/image.5.png')} className="d-block img-fluid" alt="..." />
+            <p className="font-weight-normal">
+            Esta es la primera parte de nuestra factura a elaborar, se introduce la  información del cliente, el tipo de documento y tipo de pago.
+            </p>
+            <img src={require('./assets/img/All/image.6.png')} className="d-block img-fluid" alt="..." />
+            <p className="font-weight-normal">
+            Esta es la segunda parte de nuestra factura donde se deben de introducir  los datos del producto o servicio, cantidades, impuestos y descripciones. Los  campos con un asterisco rojo deben ser llenados obligatoriamente.
+            </p>
+            <img src={require('./assets/img/All/image.7.png')} className="d-block img-fluid" alt="..." />
+            <p className="font-weight-normal">
+            La tercera y última parte es opcional, es la introducción de impuestos que  pueden modificarse. Esta última parte es importante para los clientes con  Régimen Simplificado de Confianza por la retención del ISR.
+            </p>
+            <img src={require('./assets/img/All/image.8.png')} className="d-block img-fluid" alt="..." />
+            <h5 className="text-success">
+            Sección de “Reportes”
+            </h5>
+            <p className="font-weight-normal">
+            Aquí podremos encontrar nuestro historial de facturación. Se podrá ver el  estado de nuestras facturas y se podrán realizar otras actividades como  cancelaciones, reenvío de facturas y descarga de archivos.
+            </p>
+            <img src={require('./assets/img/All/image.9.png')} className="d-block img-fluid" alt="..." />
+            <h5 className="text-success">
+            Sección de “Usuarios”
+            </h5>
+            <p className="font-weight-normal">
+            En esta sección se podrá manejar la información de los usuarios que tengan  control de la cuenta, se podrá editar información y crear nuevos usuarios.
+            </p>
+            <img src={require('./assets/img/All/image.10.png')} className="d-block img-fluid" alt="..." />
+          </div>           
         </div>
       </Modal.Body>
       <Modal.Footer>
