@@ -481,7 +481,7 @@ function App() {
       <div className="container justify-content-center a-b-2" >
         <div className="row ">
           <div className="col d-flex justify-content-center">
-            <a href="#" className="mbtn buttonexapnd"  ><span className="mb-0">BLOG</span></a>
+            <a href="https://ntlinkcfdi.com/publicaciones-blog" className="mbtn buttonexapnd"  ><span className="mb-0">BLOG</span></a>
           </div>
           <div className="col d-flex justify-content-center">
             <a href="http://dev-cfdi4.ntlink.com.mx" className="mbtn buttonexapnd"  ><span className="mb-0">DOCUMENTACIÓN</span></a>
