@@ -12,8 +12,8 @@ $body-bg: #f5f5f500;
 @import "bootstrap";
 
 .ico{
-  height: 50px;
-  width: 50px;
+  height: 30px;
+  width: 30px;
 }
 .noBorder{
   border: none;
@@ -86,13 +86,30 @@ body {
 /* .App {
   background: black;
 } */
-
+.fade{
+  padding-right: 0px !important;
+  /* max-height: 700px; */
+}
+.modal-lg{
+  max-width: 100%;
+}
+.modal-dialog{
+  margin: 0px;
+}
 .modal-content {
+ 
   background: black;
-  
-/*   background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(115, 115, 115, 1) 0%, rgba(0, 0, 0, 1) 100%); */
-  border: 5px solid #9cef2b;
-  border-radius: 20px;
+  border-top: 3px solid #9cef2b;
+  border-bottom: 3px solid #9cef2b;
+ 
+    border-radius: 0px;
+}
+.modal-body{
+  padding: 0px;
+}
+
+.textSpanBody{
+  font-size: 18px;
 }
  
 .card {
@@ -114,10 +131,13 @@ body {
 .modal-footer {
   border-top: 0px solid #005250;
 }
-
+.centerBody{
+  align-items: center;
+}
 .carro {
   margin-top: 69px;
 }
+
 
 .italic {
   font-style: italic;
@@ -129,16 +149,16 @@ body {
 
 .mbtn {
 	background-image: linear-gradient(to right, #9cef2b 0%, #00b3ff 100%);
-	border-radius: 20px;
+	border-radius: 14px;
   box-sizing: border-box;
 	color: #ffffff;
 	display: block;
-	font: 1.225rem 'Oswald', Arial, sans-serif; /*18*/
+	font: 1.125rem 'Oswald', Arial, sans-serif; /*18*/
   font-weight: 600;
 	height: 70px;
 	letter-spacing: 1px;
 	margin: 0 auto;
-	padding: 4px;
+	padding: 3px;
 	position: relative;
   text-decoration: none;
 	text-transform: uppercase;
@@ -156,7 +176,7 @@ body {
 .mbtn span {
 	align-items: center;
 	background: #181818;
-	border-radius: 20px;
+	border-radius: 14px;
 	display: flex;
 	justify-content: center;
 	height: 100%;
@@ -308,3 +328,24 @@ body {
   padding-top: 153px;
   padding-bottom: 140px;
 }
+
+.flechasCarrusel{
+  justify-content: start;
+}
+.flechaDerecha{
+  width: 25%;
+}
+
+@media(max-width: 1800px){
+  .flechaDerecha{
+    width: 20%;
+  }
+}
+@media(max-width: 1600px){
+  .flechaDerecha{
+    width: 10%;
+  }
+}
+
+
+
