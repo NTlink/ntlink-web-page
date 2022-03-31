@@ -208,7 +208,7 @@ function App() {
               <a href="https://cfdi33.ntlink.com.mx/ntfacturacion/wfrLogin.aspx" className="mbtn"><span className="mb-0">ACCESO GRATUITO</span></a>
             </div>
             <div className="col p-2 d-flex justify-content-center align-items-center">
-              <footer className="blockquote-footer text-light ">Al darte de alta en nuestro portal, recibe 5 folios para generar facturas de manera gratuita.</footer>
+              <footer className=" text-light leyendaText ">Al darte de alta en nuestro portal, recibe 5 folios para generar facturas de manera gratuita.</footer>
             </div>
 
 
@@ -460,7 +460,7 @@ function App() {
         //#region precios
       }
       <section id="PRECIOS" className="py-5 bg-transparent  a-b-2 p-0" >
-        <div className="container preciosBack">
+        <div className="container preciosBack p-0">
           <div className="row text-center align-self-center justify-content-center pbt-6">
             <div className="col-md-3 ">
               <div className="col ml-2"> <h1 className="text-light " >PRECIOS</h1></div>
@@ -607,44 +607,44 @@ function App() {
                   </ul>
                 </div>
                 <div className="col-md-4 text-start">
-                <div className="row">
-                  <h5 className="text-light">CORREO ELECTRONICO</h5>
-                  <ul className="list-unstyled text-small">
-                    <li><span className="text-light" >ventas@ntlink.com.mx</span></li>
-                    <li><span className="text-light" >soporte_tecnico@ntlink.com.mx</span></li>
-                  </ul>
-                 </div>
-                 <div className="row">
-                 <h5 className="text-light">WHATSAPP</h5>
-                  <ul className="list-unstyled text-small">
-                    <li><span className="text-light" >5591078187</span></li>
-                    <li><span className="text-light" >5524058190</span></li>
-                  </ul>
-                   </div> 
-                </div>
-               
-                <div className="col-md-4 text-start">
-                <div className="row">
-                  <h5 className="text-light">DIRECCIÓN</h5>
-                  <ul className="list-unstyled text-small">
-                    <li><span className="text-light" >Calle Xicoténcatl 103BIS Del:, Del</span></li>
-                    <li><span className="text-light" >Carmen, Coyoacán, 04100 Ciudad de</span></li>
-                    <li><span className="text-light" >México, CDMX</span></li>
-                  </ul>
-                  </div> 
                   <div className="row">
-                  <h5 className="text-light">HORARIO</h5>
-                  <ul className="list-unstyled text-small">
-                    <li><span className="text-light" >LUNES A VIERNES 09:00 18:00</span></li>
-                    <li><span className="text-light" >SABADO 9 A 3 AM</span></li>
-                  </ul>
-                   </div> 
+                    <h5 className="text-light">CORREO ELECTRONICO</h5>
+                    <ul className="list-unstyled text-small">
+                      <li><span className="text-light" >ventas@ntlink.com.mx</span></li>
+                      <li><span className="text-light" >soporte_tecnico@ntlink.com.mx</span></li>
+                    </ul>
+                  </div>
+                  <div className="row">
+                    <h5 className="text-light">WHATSAPP</h5>
+                    <ul className="list-unstyled text-small">
+                      <li><span className="text-light" >5591078187</span></li>
+                      <li><span className="text-light" >5524058190</span></li>
+                    </ul>
+                  </div>
                 </div>
-                
+
+                <div className="col-md-4 text-start">
+                  <div className="row">
+                    <h5 className="text-light">DIRECCIÓN</h5>
+                    <ul className="list-unstyled text-small">
+                      <li><span className="text-light" >Calle Xicoténcatl 103BIS Del:, Del</span></li>
+                      <li><span className="text-light" >Carmen, Coyoacán, 04100 Ciudad de</span></li>
+                      <li><span className="text-light" >México, CDMX</span></li>
+                    </ul>
+                  </div>
+                  <div className="row">
+                    <h5 className="text-light">HORARIO</h5>
+                    <ul className="list-unstyled text-small">
+                      <li><span className="text-light" >LUNES A VIERNES 09:00 18:00</span></li>
+                      <li><span className="text-light" >SABADO 9 A 3 AM</span></li>
+                    </ul>
+                  </div>
+                </div>
+
               </div>
 
               <div className="row text-light d-sm-flex justify-content-sm-end m-3">
-              <div className="col col-sm-1">
+                <div className="col col-sm-1">
                   <a type="button" className="btn btn-outline-light noBorder" onClick={() => setModalShowContact(true)} >
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="ico" viewBox="0 0 16 16">
                       <path d="M9 8.5h2.793l.853.854A.5.5 0 0 0 13 9.5h1a.5.5 0 0 0 .5-.5V8a.5.5 0 0 0-.5-.5H9v1z" />
@@ -652,7 +652,7 @@ function App() {
                     </svg>
                   </a>
                 </div>
-              {/*   <div className="col col-sm-1 text-center">
+                {/*   <div className="col col-sm-1 text-center">
                   <h2>
                   |
                     </h2>
@@ -687,14 +687,15 @@ function App() {
                     </svg>
                   </a>
                 </div>
-               
+
 
               </div>
 
             </div>
           </div>
-          <div className="text-center py-4 text-light mt-4">Copyright © 2021 NTLINK COMUNICACIONES - Todos los derechos reservados | <a className='text-success' onClick={() => setModalShowPrivacidad(true)}>POLITICA DE PRIVACIDAD</a> | <a className='text-success' onClick={() => setModalShowTerminos(true)}> TERMINOS Y CONDICIONES</a> </div>
+          <div className="text-center py-4 text-light mt-4">Copyright © 2021 NTLINK COMUNICACIONES - Todos los derechos reservados | <a className='text-light' onClick={() => setModalShowPrivacidad(true)}>POLITICA DE PRIVACIDAD</a> | <a className='text-light' onClick={() => setModalShowTerminos(true)}> TERMINOS Y CONDICIONES</a> </div>
         </div>
+        <img className="rounded mx-auto d-block" src={require('./assets/img/All/pie_remate-circuitos.gif')} />
       </footer>
       {
         //#endregion
@@ -787,6 +788,7 @@ function MyVerticallyCenteredModal(props) {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
+      <div className="container">
         <div className="row justify-content-center text-center">
           <div className="col mb-4">
             <h3 className="text-success text-start">Paquetes y costos FOLIOS (Portal CFDI / Portal Nómina)</h3>
@@ -1213,9 +1215,10 @@ function MyVerticallyCenteredModal(props) {
           Adendas, gratuitas en la compra de tu primer paquete de facturación (solo aplica para adendas existentes)
           Adendas bajo demanda (por definir dependiendo el caso)
         </p>
+        </div>
       </Modal.Body>
       <Modal.Footer>
-        <div className="container bg-info" >
+        <div className="container bg-info m-0" >
           <div className="row text-center align-self-center justify-content-center pt-1">
             <h5 className="text-light">
               Datos para Depósito Bancario
@@ -1454,59 +1457,61 @@ function MyVerticallyCenteredModalMASADDENDAS(props) {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <div className="row m-3">
-          <h3 className="text-success">
-            NUESTRAS ADDENDAS:
-          </h3>
-        </div>
-        <div className="row m-3">
-
-          <ul className="list-unstyled text-small">
-            <li><span className="text-light" >• Addenda 1888</span></li>
-            <li><span className="text-light" >• Addenda ADO </span></li>
-            <li><span className="text-light" >• Addenda Vallen  </span></li>
-            <li><span className="text-light" >• Addenda Asonioscoc </span></li>
-            <li><span className="text-light" >• Addenda Asofarma </span></li>
-            <li><span className="text-light" >• Addenda Cinepolis </span></li>
-            <li><span className="text-light" >• Addenda Disney</span></li>
-            <li><span className="text-light" >• Addenda Nadro</span></li>
-            <li><span className="text-light" >• Addenda Neto</span></li>
-            <li><span className="text-light" >• Addenda SKY</span></li>
-            <li><span className="text-light" >• Addenda Calsonic</span></li>
-            <li><span className="text-light" >• Addenda IUSACELL</span></li>
-            <li><span className="text-light" >• Addenda BIC</span></li>
-            <li><span className="text-light" >• Addenda Jumex</span></li>
-            <li><span className="text-light" >• Addenda Mabe</span></li>
-            <li><span className="text-light" >• Addenda Pilgrims                </span></li>
-            <li><span className="text-light" >• Addenda Elektra   </span></li>
-            <li><span className="text-light" >• Addenda Pemex</span></li>
-            <li><span className="text-light" >• Addenda Vallen</span></li>
-            <li><span className="text-light" >• Addenda Super Farmacia  </span></li>
-            <li><span className="text-light" >• Addenda Mondelez</span></li>
-            <li><span className="text-light" >• Addenda Liverpool</span></li>
-            <li><span className="text-light" >• Addenda Jumex</span></li>
-            <li><span className="text-light" >• Addenda Honda</span></li>
-            <li><span className="text-light" >• Addenda Nissan</span></li>
-            <li><span className="text-light" >• Addenda Volskwagen </span></li>
-            <li><span className="text-light" >• Addenda  Chrysler (PUA, PPY) </span></li>
-            <li><span className="text-light" >• Addenda GM</span></li>
-            <li><span className="text-light" >• Addenda Soriana</span></li>
-            <li><span className="text-light" >• Addenda Tridonex</span></li>
-            <li><span className="text-light" >• Addenda Copel</span></li>
-            <li><span className="text-light" >• Addenda FEMSA</span></li>
-            <li><span className="text-light" >• Addenda sunchemical </span></li>
-          </ul>
-
-
-          <div className="row">
-            <h6 className="text-light">
-              ¡PROMOCIÓN!: en caso de que sea nuevo cliente, los complementos se activaran de manera gratuita, en la compra de 100 folios.
-              Ponte en contacto con nuestro equipo de ventas para mas información del desarrollo de cualquier complemento bajo demanda.
-
-            </h6>
+        <div className="container">
+          <div className="row m-3">
+            <h3 className="text-success">
+              NUESTRAS ADDENDAS:
+            </h3>
           </div>
+          <div className="row m-3">
+
+            <ul className="list-unstyled text-small">
+              <li><span className="text-light" >• Addenda 1888</span></li>
+              <li><span className="text-light" >• Addenda ADO </span></li>
+              <li><span className="text-light" >• Addenda Vallen  </span></li>
+              <li><span className="text-light" >• Addenda Asonioscoc </span></li>
+              <li><span className="text-light" >• Addenda Asofarma </span></li>
+              <li><span className="text-light" >• Addenda Cinepolis </span></li>
+              <li><span className="text-light" >• Addenda Disney</span></li>
+              <li><span className="text-light" >• Addenda Nadro</span></li>
+              <li><span className="text-light" >• Addenda Neto</span></li>
+              <li><span className="text-light" >• Addenda SKY</span></li>
+              <li><span className="text-light" >• Addenda Calsonic</span></li>
+              <li><span className="text-light" >• Addenda IUSACELL</span></li>
+              <li><span className="text-light" >• Addenda BIC</span></li>
+              <li><span className="text-light" >• Addenda Jumex</span></li>
+              <li><span className="text-light" >• Addenda Mabe</span></li>
+              <li><span className="text-light" >• Addenda Pilgrims                </span></li>
+              <li><span className="text-light" >• Addenda Elektra   </span></li>
+              <li><span className="text-light" >• Addenda Pemex</span></li>
+              <li><span className="text-light" >• Addenda Vallen</span></li>
+              <li><span className="text-light" >• Addenda Super Farmacia  </span></li>
+              <li><span className="text-light" >• Addenda Mondelez</span></li>
+              <li><span className="text-light" >• Addenda Liverpool</span></li>
+              <li><span className="text-light" >• Addenda Jumex</span></li>
+              <li><span className="text-light" >• Addenda Honda</span></li>
+              <li><span className="text-light" >• Addenda Nissan</span></li>
+              <li><span className="text-light" >• Addenda Volskwagen </span></li>
+              <li><span className="text-light" >• Addenda  Chrysler (PUA, PPY) </span></li>
+              <li><span className="text-light" >• Addenda GM</span></li>
+              <li><span className="text-light" >• Addenda Soriana</span></li>
+              <li><span className="text-light" >• Addenda Tridonex</span></li>
+              <li><span className="text-light" >• Addenda Copel</span></li>
+              <li><span className="text-light" >• Addenda FEMSA</span></li>
+              <li><span className="text-light" >• Addenda sunchemical </span></li>
+            </ul>
 
 
+            <div className="row">
+              <h6 className="text-light">
+                ¡PROMOCIÓN!: en caso de que sea nuevo cliente, los complementos se activaran de manera gratuita, en la compra de 100 folios.
+                Ponte en contacto con nuestro equipo de ventas para mas información del desarrollo de cualquier complemento bajo demanda.
+
+              </h6>
+            </div>
+
+
+          </div>
         </div>
 
       </Modal.Body>
@@ -1525,7 +1530,7 @@ function MyVerticallyCenteredModalPRIVACIDAD(props) {
       centered
     >
       <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
+        {/*   <Modal.Title id="contained-modal-title-vcenter">
           <div className="container">
             <div className="row">
               <div className="col-md-10">
@@ -1536,21 +1541,310 @@ function MyVerticallyCenteredModalPRIVACIDAD(props) {
               <div className="col-md-2 d-flex justify-content-end"><Button onClick={props.onHide}><h3 className="mb-0">Cerrar</h3> </Button></div>
             </div>
           </div>
-        </Modal.Title>
+        </Modal.Title> */}
+
+
+
+
       </Modal.Header>
       <Modal.Body>
+        <div className="container">
+          <div className="row">
+            <img src={require('./assets/img/All/pdp-head.png')} className="img-fluid" alt="..." />
+            <p className="font-weight-normal text-light">
+              El presente Política de Privacidad establece los términos en que usa y protege la información que es proporcionada por sus usuarios al
+              momento de utilizar su sitio web. Esta compañía está comprometida con la seguridad de los datos de sus usuarios. Cuando le pedimos
+              llenar los campos de información personal con la cual usted pueda ser identificado, lo hacemos asegurando que sólo se empleará de
+              acuerdo con los términos de este documento. Sin embargo, esta Política de Privacidad puede cambiar con el tiempo o ser actualizada por
+              lo que le recomendamos y enfatizamos revisar continuamente esta página para asegurarse que está de acuerdo con dichos cambios.
+            </p>
+            <p className="font-weight-normal text-light">
+              NTLINK COMUNICACIONES S.A. de C.V Información que es recogida Nuestro sitio web podrá recoger información personal, por
+              ejemplo: Nombre, información de contacto como su dirección de correo electrónica e información demográfica. Así mismo cuando sea
+              necesario podrá ser requerida información específica para procesar algún pedido o realizar una entrega o facturación.
+            </p>
+            <p className="font-weight-normal text-light">
+              Uso de la información recogida Los datos personales que recabamos de nuestro sitio web, los utilizaremos para las siguientes finalidades
+              que son necesarias para el servicio que solicita y con el fin de proporcionar el mejor servicio posible, particularmente para mantener un
+              registro de usuarios, de pedidos en caso que aplique, y mejorar nuestros productos y servicios.
+            </p>
+          </div>
+          <div className="row">
+            <div className="col-md-4">
+              <h6 className="text-success">
+                Registro y alta para procesamiento de CFDI
+              </h6>
+              <h6 className="text-success">
+                Cookies
+              </h6>
+              <h6 className="text-success">
+                Enlaces a terceros
+              </h6>
+              <h6 className="text-success">
+                Control de su información personal
+              </h6>
+              <h6 className="text-success">
+                ¿Qué datos personales utilizaremos para estos
+                fines?
+              </h6>
+              <h6 className="text-success">
+                ¿Con quién compartimos su información
+                personal y para qué fines?
+              </h6>
+              <h6 className="text-success">
+                ¿Cómo puede acceder, rectificar o cancelar sus
+                datos personales,
+                u oponerse a su uso?
+              </h6>
+              <h6 className=" text-light">
+                ¿Cómo puede limitar el uso o divulgación de su
+                información personal?
+              </h6>
+              <h6 className=" text-light">
+                ¿Cómo puede conocer los cambios en este
+                aviso de privacidad?
+              </h6>
+              <a className="mbtn-sm" onClick={props.onHide} ><span className="mb-0 mbtnSpanBlack">Cerrar</span></a>
+            </div>
+            <div className="col-md-8">
+              <h5 className="text-success">
+                REGISTRO Y ALTA PARA PROCESAMIENTO DE CFDI
+              </h5>
+              <p className="font-weight-normal text-light">
+                Consentimiento de Alta como proveedor de CFDI de manera adicional, utilizaremos su información personal para
+                las siguientes finalidades secundarias que no son necesarias para el servicio solicitado, pero que nos permiten y facilitan
+                brindarle una mejor atención:
+              </p>
+              <ul className="list-unstyled text-light">
+                <li>
+                  <ul>
+                    <li>
+                      Consentimiento para Movimientos a la cuenta de usuario para procesamiento de CFDI
+                    </li>
+                    <li>
+                      Consentimiento para soporte remoto en la emisión de CFDI
+                    </li>
+                    <li>
+                      Mercadotecnia o publicitaria
+                    </li>
+                    <li>
+                      Prospección comercial En caso de que no desee que sus datos personales se utilicen para estos fines secundarios, No consiento que mis datos
+                      personales se utilicen para los siguientes fines:
+                    </li>
+                    <li>
+                      Mercadotecnia o publicitaria
+                    </li>
+                    <li>
+                      Prospección comercial
+                      La negativa para el uso de sus datos personales para estas finalidades no podrá ser un motivo para que le neguemos los
+                      servicios y productos que solicita o contrata con nosotros.
+                    </li>
 
-        <div className="row m-3">
+                  </ul>
+                </li>
+              </ul>
+              <p className="font-weight-normal text-light">
+                NT LINK COMUNICACIONES S.A. de C.V, está altamente comprometido para cumplir con el compromiso de mantener su
+                información segura. Usamos los sistemas más avanzados y los actualizamos constantemente para asegurarnos que no
+                exista ningún acceso no autorizado. Última actualización: 01/07/2021
+              </p>
+              <h5 className="text-success">
+                COOKIES
+              </h5>
+              <p className="font-weight-normal text-light">
+                Una cookie se refiere a un fichero que es enviado con la finalidad de solicitar permiso para almacenarse en su ordenador, al
+                aceptar dicho fichero se crea y la cookie sirve entonces para tener información respecto al tráfico web, y también facilita las
+                futuras visitas a una web recurrente.
+                Otra función que tienen las cookies es que con ellas las web pueden reconocerte individualmente y por tanto brindarte el
+                mejor servicio personalizado de su web.
+                Nuestro sitio web emplea las cookies para poder identificar las páginas que son visitadas y su frecuencia.
+                Esta información es empleada únicamente para análisis estadístico y después la información se elimina de forma
+                permanente.
+                Usted puede eliminar las cookies en cualquier momento desde su ordenador.
+                Sin embargo, las cookies ayudan a proporcionar un mejor servicio de los sitios web, estás no dan acceso a información de
+                su ordenador ni de usted, a menos de que usted así lo quiera y la proporcione directamente noticias.
+                Usted puede aceptar o negar el uso de cookies, sin embargo, la mayoría de navegadores aceptan cookies
+                automáticamente pues sirve para tener un mejor servicio web.
+                También usted puede cambiar la configuración de su ordenador para declinar las cookies. Si se declinan es posible que no
+                pueda utilizar algunos de nuestros servicios.
+              </p>
+              <h5 className="text-success">
+                ENLACES A TERCEROS
+              </h5>
+              <p className="font-weight-normal text-light">
+                Este sitio web pudiera contener en laces a otros sitios que pudieran ser de su interés. Una vez que usted de clic en estos
+                enlaces y abandone nuestra página, ya no tenemos control sobre al sitio al que es redirigido y por lo tanto no somos
+                responsables de los términos o privacidad ni de la protección de sus datos en esos otros sitios terceros.
+                Dichos sitios están sujetos a sus propias políticas de privacidad por lo cual es recomendable que los consulte para
+                confirmar que usted está de acuerdo con estas.
+              </p>
+              <h5 className="text-success">
+                CONTROL DE SU INFORMACIÓN PERSONAL
+              </h5>
+              <p className="font-weight-normal text-light">
+                En cualquier momento usted puede restringir la recopilación o el uso de la información personal que es proporcionada a
+                nuestro sitio web. Cada vez que se le solicite rellenar un formulario, como el de alta de usuario, puede marcar o desmarcar
+                la opción de recibir información por correo electrónico.
+                En caso de que haya marcado la opción de recibir nuestro boletín o publicidad usted puede cancelarla en cualquier
+                momento.
+                Esta compañía no venderá, cederá ni distribuirá la información personal que es recopilada sin su consentimiento, salvo que
+                sea requerido por un juez con un orden judicial.
+                NT LINK COMUNICACIONES S.A. de C.V, Se reserva el derecho de cambiar los términos de la presente Política de
+                Privacidad en cualquier momento.
+              </p>
+              <h5 className="text-success">
+                ¿QUÉ DATOS PERSONALES UTILIZAREMOS PARA ESTOS FINES?
+              </h5>
+              <p className="font-weight-normal text-light">
+                Para llevar a cabo las finalidades descritas en el presente aviso de privacidad, utilizaremos los siguientes datos personales:
+                • Datos de identificación
+                • Datos de contacto
+              </p>
+              <h5 className="text-success">
+                ¿CON QUIÉN COMPARTIMOS SU INFORMACIÓN PERSONAL Y PARA QUÉ FINES?
+              </h5>
+              <p className="font-weight-normal text-light">
+                Última actualización: 01/07/2021
+                Le informamos que sus datos personales son compartidos dentro y fuera del país con las siguientes personas, empresas,
+                organizaciones o autoridades distintas a nosotros, para los siguientes fines:
+                • Destinatario de los datos personales Finalidad Requiere del consentimiento Sistema de Administración Tributaria SAT
+                • Proceso de CFDI.
+                Con relación a las transferencias que requieren de su consentimiento, si usted a continuación no manifiesta su negativa
+                para que éstas ocurran, entenderemos que nos lo ha otorgado.
+                No autorizo que se lleven a cabo las siguientes transferencias de mis datos personales: Destinatario de los datos
+                personales Finalidad Selecciona Sistema de Administración Tributaria SAT Proceso de CFDI. La negación de la
+                transferencia de datos, nos impediría la continuidad del servicio, en virtud de que es el fin para el cuál el servicio se presta.
+              </p>
+              <h5 className="text-success">
+                ¿CÓMO PUEDE ACCEDER, RECTIFICAR O CANCELAR SUS DATOS PERSONALES,
+                U OPONERSE A SU USO?
+              </h5>
+              <p className="font-weight-normal text-light">
+                Usted tiene derecho a conocer qué datos personales tenemos de usted, para qué los utilizamos y las condiciones del
+                uso que les damos (Acceso). Asimismo, es su derecho solicitar la corrección de su información personal en caso de que
+                esté desactualizada, sea inexacta o incompleta (Rectificación); que la eliminemos de nuestros registros o bases de datos
+                cuando considere que la misma no está siendo utilizada adecuadamente (Cancelación); así como oponerse al uso de sus
+                datos personales para fines específicos (Oposición).
+              </p>
+              <p className="font-weight-normal text-light">
+                Estos derechos se conocen como derechos ARCO.
+                Para el ejercicio de cualquiera de los derechos ARCO, usted deberá presentar la solicitud respectiva a través del siguiente
+                medio: correo electrónico: informes@ntlink.com.mx
+              </p>
+              <p className="font-weight-normal text-light">
+                Con relación al procedimiento y requisitos para el ejercicio de sus derechos ARCO, le informamos lo siguiente:
+              </p>
+              <ul className="list-unstyled text-light">
+                <li>
+                  <ul>
+                    <li>
+                      a) ¿A través de qué medios pueden acreditar su identidad el titular y, en su caso, su representante, así como la
+                      personalidad este último? correo electrónico: informes@ntlink.com.mx
+                    </li>
+                    <li>
+                      b) ¿Qué información y/o documentación deberá contener la solicitud? Identificación oficial, carta firmada por el titular
+                    </li>
+                    <li>
+                      c) ¿En cuántos días le daremos respuesta a su solicitud? 10 días hábiles
+                    </li>
+                    <li>
+                      d) ¿Por qué medio le comunicaremos la respuesta a su solicitud? correo electrónico enviado al solicitante
+                    </li>
+                    <li>
+                      e) ¿En qué medios se pueden reproducir los datos personales que, en su caso, solicite? correo electrónico, USB Los
+                      datos de contacto de la persona o departamento de datos personales, que está a cargo de dar trámite a las solicitudes
+                      de derechos ARCO, son los siguientes: Última actualización: 01/07/2021
+                    </li>
+                    <li>
+                      a) Nombre de la persona o departamento de datos personales: Atención a clientes
+                    </li>
+                    <li>
+                      b) Domicilio: calle Xicoténcatl 103-B, colonia del Carmen, Ciudad de México, alcaldía de Coyoacán, cp. 04100, en la
+                      Ciudad de México, México
+                    </li>
+                    <li>
+                      d) Número telefónico: (55)4780-0200
+                    </li>
 
-          <p className="font-weight-normal text-light">
-            El presente Política de Privacidad establece los términos en que usa y protege la información que es proporcionada por sus usuarios al momento de utilizar su sitio web. Esta compañía está comprometida con la seguridad de los datos de sus usuarios. Cuando le pedimos llenar los campos de información personal con la cual usted pueda ser identificado, lo hacemos asegurando que sólo se empleará de acuerdo con los términos de este documento. Sin embargo, esta Política de Privacidad puede cambiar con el tiempo o ser actualizada por lo que le recomendamos y enfatizamos revisar continuamente esta página para asegurarse que está de acuerdo con dichos cambios. NTLINK COMUNICACIONES S.A. de C.V Información que es recogida Nuestro sitio web podrá recoger información personal, por ejemplo: Nombre, información de contacto como su dirección de correo electrónica e información demográfica. Así mismo cuando sea necesario podrá ser requerida información específica para procesar algún pedido o realizar una entrega o facturación. Uso de la información recogida Los datos personales que recabamos de nuestro sitio web, los utilizaremos para las siguientes finalidades que son necesarias para el servicio que solicita y con el fin de proporcionar el mejor servicio posible, particularmente para mantener un registro de usuarios, de pedidos en caso que aplique, y mejorar nuestros productos y servicios Registro y Alta para procesamiento de CFDI Consentimiento de Alta como proveedor de CFDI De manera adicional, utilizaremos su información personal para las siguientes finalidades secundarias que no son necesarias para el servicio solicitado, pero que nos permiten y facilitan brindarle una mejor atención: Consentimiento para Movimientos a la cuenta de usuario para procesamiento de CFDI Consentimiento para soporte remoto en la emisión de CFDI Mercadotecnia o publicitaria Prospección comercial En caso de que no desee que sus datos personales se utilicen para estos fines secundarios, No consiento que mis datos personales se utilicen para los siguientes fines: [ ] Mercadotecnia o publicitaria [ ] Prospección comercial La negativa para el uso de sus datos personales para estas finalidades no podrá ser un motivo para que le neguemos los servicios y productos que solicita o contrata con nosotros. NT LINK COMUNICACIONES S.A. de C.V, está altamente comprometido para cumplir con el compromiso de mantener su información segura. Usamos los sistemas más avanzados y los actualizamos constantemente para asegurarnos que no exista ningún acceso no autorizado. Última actualización: 01/07/2021 Cookies Una cookie se refiere a un fichero que es enviado con la finalidad de solicitar permiso para almacenarse en su ordenador, al aceptar dicho fichero se crea y la cookie sirve entonces para tener información respecto al tráfico web, y también facilita las futuras visitas a una web recurrente. Otra función que tienen las cookies es que con ellas las web pueden reconocerte individualmente y por tanto brindarte el mejor servicio personalizado de su web. Nuestro sitio web emplea las cookies para poder identificar las páginas que son visitadas y su frecuencia. Esta información es empleada únicamente para análisis estadístico y después la información se elimina de forma permanente. Usted puede eliminar las cookies en cualquier momento desde su ordenador. Sin embargo, las cookies ayudan a proporcionar un mejor servicio de los sitios web, estás no dan acceso a información de su ordenador ni de usted, a menos de que usted así lo quiera y la proporcione directamente noticias. Usted puede aceptar o negar el uso de cookies, sin embargo, la mayoría de navegadores aceptan cookies automáticamente pues sirve para tener un mejor servicio web. También usted puede cambiar la configuración de su ordenador para declinar las cookies. Si se declinan es posible que no pueda utilizar algunos de nuestros servicios. Enlaces a Terceros Este sitio web pudiera contener en laces a otros sitios que pudieran ser de su interés. Una vez que usted de clic en estos enlaces y abandone nuestra página, ya no tenemos control sobre al sitio al que es redirigido y por lo tanto no somos responsables de los términos o privacidad ni de la protección de sus datos en esos otros sitios terceros. Dichos sitios están sujetos a sus propias políticas de privacidad por lo cual es recomendable que los consulte para confirmar que usted está de acuerdo con estas. Control de su información personal En cualquier momento usted puede restringir la recopilación o el uso de la información personal que es proporcionada a nuestro sitio web. Cada vez que se le solicite rellenar un formulario, como el de alta de usuario, puede marcar o desmarcar la opción de recibir información por correo electrónico. En caso de que haya marcado la opción de recibir nuestro boletín o publicidad usted puede cancelarla en cualquier momento. Esta compañía no venderá, cederá ni distribuirá la información personal que es recopilada sin su consentimiento, salvo que sea requerido por un juez con un orden judicial. NT LINK COMUNICACIONES S.A. de C.V, Se reserva el derecho de cambiar los términos de la presente Política de Privacidad en cualquier momento. ¿Qué datos personales utilizaremos para estos fines? Para llevar a cabo las finalidades descritas en el presente aviso de privacidad, utilizaremos los siguientes datos personales:  Datos de identificación  Datos de contacto ¿Con quién compartimos su información personal y para qué fines? Última actualización: 01/07/2021 Le informamos que sus datos personales son compartidos dentro y fuera del país con las siguientes personas, empresas, organizaciones o autoridades distintas a nosotros, para los siguientes fines:  Destinatario de los datos personales Finalidad Requiere del consentimiento Sistema de Administración Tributaria SAT Proceso de CFDI. Con relación a las transferencias que requieren de su consentimiento, si usted a continuación no manifiesta su negativa para que éstas ocurran, entenderemos que nos lo ha otorgado.  No autorizo que se lleven a cabo las siguientes transferencias de mis datos personales: Destinatario de los datos personales Finalidad Selecciona Sistema de Administración Tributaria SAT Proceso de CFDI  La negación de la transferencia de datos, nos impediría la continuidad del servicio, en virtud de que es el fin para el cuál el servicio se presta. ¿Cómo puede acceder, rectificar o cancelar sus datos personales, u oponerse a su uso? Usted tiene derecho a conocer qué datos personales tenemos de usted, para qué los utilizamos y las condiciones del uso que les damos (Acceso). Asimismo, es su derecho solicitar la corrección de su información personal en caso de que esté desactualizada, sea inexacta o incompleta (Rectificación); que la eliminemos de nuestros registros o bases de datos cuando considere que la misma no está siendo utilizada adecuadamente (Cancelación); así como oponerse al uso de sus datos personales para fines específicos (Oposición). Estos derechos se conocen como derechos ARCO. Para el ejercicio de cualquiera de los derechos ARCO, usted deberá presentar la solicitud respectiva a través del siguiente medio: correo electrónico: informes@ntlink.com.mx Con relación al procedimiento y requisitos para el ejercicio de sus derechos ARCO, le informamos lo siguiente: a) ¿A través de qué medios pueden acreditar su identidad el titular y, en su caso, su representante, así como la personalidad este último? correo electrónico: informes@ntlink.com.mx b) ¿Qué información y/o documentación deberá contener la solicitud? Identificación oficial, carta firmada por el titular c) ¿En cuántos días le daremos respuesta a su solicitud? 10 días hábiles d) ¿Por qué medio le comunicaremos la respuesta a su solicitud? correo electrónico enviado al solicitante e) ¿En qué medios se pueden reproducir los datos personales que, en su caso, solicite? correo electrónico, USB Los datos de contacto de la persona o departamento de datos personales, que está a cargo de dar trámite a las solicitudes de derechos ARCO, son los siguientes:   Última actualización: 01/07/2021 a) Nombre de la persona o departamento de datos personales: Atención a clientes b) Domicilio: calle Xicoténcatl 103-B, colonia del Carmen, Ciudad de México, alcaldía de Coyoacán, cp. 04100, en la Ciudad de México, México c) Correo electrónico: informes@ntlink.com.mx d) Número telefónico: (55)4780-0200 Usted puede revocar su consentimiento para el uso de sus datos personales Usted puede revocar el consentimiento que, en su caso, nos haya otorgado para el tratamiento de sus datos personales. Sin embargo, es importante que tenga en cuenta que no en todos los casos podremos atender su solicitud o concluir el uso de forma inmediata, ya que es posible que por alguna obligación legal requiramos seguir tratando sus datos personales. Asimismo, usted deberá considerar que para ciertos fines, la revocación de su consentimiento implicará que no le podamos seguir prestando el servicio que nos solicitó, o la conclusión de su relación con nosotros. Para revocar su consentimiento deberá presentar su solicitud a través del siguiente medio: correo electrónico: informes@ntlink.com.mx Con relación al procedimiento y requisitos para la revocación de su consentimiento, le informamos lo siguiente: a) ¿A través de qué medios pueden acreditar su identidad el titular y, en su caso, su representante, así como la personalidad este último? vía correo electrónica, físicamente b) ¿Qué información y/o documentación deberá contener la solicitud? Identificación oficial y carta solicitud firmada por el titular c) ¿En cuántos días le daremos respuesta a su solicitud? 10 días hábiles d) ¿Por qué medio le comunicaremos la respuesta a su solicitud? vía correo electrónico ¿Cómo puede limitar el uso o divulgación de su información personal? Con objeto de que usted pueda limitar el uso y divulgación de su información personal, le ofrecemos los siguientes medios: correo electrónico: informes@ntlink.com.mx ¿Cómo puede conocer los cambios en este aviso de privacidad? El presente aviso de privacidad puede sufrir modificaciones, cambios o actualizaciones derivadas de nuevos requerimientos legales; de nuestras propias necesidades por los productos o servicios que ofrecemos; de nuestras prácticas de privacidad; de cambios en nuestro modelo de negocio, o por otras causas. Nos comprometemos a mantenerlo informado sobre los cambios que pueda sufrir el presente aviso de privacidad, a través de: página web: www.ntlink.com.mx. El procedimiento a través del cual se llevarán a cabo las notificaciones sobre cambios o actualizaciones al presente aviso de privacidad es el siguiente: Se publicará en la página web de NT Link, dando a conocer la actualización del aviso de privacidad.
+                  </ul>
+                </li>
+              </ul>
 
-          </p>
+
+              <p className="font-weight-normal text-light">
+                Usted puede revocar su consentimiento para el uso de sus datos personales
+                Usted puede revocar el consentimiento que, en su caso, nos haya otorgado para el tratamiento de sus datos personales.
+                Sin embargo, es importante que tenga en cuenta que no en todos los casos podremos atender su solicitud o concluir el uso
+                de forma inmediata, ya que es posible que por alguna obligación legal requiramos seguir tratando sus datos personales.
+                Asimismo, usted deberá considerar que para ciertos fines, la revocación de su consentimiento implicará que no le podamos
+                seguir prestando el servicio que nos solicitó, o la conclusión de su relación con nosotros.
+              </p>
+              <p className="font-weight-normal text-light">
+                Para revocar su consentimiento deberá presentar su solicitud a través del siguiente medio: correo electrónico: informes@
+                ntlink.com.mx Con relación al procedimiento y requisitos para la revocación de su consentimiento, le informamos lo
+                siguiente:
+              </p>
+              <ul className="list-unstyled text-light">
+                <li>
+                  <ul>
+                    <li>
+                      a) ¿A través de qué medios pueden acreditar su identidad el titular y, en su caso, su representante, así como la
+                      personalidad este último? vía correo electrónica, físicamente
+                    </li>
+                    <li>
+                      b) ¿Qué información y/o documentación deberá contener la solicitud? Identificación oficial y carta solicitud firmada por el
+                      titular
+                    </li>
+                    <li>
+                      c) ¿En cuántos días le daremos respuesta a su solicitud? 10 días hábiles
+                    </li>
+                    <li>
+                      d) ¿Por qué medio le comunicaremos la respuesta a su solicitud? vía correo electrónico
+                    </li>
+
+                  </ul>
+                </li>
+              </ul>
+
+
+
+
+
+              <h5 className="text-light">
+                ¿Cómo puede limitar el uso o divulgación de su información personal?
+              </h5>
+              <p className="font-weight-normal text-light">
+                Con objeto de que usted pueda limitar el uso y divulgación de su información personal, le ofrecemos los siguientes medios:
+                correo electrónico: informes@ntlink.com.mx
+              </p>
+              <h5 className="text-light">
+                ¿Cómo puede conocer los cambios en este aviso de privacidad?
+              </h5>
+              <p className="font-weight-normal text-light">
+                El presente aviso de privacidad puede sufrir modificaciones, cambios o actualizaciones derivadas de nuevos requerimientos
+                legales; de nuestras propias necesidades por los productos o servicios que ofrecemos; de nuestras prácticas de privacidad;
+                de cambios en nuestro modelo de negocio, o por otras causas.
+              </p>
+              <p className="font-weight-normal text-light">
+                Nos comprometemos a mantenerlo informado sobre los cambios que pueda sufrir el presente aviso de privacidad, a través
+                de: página web: www.ntlink.com.mx.
+              </p>
+              <p className="font-weight-normal text-light">
+                El procedimiento a través del cual se llevarán a cabo las notificaciones sobre cambios o actualizaciones al presente aviso
+                de privacidad es el siguiente: Se publicará en la página web de NT Link, dando a conocer la actualización del aviso de
+                privacidad.
+              </p>
+              <div class="row justify-content-center">
+                <a className="mbtn-sm" onClick={props.onHide} ><span className="mb-0 mbtnSpanBlack">Cerrar</span></a>
+              </div>
+            </div>
+
+          </div>
+
         </div>
-
       </Modal.Body>
       <Modal.Footer>
-        <div className="col-md-2 d-flex justify-content-end"><Button onClick={props.onHide}><h3 className="mb-0">Cerrar</h3> </Button></div>
+        <div className="col-md-2 d-flex "></div>
       </Modal.Footer>
     </Modal >
   );
@@ -1578,14 +1872,14 @@ function MyVerticallyCenteredModalTERMINOS(props) {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
+        <div className="container">
+          <div className="row m-3">
+            <p className="font-weight-normal text-light">
 
-        <div className="row m-3">
-          <p className="font-weight-normal text-light">
-
-            El presente Política de Privacidad establece los términos en que usa y protege la información que es proporcionada por sus usuarios al momento de utilizar su sitio web. Esta compañía está comprometida con la seguridad de los datos de sus usuarios. Cuando le pedimos llenar los campos de información personal con la cual usted pueda ser identificado, lo hacemos asegurando que sólo se empleará de acuerdo con los términos de este documento. Sin embargo, esta Política de Privacidad puede cambiar con el tiempo o ser actualizada por lo que le recomendamos y enfatizamos revisar continuamente esta página para asegurarse que está de acuerdo con dichos cambios. NT LINK COMUNICACIONES S.A. de C.V Información que es recogida Nuestro sitio web podrá recoger información personal, por ejemplo: Nombre, información de contacto como su dirección de correo electrónica e información demográfica. Así mismo cuando sea necesario podrá ser requerida información específica para procesar algún pedido o realizar una entrega o facturación. Uso de la información recogida Los datos personales que recabamos de nuestro sitio web, los utilizaremos para las siguientes finalidades que son necesarias para el servicio que solicita y con el fin de proporcionar el mejor servicio posible, particularmente para mantener un registro de usuarios, de pedidos en caso que aplique, y mejorar nuestros productos y servicios Registro y Alta para procesamiento de CFDI Consentimiento de Alta como proveedor de CFDI De manera adicional, utilizaremos su información personal para las siguientes finalidades secundarias que no son necesarias para el servicio solicitado, pero que nos permiten y facilitan brindarle una mejor atención: Consentimiento para Movimientos a la cuenta de usuario para procesamiento de CFDI Consentimiento para soporte remoto en la emisión de CFDI Mercadotecnia o publicitaria Prospección comercial En caso de que no desee que sus datos personales se utilicen para estos fines secundarios, No consiento que mis datos personales se utilicen para los siguientes fines: [ ] Mercadotecnia o publicitaria [ ] Prospección comercial La negativa para el uso de sus datos personales para estas finalidades no podrá ser un motivo para que le neguemos los servicios y productos que solicita o contrata con nosotros. NT LINK COMUNICACIONES S.A. de C.V, está altamente comprometido para cumplir con el compromiso de mantener su información segura. Usamos los sistemas más avanzados y los actualizamos constantemente para asegurarnos que no exista ningún acceso no autorizado. Última actualización: 01/07/2021 Cookies Una cookie se refiere a un fichero que es enviado con la finalidad de solicitar permiso para almacenarse en su ordenador, al aceptar dicho fichero se crea y la cookie sirve entonces para tener información respecto al tráfico web, y también facilita las futuras visitas a una web recurrente. Otra función que tienen las cookies es que con ellas las web pueden reconocerte individualmente y por tanto brindarte el mejor servicio personalizado de su web. Nuestro sitio web emplea las cookies para poder identificar las páginas que son visitadas y su frecuencia. Esta información es empleada únicamente para análisis estadístico y después la información se elimina de forma permanente. Usted puede eliminar las cookies en cualquier momento desde su ordenador. Sin embargo, las cookies ayudan a proporcionar un mejor servicio de los sitios web, estás no dan acceso a información de su ordenador ni de usted, a menos de que usted así lo quiera y la proporcione directamente noticias. Usted puede aceptar o negar el uso de cookies, sin embargo, la mayoría de navegadores aceptan cookies automáticamente pues sirve para tener un mejor servicio web. También usted puede cambiar la configuración de su ordenador para declinar las cookies. Si se declinan es posible que no pueda utilizar algunos de nuestros servicios. Enlaces a Terceros Este sitio web pudiera contener en laces a otros sitios que pudieran ser de su interés. Una vez que usted de clic en estos enlaces y abandone nuestra página, ya no tenemos control sobre al sitio al que es redirigido y por lo tanto no somos responsables de los términos o privacidad ni de la protección de sus datos en esos otros sitios terceros. Dichos sitios están sujetos a sus propias políticas de privacidad por lo cual es recomendable que los consulte para confirmar que usted está de acuerdo con estas. Control de su información personal En cualquier momento usted puede restringir la recopilación o el uso de la información personal que es proporcionada a nuestro sitio web. Cada vez que se le solicite rellenar un formulario, como el de alta de usuario, puede marcar o desmarcar la opción de recibir información por correo electrónico. En caso de que haya marcado la opción de recibir nuestro boletín o publicidad usted puede cancelarla en cualquier momento. Esta compañía no venderá, cederá ni distribuirá la información personal que es recopilada sin su consentimiento, salvo que sea requerido por un juez con un orden judicial. NT LINK COMUNICACIONES S.A. de C.V, Se reserva el derecho de cambiar los términos de la presente Política de Privacidad en cualquier momento. ¿Qué datos personales utilizaremos para estos fines? Para llevar a cabo las finalidades descritas en el presente aviso de privacidad, utilizaremos los siguientes datos personales:  Datos de identificación  Datos de contacto ¿Con quién compartimos su información personal y para qué fines? Última actualización: 01/07/2021 Le informamos que sus datos personales son compartidos dentro y fuera del país con las siguientes personas, empresas, organizaciones o autoridades distintas a nosotros, para los siguientes fines:  Destinatario de los datos personales Finalidad Requiere del consentimiento Sistema de Administración Tributaria SAT Proceso de CFDI. Con relación a las transferencias que requieren de su consentimiento, si usted a continuación no manifiesta su negativa para que éstas ocurran, entenderemos que nos lo ha otorgado.  No autorizo que se lleven a cabo las siguientes transferencias de mis datos personales: Destinatario de los datos personales Finalidad Selecciona Sistema de Administración Tributaria SAT Proceso de CFDI  La negación de la transferencia de datos, nos impediría la continuidad del servicio, en virtud de que es el fin para el cuál el servicio se presta. ¿Cómo puede acceder, rectificar o cancelar sus datos personales, u oponerse a su uso? Usted tiene derecho a conocer qué datos personales tenemos de usted, para qué los utilizamos y las condiciones del uso que les damos (Acceso). Asimismo, es su derecho solicitar la corrección de su información personal en caso de que esté desactualizada, sea inexacta o incompleta (Rectificación); que la eliminemos de nuestros registros o bases de datos cuando considere que la misma no está siendo utilizada adecuadamente (Cancelación); así como oponerse al uso de sus datos personales para fines específicos (Oposición). Estos derechos se conocen como derechos ARCO. Para el ejercicio de cualquiera de los derechos ARCO, usted deberá presentar la solicitud respectiva a través del siguiente medio: correo electrónico: informes@ntlink.com.mx Con relación al procedimiento y requisitos para el ejercicio de sus derechos ARCO, le informamos lo siguiente: a) ¿A través de qué medios pueden acreditar su identidad el titular y, en su caso, su representante, así como la personalidad este último? correo electrónico: informes@ntlink.com.mx b) ¿Qué información y/o documentación deberá contener la solicitud? Identificación oficial, carta firmada por el titular c) ¿En cuántos días le daremos respuesta a su solicitud? 10 días hábiles d) ¿Por qué medio le comunicaremos la respuesta a su solicitud? correo electrónico enviado al solicitante e) ¿En qué medios se pueden reproducir los datos personales que, en su caso, solicite? correo electrónico, USB Los datos de contacto de la persona o departamento de datos personales, que está a cargo de dar trámite a las solicitudes de derechos ARCO, son los siguientes:   Última actualización: 01/07/2021 a) Nombre de la persona o departamento de datos personales: Atención a clientes b) Domicilio: calle Xicoténcatl 103-B, colonia del Carmen, Ciudad de México, alcaldía de Coyoacán, cp. 04100, en la Ciudad de México, México c) Correo electrónico: informes@ntlink.com.mx d) Número telefónico: (55)4780-0200 Usted puede revocar su consentimiento para el uso de sus datos personales Usted puede revocar el consentimiento que, en su caso, nos haya otorgado para el tratamiento de sus datos personales. Sin embargo, es importante que tenga en cuenta que no en todos los casos podremos atender su solicitud o concluir el uso de forma inmediata, ya que es posible que por alguna obligación legal requiramos seguir tratando sus datos personales. Asimismo, usted deberá considerar que para ciertos fines, la revocación de su consentimiento implicará que no le podamos seguir prestando el servicio que nos solicitó, o la conclusión de su relación con nosotros. Para revocar su consentimiento deberá presentar su solicitud a través del siguiente medio: correo electrónico: informes@ntlink.com.mx Con relación al procedimiento y requisitos para la revocación de su consentimiento, le informamos lo siguiente: a) ¿A través de qué medios pueden acreditar su identidad el titular y, en su caso, su representante, así como la personalidad este último? vía correo electrónica, físicamente b) ¿Qué información y/o documentación deberá contener la solicitud? Identificación oficial y carta solicitud firmada por el titular c) ¿En cuántos días le daremos respuesta a su solicitud? 10 días hábiles d) ¿Por qué medio le comunicaremos la respuesta a su solicitud? vía correo electrónico ¿Cómo puede limitar el uso o divulgación de su información personal? Con objeto de que usted pueda limitar el uso y divulgación de su información personal, le ofrecemos los siguientes medios: correo electrónico: informes@ntlink.com.mx ¿Cómo puede conocer los cambios en este aviso de privacidad? El presente aviso de privacidad puede sufrir modificaciones, cambios o actualizaciones derivadas de nuevos requerimientos legales; de nuestras propias necesidades por los productos o servicios que ofrecemos; de nuestras prácticas de privacidad; de cambios en nuestro modelo de negocio, o por otras causas. Nos comprometemos a mantenerlo informado sobre los cambios que pueda sufrir el presente aviso de privacidad, a través de: página web: www.ntlink.com.mx. El procedimiento a través del cual se llevarán a cabo las notificaciones sobre cambios o actualizaciones al presente aviso de privacidad es el siguiente: Se publicará en la página web de NT Link, dando a conocer la actualización del aviso de privacidad
-          </p>
+              El presente Política de Privacidad establece los términos en que usa y protege la información que es proporcionada por sus usuarios al momento de utilizar su sitio web. Esta compañía está comprometida con la seguridad de los datos de sus usuarios. Cuando le pedimos llenar los campos de información personal con la cual usted pueda ser identificado, lo hacemos asegurando que sólo se empleará de acuerdo con los términos de este documento. Sin embargo, esta Política de Privacidad puede cambiar con el tiempo o ser actualizada por lo que le recomendamos y enfatizamos revisar continuamente esta página para asegurarse que está de acuerdo con dichos cambios. NT LINK COMUNICACIONES S.A. de C.V Información que es recogida Nuestro sitio web podrá recoger información personal, por ejemplo: Nombre, información de contacto como su dirección de correo electrónica e información demográfica. Así mismo cuando sea necesario podrá ser requerida información específica para procesar algún pedido o realizar una entrega o facturación. Uso de la información recogida Los datos personales que recabamos de nuestro sitio web, los utilizaremos para las siguientes finalidades que son necesarias para el servicio que solicita y con el fin de proporcionar el mejor servicio posible, particularmente para mantener un registro de usuarios, de pedidos en caso que aplique, y mejorar nuestros productos y servicios Registro y Alta para procesamiento de CFDI Consentimiento de Alta como proveedor de CFDI De manera adicional, utilizaremos su información personal para las siguientes finalidades secundarias que no son necesarias para el servicio solicitado, pero que nos permiten y facilitan brindarle una mejor atención: Consentimiento para Movimientos a la cuenta de usuario para procesamiento de CFDI Consentimiento para soporte remoto en la emisión de CFDI Mercadotecnia o publicitaria Prospección comercial En caso de que no desee que sus datos personales se utilicen para estos fines secundarios, No consiento que mis datos personales se utilicen para los siguientes fines: [ ] Mercadotecnia o publicitaria [ ] Prospección comercial La negativa para el uso de sus datos personales para estas finalidades no podrá ser un motivo para que le neguemos los servicios y productos que solicita o contrata con nosotros. NT LINK COMUNICACIONES S.A. de C.V, está altamente comprometido para cumplir con el compromiso de mantener su información segura. Usamos los sistemas más avanzados y los actualizamos constantemente para asegurarnos que no exista ningún acceso no autorizado. Última actualización: 01/07/2021 Cookies Una cookie se refiere a un fichero que es enviado con la finalidad de solicitar permiso para almacenarse en su ordenador, al aceptar dicho fichero se crea y la cookie sirve entonces para tener información respecto al tráfico web, y también facilita las futuras visitas a una web recurrente. Otra función que tienen las cookies es que con ellas las web pueden reconocerte individualmente y por tanto brindarte el mejor servicio personalizado de su web. Nuestro sitio web emplea las cookies para poder identificar las páginas que son visitadas y su frecuencia. Esta información es empleada únicamente para análisis estadístico y después la información se elimina de forma permanente. Usted puede eliminar las cookies en cualquier momento desde su ordenador. Sin embargo, las cookies ayudan a proporcionar un mejor servicio de los sitios web, estás no dan acceso a información de su ordenador ni de usted, a menos de que usted así lo quiera y la proporcione directamente noticias. Usted puede aceptar o negar el uso de cookies, sin embargo, la mayoría de navegadores aceptan cookies automáticamente pues sirve para tener un mejor servicio web. También usted puede cambiar la configuración de su ordenador para declinar las cookies. Si se declinan es posible que no pueda utilizar algunos de nuestros servicios. Enlaces a Terceros Este sitio web pudiera contener en laces a otros sitios que pudieran ser de su interés. Una vez que usted de clic en estos enlaces y abandone nuestra página, ya no tenemos control sobre al sitio al que es redirigido y por lo tanto no somos responsables de los términos o privacidad ni de la protección de sus datos en esos otros sitios terceros. Dichos sitios están sujetos a sus propias políticas de privacidad por lo cual es recomendable que los consulte para confirmar que usted está de acuerdo con estas. Control de su información personal En cualquier momento usted puede restringir la recopilación o el uso de la información personal que es proporcionada a nuestro sitio web. Cada vez que se le solicite rellenar un formulario, como el de alta de usuario, puede marcar o desmarcar la opción de recibir información por correo electrónico. En caso de que haya marcado la opción de recibir nuestro boletín o publicidad usted puede cancelarla en cualquier momento. Esta compañía no venderá, cederá ni distribuirá la información personal que es recopilada sin su consentimiento, salvo que sea requerido por un juez con un orden judicial. NT LINK COMUNICACIONES S.A. de C.V, Se reserva el derecho de cambiar los términos de la presente Política de Privacidad en cualquier momento. ¿Qué datos personales utilizaremos para estos fines? Para llevar a cabo las finalidades descritas en el presente aviso de privacidad, utilizaremos los siguientes datos personales:  Datos de identificación  Datos de contacto ¿Con quién compartimos su información personal y para qué fines? Última actualización: 01/07/2021 Le informamos que sus datos personales son compartidos dentro y fuera del país con las siguientes personas, empresas, organizaciones o autoridades distintas a nosotros, para los siguientes fines:  Destinatario de los datos personales Finalidad Requiere del consentimiento Sistema de Administración Tributaria SAT Proceso de CFDI. Con relación a las transferencias que requieren de su consentimiento, si usted a continuación no manifiesta su negativa para que éstas ocurran, entenderemos que nos lo ha otorgado.  No autorizo que se lleven a cabo las siguientes transferencias de mis datos personales: Destinatario de los datos personales Finalidad Selecciona Sistema de Administración Tributaria SAT Proceso de CFDI  La negación de la transferencia de datos, nos impediría la continuidad del servicio, en virtud de que es el fin para el cuál el servicio se presta. ¿Cómo puede acceder, rectificar o cancelar sus datos personales, u oponerse a su uso? Usted tiene derecho a conocer qué datos personales tenemos de usted, para qué los utilizamos y las condiciones del uso que les damos (Acceso). Asimismo, es su derecho solicitar la corrección de su información personal en caso de que esté desactualizada, sea inexacta o incompleta (Rectificación); que la eliminemos de nuestros registros o bases de datos cuando considere que la misma no está siendo utilizada adecuadamente (Cancelación); así como oponerse al uso de sus datos personales para fines específicos (Oposición). Estos derechos se conocen como derechos ARCO. Para el ejercicio de cualquiera de los derechos ARCO, usted deberá presentar la solicitud respectiva a través del siguiente medio: correo electrónico: informes@ntlink.com.mx Con relación al procedimiento y requisitos para el ejercicio de sus derechos ARCO, le informamos lo siguiente: a) ¿A través de qué medios pueden acreditar su identidad el titular y, en su caso, su representante, así como la personalidad este último? correo electrónico: informes@ntlink.com.mx b) ¿Qué información y/o documentación deberá contener la solicitud? Identificación oficial, carta firmada por el titular c) ¿En cuántos días le daremos respuesta a su solicitud? 10 días hábiles d) ¿Por qué medio le comunicaremos la respuesta a su solicitud? correo electrónico enviado al solicitante e) ¿En qué medios se pueden reproducir los datos personales que, en su caso, solicite? correo electrónico, USB Los datos de contacto de la persona o departamento de datos personales, que está a cargo de dar trámite a las solicitudes de derechos ARCO, son los siguientes:   Última actualización: 01/07/2021 a) Nombre de la persona o departamento de datos personales: Atención a clientes b) Domicilio: calle Xicoténcatl 103-B, colonia del Carmen, Ciudad de México, alcaldía de Coyoacán, cp. 04100, en la Ciudad de México, México c) Correo electrónico: informes@ntlink.com.mx d) Número telefónico: (55)4780-0200 Usted puede revocar su consentimiento para el uso de sus datos personales Usted puede revocar el consentimiento que, en su caso, nos haya otorgado para el tratamiento de sus datos personales. Sin embargo, es importante que tenga en cuenta que no en todos los casos podremos atender su solicitud o concluir el uso de forma inmediata, ya que es posible que por alguna obligación legal requiramos seguir tratando sus datos personales. Asimismo, usted deberá considerar que para ciertos fines, la revocación de su consentimiento implicará que no le podamos seguir prestando el servicio que nos solicitó, o la conclusión de su relación con nosotros. Para revocar su consentimiento deberá presentar su solicitud a través del siguiente medio: correo electrónico: informes@ntlink.com.mx Con relación al procedimiento y requisitos para la revocación de su consentimiento, le informamos lo siguiente: a) ¿A través de qué medios pueden acreditar su identidad el titular y, en su caso, su representante, así como la personalidad este último? vía correo electrónica, físicamente b) ¿Qué información y/o documentación deberá contener la solicitud? Identificación oficial y carta solicitud firmada por el titular c) ¿En cuántos días le daremos respuesta a su solicitud? 10 días hábiles d) ¿Por qué medio le comunicaremos la respuesta a su solicitud? vía correo electrónico ¿Cómo puede limitar el uso o divulgación de su información personal? Con objeto de que usted pueda limitar el uso y divulgación de su información personal, le ofrecemos los siguientes medios: correo electrónico: informes@ntlink.com.mx ¿Cómo puede conocer los cambios en este aviso de privacidad? El presente aviso de privacidad puede sufrir modificaciones, cambios o actualizaciones derivadas de nuevos requerimientos legales; de nuestras propias necesidades por los productos o servicios que ofrecemos; de nuestras prácticas de privacidad; de cambios en nuestro modelo de negocio, o por otras causas. Nos comprometemos a mantenerlo informado sobre los cambios que pueda sufrir el presente aviso de privacidad, a través de: página web: www.ntlink.com.mx. El procedimiento a través del cual se llevarán a cabo las notificaciones sobre cambios o actualizaciones al presente aviso de privacidad es el siguiente: Se publicará en la página web de NT Link, dando a conocer la actualización del aviso de privacidad
+            </p>
+          </div>
         </div>
-
       </Modal.Body>
       <Modal.Footer>
         <div className="col-md-2 d-flex justify-content-end"><Button onClick={props.onHide}><h3 className="mb-0">Cerrar</h3> </Button></div>
@@ -1727,24 +2021,25 @@ function MyVerticallyCenteredModalDISTRIBUIDORES(props) {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
+        <div className="container">
+          <div className="row m-3 ">
+            <section className="author-area">
+              <div className="container">
+                <div className="row justify-content-center">
+                  <div className="col-12 col-md-8 col-lg-7">
+                    <div className="row">
+                    </div>
 
-        <div className="row m-3 ">
-          <section className="author-area">
-            <div className="container">
-              <div className="row justify-content-center">
-                <div className="col-12 col-md-8 col-lg-7">
-                  <div className="row">
+                    <h6 className="text-light">
+                      Como distribuidor, podrás obtener ganancias mediante la reventa de nuestros productos, ya que tenemos atractivos planes para que puedas obtener ganancias y crecer junto a nosotros. Contacta al equipo de ventas para más información.
+                      Para los desarrolladores, tenemos planes interesantes para apoyarte con tu nueva aplicación, te podemos apoyar con un numero de timbres adecuados a tu proyecto en un esquema pospago, ponte en contacto para mas información.
+                    </h6>
                   </div>
 
-                  <h6 className="text-light">
-                    Como distribuidor, podrás obtener ganancias mediante la reventa de nuestros productos, ya que tenemos atractivos planes para que puedas obtener ganancias y crecer junto a nosotros. Contacta al equipo de ventas para más información.
-                    Para los desarrolladores, tenemos planes interesantes para apoyarte con tu nueva aplicación, te podemos apoyar con un numero de timbres adecuados a tu proyecto en un esquema pospago, ponte en contacto para mas información.
-                  </h6>
                 </div>
-
               </div>
-            </div>
-          </section>
+            </section>
+          </div>
         </div>
 
       </Modal.Body>
@@ -1764,50 +2059,51 @@ function MyVerticallyCenteredModalPLANESDETIMBRADO(props) {
     >
 
       <Modal.Body>
-
-        <div className="row ">
-          <section className="author-area">
-            <div className="container">
-              <div className="row justify-content-center centerBody">
-                <div className="col-md-7 ">
-                  <div className="row mb-2 mt-2">
-                    <h2 className="text-success text-start">
-                      PLANES DE TIMBRADO POSTPAGO
-                    </h2>
-                  </div>
-                  <div className="row mt-3 ">
-                    <div className="col-md-2 d-flex justify-content-center align-items-center">
-                      <img src={require('./assets/img/All/main-icono-convertidor.png')} className="d-block img-fluid" alt="..." />
+        <div className="container">
+          <div className="row ">
+            <section className="author-area">
+              <div className="container">
+                <div className="row justify-content-center centerBody">
+                  <div className="col-md-7 ">
+                    <div className="row mb-2 mt-2">
+                      <h2 className="text-success text-start">
+                        PLANES DE TIMBRADO POSTPAGO
+                      </h2>
                     </div>
-                    <div className="col-md-10">
-                      <div className="row">
-                        <h4 className='text-light'>
-                          Si eres una Pyme, te apoyamos con nuestros planes post pago, dándote un crédito para que uses nuestros productos ahora y los pagues después.
-                        </h4>
+                    <div className="row mt-3 ">
+                      <div className="col-md-2 d-flex justify-content-center align-items-center">
+                        <img src={require('./assets/img/All/main-icono-convertidor.png')} className="d-block img-fluid" alt="..." />
                       </div>
-                      <div className="row ">
-                        <span className='text-light textSpanBody'>
-                          Dependiendo de tu volumetría de uso, podremos darte mejores precios que los de lista, además de darte un mejor acompañamiento en el día a día.
-                          Ponte en contacto con un asesor de ventas y conoce mas de nuestros planes pospago.
-                        </span>
-                      </div>
-                      <div className="row ">
-                        <div className="col-md-6 d-flex justify-content-center align-items-center">
-                          <a className="mbtn" ><span className="mb-0">MÁSINFORMACIÓN</span></a>
+                      <div className="col-md-10">
+                        <div className="row">
+                          <h4 className='text-light'>
+                            Si eres una Pyme, te apoyamos con nuestros planes post pago, dándote un crédito para que uses nuestros productos ahora y los pagues después.
+                          </h4>
                         </div>
-                        <div className="col-md-6 d-flex justify-content-center align-items-center">
-                          <a className="mbtn" onClick={props.onHide} ><span className="mb-0">Cerrar</span></a>
+                        <div className="row ">
+                          <span className='text-light textSpanBody'>
+                            Dependiendo de tu volumetría de uso, podremos darte mejores precios que los de lista, además de darte un mejor acompañamiento en el día a día.
+                            Ponte en contacto con un asesor de ventas y conoce mas de nuestros planes pospago.
+                          </span>
+                        </div>
+                        <div className="row ">
+                          <div className="col-md-6 d-flex justify-content-center align-items-center">
+                            <a className="mbtn" ><span className="mb-0">MÁSINFORMACIÓN</span></a>
+                          </div>
+                          <div className="col-md-6 d-flex justify-content-center align-items-center">
+                            <a className="mbtn" onClick={props.onHide} ><span className="mb-0">Cerrar</span></a>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className="col-md-5">
-                  <img src={require('./assets/img/All/PTPP_personaje.gif')} className="d-block img-fluid" alt="..." />
+                  <div className="col-md-5">
+                    <img src={require('./assets/img/All/PTPP_personaje.gif')} className="d-block img-fluid" alt="..." />
+                  </div>
                 </div>
               </div>
-            </div>
-          </section>
+            </section>
+          </div>
         </div>
 
       </Modal.Body >
