@@ -68,7 +68,7 @@ body {
 
 .gradeintBlack {
   background: rgb(0, 0, 0);
-  background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(115, 115, 115, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, #2e2e2e 0%, rgba(0, 0, 0, 1) 60%);
 }
 
 .border-gradient {
@@ -167,6 +167,7 @@ body {
 	z-index: 2;
   text-align: center;
   margin: 10px;
+ 
 }
 
 .mbtn:hover {
@@ -182,6 +183,14 @@ body {
 	height: 100%;
 	transition: background .5s ease;
 	width: 100%;
+}
+.mbtnSpanBlack {
+  background: #000000 !important;
+}
+.mbtn-sm{
+  @extend .mbtn;
+  height: 46px;
+  max-width: 141px;
 }
 
 .weight{
@@ -347,5 +356,7 @@ body {
   }
 }
 
-
+.leyendaText{
+  font-size: 11px;
+}
 
