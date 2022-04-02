@@ -1241,18 +1241,19 @@ function MyVerticallyCenteredModal(props) {
                 Clabe Interbancaria: 021180040471504049
               </h4>
             </div>
+            
           </div>
-
+         
 
         </div>
       </Modal.Body>
-     {/*  <Modal.Footer>
-        <div className="container bg-info m-0" >
+      <Modal.Footer>
+        <div className="container  m-0" >
           <div className="row text-center align-self-center justify-content-center pt-1">
-
+          <a className="mbtn-sm" onClick={props.onHide} ><span className="mb-0 mbtnSpanBlack">Cerrar</span></a>
           </div>
         </div>
-      </Modal.Footer> */}
+      </Modal.Footer>
     </Modal >
   );
 }
