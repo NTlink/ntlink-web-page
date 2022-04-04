@@ -767,8 +767,9 @@ function MyVerticallyCenteredModal(props) {
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       centered
+      clas
     >
-      <Modal.Header closeButton>
+      {/*  <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
           <div className="container">
             <div className="row">
@@ -786,449 +787,470 @@ function MyVerticallyCenteredModal(props) {
 
 
         </Modal.Title>
-      </Modal.Header>
-      <Modal.Body>
-      <div className="container">
-        <div className="row justify-content-center text-center">
-          <div className="col mb-4">
-            <h3 className="text-success text-start">Paquetes y costos FOLIOS (Portal CFDI / Portal Nómina)</h3>
+      </Modal.Header> */}
+      <Modal.Body className='preciosBackPop'>
+        <div className="container ">
+          <div className="row justify-content-center text-center">
+            <img src={require('./assets/img/All/preciosimg.png')} className="img-fluid" alt="..." />
+            <div className="col mb-4 mt-5">
+              <h3 className="text-success text-start">Paquetes y costos FOLIOS (Portal CFDI / Portal Nómina)</h3>
+            </div>
           </div>
-        </div>
-        <div className="row d-flex align-items-center">
-          <div className="col d-flex justify-content-center">
-            <a href="#">
+          <div className="row d-flex align-items-center ">
+            <div className="col-md-2 d-flex justify-content-center p-2">
+
               <img className="d-block img-fluid" src={require('./assets/img/All/main-icono-nomina.png')} />
-            </a>
-          </div>
-          <div className="col d-flex justify-content-center">
-            <a href="#">
+
+            </div>
+            <div className="col-md-2 d-flex justify-content-center p-2">
+
               <img className="d-block img-fluid" src={require('./assets/img/All/main-icono-CFDI.png')} />
-            </a>
-          </div>
-          <div className="col">
-            <div className="row mb-4">
-
-              <div className="card border-0 text-center">
-                <div className="card-header bg-info text-light">
-                  <h4 className="my-0 font-weight-normal">PAQUETE</h4>
-                </div>
-                <div className="card-body p-0 bg-white text-light">
-                  <h1 className="card-title text-info pricing-card-title">{props.preciosfolios[0].folio}</h1>
-                  <ul className="list-unstyled  text-info mt-0 mb-0">
-                    <li>FOLIOS</li>
-                  </ul>
-                </div>
-                <div className="card-footer bg-secondary text-light">
-                  <h4 className=" mt-0 mb-0 my-0 font-weight-normal">${props.preciosfolios[0].precio}.00</h4>
-                </div>
-              </div>
 
             </div>
-            <div className="row mb-4">
-              <div className="card border-0 text-center">
-                <div className="card-header bg-info text-light">
-                  <h4 className="my-0 font-weight-normal">
-                    PAQUETE
-                  </h4>
+            <div className="col-md-2 ">
+              <div className="row mb-4 justify-content-center">
+
+                <div className="card border-0 text-center">
+                  <div className="card-header bg-info text-light">
+                    <h5 className="my-0 font-weight-normal">PAQUETE</h5>
+                  </div>
+                  <div className="card-body p-0 bg-white text-light">
+                    <h2 className="card-title text-info pricing-card-title">{props.preciosfolios[0].folio}</h2>
+                    <ul className="list-unstyled  text-info mt-0 mb-0">
+                      <li>FOLIOS</li>
+                    </ul>
+                  </div>
+                  <div className="card-footer bg-secondary text-light">
+                    <h6 className=" mt-0 mb-0 my-0 font-weight-normal">${props.preciosfolios[0].precio}.00</h6>
+                  </div>
                 </div>
-                <div className="card-body p-0 bg-white text-light">
-                  <h1 className="card-title text-info pricing-card-title">
-                    {props.preciosfolios[1].folio}
-                  </h1>
-                  <ul className="list-unstyled  text-info mt-0 mb-0">
-                    <li>
-                      FOLIOS
-                    </li>
-                  </ul>
+
+              </div>
+              <div className="row mb-4 justify-content-center">
+                <div className="card border-0 text-center">
+                  <div className="card-header bg-info text-light">
+                    <h5 className="my-0 font-weight-normal">
+                      PAQUETE
+                    </h5>
+                  </div>
+                  <div className="card-body p-0 bg-white text-light">
+                    <h2 className="card-title text-info pricing-card-title">
+                      {props.preciosfolios[1].folio}
+                    </h2>
+                    <ul className="list-unstyled  text-info mt-0 mb-0">
+                      <li>
+                        FOLIOS
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="card-footer bg-secondary text-light">
+                    <h6 className=" mt-0 mb-0 my-0 font-weight-normal">
+                      ${props.preciosfolios[1].precio}.00
+                    </h6>
+                  </div>
                 </div>
-                <div className="card-footer bg-secondary text-light">
-                  <h4 className=" mt-0 mb-0 my-0 font-weight-normal">
-                    ${props.preciosfolios[1].precio}.00
-                  </h4>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="row mb-4 justify-content-center">
+                <div className="card border-0 text-center">
+                  <div className="card-header bg-info text-light">
+                    <h5 className="my-0 font-weight-normal">
+                      PAQUETE
+                    </h5>
+                  </div>
+                  <div className="card-body p-0 bg-white text-light">
+                    <h2 className="card-title text-info pricing-card-title">
+                      {props.preciosfolios[2].folio}
+                    </h2>
+                    <ul className="list-unstyled  text-info mt-0 mb-0">
+                      <li>
+                        FOLIOS
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="card-footer bg-secondary text-light">
+                    <h6 className=" mt-0 mb-0 my-0 font-weight-normal">
+                      ${props.preciosfolios[2].precio}.00
+                    </h6>
+                  </div>
+                </div>
+              </div>
+              <div className="row mb-4 justify-content-center">
+                <div className="card border-0 text-center">
+                  <div className="card-header bg-info text-light">
+                    <h5 className="my-0 font-weight-normal">
+                      PAQUETE
+                    </h5>
+                  </div>
+                  <div className="card-body p-0 bg-white text-light">
+                    <h2 className="card-title text-info pricing-card-title">
+                      {props.preciosfolios[3].folio}
+                    </h2>
+                    <ul className="list-unstyled  text-info mt-0 mb-0">
+                      <li>
+                        FOLIOS
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="card-footer bg-secondary text-light">
+                    <h6 className=" mt-0 mb-0 my-0 font-weight-normal">
+                      ${props.preciosfolios[3].precio}.00
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="row mb-4 justify-content-center">
+                <div className="card border-0 text-center">
+                  <div className="card-header bg-info text-light">
+                    <h5 className="my-0 font-weight-normal">
+                      PAQUETE
+                    </h5>
+                  </div>
+                  <div className="card-body p-0 bg-white text-light">
+                    <h2 className="card-title text-info pricing-card-title">
+                      {props.preciosfolios[4].folio}
+                    </h2>
+                    <ul className="list-unstyled  text-info mt-0 mb-0">
+                      <li>
+                        FOLIOS
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="card-footer bg-secondary text-light">
+                    <h6 className=" mt-0 mb-0 my-0 font-weight-normal">
+                      ${props.preciosfolios[4].precio}.00
+                    </h6>
+                  </div>
+                </div>
+              </div>
+              <div className="row mb-4 justify-content-center">
+                <div className="card border-0 text-center">
+                  <div className="card-header bg-info text-light">
+                    <h5 className="my-0 font-weight-normal">
+                      PAQUETE
+                    </h5>
+                  </div>
+                  <div className="card-body p-0 bg-white text-light">
+                    <h2 className="card-title text-info pricing-card-title">
+                      {props.preciosfolios[5].folio}
+                    </h2>
+                    <ul className="list-unstyled  text-info mt-0 mb-0">
+                      <li>
+                        FOLIOS
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="card-footer bg-secondary text-light">
+                    <h6 className=" mt-0 mb-0 my-0 font-weight-normal">
+                      ${props.preciosfolios[5].precio}.00
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="row mb-4 justify-content-center">
+                <div className="card border-0 text-center">
+                  <div className="card-header bg-info text-light">
+                    <h5 className="my-0 font-weight-normal">
+                      PAQUETE
+                    </h5>
+                  </div>
+                  <div className="card-body p-0 bg-white text-light">
+                    <h2 className="card-title text-info pricing-card-title">
+                      {props.preciosfolios[6].folio}
+                    </h2>
+                    <ul className="list-unstyled  text-info mt-0 mb-0">
+                      <li>
+                        FOLIOS
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="card-footer bg-secondary text-light">
+                    <h6 className=" mt-0 mb-0 my-0 font-weight-normal">
+                      ${props.preciosfolios[6].precio}.00
+                    </h6>
+                  </div>
+                </div>
+              </div>
+              <div className="row mb-4 justify-content-center">
+                <div className="card border-0 text-center">
+                  <div className="card-header bg-info text-light">
+                    <h5 className="my-0 font-weight-normal">
+                      PAQUETE
+                    </h5>
+                  </div>
+                  <div className="card-body p-0 bg-white text-light">
+                    <h2 className="card-title text-info pricing-card-title">
+                      {props.preciosfolios[7].folio}
+                    </h2>
+                    <ul className="list-unstyled  text-info mt-0 mb-0">
+                      <li>
+                        FOLIOS
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="card-footer bg-secondary text-light">
+                    <h6 className=" mt-0 mb-0 my-0 font-weight-normal">
+                      ${props.preciosfolios[7].precio}.00
+                    </h6>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="col">
-            <div className="row mb-4">
-              <div className="card border-0 text-center">
-                <div className="card-header bg-info text-light">
-                  <h4 className="my-0 font-weight-normal">
-                    PAQUETE
-                  </h4>
-                </div>
-                <div className="card-body p-0 bg-white text-light">
-                  <h1 className="card-title text-info pricing-card-title">
-                    {props.preciosfolios[2].folio}
-                  </h1>
-                  <ul className="list-unstyled  text-info mt-0 mb-0">
-                    <li>
-                      FOLIOS
-                    </li>
-                  </ul>
-                </div>
-                <div className="card-footer bg-secondary text-light">
-                  <h4 className=" mt-0 mb-0 my-0 font-weight-normal">
-                    ${props.preciosfolios[2].precio}.00
-                  </h4>
-                </div>
-              </div>
-            </div>
-            <div className="row mb-4">
-              <div className="card border-0 text-center">
-                <div className="card-header bg-info text-light">
-                  <h4 className="my-0 font-weight-normal">
-                    PAQUETE
-                  </h4>
-                </div>
-                <div className="card-body p-0 bg-white text-light">
-                  <h1 className="card-title text-info pricing-card-title">
-                    {props.preciosfolios[3].folio}
-                  </h1>
-                  <ul className="list-unstyled  text-info mt-0 mb-0">
-                    <li>
-                      FOLIOS
-                    </li>
-                  </ul>
-                </div>
-                <div className="card-footer bg-secondary text-light">
-                  <h4 className=" mt-0 mb-0 my-0 font-weight-normal">
-                    ${props.preciosfolios[3].precio}.00
-                  </h4>
-                </div>
-              </div>
+          <div className="row justify-content-center text-center">
+            <div className="col mb-4">
+              <h3 className="text-success text-start">Paquetes y costos TIMBRES (WebService / Convertidor)</h3>
             </div>
           </div>
-          <div className="col">
-            <div className="row mb-4">
-              <div className="card border-0 text-center">
-                <div className="card-header bg-info text-light">
-                  <h4 className="my-0 font-weight-normal">
-                    PAQUETE
-                  </h4>
-                </div>
-                <div className="card-body p-0 bg-white text-light">
-                  <h1 className="card-title text-info pricing-card-title">
-                    {props.preciosfolios[4].folio}
-                  </h1>
-                  <ul className="list-unstyled  text-info mt-0 mb-0">
-                    <li>
-                      FOLIOS
-                    </li>
-                  </ul>
-                </div>
-                <div className="card-footer bg-secondary text-light">
-                  <h4 className=" mt-0 mb-0 my-0 font-weight-normal">
-                    ${props.preciosfolios[4].precio}.00
-                  </h4>
-                </div>
-              </div>
-            </div>
-            <div className="row mb-4">
-              <div className="card border-0 text-center">
-                <div className="card-header bg-info text-light">
-                  <h4 className="my-0 font-weight-normal">
-                    PAQUETE
-                  </h4>
-                </div>
-                <div className="card-body p-0 bg-white text-light">
-                  <h1 className="card-title text-info pricing-card-title">
-                    {props.preciosfolios[5].folio}
-                  </h1>
-                  <ul className="list-unstyled  text-info mt-0 mb-0">
-                    <li>
-                      FOLIOS
-                    </li>
-                  </ul>
-                </div>
-                <div className="card-footer bg-secondary text-light">
-                  <h4 className=" mt-0 mb-0 my-0 font-weight-normal">
-                    ${props.preciosfolios[5].precio}.00
-                  </h4>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col">
-            <div className="row mb-4">
-              <div className="card border-0 text-center">
-                <div className="card-header bg-info text-light">
-                  <h4 className="my-0 font-weight-normal">
-                    PAQUETE
-                  </h4>
-                </div>
-                <div className="card-body p-0 bg-white text-light">
-                  <h1 className="card-title text-info pricing-card-title">
-                    {props.preciosfolios[6].folio}
-                  </h1>
-                  <ul className="list-unstyled  text-info mt-0 mb-0">
-                    <li>
-                      FOLIOS
-                    </li>
-                  </ul>
-                </div>
-                <div className="card-footer bg-secondary text-light">
-                  <h4 className=" mt-0 mb-0 my-0 font-weight-normal">
-                    ${props.preciosfolios[6].precio}.00
-                  </h4>
-                </div>
-              </div>
-            </div>
-            <div className="row mb-4">
-              <div className="card border-0 text-center">
-                <div className="card-header bg-info text-light">
-                  <h4 className="my-0 font-weight-normal">
-                    PAQUETE
-                  </h4>
-                </div>
-                <div className="card-body p-0 bg-white text-light">
-                  <h1 className="card-title text-info pricing-card-title">
-                    {props.preciosfolios[7].folio}
-                  </h1>
-                  <ul className="list-unstyled  text-info mt-0 mb-0">
-                    <li>
-                      FOLIOS
-                    </li>
-                  </ul>
-                </div>
-                <div className="card-footer bg-secondary text-light">
-                  <h4 className=" mt-0 mb-0 my-0 font-weight-normal">
-                    ${props.preciosfolios[7].precio}.00
-                  </h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="row justify-content-center text-center">
-          <div className="col mb-4">
-            <h3 className="text-success text-start">Paquetes y costos TIMBRES (WebService / Convertidor)</h3>
-          </div>
-        </div>
-        <div className="row  d-flex align-items-center">
-          <div className="col-4 d-flex justify-content-center">
-            <a href="#">
+          <div className="row  d-flex align-items-center">
+            <div className="col-md-4 d-flex justify-content-center  p-2">
+
               <img className="d-block img-fluid" src={require('./assets/img/All/main-icono-convertidor.png')} />
-            </a>
-          </div>
-
-          <div className="col">
-            <div className="row mb-4">
-
-              <div className="card border-0 text-center">
-                <div className="card-header bg-info text-light">
-                  <h4 className="my-0 font-weight-normal">PAQUETE</h4>
-                </div>
-                <div className="card-body p-0 bg-white text-light">
-                  <h1 className="card-title text-info pricing-card-title">{props.preciostimbre[0].timbre}</h1>
-                  <ul className="list-unstyled  text-info mt-0 mb-0">
-                    <li>TIMBRES</li>
-                  </ul>
-                </div>
-                <div className="card-footer bg-secondary text-light">
-                  <h4 className=" mt-0 mb-0 my-0 font-weight-normal">${props.preciostimbre[0].precio}.00</h4>
-                </div>
-              </div>
 
             </div>
-            <div className="row mb-4">
-              <div className="card border-0 text-center">
-                <div className="card-header bg-info text-light">
-                  <h4 className="my-0 font-weight-normal">
-                    PAQUETE
-                  </h4>
-                </div>
-                <div className="card-body p-0 bg-white text-light">
-                  <h1 className="card-title text-info pricing-card-title">
-                    {props.preciostimbre[1].timbre}
-                  </h1>
-                  <ul className="list-unstyled  text-info mt-0 mb-0">
-                    <li>
-                      TIMBRES
-                    </li>
-                  </ul>
-                </div>
-                <div className="card-footer bg-secondary text-light">
-                  <h4 className=" mt-0 mb-0 my-0 font-weight-normal">
-                    ${props.preciostimbre[1].precio}.00
-                  </h4>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col">
-            <div className="row mb-4">
-              <div className="card border-0 text-center">
-                <div className="card-header bg-info text-light">
-                  <h4 className="my-0 font-weight-normal">
-                    PAQUETE
-                  </h4>
-                </div>
-                <div className="card-body p-0 bg-white text-light">
-                  <h1 className="card-title text-info pricing-card-title">
-                    {props.preciostimbre[2].timbre}
-                  </h1>
-                  <ul className="list-unstyled  text-info mt-0 mb-0">
-                    <li>
-                      TIMBRES
-                    </li>
-                  </ul>
-                </div>
-                <div className="card-footer bg-secondary text-light">
-                  <h4 className=" mt-0 mb-0 my-0 font-weight-normal">
-                    ${props.preciostimbre[2].precio}.00
-                  </h4>
-                </div>
-              </div>
-            </div>
-            <div className="row mb-4">
-              <div className="card border-0 text-center">
-                <div className="card-header bg-info text-light">
-                  <h4 className="my-0 font-weight-normal">
-                    PAQUETE
-                  </h4>
-                </div>
-                <div className="card-body p-0 bg-white text-light">
-                  <h1 className="card-title text-info pricing-card-title">
-                    {props.preciostimbre[3].timbre}
-                  </h1>
-                  <ul className="list-unstyled  text-info mt-0 mb-0">
-                    <li>
-                      TIMBRES
-                    </li>
-                  </ul>
-                </div>
-                <div className="card-footer bg-secondary text-light">
-                  <h4 className=" mt-0 mb-0 my-0 font-weight-normal">
-                    ${props.preciostimbre[3].precio}.00
-                  </h4>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col">
-            <div className="row mb-4">
-              <div className="card border-0 text-center">
-                <div className="card-header bg-info text-light">
-                  <h4 className="my-0 font-weight-normal">
-                    PAQUETE
-                  </h4>
-                </div>
-                <div className="card-body p-0 bg-white text-light">
-                  <h1 className="card-title text-info pricing-card-title">
-                    {props.preciostimbre[4].timbre}
-                  </h1>
-                  <ul className="list-unstyled  text-info mt-0 mb-0">
-                    <li>
-                      TIMBRES
-                    </li>
-                  </ul>
-                </div>
-                <div className="card-footer bg-secondary text-light">
-                  <h4 className=" mt-0 mb-0 my-0 font-weight-normal">
-                    ${props.preciostimbre[4].precio}.00
-                  </h4>
-                </div>
-              </div>
-            </div>
-            <div className="row mb-4">
-              <div className="card border-0 text-center">
-                <div className="card-header bg-info text-light">
-                  <h4 className="my-0 font-weight-normal">
-                    PAQUETE
-                  </h4>
-                </div>
-                <div className="card-body p-0 bg-white text-light">
-                  <h1 className="card-title text-info pricing-card-title">
-                    {props.preciostimbre[5].timbre}
-                  </h1>
-                  <ul className="list-unstyled  text-info mt-0 mb-0">
-                    <li>
-                      TIMBRES
-                    </li>
-                  </ul>
-                </div>
-                <div className="card-footer bg-secondary text-light">
-                  <h4 className=" mt-0 mb-0 my-0 font-weight-normal">
-                    ${props.preciostimbre[5].precio}.00
-                  </h4>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col">
-            <div className="row mb-4">
-              <div className="card border-0 text-center">
-                <div className="card-header bg-info text-light">
-                  <h4 className="my-0 font-weight-normal">
-                    PAQUETE
-                  </h4>
-                </div>
-                <div className="card-body p-0 bg-white text-light">
-                  <h1 className="card-title text-info pricing-card-title">
-                    {props.preciostimbre[6].timbre}
-                  </h1>
-                  <ul className="list-unstyled  text-info mt-0 mb-0">
-                    <li>
-                      TIMBRES
-                    </li>
-                  </ul>
-                </div>
-                <div className="card-footer bg-secondary text-light">
-                  <h4 className=" mt-0 mb-0 my-0 font-weight-normal">
-                    ${props.preciostimbre[6].precio}.00
-                  </h4>
-                </div>
-              </div>
-            </div>
-            <div className="row mb-4">
-              <div className="card border-0 text-center">
-                <div className="card-header bg-info text-light">
-                  <h4 className="my-0 font-weight-normal">
-                    PAQUETE
-                  </h4>
-                </div>
-                <div className="card-body p-0 bg-white text-light">
-                  <h1 className="card-title text-info pricing-card-title">
-                    {props.preciostimbre[7].timbre}
-                  </h1>
-                  <ul className="list-unstyled  text-info mt-0 mb-0">
-                    <li>
-                      TIMBRES
-                    </li>
-                  </ul>
-                </div>
-                <div className="card-footer bg-secondary text-light">
-                  <h4 className=" mt-0 mb-0 my-0 font-weight-normal">
-                    ${props.preciostimbre[7].precio}.00
-                  </h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col"></div>
-        </div>
 
-        <p className="text-light">
-          Adendas, gratuitas en la compra de tu primer paquete de facturación (solo aplica para adendas existentes)
-          Adendas bajo demanda (por definir dependiendo el caso)
-        </p>
+            <div className="col-md-2 ">
+              <div className="row mb-4 justify-content-center">
+
+                <div className="card border-0 text-center">
+                  <div className="card-header bg-info text-light">
+                    <h5 className="my-0 font-weight-normal">PAQUETE</h5>
+                  </div>
+                  <div className="card-body p-0 bg-white text-light">
+                    <h2 className="card-title text-info pricing-card-title">{props.preciostimbre[0].timbre}</h2>
+                    <ul className="list-unstyled  text-info mt-0 mb-0">
+                      <li>TIMBRES</li>
+                    </ul>
+                  </div>
+                  <div className="card-footer bg-secondary text-light">
+                    <h6 className=" mt-0 mb-0 my-0 font-weight-normal">${props.preciostimbre[0].precio}.00</h6>
+                  </div>
+                </div>
+
+              </div>
+              <div className="row mb-4 justify-content-center">
+                <div className="card border-0 text-center">
+                  <div className="card-header bg-info text-light">
+                    <h5 className="my-0 font-weight-normal">
+                      PAQUETE
+                    </h5>
+                  </div>
+                  <div className="card-body p-0 bg-white text-light">
+                    <h2 className="card-title text-info pricing-card-title">
+                      {props.preciostimbre[1].timbre}
+                    </h2>
+                    <ul className="list-unstyled  text-info mt-0 mb-0">
+                      <li>
+                        TIMBRES
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="card-footer bg-secondary text-light">
+                    <h6 className=" mt-0 mb-0 my-0 font-weight-normal">
+                      ${props.preciostimbre[1].precio}.00
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="row mb-4 justify-content-center">
+                <div className="card border-0 text-center">
+                  <div className="card-header bg-info text-light">
+                    <h5 className="my-0 font-weight-normal">
+                      PAQUETE
+                    </h5>
+                  </div>
+                  <div className="card-body p-0 bg-white text-light">
+                    <h2 className="card-title text-info pricing-card-title">
+                      {props.preciostimbre[2].timbre}
+                    </h2>
+                    <ul className="list-unstyled  text-info mt-0 mb-0">
+                      <li>
+                        TIMBRES
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="card-footer bg-secondary text-light">
+                    <h6 className=" mt-0 mb-0 my-0 font-weight-normal">
+                      ${props.preciostimbre[2].precio}.00
+                    </h6>
+                  </div>
+                </div>
+              </div>
+              <div className="row mb-4 justify-content-center">
+                <div className="card border-0 text-center">
+                  <div className="card-header bg-info text-light">
+                    <h5 className="my-0 font-weight-normal">
+                      PAQUETE
+                    </h5>
+                  </div>
+                  <div className="card-body p-0 bg-white text-light">
+                    <h2 className="card-title text-info pricing-card-title">
+                      {props.preciostimbre[3].timbre}
+                    </h2>
+                    <ul className="list-unstyled  text-info mt-0 mb-0">
+                      <li>
+                        TIMBRES
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="card-footer bg-secondary text-light">
+                    <h6 className=" mt-0 mb-0 my-0 font-weight-normal">
+                      ${props.preciostimbre[3].precio}.00
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="row mb-4 justify-content-center">
+                <div className="card border-0 text-center">
+                  <div className="card-header bg-info text-light">
+                    <h5 className="my-0 font-weight-normal">
+                      PAQUETE
+                    </h5>
+                  </div>
+                  <div className="card-body p-0 bg-white text-light">
+                    <h2 className="card-title text-info pricing-card-title">
+                      {props.preciostimbre[4].timbre}
+                    </h2>
+                    <ul className="list-unstyled  text-info mt-0 mb-0">
+                      <li>
+                        TIMBRES
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="card-footer bg-secondary text-light">
+                    <h6 className=" mt-0 mb-0 my-0 font-weight-normal">
+                      ${props.preciostimbre[4].precio}.00
+                    </h6>
+                  </div>
+                </div>
+              </div>
+              <div className="row mb-4 justify-content-center">
+                <div className="card border-0 text-center">
+                  <div className="card-header bg-info text-light">
+                    <h5 className="my-0 font-weight-normal">
+                      PAQUETE
+                    </h5>
+                  </div>
+                  <div className="card-body p-0 bg-white text-light">
+                    <h2 className="card-title text-info pricing-card-title">
+                      {props.preciostimbre[5].timbre}
+                    </h2>
+                    <ul className="list-unstyled  text-info mt-0 mb-0">
+                      <li>
+                        TIMBRES
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="card-footer bg-secondary text-light">
+                    <h6 className=" mt-0 mb-0 my-0 font-weight-normal">
+                      ${props.preciostimbre[5].precio}.00
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-2">
+              <div className="row mb-4 justify-content-center">
+                <div className="card border-0 text-center">
+                  <div className="card-header bg-info text-light">
+                    <h5 className="my-0 font-weight-normal">
+                      PAQUETE
+                    </h5>
+                  </div>
+                  <div className="card-body p-0 bg-white text-light">
+                    <h2 className="card-title text-info pricing-card-title">
+                      {props.preciostimbre[6].timbre}
+                    </h2>
+                    <ul className="list-unstyled  text-info mt-0 mb-0">
+                      <li>
+                        TIMBRES
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="card-footer bg-secondary text-light">
+                    <h6 className=" mt-0 mb-0 my-0 font-weight-normal">
+                      ${props.preciostimbre[6].precio}.00
+                    </h6>
+                  </div>
+                </div>
+              </div>
+              <div className="row mb-4 justify-content-center">
+                <div className="card border-0 text-center">
+                  <div className="card-header bg-info text-light">
+                    <h5 className="my-0 font-weight-normal">
+                      PAQUETE
+                    </h5>
+                  </div>
+                  <div className="card-body p-0 bg-white text-light">
+                    <h2 className="card-title text-info pricing-card-title">
+                      {props.preciostimbre[7].timbre}
+                    </h2>
+                    <ul className="list-unstyled  text-info mt-0 mb-0">
+                      <li>
+                        TIMBRES
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="card-footer bg-secondary text-light">
+                    <h6 className=" mt-0 mb-0 my-0 font-weight-normal">
+                      ${props.preciostimbre[7].precio}.00
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-7">
+              <p className="text-light">
+                Adendas, gratuitas en la compra de tu primer paquete de facturación (solo aplica para adendas existentes)
+                Adendas bajo demanda (por definir dependiendo el caso)
+              </p>
+            </div>
+            <div className="col-5"></div>
+          </div>
+          <div className="row justify-content-md-center">
+            <div className="col col-lg-5">
+              <h3 className="text-success">
+                Datos para Depósito Bancario
+              </h3>
+              <h3 className="font-weight-normal text-light ">
+                NT LINK Comunicaciones S.A. DE C.V.
+               
+              </h3>
+              <h4 className="font-weight-normal text-light weight4 ">
+                Banco: HSBC
+                N
+              </h4>
+              <h4 className="font-weight-normal text-light weight4 ">
+             
+                Número de cuenta: 4047150404
+               
+              </h4>
+              <h4 className="font-weight-normal text-light weight4 ">
+              
+                Clabe Interbancaria: 021180040471504049
+              </h4>
+            </div>
+            
+          </div>
+         
+
         </div>
       </Modal.Body>
       <Modal.Footer>
-        <div className="container bg-info m-0" >
+        <div className="container  m-0" >
           <div className="row text-center align-self-center justify-content-center pt-1">
-            <h5 className="text-light">
-              Datos para Depósito Bancario
-            </h5>
-            <h6 className="font-weight-normal text-light ">
-              NT LINK Comunicaciones S.A. DE C.V.
-              Banco: HSBC
-              Número de cuenta: 4047150404
-              Clabe Interbancaria: 021180040471504049
-            </h6>
+          <a className="mbtn-sm" onClick={props.onHide} ><span className="mb-0 mbtnSpanBlack">Cerrar</span></a>
           </div>
         </div>
       </Modal.Footer>
