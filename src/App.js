@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import axios from "axios";
-import CookieConsent, { Cookies, getCookieConsentValue } from "react-cookie-consent";
+import CookieConsent, { getCookieConsentValue } from "react-cookie-consent";
 import ReactGA from 'react-ga';
 import TagManager from 'react-gtm-module'
 import { Button, Modal, Alert } from 'react-bootstrap';
@@ -593,9 +593,7 @@ function App() {
               </div>
 
               <div className="row">
-                {/* <div className="col-md-2 d-flex justify-content-center">
-
-                </div> */}
+              
                 <div className="col-md-3 text-start">
                   <h5 className="text-light " >TELEFONOS</h5>
 
@@ -652,11 +650,7 @@ function App() {
                     </svg>
                   </a>
                 </div>
-                {/*   <div className="col col-sm-1 text-center">
-                  <h2>
-                  |
-                    </h2>
-                </div> */}
+              
                 <div className="col col-sm-1">
                   <a type="button" className="btn btn-outline-light noBorder" href="https://www.facebook.com/NT-Link-105356365428787">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className='ico' viewBox="0 0 16 16">
@@ -769,29 +763,11 @@ function MyVerticallyCenteredModal(props) {
       centered
       clas
     >
-      {/*  <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          <div className="container">
-            <div className="row">
-              <div className="col">
-                <h1 className="text-light text-start">
-                  PRECIOS
-                </h1>
-              </div>
-              <div className="col d-flex justify-content-end"><Button onClick={props.onHide}><h3 className="mb-0">Cerrar</h3> </Button></div>
-
-
-            </div>
-
-          </div>
-
-
-        </Modal.Title>
-      </Modal.Header> */}
+     
       <Modal.Body className='preciosBackPop'>
         <div className="container ">
           <div className="row justify-content-center text-center">
-            <img src={require('./assets/img/All/preciosimg.png')} className="img-fluid" alt="..." />
+            <img src={require('./assets/img/All/precios_head.png')} className="img-fluid" alt="..." />
             <div className="col mb-4 mt-5">
               <h3 className="text-success text-start">Paquetes y costos FOLIOS (Portal CFDI / Portal Nómina)</h3>
             </div>
@@ -1218,39 +1194,13 @@ function MyVerticallyCenteredModal(props) {
             </div>
             <div className="col-5"></div>
           </div>
-          <div className="row justify-content-md-center">
-            <div className="col col-lg-5">
-              <h3 className="text-success">
-                Datos para Depósito Bancario
-              </h3>
-              <h3 className="font-weight-normal text-light ">
-                NT LINK Comunicaciones S.A. DE C.V.
-               
-              </h3>
-              <h4 className="font-weight-normal text-light weight4 ">
-                Banco: HSBC
-                N
-              </h4>
-              <h4 className="font-weight-normal text-light weight4 ">
-             
-                Número de cuenta: 4047150404
-               
-              </h4>
-              <h4 className="font-weight-normal text-light weight4 ">
-              
-                Clabe Interbancaria: 021180040471504049
-              </h4>
-            </div>
-            
-          </div>
          
-
         </div>
       </Modal.Body>
       <Modal.Footer>
-        <div className="container  m-0" >
+        <div className="container-fluid  m-0" >
           <div className="row text-center align-self-center justify-content-center pt-1">
-          <a className="mbtn-sm" onClick={props.onHide} ><span className="mb-0 mbtnSpanBlack">Cerrar</span></a>
+            <a className="mbtn-sm" onClick={props.onHide} ><span className="mb-0 mbtnSpanBlack">Cerrar</span></a>
           </div>
         </div>
       </Modal.Footer>
@@ -1314,9 +1264,7 @@ function MyVerticallyCenteredModalMASCOMPLEMENTOS(props) {
           </div>
         </div>
       </Modal.Body>
-      {/*  <Modal.Footer>
-       
-      </Modal.Footer> */}
+      
     </Modal >
   );
 }
@@ -1537,9 +1485,7 @@ function MyVerticallyCenteredModalMASADDENDAS(props) {
         </div>
 
       </Modal.Body>
-      {/*  <Modal.Footer>
-       
-      </Modal.Footer> */}
+     
     </Modal >
   );
 }
@@ -1552,19 +1498,7 @@ function MyVerticallyCenteredModalPRIVACIDAD(props) {
       centered
     >
       <Modal.Header closeButton>
-        {/*   <Modal.Title id="contained-modal-title-vcenter">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-10">
-                <h1 className="text-light text-start">
-                  POLITICA DE PRIVACIDAD
-                </h1>
-              </div>
-              <div className="col-md-2 d-flex justify-content-end"><Button onClick={props.onHide}><h3 className="mb-0">Cerrar</h3> </Button></div>
-            </div>
-          </div>
-        </Modal.Title> */}
-
+        
 
 
 
@@ -1880,31 +1814,305 @@ function MyVerticallyCenteredModalTERMINOS(props) {
       centered
     >
       <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-10">
-                <h1 className="text-light text-start">
-                  TERMINOS Y CONDICIONES
-                </h1>
-              </div>
-              <div className="col-md-2 d-flex justify-content-end"><Button onClick={props.onHide}><h3 className="mb-0">Cerrar</h3> </Button></div>
-            </div>
-          </div>
-        </Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <div className="container">
-          <div className="row m-3">
+          <div className="row">
+            <img src={require('./assets/img/All/terminosycondiciones-head.png')} className="img-fluid" alt="..." />
             <p className="font-weight-normal text-light">
-
-              El presente Política de Privacidad establece los términos en que usa y protege la información que es proporcionada por sus usuarios al momento de utilizar su sitio web. Esta compañía está comprometida con la seguridad de los datos de sus usuarios. Cuando le pedimos llenar los campos de información personal con la cual usted pueda ser identificado, lo hacemos asegurando que sólo se empleará de acuerdo con los términos de este documento. Sin embargo, esta Política de Privacidad puede cambiar con el tiempo o ser actualizada por lo que le recomendamos y enfatizamos revisar continuamente esta página para asegurarse que está de acuerdo con dichos cambios. NT LINK COMUNICACIONES S.A. de C.V Información que es recogida Nuestro sitio web podrá recoger información personal, por ejemplo: Nombre, información de contacto como su dirección de correo electrónica e información demográfica. Así mismo cuando sea necesario podrá ser requerida información específica para procesar algún pedido o realizar una entrega o facturación. Uso de la información recogida Los datos personales que recabamos de nuestro sitio web, los utilizaremos para las siguientes finalidades que son necesarias para el servicio que solicita y con el fin de proporcionar el mejor servicio posible, particularmente para mantener un registro de usuarios, de pedidos en caso que aplique, y mejorar nuestros productos y servicios Registro y Alta para procesamiento de CFDI Consentimiento de Alta como proveedor de CFDI De manera adicional, utilizaremos su información personal para las siguientes finalidades secundarias que no son necesarias para el servicio solicitado, pero que nos permiten y facilitan brindarle una mejor atención: Consentimiento para Movimientos a la cuenta de usuario para procesamiento de CFDI Consentimiento para soporte remoto en la emisión de CFDI Mercadotecnia o publicitaria Prospección comercial En caso de que no desee que sus datos personales se utilicen para estos fines secundarios, No consiento que mis datos personales se utilicen para los siguientes fines: [ ] Mercadotecnia o publicitaria [ ] Prospección comercial La negativa para el uso de sus datos personales para estas finalidades no podrá ser un motivo para que le neguemos los servicios y productos que solicita o contrata con nosotros. NT LINK COMUNICACIONES S.A. de C.V, está altamente comprometido para cumplir con el compromiso de mantener su información segura. Usamos los sistemas más avanzados y los actualizamos constantemente para asegurarnos que no exista ningún acceso no autorizado. Última actualización: 01/07/2021 Cookies Una cookie se refiere a un fichero que es enviado con la finalidad de solicitar permiso para almacenarse en su ordenador, al aceptar dicho fichero se crea y la cookie sirve entonces para tener información respecto al tráfico web, y también facilita las futuras visitas a una web recurrente. Otra función que tienen las cookies es que con ellas las web pueden reconocerte individualmente y por tanto brindarte el mejor servicio personalizado de su web. Nuestro sitio web emplea las cookies para poder identificar las páginas que son visitadas y su frecuencia. Esta información es empleada únicamente para análisis estadístico y después la información se elimina de forma permanente. Usted puede eliminar las cookies en cualquier momento desde su ordenador. Sin embargo, las cookies ayudan a proporcionar un mejor servicio de los sitios web, estás no dan acceso a información de su ordenador ni de usted, a menos de que usted así lo quiera y la proporcione directamente noticias. Usted puede aceptar o negar el uso de cookies, sin embargo, la mayoría de navegadores aceptan cookies automáticamente pues sirve para tener un mejor servicio web. También usted puede cambiar la configuración de su ordenador para declinar las cookies. Si se declinan es posible que no pueda utilizar algunos de nuestros servicios. Enlaces a Terceros Este sitio web pudiera contener en laces a otros sitios que pudieran ser de su interés. Una vez que usted de clic en estos enlaces y abandone nuestra página, ya no tenemos control sobre al sitio al que es redirigido y por lo tanto no somos responsables de los términos o privacidad ni de la protección de sus datos en esos otros sitios terceros. Dichos sitios están sujetos a sus propias políticas de privacidad por lo cual es recomendable que los consulte para confirmar que usted está de acuerdo con estas. Control de su información personal En cualquier momento usted puede restringir la recopilación o el uso de la información personal que es proporcionada a nuestro sitio web. Cada vez que se le solicite rellenar un formulario, como el de alta de usuario, puede marcar o desmarcar la opción de recibir información por correo electrónico. En caso de que haya marcado la opción de recibir nuestro boletín o publicidad usted puede cancelarla en cualquier momento. Esta compañía no venderá, cederá ni distribuirá la información personal que es recopilada sin su consentimiento, salvo que sea requerido por un juez con un orden judicial. NT LINK COMUNICACIONES S.A. de C.V, Se reserva el derecho de cambiar los términos de la presente Política de Privacidad en cualquier momento. ¿Qué datos personales utilizaremos para estos fines? Para llevar a cabo las finalidades descritas en el presente aviso de privacidad, utilizaremos los siguientes datos personales:  Datos de identificación  Datos de contacto ¿Con quién compartimos su información personal y para qué fines? Última actualización: 01/07/2021 Le informamos que sus datos personales son compartidos dentro y fuera del país con las siguientes personas, empresas, organizaciones o autoridades distintas a nosotros, para los siguientes fines:  Destinatario de los datos personales Finalidad Requiere del consentimiento Sistema de Administración Tributaria SAT Proceso de CFDI. Con relación a las transferencias que requieren de su consentimiento, si usted a continuación no manifiesta su negativa para que éstas ocurran, entenderemos que nos lo ha otorgado.  No autorizo que se lleven a cabo las siguientes transferencias de mis datos personales: Destinatario de los datos personales Finalidad Selecciona Sistema de Administración Tributaria SAT Proceso de CFDI  La negación de la transferencia de datos, nos impediría la continuidad del servicio, en virtud de que es el fin para el cuál el servicio se presta. ¿Cómo puede acceder, rectificar o cancelar sus datos personales, u oponerse a su uso? Usted tiene derecho a conocer qué datos personales tenemos de usted, para qué los utilizamos y las condiciones del uso que les damos (Acceso). Asimismo, es su derecho solicitar la corrección de su información personal en caso de que esté desactualizada, sea inexacta o incompleta (Rectificación); que la eliminemos de nuestros registros o bases de datos cuando considere que la misma no está siendo utilizada adecuadamente (Cancelación); así como oponerse al uso de sus datos personales para fines específicos (Oposición). Estos derechos se conocen como derechos ARCO. Para el ejercicio de cualquiera de los derechos ARCO, usted deberá presentar la solicitud respectiva a través del siguiente medio: correo electrónico: informes@ntlink.com.mx Con relación al procedimiento y requisitos para el ejercicio de sus derechos ARCO, le informamos lo siguiente: a) ¿A través de qué medios pueden acreditar su identidad el titular y, en su caso, su representante, así como la personalidad este último? correo electrónico: informes@ntlink.com.mx b) ¿Qué información y/o documentación deberá contener la solicitud? Identificación oficial, carta firmada por el titular c) ¿En cuántos días le daremos respuesta a su solicitud? 10 días hábiles d) ¿Por qué medio le comunicaremos la respuesta a su solicitud? correo electrónico enviado al solicitante e) ¿En qué medios se pueden reproducir los datos personales que, en su caso, solicite? correo electrónico, USB Los datos de contacto de la persona o departamento de datos personales, que está a cargo de dar trámite a las solicitudes de derechos ARCO, son los siguientes:   Última actualización: 01/07/2021 a) Nombre de la persona o departamento de datos personales: Atención a clientes b) Domicilio: calle Xicoténcatl 103-B, colonia del Carmen, Ciudad de México, alcaldía de Coyoacán, cp. 04100, en la Ciudad de México, México c) Correo electrónico: informes@ntlink.com.mx d) Número telefónico: (55)4780-0200 Usted puede revocar su consentimiento para el uso de sus datos personales Usted puede revocar el consentimiento que, en su caso, nos haya otorgado para el tratamiento de sus datos personales. Sin embargo, es importante que tenga en cuenta que no en todos los casos podremos atender su solicitud o concluir el uso de forma inmediata, ya que es posible que por alguna obligación legal requiramos seguir tratando sus datos personales. Asimismo, usted deberá considerar que para ciertos fines, la revocación de su consentimiento implicará que no le podamos seguir prestando el servicio que nos solicitó, o la conclusión de su relación con nosotros. Para revocar su consentimiento deberá presentar su solicitud a través del siguiente medio: correo electrónico: informes@ntlink.com.mx Con relación al procedimiento y requisitos para la revocación de su consentimiento, le informamos lo siguiente: a) ¿A través de qué medios pueden acreditar su identidad el titular y, en su caso, su representante, así como la personalidad este último? vía correo electrónica, físicamente b) ¿Qué información y/o documentación deberá contener la solicitud? Identificación oficial y carta solicitud firmada por el titular c) ¿En cuántos días le daremos respuesta a su solicitud? 10 días hábiles d) ¿Por qué medio le comunicaremos la respuesta a su solicitud? vía correo electrónico ¿Cómo puede limitar el uso o divulgación de su información personal? Con objeto de que usted pueda limitar el uso y divulgación de su información personal, le ofrecemos los siguientes medios: correo electrónico: informes@ntlink.com.mx ¿Cómo puede conocer los cambios en este aviso de privacidad? El presente aviso de privacidad puede sufrir modificaciones, cambios o actualizaciones derivadas de nuevos requerimientos legales; de nuestras propias necesidades por los productos o servicios que ofrecemos; de nuestras prácticas de privacidad; de cambios en nuestro modelo de negocio, o por otras causas. Nos comprometemos a mantenerlo informado sobre los cambios que pueda sufrir el presente aviso de privacidad, a través de: página web: www.ntlink.com.mx. El procedimiento a través del cual se llevarán a cabo las notificaciones sobre cambios o actualizaciones al presente aviso de privacidad es el siguiente: Se publicará en la página web de NT Link, dando a conocer la actualización del aviso de privacidad
+              El presente Política de Privacidad establece los términos en que usa y protege la información que es proporcionada por sus usuarios al
+              momento de utilizar su sitio web. Esta compañía está comprometida con la seguridad de los datos de sus usuarios. Cuando le pedimos
+              llenar los campos de información personal con la cual usted pueda ser identificado, lo hacemos asegurando que sólo se empleará de
+              acuerdo con los términos de este documento. Sin embargo, esta Política de Privacidad puede cambiar con el tiempo o ser actualizada por
+              lo que le recomendamos y enfatizamos revisar continuamente esta página para asegurarse que está de acuerdo con dichos cambios.
+            </p>
+            <p className="font-weight-normal text-light">
+              NTLINK COMUNICACIONES S.A. de C.V Información que es recogida Nuestro sitio web podrá recoger información personal, por
+              ejemplo: Nombre, información de contacto como su dirección de correo electrónica e información demográfica. Así mismo cuando sea
+              necesario podrá ser requerida información específica para procesar algún pedido o realizar una entrega o facturación.
+            </p>
+            <p className="font-weight-normal text-light">
+              Uso de la información recogida Los datos personales que recabamos de nuestro sitio web, los utilizaremos para las siguientes finalidades
+              que son necesarias para el servicio que solicita y con el fin de proporcionar el mejor servicio posible, particularmente para mantener un
+              registro de usuarios, de pedidos en caso que aplique, y mejorar nuestros productos y servicios.
             </p>
           </div>
+          <div className="row">
+            <div className="col-md-4">
+              <h6 className="text-success">
+                Registro y alta para procesamiento de CFDI
+              </h6>
+              <h6 className="text-success">
+                Cookies
+              </h6>
+              <h6 className="text-success">
+                Enlaces a terceros
+              </h6>
+              <h6 className="text-success">
+                Control de su información personal
+              </h6>
+              <h6 className="text-success">
+                ¿Qué datos personales utilizaremos para estos
+                fines?
+              </h6>
+              <h6 className="text-success">
+                ¿Con quién compartimos su información
+                personal y para qué fines?
+              </h6>
+              <h6 className="text-success">
+                ¿Cómo puede acceder, rectificar o cancelar sus
+                datos personales,
+                u oponerse a su uso?
+              </h6>
+              <h6 className=" text-light">
+                ¿Cómo puede limitar el uso o divulgación de su
+                información personal?
+              </h6>
+              <h6 className=" text-light">
+                ¿Cómo puede conocer los cambios en este
+                aviso de privacidad?
+              </h6>
+              <a className="mbtn-sm" onClick={props.onHide} ><span className="mb-0 mbtnSpanBlack">Cerrar</span></a>
+            </div>
+            <div className="col-md-8">
+              <h5 className="text-success">
+                REGISTRO Y ALTA PARA PROCESAMIENTO DE CFDI
+              </h5>
+              <p className="font-weight-normal text-light">
+                Consentimiento de Alta como proveedor de CFDI de manera adicional, utilizaremos su información personal para
+                las siguientes finalidades secundarias que no son necesarias para el servicio solicitado, pero que nos permiten y facilitan
+                brindarle una mejor atención:
+              </p>
+              <ul className="list-unstyled text-light">
+                <li>
+                  <ul>
+                    <li>
+                      Consentimiento para Movimientos a la cuenta de usuario para procesamiento de CFDI
+                    </li>
+                    <li>
+                      Consentimiento para soporte remoto en la emisión de CFDI
+                    </li>
+                    <li>
+                      Mercadotecnia o publicitaria
+                    </li>
+                    <li>
+                      Prospección comercial En caso de que no desee que sus datos personales se utilicen para estos fines secundarios, No consiento que mis datos
+                      personales se utilicen para los siguientes fines:
+                    </li>
+                    <li>
+                      Mercadotecnia o publicitaria
+                    </li>
+                    <li>
+                      Prospección comercial
+                      La negativa para el uso de sus datos personales para estas finalidades no podrá ser un motivo para que le neguemos los
+                      servicios y productos que solicita o contrata con nosotros.
+                    </li>
+
+                  </ul>
+                </li>
+              </ul>
+              <p className="font-weight-normal text-light">
+                NT LINK COMUNICACIONES S.A. de C.V, está altamente comprometido para cumplir con el compromiso de mantener su
+                información segura. Usamos los sistemas más avanzados y los actualizamos constantemente para asegurarnos que no
+                exista ningún acceso no autorizado. Última actualización: 01/07/2021
+              </p>
+              <h5 className="text-success">
+                COOKIES
+              </h5>
+              <p className="font-weight-normal text-light">
+                Una cookie se refiere a un fichero que es enviado con la finalidad de solicitar permiso para almacenarse en su ordenador, al
+                aceptar dicho fichero se crea y la cookie sirve entonces para tener información respecto al tráfico web, y también facilita las
+                futuras visitas a una web recurrente.
+                Otra función que tienen las cookies es que con ellas las web pueden reconocerte individualmente y por tanto brindarte el
+                mejor servicio personalizado de su web.
+                Nuestro sitio web emplea las cookies para poder identificar las páginas que son visitadas y su frecuencia.
+                Esta información es empleada únicamente para análisis estadístico y después la información se elimina de forma
+                permanente.
+                Usted puede eliminar las cookies en cualquier momento desde su ordenador.
+                Sin embargo, las cookies ayudan a proporcionar un mejor servicio de los sitios web, estás no dan acceso a información de
+                su ordenador ni de usted, a menos de que usted así lo quiera y la proporcione directamente noticias.
+                Usted puede aceptar o negar el uso de cookies, sin embargo, la mayoría de navegadores aceptan cookies
+                automáticamente pues sirve para tener un mejor servicio web.
+                También usted puede cambiar la configuración de su ordenador para declinar las cookies. Si se declinan es posible que no
+                pueda utilizar algunos de nuestros servicios.
+              </p>
+              <h5 className="text-success">
+                ENLACES A TERCEROS
+              </h5>
+              <p className="font-weight-normal text-light">
+                Este sitio web pudiera contener en laces a otros sitios que pudieran ser de su interés. Una vez que usted de clic en estos
+                enlaces y abandone nuestra página, ya no tenemos control sobre al sitio al que es redirigido y por lo tanto no somos
+                responsables de los términos o privacidad ni de la protección de sus datos en esos otros sitios terceros.
+                Dichos sitios están sujetos a sus propias políticas de privacidad por lo cual es recomendable que los consulte para
+                confirmar que usted está de acuerdo con estas.
+              </p>
+              <h5 className="text-success">
+                CONTROL DE SU INFORMACIÓN PERSONAL
+              </h5>
+              <p className="font-weight-normal text-light">
+                En cualquier momento usted puede restringir la recopilación o el uso de la información personal que es proporcionada a
+                nuestro sitio web. Cada vez que se le solicite rellenar un formulario, como el de alta de usuario, puede marcar o desmarcar
+                la opción de recibir información por correo electrónico.
+                En caso de que haya marcado la opción de recibir nuestro boletín o publicidad usted puede cancelarla en cualquier
+                momento.
+                Esta compañía no venderá, cederá ni distribuirá la información personal que es recopilada sin su consentimiento, salvo que
+                sea requerido por un juez con un orden judicial.
+                NT LINK COMUNICACIONES S.A. de C.V, Se reserva el derecho de cambiar los términos de la presente Política de
+                Privacidad en cualquier momento.
+              </p>
+              <h5 className="text-success">
+                ¿QUÉ DATOS PERSONALES UTILIZAREMOS PARA ESTOS FINES?
+              </h5>
+              <p className="font-weight-normal text-light">
+                Para llevar a cabo las finalidades descritas en el presente aviso de privacidad, utilizaremos los siguientes datos personales:
+                • Datos de identificación
+                • Datos de contacto
+              </p>
+              <h5 className="text-success">
+                ¿CON QUIÉN COMPARTIMOS SU INFORMACIÓN PERSONAL Y PARA QUÉ FINES?
+              </h5>
+              <p className="font-weight-normal text-light">
+                Última actualización: 01/07/2021
+                Le informamos que sus datos personales son compartidos dentro y fuera del país con las siguientes personas, empresas,
+                organizaciones o autoridades distintas a nosotros, para los siguientes fines:
+                • Destinatario de los datos personales Finalidad Requiere del consentimiento Sistema de Administración Tributaria SAT
+                • Proceso de CFDI.
+                Con relación a las transferencias que requieren de su consentimiento, si usted a continuación no manifiesta su negativa
+                para que éstas ocurran, entenderemos que nos lo ha otorgado.
+                No autorizo que se lleven a cabo las siguientes transferencias de mis datos personales: Destinatario de los datos
+                personales Finalidad Selecciona Sistema de Administración Tributaria SAT Proceso de CFDI. La negación de la
+                transferencia de datos, nos impediría la continuidad del servicio, en virtud de que es el fin para el cuál el servicio se presta.
+              </p>
+              <h5 className="text-success">
+                ¿CÓMO PUEDE ACCEDER, RECTIFICAR O CANCELAR SUS DATOS PERSONALES,
+                U OPONERSE A SU USO?
+              </h5>
+              <p className="font-weight-normal text-light">
+                Usted tiene derecho a conocer qué datos personales tenemos de usted, para qué los utilizamos y las condiciones del
+                uso que les damos (Acceso). Asimismo, es su derecho solicitar la corrección de su información personal en caso de que
+                esté desactualizada, sea inexacta o incompleta (Rectificación); que la eliminemos de nuestros registros o bases de datos
+                cuando considere que la misma no está siendo utilizada adecuadamente (Cancelación); así como oponerse al uso de sus
+                datos personales para fines específicos (Oposición).
+              </p>
+              <p className="font-weight-normal text-light">
+                Estos derechos se conocen como derechos ARCO.
+                Para el ejercicio de cualquiera de los derechos ARCO, usted deberá presentar la solicitud respectiva a través del siguiente
+                medio: correo electrónico: informes@ntlink.com.mx
+              </p>
+              <p className="font-weight-normal text-light">
+                Con relación al procedimiento y requisitos para el ejercicio de sus derechos ARCO, le informamos lo siguiente:
+              </p>
+              <ul className="list-unstyled text-light">
+                <li>
+                  <ul>
+                    <li>
+                      a) ¿A través de qué medios pueden acreditar su identidad el titular y, en su caso, su representante, así como la
+                      personalidad este último? correo electrónico: informes@ntlink.com.mx
+                    </li>
+                    <li>
+                      b) ¿Qué información y/o documentación deberá contener la solicitud? Identificación oficial, carta firmada por el titular
+                    </li>
+                    <li>
+                      c) ¿En cuántos días le daremos respuesta a su solicitud? 10 días hábiles
+                    </li>
+                    <li>
+                      d) ¿Por qué medio le comunicaremos la respuesta a su solicitud? correo electrónico enviado al solicitante
+                    </li>
+                    <li>
+                      e) ¿En qué medios se pueden reproducir los datos personales que, en su caso, solicite? correo electrónico, USB Los
+                      datos de contacto de la persona o departamento de datos personales, que está a cargo de dar trámite a las solicitudes
+                      de derechos ARCO, son los siguientes: Última actualización: 01/07/2021
+                    </li>
+                    <li>
+                      a) Nombre de la persona o departamento de datos personales: Atención a clientes
+                    </li>
+                    <li>
+                      b) Domicilio: calle Xicoténcatl 103-B, colonia del Carmen, Ciudad de México, alcaldía de Coyoacán, cp. 04100, en la
+                      Ciudad de México, México
+                    </li>
+                    <li>
+                      d) Número telefónico: (55)4780-0200
+                    </li>
+
+                  </ul>
+                </li>
+              </ul>
+
+
+              <p className="font-weight-normal text-light">
+                Usted puede revocar su consentimiento para el uso de sus datos personales
+                Usted puede revocar el consentimiento que, en su caso, nos haya otorgado para el tratamiento de sus datos personales.
+                Sin embargo, es importante que tenga en cuenta que no en todos los casos podremos atender su solicitud o concluir el uso
+                de forma inmediata, ya que es posible que por alguna obligación legal requiramos seguir tratando sus datos personales.
+                Asimismo, usted deberá considerar que para ciertos fines, la revocación de su consentimiento implicará que no le podamos
+                seguir prestando el servicio que nos solicitó, o la conclusión de su relación con nosotros.
+              </p>
+              <p className="font-weight-normal text-light">
+                Para revocar su consentimiento deberá presentar su solicitud a través del siguiente medio: correo electrónico: informes@
+                ntlink.com.mx Con relación al procedimiento y requisitos para la revocación de su consentimiento, le informamos lo
+                siguiente:
+              </p>
+              <ul className="list-unstyled text-light">
+                <li>
+                  <ul>
+                    <li>
+                      a) ¿A través de qué medios pueden acreditar su identidad el titular y, en su caso, su representante, así como la
+                      personalidad este último? vía correo electrónica, físicamente
+                    </li>
+                    <li>
+                      b) ¿Qué información y/o documentación deberá contener la solicitud? Identificación oficial y carta solicitud firmada por el
+                      titular
+                    </li>
+                    <li>
+                      c) ¿En cuántos días le daremos respuesta a su solicitud? 10 días hábiles
+                    </li>
+                    <li>
+                      d) ¿Por qué medio le comunicaremos la respuesta a su solicitud? vía correo electrónico
+                    </li>
+
+                  </ul>
+                </li>
+              </ul>
+
+
+
+
+
+              <h5 className="text-light">
+                ¿Cómo puede limitar el uso o divulgación de su información personal?
+              </h5>
+              <p className="font-weight-normal text-light">
+                Con objeto de que usted pueda limitar el uso y divulgación de su información personal, le ofrecemos los siguientes medios:
+                correo electrónico: informes@ntlink.com.mx
+              </p>
+              <h5 className="text-light">
+                ¿Cómo puede conocer los cambios en este aviso de privacidad?
+              </h5>
+              <p className="font-weight-normal text-light">
+                El presente aviso de privacidad puede sufrir modificaciones, cambios o actualizaciones derivadas de nuevos requerimientos
+                legales; de nuestras propias necesidades por los productos o servicios que ofrecemos; de nuestras prácticas de privacidad;
+                de cambios en nuestro modelo de negocio, o por otras causas.
+              </p>
+              <p className="font-weight-normal text-light">
+                Nos comprometemos a mantenerlo informado sobre los cambios que pueda sufrir el presente aviso de privacidad, a través
+                de: página web: www.ntlink.com.mx.
+              </p>
+              <p className="font-weight-normal text-light">
+                El procedimiento a través del cual se llevarán a cabo las notificaciones sobre cambios o actualizaciones al presente aviso
+                de privacidad es el siguiente: Se publicará en la página web de NT Link, dando a conocer la actualización del aviso de
+                privacidad.
+              </p>
+              <div class="row justify-content-center">
+                <a className="mbtn-sm" onClick={props.onHide} ><span className="mb-0 mbtnSpanBlack">Cerrar</span></a>
+              </div>
+            </div>
+
+          </div>
+
         </div>
       </Modal.Body>
       <Modal.Footer>
-        <div className="col-md-2 d-flex justify-content-end"><Button onClick={props.onHide}><h3 className="mb-0">Cerrar</h3> </Button></div>
+        <div className="col-md-2 d-flex "></div>
       </Modal.Footer>
     </Modal >
   );
@@ -1920,103 +2128,132 @@ function MyVerticallyCenteredModalContact(props) {
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-10">
-                <h1 className="text-light text-start">
-                  Contacto
-                </h1>
-              </div>
-              <div className="col-md-2 d-flex justify-content-end"><Button onClick={props.onHide}><h3 className="mb-0">Cerrar</h3> </Button></div>
-            </div>
-          </div>
-        </Modal.Title>
-
-
-      </Modal.Header>
+     
       <Modal.Body>
-        {emailSucces &&
-          <Alert variant="success">
-            <Alert.Heading>Exito, Se ha enviado!</Alert.Heading>
-            <p>
-              Se ha enviado un correo de confirmacion al correo que has introducido.
-            </p>
-            <hr />
-            <p className="mb-0">
-              !Te responderemos lo antes posible!
-            </p>
-          </Alert>
-        }
+        <div className="container">
+          {emailSucces &&
+            <Alert variant="success">
+              <Alert.Heading>Exito, Se ha enviado!</Alert.Heading>
+              <p>
+                Se ha enviado un correo de confirmacion al correo que has introducido.
+              </p>
+              <hr />
+              <p className="mb-0">
+                !Te responderemos lo antes posible!
+              </p>
+            </Alert>
+          }
 
 
-        <div className="row m-3 ">
-          <section className="author-area">
-            <div className="container">
-              <div className="row justify-content-center">
-                <div className="col-12 col-md-8 col-lg-7">
-                  <div className="intro text-center">
-                  </div>
-                  {/* TODO mover esta wea a una funcion fuera del popup */}
-                  <form id="contact-form" className="item-form card no-hover " action='' onSubmit={(e) => {
-                    e.preventDefault();
-                    axios.post(`https://nt-invoice.ntlink.com.mx/api/v1/contact/request`, state, {
-                      headers: {
-                        'Content-Type': 'application/json',
-                        'Access-Control-Allow-Origin': '*',
-                        'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
-                      }
-                    }).then(res => {
-                      { setModalShowSucces(true) }
-                      console.log(res)
-                    }).catch(err => {
-                      console.log(err)
-                    });
-                  }
-                  } >
-                    <div className="row">
-                      <div className="col-12">
-                        <div className="form-group mt-3">
-                          <input type="text" value={state.nombre} onChange={(e) => setname({ ...state, nombre: e.target.value })} className="form-control input-group-text text-light" name="nombre" placeholder="Nombre" required="required" />
-                        </div>
-                      </div>
-                      <div className="col-12">
-                        <div className="form-group mt-3">
-                          <input type="text" value={state.nombreEmpresa} onChange={(e) => setname({ ...state, nombreEmpresa: e.target.value })} className="form-control input-group-text text-light" name="nombreEmpresa" placeholder="Nombre de la Empresa" required="required" />
-                        </div>
-                      </div>
-                      <div className="col-12">
-                        <div className="form-group mt-3">
-                          <input type="email" value={state.email} onChange={(e) => setname({ ...state, email: e.target.value })} className="form-control input-group-text text-light h4" name="email" placeholder="Correo" required="required" />
-                        </div>
-                      </div>
-                      <div className="col-12">
-                        <div className="form-group mt-3">
-                          <input type="number" value={state.telefono} onChange={(e) => setname({ ...state, telefono: e.target.value })} className="form-control input-group-text text-light" name="telefono" placeholder="Telefono" required="required" />
-                        </div>
-                      </div>
-                      <div className="col-12">
-                        <div className="form-group mt-3">
-                          <textarea className="form-control text-light input-group-text" value={state.comentarios} onChange={(e) => setname({ ...state, comentarios: e.target.value })} name="comentarios" placeholder="Comentarios" cols={30} rows={3} />
-                        </div>
-                      </div>
-                      <div className="col-12 d-flex justify-content-center">
-                        <button className="mbtn" type="submit" > <span> Enviar Correo </span> </button>
-                      </div>
-                    </div>
-                  </form>
-                  <p className="form-message" />
-                </div>
+
+
+
+          <div className="row justify-content-center">
+            <img src={require('./assets/img/All/contacto-head-back.png')} className="img-fluid" alt="..." />
+            <div className="col-md-7">
+              <div className="intro text-center">
               </div>
+              {/* TODO mover esta wea a una funcion fuera del popup */}
+              <form id="contact-form" className="item-form " action='' onSubmit={(e) => {
+                e.preventDefault();
+                axios.post(`https://nt-invoice.ntlink.com.mx/api/v1/contact/request`, state, {
+                  headers: {
+                    'Content-Type': 'application/json',
+                    'Access-Control-Allow-Origin': '*',
+                    'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
+                  }
+                }).then(res => {
+                  { setModalShowSucces(true) }
+                  console.log(res)
+                }).catch(err => {
+                  console.log(err)
+                });
+              }
+              } >
+                <div className="row mt-3 align-items-center">
+                  <div className="col-md-2 ">
+                    <h6 className="text-light text-end m-0">
+                      Nombre:
+                    </h6>
+                  </div>
+                  <div className="col-md-10 ">
+                    <div className="form-group ">
+                      <input type="text" value={state.nombre} onChange={(e) => setname({ ...state, nombre: e.target.value })} className="form-control input-group-text text-light" name="nombre" placeholder="" required="required" />
+                    </div>
+                  </div>
+                </div>
+                <div className="row mt-3">
+                  <div className="col-md-2">
+                    <h6 className="text-light text-end m-0">
+                    Nombre de la Empresa:
+                    </h6>
+                  </div>
+                  <div className="col-md-10">
+                    <div className="form-group ">
+                      <input type="text" value={state.nombreEmpresa} onChange={(e) => setname({ ...state, nombreEmpresa: e.target.value })} className="form-control input-group-text text-light" name="nombreEmpresa" placeholder="" required="required" />
+                    </div>
+                  </div>
+                </div>
+                <div className="row mt-3">
+                  <div className="col-md-2">
+                    <h6 className="text-light text-end m-0">
+                    Correo:
+                    </h6>
+                  </div>
+                  <div className="col-md-10">
+                    <div className="form-group ">
+                      <input type="email" value={state.email} onChange={(e) => setname({ ...state, email: e.target.value })} className="form-control input-group-text text-light h4" name="email" placeholder="" required="required" />
+                    </div>
+                  </div>
+                </div>
+                <div className="row mt-3">
+                  <div className="col-md-2">
+                    <h6 className="text-light text-end m-0">
+                    Telefono:
+                    </h6>
+                  </div>
+                  <div className="col-md-10">
+                    <div className="form-group ">
+                      <input type="number" value={state.telefono} onChange={(e) => setname({ ...state, telefono: e.target.value })} className="form-control input-group-text text-light" name="" placeholder="" required="required" />
+                    </div>
+                  </div>
+                </div>
+                <div className="row mt-3">
+                  <div className="col-md-2">
+                    <h6 className="text-light text-end m-0">
+                    Comentarios:
+                    </h6>
+                  </div>
+                  <div className="col-md-10">
+                    <div className="form-group ">
+                      <textarea className="form-control text-light input-group-text" value={state.comentarios} onChange={(e) => setname({ ...state, comentarios: e.target.value })} name="comentarios" placeholder="" cols={30} rows={3} />
+                    </div>
+                  </div>
+                </div>
+                <div className="row">
+                  
+               
+                  <div className="col-md-2">
+                    
+                  </div>
+                  <div className="col-md-5 d-flex justify-content-center">
+                  <button className="mbtn-sm" type="submit" > <span className='mbtnSpanBlack'> Enviar </span> </button>
+                  </div>
+                  <div className="col-md-5 d-flex justify-content-center">
+                  <a className="mbtn-sm" onClick={props.onHide} ><span className="mb-0 mbtnSpanBlack">Cerrar</span></a>
+                  </div>
+                </div>
+              </form>
+              <p className="form-message" />
             </div>
-          </section>
-        </div>
+            <img src={require('./assets/img/All/contacto-foot.png')} className="img-fluid" alt="..." />
+          </div>
 
+
+
+        </div>
       </Modal.Body>
-      {/*   <Modal.Footer>
-        <div className="col-md-2 d-flex justify-content-end"><Button onClick={props.onHide}><h3 className="mb-0">Cerrar</h3> </Button></div>
-      </Modal.Footer> */}
+      
     </Modal >
   );
 }
@@ -2048,7 +2285,7 @@ function MyVerticallyCenteredModalDISTRIBUIDORES(props) {
             <section className="author-area">
               <div className="container">
                 <div className="row justify-content-center">
-                  <div className="col-12 col-md-8 col-lg-7">
+                  <div className="col-md-8">
                     <div className="row">
                     </div>
 
@@ -2065,9 +2302,7 @@ function MyVerticallyCenteredModalDISTRIBUIDORES(props) {
         </div>
 
       </Modal.Body>
-      {/*   <Modal.Footer>
-        <div className="col-md-2 d-flex justify-content-end"><Button onClick={props.onHide}><h3 className="mb-0">Cerrar</h3> </Button></div>
-      </Modal.Footer> */}
+    
     </Modal >
   );
 }
@@ -2129,9 +2364,7 @@ function MyVerticallyCenteredModalPLANESDETIMBRADO(props) {
         </div>
 
       </Modal.Body >
-      {/*   <Modal.Footer>
-        <div className="col-md-2 d-flex justify-content-end"><Button onClick={props.onHide}><h3 className="mb-0">Cerrar</h3> </Button></div>
-      </Modal.Footer> */}
+ 
     </Modal >
   );
 }
