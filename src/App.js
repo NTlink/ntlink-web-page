@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import axios from "axios";
-import CookieConsent, { Cookies, getCookieConsentValue } from "react-cookie-consent";
+import CookieConsent, { getCookieConsentValue } from "react-cookie-consent";
 import ReactGA from 'react-ga';
 import TagManager from 'react-gtm-module'
 import { Button, Modal, Alert } from 'react-bootstrap';
@@ -593,9 +593,7 @@ function App() {
               </div>
 
               <div className="row">
-                {/* <div className="col-md-2 d-flex justify-content-center">
-
-                </div> */}
+              
                 <div className="col-md-3 text-start">
                   <h5 className="text-light " >TELEFONOS</h5>
 
@@ -652,11 +650,7 @@ function App() {
                     </svg>
                   </a>
                 </div>
-                {/*   <div className="col col-sm-1 text-center">
-                  <h2>
-                  |
-                    </h2>
-                </div> */}
+              
                 <div className="col col-sm-1">
                   <a type="button" className="btn btn-outline-light noBorder" href="https://www.facebook.com/NT-Link-105356365428787">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className='ico' viewBox="0 0 16 16">
@@ -769,25 +763,7 @@ function MyVerticallyCenteredModal(props) {
       centered
       clas
     >
-      {/*  <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          <div className="container">
-            <div className="row">
-              <div className="col">
-                <h1 className="text-light text-start">
-                  PRECIOS
-                </h1>
-              </div>
-              <div className="col d-flex justify-content-end"><Button onClick={props.onHide}><h3 className="mb-0">Cerrar</h3> </Button></div>
-
-
-            </div>
-
-          </div>
-
-
-        </Modal.Title>
-      </Modal.Header> */}
+     
       <Modal.Body className='preciosBackPop'>
         <div className="container ">
           <div className="row justify-content-center text-center">
@@ -1218,33 +1194,7 @@ function MyVerticallyCenteredModal(props) {
             </div>
             <div className="col-5"></div>
           </div>
-          {/* <div className="row justify-content-md-center">
-            <div className="col col-lg-5">
-              <h3 className="text-success">
-                Datos para Depósito Bancario
-              </h3>
-              <h3 className="font-weight-normal text-light ">
-                NT LINK Comunicaciones S.A. DE C.V.
-
-              </h3>
-              <h4 className="font-weight-normal text-light weight4 ">
-                Banco: HSBC
-                N
-              </h4>
-              <h4 className="font-weight-normal text-light weight4 ">
-
-                Número de cuenta: 4047150404
-
-              </h4>
-              <h4 className="font-weight-normal text-light weight4 ">
-
-                Clabe Interbancaria: 021180040471504049
-              </h4>
-            </div>
-
-          </div> */}
-
-
+         
         </div>
       </Modal.Body>
       <Modal.Footer>
@@ -1314,9 +1264,7 @@ function MyVerticallyCenteredModalMASCOMPLEMENTOS(props) {
           </div>
         </div>
       </Modal.Body>
-      {/*  <Modal.Footer>
-       
-      </Modal.Footer> */}
+      
     </Modal >
   );
 }
@@ -1537,9 +1485,7 @@ function MyVerticallyCenteredModalMASADDENDAS(props) {
         </div>
 
       </Modal.Body>
-      {/*  <Modal.Footer>
-       
-      </Modal.Footer> */}
+     
     </Modal >
   );
 }
@@ -1552,19 +1498,7 @@ function MyVerticallyCenteredModalPRIVACIDAD(props) {
       centered
     >
       <Modal.Header closeButton>
-        {/*   <Modal.Title id="contained-modal-title-vcenter">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-10">
-                <h1 className="text-light text-start">
-                  POLITICA DE PRIVACIDAD
-                </h1>
-              </div>
-              <div className="col-md-2 d-flex justify-content-end"><Button onClick={props.onHide}><h3 className="mb-0">Cerrar</h3> </Button></div>
-            </div>
-          </div>
-        </Modal.Title> */}
-
+        
 
 
 
@@ -2194,22 +2128,7 @@ function MyVerticallyCenteredModalContact(props) {
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      {/*  <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-10">
-                <h1 className="text-light text-start">
-                  Contacto
-                </h1>
-              </div>
-              <div className="col-md-2 d-flex justify-content-end"><Button onClick={props.onHide}><h3 className="mb-0">Cerrar</h3> </Button></div>
-            </div>
-          </div>
-        </Modal.Title>
-
-
-      </Modal.Header> */}
+     
       <Modal.Body>
         <div className="container">
           {emailSucces &&
@@ -2313,9 +2232,7 @@ function MyVerticallyCenteredModalContact(props) {
                 </div>
                 <div className="row">
                   
-                 {/*  <div className="col-md-12 d-flex justify-content-center">
-                    <button className="mbtn" type="submit" > <span> Enviar Correo </span> </button>
-                  </div> */}
+               
                   <div className="col-md-2">
                     
                   </div>
@@ -2336,9 +2253,7 @@ function MyVerticallyCenteredModalContact(props) {
 
         </div>
       </Modal.Body>
-      {/*   <Modal.Footer>
-        <div className="col-md-2 d-flex justify-content-end"><Button onClick={props.onHide}><h3 className="mb-0">Cerrar</h3> </Button></div>
-      </Modal.Footer> */}
+      
     </Modal >
   );
 }
@@ -2387,9 +2302,7 @@ function MyVerticallyCenteredModalDISTRIBUIDORES(props) {
         </div>
 
       </Modal.Body>
-      {/*   <Modal.Footer>
-        <div className="col-md-2 d-flex justify-content-end"><Button onClick={props.onHide}><h3 className="mb-0">Cerrar</h3> </Button></div>
-      </Modal.Footer> */}
+    
     </Modal >
   );
 }
@@ -2451,9 +2364,7 @@ function MyVerticallyCenteredModalPLANESDETIMBRADO(props) {
         </div>
 
       </Modal.Body >
-      {/*   <Modal.Footer>
-        <div className="col-md-2 d-flex justify-content-end"><Button onClick={props.onHide}><h3 className="mb-0">Cerrar</h3> </Button></div>
-      </Modal.Footer> */}
+ 
     </Modal >
   );
 }
