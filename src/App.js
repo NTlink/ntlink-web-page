@@ -96,7 +96,7 @@ function App() {
                       </div>
                       :
                       <div key={`${carruselPicturesURL[index].urlImage}-${index}`} className="carousel-item">
-                        <a target="_blank"  href={carruselPicturesURL[index].href}><img src={require('./assets/img/All/' + carruselPicturesURL[index].urlImage + '.gif')} className="img-fluid" alt="..." /></a>
+                        <a target="_blank" href={carruselPicturesURL[index].href}><img src={require('./assets/img/All/' + carruselPicturesURL[index].urlImage + '.gif')} className="img-fluid" alt="..." /></a>
                       </div>
                   ))
                 }
@@ -158,7 +158,7 @@ function App() {
 
 
           <div className="col-md-3 d-flex justify-content-center h-50 ">
-              <img src={require('./assets/img/All/PAC-logo.gif')} className="d-block img-fluid " alt="..." />
+            <img src={require('./assets/img/All/PAC-logo.gif')} className="d-block img-fluid " alt="..." />
           </div>
           <div className="col-md-3 d-flex align-items-center">
             <p className="lead text-light ">Tras un largo proceso de certificación
@@ -178,19 +178,19 @@ function App() {
         </div>
         <div className="row p-3">
           <div className="col-sm-2 d-flex justify-content-center">
-              <img src={require('./assets/img/All/main-icono-CFDI.png')} className="d-block img-fluid" alt="..." />
+            <img src={require('./assets/img/All/main-icono-CFDI.png')} className="d-block img-fluid" alt="..." />
           </div>
           <div className="col-sm-2 d-flex justify-content-center align-items-center">
             <a href="https://cfdi33.ntlink.com.mx/Facturacion3.3/wfrLogin.aspx" target="_blank" className="mbtn"><span className="mb-0">ACCESO CFDI</span></a>
           </div>
           <div className="col-sm-2 d-flex justify-content-center">
-              <img src={require('./assets/img/All/main-icono-nomina.png')} className="d-block img-fluid" alt="..." />
+            <img src={require('./assets/img/All/main-icono-nomina.png')} className="d-block img-fluid" alt="..." />
           </div>
           <div className="col-sm-2 d-flex justify-content-center align-items-center">
             <a href="https://cfdi33.ntlink.com.mx/NominaLocal3.3/wfrLogin.aspx" target="_blank" className="mbtn"><span className="mb-0">ACCESO NÓMINA </span></a>
           </div>
           <div className="col-sm-2 d-flex justify-content-center">
-              <img src={require('./assets/img/All/main-icono-agratuito.png')} className="d-block img-fluid" alt="..." />
+            <img src={require('./assets/img/All/main-icono-agratuito.png')} className="d-block img-fluid" alt="..." />
           </div>
           <div className="col-sm-2 d-block col2">
 
@@ -218,7 +218,7 @@ function App() {
 
           <div className="row align-items-center ">
             <div className="col-md-2 d-flex justify-content-center">
-                <img src={require('./assets/img/All/main-icono-CFDI.png')} className="d-block img-fluid" alt="..." />
+              <img src={require('./assets/img/All/main-icono-CFDI.png')} className="d-block img-fluid" alt="..." />
             </div>
             <div className="col-md-8 ">
               <div className="col">
@@ -242,7 +242,7 @@ function App() {
           </div>
           <div className="row align-items-center">
             <div className="col-md-2 d-flex justify-content-center" >
-                <img src={require('./assets/img/All/main-icono-nomina.png')} className="d-block img-fluid" alt="..." />
+              <img src={require('./assets/img/All/main-icono-nomina.png')} className="d-block img-fluid" alt="..." />
             </div>
             <div className="col-md-8 justify-content-center">
               <div className="col">
@@ -266,8 +266,8 @@ function App() {
           </div>
 
           <div className="row align-items-center">
-            <div className="col-md-2 d-flex justify-content-center">         
-                <img src={require('./assets/img/All/main-icono-compsCFDI.png')} className="d-block img-fluid" alt="..." />
+            <div className="col-md-2 d-flex justify-content-center">
+              <img src={require('./assets/img/All/main-icono-compsCFDI.png')} className="d-block img-fluid" alt="..." />
             </div>
             <div className="col-md-8 justify-content-center">
               <div className="col">
@@ -330,8 +330,8 @@ function App() {
           </div>
 
           <div className="row align-items-center">
-            <div className="col-md-2 d-flex justify-content-center">          
-                <img src={require('./assets/img/All/main-icono-adendas.png')} className="d-block img-fluid" alt="..." />
+            <div className="col-md-2 d-flex justify-content-center">
+              <img src={require('./assets/img/All/main-icono-adendas.png')} className="d-block img-fluid" alt="..." />
             </div>
             <div className="col-md-8 justify-content-center">
               <div className="col">
@@ -406,8 +406,8 @@ function App() {
             </div>
           </div>
           <div className="row align-items-center">
-            <div className="col-md-2 d-flex justify-content-center">     
-                <img src={require('./assets/img/All/main-icono-convertidor.png')} className="d-block img-fluid" alt="..." />          
+            <div className="col-md-2 d-flex justify-content-center">
+              <img src={require('./assets/img/All/main-icono-convertidor.png')} className="d-block img-fluid" alt="..." />
             </div>
             <div className="col-md-8 justify-content-center">
               <div className="col">
@@ -563,8 +563,8 @@ function App() {
       <footer id="CONTACTO" className="pt-4 pt-md-5 border-top gradeintBlack bg-dark a-b-2">
         <div className="container  bg-trasparent">
           <div className="row">
-            <div className="col-md-3">             
-                <img className="img-fluid" src={require('./assets/img/All/main-logo-contacto.png')} />        
+            <div className="col-md-3">
+              <img className="img-fluid" src={require('./assets/img/All/main-logo-contacto.png')} />
             </div>
             <div className="col-md-9 mt-5 text-start">
               <div className="row">
@@ -572,7 +572,7 @@ function App() {
               </div>
 
               <div className="row">
-              
+
                 <div className="col-md-3 text-start">
                   <h5 className="text-light " >TELEFONOS</h5>
 
@@ -621,17 +621,16 @@ function App() {
               </div>
 
               <div className="row text-light d-sm-flex justify-content-sm-end m-3">
-                <div className="col col-sm-1">
+                <div className=" col-1 WithForece">
                   <a type="button" className="btn btn-outline-light noBorder" onClick={() => setModalShowContact(true)} >
-                  
-                     <img className="img-fluid" src={require('./assets/img/All/esquema-de-correo-electronico (1).png')} />        
+                    <img className="img-fluid" src={require('./assets/img/All/esquema-de-correo-electronico (1).png')} />
                   </a>
                 </div>
-                
-                <div className="col col-sm-1">
-                  
-                  <img className="img-fluid" src={require('./assets/img/All/line.png')} />   
-                  
+
+                <div className="col-1 WithForece2">
+
+                  <img className="img-fluid" src={require('./assets/img/All/line.png')} />
+
                 </div>
                 <div className="col col-sm-1">
                   <a type="button" className="btn btn-outline-light noBorder" href="https://www.facebook.com/NT-Link-105356365428787" target="_blank">
@@ -713,7 +712,7 @@ function App() {
       <MyVerticallyCenteredModalDISTRIBUIDORES
         show={modalShowDistribuidores}
         onHide={() => setModalShowDistribuidores(false)}
-
+        setmodalshowcontact={() => setModalShowContact(true)}
       />
       <MyVerticallyCenteredModalPLANESDETIMBRADO
         show={modalShowPlanes}
@@ -743,9 +742,8 @@ function MyVerticallyCenteredModal(props) {
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       centered
-      clas
     >
-     
+
       <Modal.Body className='preciosBackPop'>
         <div className="container ">
           <div className="row justify-content-center text-center">
@@ -1176,7 +1174,7 @@ function MyVerticallyCenteredModal(props) {
             </div>
             <div className="col-5"></div>
           </div>
-         
+
         </div>
       </Modal.Body>
       <Modal.Footer>
@@ -1198,55 +1196,62 @@ function MyVerticallyCenteredModalMASCOMPLEMENTOS(props) {
 
       centered
     >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          <div className="container m-3">
-            <div className="row">
-              <div className="col-md-10">
-                <h2 className="text-light text-start">
-                  MAS INFORMACIÓN DE COMPLEMENTOS
-                </h2>
-              </div>
-              <div className="col-md-2 d-flex justify-content-end"><Button onClick={props.onHide}><h3 className="mb-0">Cerrar</h3> </Button></div>
-            </div>
-          </div>
-        </Modal.Title>
-      </Modal.Header>
+
       <Modal.Body>
         <div className="container">
-          <div className="row text-center">
-            <h3 className="text-success">NUESTROS COMPLEMENTOS: </h3>
-          </div>
-          <div className="row text-center">
-            <div className="col">
-              <ul className="list-unstyled text-small">
-                <li><span className="text-light" >• Recibo electrónico de pagos (Complemento de pagos)</span></li>
-                <li><span className="text-light" >• Instituciones Educativas Privadas (Complemento IUEDU)</span></li>
-                <li><span className="text-light" >• Donatarias </span></li>
-                <li><span className="text-light" >• Complemento INE</span></li>
-                <li><span className="text-light" >• Complemento servicio parcial de construcción</span></li>
-                <li><span className="text-light" >• Complemento vehículos usados</span></li>
-                <li><span className="text-light" >• Complemento Comercio exterior</span></li>
-                <li><span className="text-light" >• Recibo de Nómina</span></li>
-                <li><span className="text-light" >• Generar CFDI C/Retenciones</span></li>
-                <li><span className="text-light" >• CFDI Aduanal</span></li>
-                <li><span className="text-light" >• CFDI con Firmas</span></li>
-                <li><span className="text-light" >• Carta traslado</span></li>
-                <li><span className="text-light" >• Carta Porte</span></li>
-                <li><span className="text-light" >• Comisionistas</span></li>
-                <li><span className="text-light" >• Cfdi complementos</span></li>
-              </ul>
+          <div className="row justify-content-center">
+            <img src={require('./assets/img/All/Complementos-head.png')} className="img-fluid" alt="..." />
+            <div className="col-md-9">
+              <div class="row">
+                <div className="col-md-10 mb-3">
+                  <h4 className="text-success text-start">
+                    MAS INFORMACIÓN DE NUESTROS COMPLEMENTOS:
+                  </h4>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-md-6">
+                  <ul className="list-unstyled text-small">
+                    <li><span className="text-light" >• Recibo electrónico de pagos (Complemento de pagos)</span></li>
+                    <li><span className="text-light" >• Instituciones Educativas Privadas (Complemento IUEDU)</span></li>
+                    <li><span className="text-light" >• Donatarias </span></li>
+                    <li><span className="text-light" >• Complemento INE</span></li>
+                    <li><span className="text-light" >• Complemento servicio parcial de construcción</span></li>
+                    <li><span className="text-light" >• Complemento vehículos usados</span></li>
+                    <li><span className="text-light" >• Complemento Comercio exterior</span></li>
+                    <li><span className="text-light" >• Recibo de Nómina</span></li>
+                    <li><span className="text-light" >• Generar CFDI C/Retenciones</span></li>
+                    <li><span className="text-light" >• CFDI Aduanal</span></li>
+                    <li><span className="text-light" >• CFDI con Firmas</span></li>
+                    <li><span className="text-light" >• Carta traslado</span></li>
+                    <li><span className="text-light" >• Carta Porte</span></li>
+                    <li><span className="text-light" >• Comisionistas</span></li>
+                    <li><span className="text-light" >• Cfdi complementos</span></li>
+                  </ul>
+                </div>
+                <div className="col-md-6 text-center">
+                  <img src={require('./assets/img/All/Complementos-image.png')} className="img-fluid" alt="..." />
+                </div>
+              </div>
+              <div className="row bg-info mt-3">
+                <h6 className="text-light">
+                  <small className="text-success h4">
+                    ¡PROMOCIÓN!:
+                  </small> en caso de que sea nuevo cliente, los complementos se activaran de manera gratuita, en la compra de 100 folios.
+                  Ponte en contacto con nuestro equipo de ventas para mas información del desarrollo de cualquier complemento bajo demanda.
+                </h6>
+              </div>
+              <div class="row">
+                <div className="col-md-12 d-flex justify-content-center align-items-center">
+                  <a className="mbtn-sm" onClick={props.onHide} ><span className="mb-0 mbtnSpanBlack">Cerrar</span></a>
+                </div>
+              </div>
             </div>
+          </div>
 
-          </div>
-          <div className="row">
-            <h6 className="text-success">¡PROMOCIÓN!: en caso de que sea nuevo cliente, los complementos se activaran de manera gratuita, en la compra de 100 folios.
-              Ponte en contacto con nuestro equipo de ventas para mas información del desarrollo de cualquier complemento bajo demanda.
-            </h6>
-          </div>
         </div>
       </Modal.Body>
-      
+
     </Modal >
   );
 }
@@ -1394,80 +1399,86 @@ function MyVerticallyCenteredModalMASADDENDAS(props) {
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-10">
-                <h1 className="text-light text-start">
-                  MAS INFORMACIÓN ADDENDAS
-                </h1>
-              </div>
-              <div className="col-md-2 d-flex justify-content-end"><Button onClick={props.onHide} className="buttonchico"><h3 className="mb-0  ">Cerrar</h3> </Button></div>
-            </div>
-          </div>
-        </Modal.Title>
-      </Modal.Header>
+
       <Modal.Body>
         <div className="container">
-          <div className="row m-3">
-            <h3 className="text-success">
-              NUESTRAS ADDENDAS:
-            </h3>
-          </div>
-          <div className="row m-3">
+          <div className="row justify-content-center">
+            <img src={require('./assets/img/All/Addendas-head.png')} className="img-fluid" alt="..." />
+            <div className="col-md-9">
+              <div class="row">
+                <div className="col-md-10 mb-3">
+                  <h4 className="text-success text-start">
+                    MAS INFORMACIÓN ADDENDAS:
+                  </h4>
+                </div>
+              </div>
 
-            <ul className="list-unstyled text-small">
-              <li><span className="text-light" >• Addenda 1888</span></li>
-              <li><span className="text-light" >• Addenda ADO </span></li>
-              <li><span className="text-light" >• Addenda Vallen  </span></li>
-              <li><span className="text-light" >• Addenda Asonioscoc </span></li>
-              <li><span className="text-light" >• Addenda Asofarma </span></li>
-              <li><span className="text-light" >• Addenda Cinepolis </span></li>
-              <li><span className="text-light" >• Addenda Disney</span></li>
-              <li><span className="text-light" >• Addenda Nadro</span></li>
-              <li><span className="text-light" >• Addenda Neto</span></li>
-              <li><span className="text-light" >• Addenda SKY</span></li>
-              <li><span className="text-light" >• Addenda Calsonic</span></li>
-              <li><span className="text-light" >• Addenda IUSACELL</span></li>
-              <li><span className="text-light" >• Addenda BIC</span></li>
-              <li><span className="text-light" >• Addenda Jumex</span></li>
-              <li><span className="text-light" >• Addenda Mabe</span></li>
-              <li><span className="text-light" >• Addenda Pilgrims                </span></li>
-              <li><span className="text-light" >• Addenda Elektra   </span></li>
-              <li><span className="text-light" >• Addenda Pemex</span></li>
-              <li><span className="text-light" >• Addenda Vallen</span></li>
-              <li><span className="text-light" >• Addenda Super Farmacia  </span></li>
-              <li><span className="text-light" >• Addenda Mondelez</span></li>
-              <li><span className="text-light" >• Addenda Liverpool</span></li>
-              <li><span className="text-light" >• Addenda Jumex</span></li>
-              <li><span className="text-light" >• Addenda Honda</span></li>
-              <li><span className="text-light" >• Addenda Nissan</span></li>
-              <li><span className="text-light" >• Addenda Volskwagen </span></li>
-              <li><span className="text-light" >• Addenda  Chrysler (PUA, PPY) </span></li>
-              <li><span className="text-light" >• Addenda GM</span></li>
-              <li><span className="text-light" >• Addenda Soriana</span></li>
-              <li><span className="text-light" >• Addenda Tridonex</span></li>
-              <li><span className="text-light" >• Addenda Copel</span></li>
-              <li><span className="text-light" >• Addenda FEMSA</span></li>
-              <li><span className="text-light" >• Addenda sunchemical </span></li>
-            </ul>
-
-
-            <div className="row">
-              <h6 className="text-light">
-                ¡PROMOCIÓN!: en caso de que sea nuevo cliente, los complementos se activaran de manera gratuita, en la compra de 100 folios.
-                Ponte en contacto con nuestro equipo de ventas para mas información del desarrollo de cualquier complemento bajo demanda.
-
-              </h6>
+              <div className="row m-3">
+                <div className="col-md-4">
+                  <ul className="list-unstyled text-small">
+                    <li><span className="text-light" >• Addenda 1888</span></li>
+                    <li><span className="text-light" >• Addenda ADO </span></li>
+                    <li><span className="text-light" >• Addenda Vallen  </span></li>
+                    <li><span className="text-light" >• Addenda Asonioscoc </span></li>
+                    <li><span className="text-light" >• Addenda Asofarma </span></li>
+                    <li><span className="text-light" >• Addenda Cinepolis </span></li>
+                    <li><span className="text-light" >• Addenda Disney</span></li>
+                    <li><span className="text-light" >• Addenda Nadro</span></li>
+                    <li><span className="text-light" >• Addenda Neto</span></li>
+                    <li><span className="text-light" >• Addenda SKY</span></li>
+                    <li><span className="text-light" >• Addenda Calsonic</span></li>
+                  </ul>
+                </div>
+                <div className="col-md-4">
+                  <ul className="list-unstyled text-small">
+                    <li><span className="text-light" >• Addenda IUSACELL</span></li>
+                    <li><span className="text-light" >• Addenda BIC</span></li>
+                    <li><span className="text-light" >• Addenda Jumex</span></li>
+                    <li><span className="text-light" >• Addenda Mabe</span></li>
+                    <li><span className="text-light" >• Addenda Pilgrims                </span></li>
+                    <li><span className="text-light" >• Addenda Elektra   </span></li>
+                    <li><span className="text-light" >• Addenda Pemex</span></li>
+                    <li><span className="text-light" >• Addenda Vallen</span></li>
+                    <li><span className="text-light" >• Addenda Super Farmacia  </span></li>
+                    <li><span className="text-light" >• Addenda Mondelez</span></li>
+                    <li><span className="text-light" >• Addenda Liverpool</span></li>
+                  </ul>
+                </div>
+                <div className="col-md-4">
+                  <ul className="list-unstyled text-small">
+                    <li><span className="text-light" >• Addenda Jumex</span></li>
+                    <li><span className="text-light" >• Addenda Honda</span></li>
+                    <li><span className="text-light" >• Addenda Nissan</span></li>
+                    <li><span className="text-light" >• Addenda Volskwagen </span></li>
+                    <li><span className="text-light" >• Addenda  Chrysler (PUA, PPY) </span></li>
+                    <li><span className="text-light" >• Addenda GM</span></li>
+                    <li><span className="text-light" >• Addenda Soriana</span></li>
+                    <li><span className="text-light" >• Addenda Tridonex</span></li>
+                    <li><span className="text-light" >• Addenda Copel</span></li>
+                    <li><span className="text-light" >• Addenda FEMSA</span></li>
+                    <li><span className="text-light" >• Addenda sunchemical </span></li>
+                  </ul>
+                </div>
+              </div>
+              <div className="row bg-info mt-3">
+                <h6 className="text-light">
+                  <small className="text-success h4">
+                    ¡PROMOCIÓN!:
+                  </small>  en caso de que sea nuevo cliente, los complementos se activaran de manera gratuita, en la compra de 100 folios.
+                  Ponte en contacto con nuestro equipo de ventas para mas información del desarrollo de cualquier complemento bajo demanda.
+                </h6>
+              </div>
+              <div class="row ">
+                <div className="col-md-12 d-flex justify-content-center align-items-center">
+                  <a className="mbtn-sm" onClick={props.onHide} ><span className="mb-0 mbtnSpanBlack">Cerrar</span></a>
+                </div>
+              </div>
             </div>
-
-
           </div>
         </div>
 
       </Modal.Body>
-     
+
     </Modal >
   );
 }
@@ -1480,7 +1491,7 @@ function MyVerticallyCenteredModalPRIVACIDAD(props) {
       centered
     >
       <Modal.Header closeButton>
-        
+
 
 
 
@@ -2110,7 +2121,7 @@ function MyVerticallyCenteredModalContact(props) {
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-     
+
       <Modal.Body>
         <div className="container">
           {emailSucces &&
@@ -2167,7 +2178,7 @@ function MyVerticallyCenteredModalContact(props) {
                 <div className="row mt-3">
                   <div className="col-md-2">
                     <h6 className="text-light text-end m-0">
-                    Nombre de la Empresa:
+                      Nombre de la Empresa:
                     </h6>
                   </div>
                   <div className="col-md-10">
@@ -2179,7 +2190,7 @@ function MyVerticallyCenteredModalContact(props) {
                 <div className="row mt-3">
                   <div className="col-md-2">
                     <h6 className="text-light text-end m-0">
-                    Correo:
+                      Correo:
                     </h6>
                   </div>
                   <div className="col-md-10">
@@ -2191,7 +2202,7 @@ function MyVerticallyCenteredModalContact(props) {
                 <div className="row mt-3">
                   <div className="col-md-2">
                     <h6 className="text-light text-end m-0">
-                    Telefono:
+                      Telefono:
                     </h6>
                   </div>
                   <div className="col-md-10">
@@ -2203,7 +2214,7 @@ function MyVerticallyCenteredModalContact(props) {
                 <div className="row mt-3">
                   <div className="col-md-2">
                     <h6 className="text-light text-end m-0">
-                    Comentarios:
+                      Comentarios:
                     </h6>
                   </div>
                   <div className="col-md-10">
@@ -2213,16 +2224,16 @@ function MyVerticallyCenteredModalContact(props) {
                   </div>
                 </div>
                 <div className="row">
-                  
-               
+
+
                   <div className="col-md-2">
-                    
+
                   </div>
                   <div className="col-md-5 d-flex justify-content-center">
-                  <button className="mbtn-sm" type="submit" > <span className='mbtnSpanBlack'> Enviar </span> </button>
+                    <button className="mbtn-sm" type="submit" > <span className='mbtnSpanBlack'> Enviar </span> </button>
                   </div>
                   <div className="col-md-5 d-flex justify-content-center">
-                  <a className="mbtn-sm" onClick={props.onHide} ><span className="mb-0 mbtnSpanBlack">Cerrar</span></a>
+                    <a className="mbtn-sm" onClick={props.onHide} ><span className="mb-0 mbtnSpanBlack">Cerrar</span></a>
                   </div>
                 </div>
               </form>
@@ -2235,7 +2246,7 @@ function MyVerticallyCenteredModalContact(props) {
 
         </div>
       </Modal.Body>
-      
+
     </Modal >
   );
 }
@@ -2247,44 +2258,46 @@ function MyVerticallyCenteredModalDISTRIBUIDORES(props) {
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-10">
-                <h3 className="text-light text-start">
-                  DISTRIBUIDORES/ DESARROLLADORES:
-                </h3>
-              </div>
-              <div className="col-md-2 d-flex justify-content-end"><Button onClick={props.onHide}><h3 className="mb-0">Cerrar</h3> </Button></div>
-            </div>
-          </div>
-        </Modal.Title>
-      </Modal.Header>
+
       <Modal.Body>
         <div className="container">
-          <div className="row m-3 ">
-            <section className="author-area">
-              <div className="container">
-                <div className="row justify-content-center">
-                  <div className="col-md-8">
-                    <div className="row">
+          <div className="row justify-content-center">
+            <img src={require('./assets/img/All/Distribuidoresdesarrolladores-head.png')} className="img-fluid" alt="..." />
+            <div className="col-md-9">
+              <div className="row justify-content-center mt-3">
+                <div className="col-md-7">
+                  <div className="row">
+                    <p className="text-light">
+                      <small className="text-success h4">
+                        Como distribuidor, podrás obtener ganancias mediante la reventa de nuestros productos,
+                      </small>
+                      ya que tenemos atractivos planes para que puedas obtener ganancias y crecer junto a nosotros. Contacta al equipo de ventas para más información.
+                      Para los desarrolladores, tenemos planes interesantes para apoyarte con tu nueva aplicación, te podemos apoyar con un numero de timbres adecuados a tu proyecto en un esquema pospago, ponte en contacto para mas información.
+                    </p>
+                  </div>
+                  <div className="row">
+                    <div className="col-md-6 d-flex justify-content-center align-items-center">
+                      <a className="mbtn-sm" onClick={props.setmodalshowcontact} ><span className="mb-0 mbtnSpanBlack">Contacto</span></a>
+                    </div>
+                    <div className="col-md-6 d-flex justify-content-center align-items-center">
+                      <a className="mbtn-sm" onClick={props.onHide} ><span className="mb-0 mbtnSpanBlack">Cerrar</span></a>
                     </div>
 
-                    <h6 className="text-light">
-                      Como distribuidor, podrás obtener ganancias mediante la reventa de nuestros productos, ya que tenemos atractivos planes para que puedas obtener ganancias y crecer junto a nosotros. Contacta al equipo de ventas para más información.
-                      Para los desarrolladores, tenemos planes interesantes para apoyarte con tu nueva aplicación, te podemos apoyar con un numero de timbres adecuados a tu proyecto en un esquema pospago, ponte en contacto para mas información.
-                    </h6>
                   </div>
 
+
+                </div>
+                <div className="col-md-5 text-center">
+                  <img src={require('./assets/img/All/Distribuidoresdesarrolladores-image02.png')} className="img-fluid" alt="..." />
                 </div>
               </div>
-            </section>
+            </div>
+
           </div>
         </div>
 
       </Modal.Body>
-    
+
     </Modal >
   );
 }
@@ -2346,7 +2359,7 @@ function MyVerticallyCenteredModalPLANESDETIMBRADO(props) {
         </div>
 
       </Modal.Body >
- 
+
     </Modal >
   );
 }
@@ -2520,7 +2533,7 @@ function MyVerticallyCenteredModalCFDI(props) {
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      <Modal.Header closeButton>
+      {/*  <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
           <div className="container">
             <div className="row">
@@ -2533,107 +2546,154 @@ function MyVerticallyCenteredModalCFDI(props) {
             </div>
           </div>
         </Modal.Title>
-      </Modal.Header>
+      </Modal.Header> */}
       <Modal.Body>
         <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-md-9">
+              <div className="row text-start text-light">
 
-          <div className="row text-start text-light">
-            <p className="font-weight-normal">
-              Al iniciar sesión en el portal la primera sección que encontraremos es la de  “Empresas”. En esta sección se podrán modificar los datos de la empresa,  crear más empresas si es que se está a cargo de mas, crear sucursales e introducir los conceptos que serán usados en sus facturas.
-            </p>
-            <img src={require('./assets/img/All/image.0.png')} className="d-block img-fluid" alt="..." />
-            <h5 className="text-success">
-              Apartado “Editar”
-            </h5>
-            <p className="font-weight-normal">
-              En este apartado se pueden llenar todos los datos de la empresa que son  necesarios para poder facturar, aquí también se debe cargar el CSD (Sello  digital)
-            </p>
-            <img src={require('./assets/img/All/image.11.png')} className="d-block img-fluid" alt="..." />
-          </div>
-          <div className="row text-start text-light">
+                <div className=" headerCf pt15 pf">
+                  <a href="#Editar" className='text-decorationNone'>
+                    <h5 className="text-success pt-2">
+                      Apartado “Editar”
+                    </h5>
+                  </a>
+                  <a href="#Sucursales" className='text-decorationNone' >
+                    <h5 className="text-success pt-2">
+                      Apartado “Sucursales”
+                    </h5>
+                  </a>
+                  <a href="#Clientes" className='text-decorationNone' >
+                    <h5 className="text-success pt-2">
+                      Apartado “Clientes”
+                    </h5>
+                  </a>
+                  <a href="#Facturación" className='text-decorationNone'>
+                    <h5 className="text-success pt-2">
+                      Sección “Facturación”
+                    </h5>
+                  </a>
+                  <a href="#Reportes" className='text-decorationNone'>
+                    <h5 className="text-success pt-2">
+                      Sección de “Reportes”
+                    </h5>
+                  </a>
+                  <a href="#Usuarios" className='text-decorationNone'>
+                    <h5 className="text-success pt-2">
+                      Sección de “Usuarios”
+                    </h5>
+                  </a>
+                  <div className="col-md-12 pt-2 d-flex justify-content-start align-items-center">
+                    <a className="mbtn-sm" onClick={props.onHide} ><span className="mb-0 mbtnSpanBlack">Cerrar</span></a>
+                  </div>
+                </div>
+                <div className="col-md-4"></div>
+                <div className="col-md-8">
+                  <h5 className="text-success pt-4">
+                    Introducción al portal de facturación NT link 3.3
+                  </h5>
+                  <p className="font-weight-normal">
+                    Al iniciar sesión en el portal la primera sección que encontraremos es la de  “Empresas”. En esta sección se podrán modificar los datos de la empresa,  crear más empresas si es que se está a cargo de mas, crear sucursales e introducir los conceptos que serán usados en sus facturas.
+                  </p>
+                  <img src={require('./assets/img/All/d1.PNG')} className="img-fluid" alt="..." />
 
-            <p className="font-weight-normal">
-              Los archivos que se deben cargarse en el portal son los que tienen  terminacion .cer (certificado) y .key (llave privada). Los dos son archivos del  CSD (sello digital).
+                  <h5 id="Editar" className="text-success">
+                    Apartado “Editar”
+                  </h5>
+                  <p className="font-weight-normal">
+                    En este apartado se pueden llenar todos los datos de la empresa que son  necesarios para poder facturar, aquí también se debe cargar el CSD (Sello  digital)
+                  </p>
+                  <img src={require('./assets/img/All/d2.PNG')} className="d-block img-fluid" alt="..." />
+                  <p className="font-weight-normal">
+                    Los archivos que se deben cargarse en el portal son los que tienen  terminacion .cer (certificado) y .key (llave privada). Los dos son archivos del  CSD (sello digital).
+                  </p>
+                  <h5 id="Sucursales" className="text-success ">
+                    Apartado “Sucursales”
+                  </h5>
+                  <p className="font-weight-normal">
+                    Aqui se pueden crear nuevas sucursales o editar las ya existentes si es  necesario.
+                  </p>
+                  <img src={require('./assets/img/All/d3.PNG')} className="d-block img-fluid" alt="..." />
+                  <h5 id='Clientes' className="text-success">
+                    Seccion de “Clientes”
+                  </h5>
+                  <p className="font-weight-normal">
+                    Aqui encontraremos a todos nuestros clientes a los que se les genera  factura. Se podran crear nuevos clientes y tambien eliminar a los que ya no  se necesiten.
+                  </p>
+                  <img src={require('./assets/img/All/d4.PNG')} className="d-block img-fluid" alt="..." />
+                  <p className="font-weight-normal">
+                    En la opción "Editar" se deben introducir todos los datos del cliente para que  se pueda generar la factura correctamente.
+                  </p>
+                  <img src={require('./assets/img/All/d5.PNG')} className="d-block img-fluid" alt="..." />
+                  <h5 id='Facturación' className="text-success">
+                    Sección “Facturación”
+                  </h5>
+                  <p className="font-weight-normal">
+                    Es donde podremos crear nuestra factura, al colocar el cursor se mostrarán  los tipos de factura que se hayan contratado.
+                    Algunos complementos son:
+                  </p>
 
+                  <ul className="list-unstyled">
+                    <li>
+                      <ul>
+                        <li>
+                          Complemento Carta Porte
+                        </li>
+                        <li>
+                          Complemento de pago
+                        </li>
+                        <li>
+                          Complemento INE
+                        </li>
+                        <li>
+                          Complemento Comercio exterior
+                        </li>
 
-            </p>
-            <h5 className="text-success">
-              Apartado “Sucursales”
-            </h5>
-            <p className="font-weight-normal">
-              Aqui se pueden crear nuevas sucursales o editar las ya existentes si es  necesario.
-            </p>
-            <img src={require('./assets/img/All/image.2.png')} className="d-block img-fluid" alt="..." />
-            <h5 className="text-success">
-              Seccion de “Clientes”
-            </h5>
-            <p className="font-weight-normal">
-              Aqui encontraremos a todos nuestros clientes a los que se les genera  factura. Se podran crear nuevos clientes y tambien eliminar a los que ya no  se necesiten.
-            </p>
-            <img src={require('./assets/img/All/image.3.png')} className="d-block img-fluid" alt="..." />
-            <p className="font-weight-normal">
-              En la opción "Editar" se deben introducir todos los datos del cliente para que  se pueda generar la factura correctamente.
-            </p>
-            <img src={require('./assets/img/All/image.4.png')} className="d-block img-fluid" alt="..." />
-            <h5 className="text-success">
-              Sección “Facturación”
-            </h5>
-            <p className="font-weight-normal">
-              Es donde podremos crear nuestra factura, al colocar el cursor se mostrarán  los tipos de factura que se hayan contratado.
-              Algunos complementos son:
-            </p>
+                      </ul>
+                    </li>
+                  </ul>
+                  <img src={require('./assets/img/All/d6.PNG')} className="d-block img-fluid" alt="..." />
+                  <p className="font-weight-normal">
+                    Esta es la primera parte de nuestra factura a elaborar, se introduce la  información del cliente, el tipo de documento y tipo de pago.
+                  </p>
+                  <img src={require('./assets/img/All/d7.PNG')} className="d-block img-fluid" alt="..." />
+                  <p className="font-weight-normal">
+                    Esta es la segunda parte de nuestra factura donde se deben de introducir  los datos del producto o servicio, cantidades, impuestos y descripciones. Los  campos con un asterisco rojo deben ser llenados obligatoriamente.
+                  </p>
+                  <img src={require('./assets/img/All/d8.PNG')} className="d-block img-fluid" alt="..." />
+                  <p className="font-weight-normal">
+                    La tercera y última parte es opcional, es la introducción de impuestos que  pueden modificarse. Esta última parte es importante para los clientes con  Régimen Simplificado de Confianza por la retención del ISR.
+                  </p>
+                  <img src={require('./assets/img/All/d9.PNG')} className="d-block img-fluid" alt="..." />
+                  <h5 id='Reportes' className="text-success">
+                    Sección de “Reportes”
+                  </h5>
+                  <p className="font-weight-normal">
+                    Aquí podremos encontrar nuestro historial de facturación. Se podrá ver el  estado de nuestras facturas y se podrán realizar otras actividades como  cancelaciones, reenvío de facturas y descarga de archivos.
+                  </p>
+                  <img src={require('./assets/img/All/d10.PNG')} className="d-block img-fluid" alt="..." />
+                  <h5 id="Usuarios" className="text-success">
+                    Sección de “Usuarios”
+                  </h5>
+                  <p className="font-weight-normal">
+                    En esta sección se podrá manejar la información de los usuarios que tengan  control de la cuenta, se podrá editar información y crear nuevos usuarios.
+                  </p>
+                  <img src={require('./assets/img/All/d11.PNG')} className="d-block img-fluid" alt="..." />
+                </div>
 
-            <ul className="list-unstyled">
-              <li>
-                <ul>
-                  <li>
-                    Complemento Carta Porte
-                  </li>
-                  <li>
-                    Complemento de pago
-                  </li>
-                  <li>
-                    Complemento INE
-                  </li>
-                  <li>
-                    Complemento Comercio exterior
-                  </li>
+              </div>
+              <div className="row text-start text-light">
 
-                </ul>
-              </li>
-            </ul>
-            <img src={require('./assets/img/All/image.5.png')} className="d-block img-fluid" alt="..." />
-            <p className="font-weight-normal">
-              Esta es la primera parte de nuestra factura a elaborar, se introduce la  información del cliente, el tipo de documento y tipo de pago.
-            </p>
-            <img src={require('./assets/img/All/image.6.png')} className="d-block img-fluid" alt="..." />
-            <p className="font-weight-normal">
-              Esta es la segunda parte de nuestra factura donde se deben de introducir  los datos del producto o servicio, cantidades, impuestos y descripciones. Los  campos con un asterisco rojo deben ser llenados obligatoriamente.
-            </p>
-            <img src={require('./assets/img/All/image.7.png')} className="d-block img-fluid" alt="..." />
-            <p className="font-weight-normal">
-              La tercera y última parte es opcional, es la introducción de impuestos que  pueden modificarse. Esta última parte es importante para los clientes con  Régimen Simplificado de Confianza por la retención del ISR.
-            </p>
-            <img src={require('./assets/img/All/image.8.png')} className="d-block img-fluid" alt="..." />
-            <h5 className="text-success">
-              Sección de “Reportes”
-            </h5>
-            <p className="font-weight-normal">
-              Aquí podremos encontrar nuestro historial de facturación. Se podrá ver el  estado de nuestras facturas y se podrán realizar otras actividades como  cancelaciones, reenvío de facturas y descarga de archivos.
-            </p>
-            <img src={require('./assets/img/All/image.9.png')} className="d-block img-fluid" alt="..." />
-            <h5 className="text-success">
-              Sección de “Usuarios”
-            </h5>
-            <p className="font-weight-normal">
-              En esta sección se podrá manejar la información de los usuarios que tengan  control de la cuenta, se podrá editar información y crear nuevos usuarios.
-            </p>
-            <img src={require('./assets/img/All/image.10.png')} className="d-block img-fluid" alt="..." />
+              </div>
+            </div>
           </div>
         </div>
       </Modal.Body>
       <Modal.Footer>
-        <div className="col-md-2 d-flex justify-content-end"><Button onClick={props.onHide}><h3 className="mb-0">Cerrar</h3> </Button></div>
+
+        <a className="mbtn-sm" onClick={props.onHide} ><span className="mb-0 mbtnSpanBlack">Cerrar</span></a>
+
       </Modal.Footer>
     </Modal >
   );
