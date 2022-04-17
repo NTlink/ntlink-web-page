@@ -2435,7 +2435,7 @@ function MyVerticallyCenteredModalNomina(props) {
 
                   </li>
                   <li>	los archivos son correctos nos arrojara el mensaje de CSD cargado Exitosamente y se actualizara la fecha de vigencia.
-                    <img src={require('./assets/img/All/image.1.png')} className="d-block img-fluid" alt="..." />
+                    <img src={require('./assets/img/All/PLACEHOLDER_image4.jpg')} className="d-block img-fluid" alt="..." />
                   </li>
                 </ul>
               </li>
