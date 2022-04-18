@@ -622,6 +622,7 @@ function App() {
 
               <div className="row text-light d-sm-flex justify-content-sm-end m-3">
                 <div className=" col-1 WithForece">
+
                   <a type="button" className="btn btn-outline-light noBorder" onClick={() => setModalShowContact(true)} >
                     <img className="img-fluid" src={require('./assets/img/All/esquema-de-correo-electronico (1).png')} />
                   </a>
@@ -630,6 +631,7 @@ function App() {
                 <div className="col-1 WithForece2">
 
                   <img className="img-fluid" src={require('./assets/img/All/line.png')} />
+
 
                 </div>
                 <div className="col col-sm-1">
@@ -742,6 +744,7 @@ function MyVerticallyCenteredModal(props) {
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       centered
+
     >
 
       <Modal.Body className='preciosBackPop'>
@@ -2170,11 +2173,6 @@ function MyVerticallyCenteredModalContact(props) {
               </p>
             </Alert>
           }
-
-
-
-
-
           <div className="row justify-content-center">
             <img src={require('./assets/img/All/contacto-head-back.png')} className="img-fluid" alt="..." />
             <div className="col-md-7">
@@ -2205,7 +2203,7 @@ function MyVerticallyCenteredModalContact(props) {
                   </div>
                   <div className="col-md-10 ">
                     <div className="form-group ">
-                      <input type="text" value={state.nombre} onChange={(e) => setname({ ...state, nombre: e.target.value })} className="form-control input-group-text text-light" name="nombre" placeholder="" required="required" />
+                      <input type="text" value={state.nombre} onChange={(e) => setname({ ...state, nombre: e.target.value })} className="form-control input-group-text text-dark" name="nombre" placeholder="" required="required" />
                     </div>
                   </div>
                 </div>
@@ -2217,7 +2215,7 @@ function MyVerticallyCenteredModalContact(props) {
                   </div>
                   <div className="col-md-10">
                     <div className="form-group ">
-                      <input type="text" value={state.nombreEmpresa} onChange={(e) => setname({ ...state, nombreEmpresa: e.target.value })} className="form-control input-group-text text-light" name="nombreEmpresa" placeholder="" required="required" />
+                      <input type="text" value={state.nombreEmpresa} onChange={(e) => setname({ ...state, nombreEmpresa: e.target.value })} className="form-control input-group-text text-dark" name="nombreEmpresa" placeholder="" required="required" />
                     </div>
                   </div>
                 </div>
@@ -2229,7 +2227,7 @@ function MyVerticallyCenteredModalContact(props) {
                   </div>
                   <div className="col-md-10">
                     <div className="form-group ">
-                      <input type="email" value={state.email} onChange={(e) => setname({ ...state, email: e.target.value })} className="form-control input-group-text text-light h4" name="email" placeholder="" required="required" />
+                      <input type="email" value={state.email} onChange={(e) => setname({ ...state, email: e.target.value })} className="form-control input-group-text text-dark h4" name="email" placeholder="" required="required" />
                     </div>
                   </div>
                 </div>
@@ -2241,7 +2239,7 @@ function MyVerticallyCenteredModalContact(props) {
                   </div>
                   <div className="col-md-10">
                     <div className="form-group ">
-                      <input type="number" value={state.telefono} onChange={(e) => setname({ ...state, telefono: e.target.value })} className="form-control input-group-text text-light" name="" placeholder="" required="required" />
+                      <input type="number" value={state.telefono} onChange={(e) => setname({ ...state, telefono: e.target.value })} className="form-control input-group-text text-dark" name="" placeholder="" required="required" />
                     </div>
                   </div>
                 </div>
@@ -2253,7 +2251,7 @@ function MyVerticallyCenteredModalContact(props) {
                   </div>
                   <div className="col-md-10">
                     <div className="form-group ">
-                      <textarea className="form-control text-light input-group-text" value={state.comentarios} onChange={(e) => setname({ ...state, comentarios: e.target.value })} name="comentarios" placeholder="" cols={30} rows={3} />
+                      <textarea className="form-control text-dark input-group-text " value={state.comentarios} onChange={(e) => setname({ ...state, comentarios: e.target.value })} name="comentarios" placeholder="" cols={30} rows={3} />
                     </div>
                   </div>
                 </div>
