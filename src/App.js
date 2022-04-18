@@ -96,7 +96,7 @@ function App() {
                       </div>
                       :
                       <div key={`${carruselPicturesURL[index].urlImage}-${index}`} className="carousel-item">
-                        <a target="_blank"  href={carruselPicturesURL[index].href}><img src={require('./assets/img/All/' + carruselPicturesURL[index].urlImage + '.gif')} className="img-fluid" alt="..." /></a>
+                        <a target="_blank" href={carruselPicturesURL[index].href}><img src={require('./assets/img/All/' + carruselPicturesURL[index].urlImage + '.gif')} className="img-fluid" alt="..." /></a>
                       </div>
                   ))
                 }
@@ -158,7 +158,7 @@ function App() {
 
 
           <div className="col-md-3 d-flex justify-content-center h-50 ">
-              <img src={require('./assets/img/All/PAC-logo.gif')} className="d-block img-fluid " alt="..." />
+            <img src={require('./assets/img/All/PAC-logo.gif')} className="d-block img-fluid " alt="..." />
           </div>
           <div className="col-md-3 d-flex align-items-center">
             <p className="lead text-light ">Tras un largo proceso de certificación
@@ -178,19 +178,19 @@ function App() {
         </div>
         <div className="row p-3">
           <div className="col-sm-2 d-flex justify-content-center">
-              <img src={require('./assets/img/All/main-icono-CFDI.png')} className="d-block img-fluid" alt="..." />
+            <img src={require('./assets/img/All/main-icono-CFDI.png')} className="d-block img-fluid" alt="..." />
           </div>
           <div className="col-sm-2 d-flex justify-content-center align-items-center">
             <a href="https://cfdi33.ntlink.com.mx/Facturacion3.3/wfrLogin.aspx" target="_blank" className="mbtn"><span className="mb-0">ACCESO CFDI</span></a>
           </div>
           <div className="col-sm-2 d-flex justify-content-center">
-              <img src={require('./assets/img/All/main-icono-nomina.png')} className="d-block img-fluid" alt="..." />
+            <img src={require('./assets/img/All/main-icono-nomina.png')} className="d-block img-fluid" alt="..." />
           </div>
           <div className="col-sm-2 d-flex justify-content-center align-items-center">
             <a href="https://cfdi33.ntlink.com.mx/NominaLocal3.3/wfrLogin.aspx" target="_blank" className="mbtn"><span className="mb-0">ACCESO NÓMINA </span></a>
           </div>
           <div className="col-sm-2 d-flex justify-content-center">
-              <img src={require('./assets/img/All/main-icono-agratuito.png')} className="d-block img-fluid" alt="..." />
+            <img src={require('./assets/img/All/main-icono-agratuito.png')} className="d-block img-fluid" alt="..." />
           </div>
           <div className="col-sm-2 d-block col2">
 
@@ -218,7 +218,7 @@ function App() {
 
           <div className="row align-items-center ">
             <div className="col-md-2 d-flex justify-content-center">
-                <img src={require('./assets/img/All/main-icono-CFDI.png')} className="d-block img-fluid" alt="..." />
+              <img src={require('./assets/img/All/main-icono-CFDI.png')} className="d-block img-fluid" alt="..." />
             </div>
             <div className="col-md-8 ">
               <div className="col">
@@ -242,7 +242,7 @@ function App() {
           </div>
           <div className="row align-items-center">
             <div className="col-md-2 d-flex justify-content-center" >
-                <img src={require('./assets/img/All/main-icono-nomina.png')} className="d-block img-fluid" alt="..." />
+              <img src={require('./assets/img/All/main-icono-nomina.png')} className="d-block img-fluid" alt="..." />
             </div>
             <div className="col-md-8 justify-content-center">
               <div className="col">
@@ -266,8 +266,8 @@ function App() {
           </div>
 
           <div className="row align-items-center">
-            <div className="col-md-2 d-flex justify-content-center">         
-                <img src={require('./assets/img/All/main-icono-compsCFDI.png')} className="d-block img-fluid" alt="..." />
+            <div className="col-md-2 d-flex justify-content-center">
+              <img src={require('./assets/img/All/main-icono-compsCFDI.png')} className="d-block img-fluid" alt="..." />
             </div>
             <div className="col-md-8 justify-content-center">
               <div className="col">
@@ -330,8 +330,8 @@ function App() {
           </div>
 
           <div className="row align-items-center">
-            <div className="col-md-2 d-flex justify-content-center">          
-                <img src={require('./assets/img/All/main-icono-adendas.png')} className="d-block img-fluid" alt="..." />
+            <div className="col-md-2 d-flex justify-content-center">
+              <img src={require('./assets/img/All/main-icono-adendas.png')} className="d-block img-fluid" alt="..." />
             </div>
             <div className="col-md-8 justify-content-center">
               <div className="col">
@@ -406,8 +406,8 @@ function App() {
             </div>
           </div>
           <div className="row align-items-center">
-            <div className="col-md-2 d-flex justify-content-center">     
-                <img src={require('./assets/img/All/main-icono-convertidor.png')} className="d-block img-fluid" alt="..." />          
+            <div className="col-md-2 d-flex justify-content-center">
+              <img src={require('./assets/img/All/main-icono-convertidor.png')} className="d-block img-fluid" alt="..." />
             </div>
             <div className="col-md-8 justify-content-center">
               <div className="col">
@@ -563,8 +563,8 @@ function App() {
       <footer id="CONTACTO" className="pt-4 pt-md-5 border-top gradeintBlack bg-dark a-b-2">
         <div className="container  bg-trasparent">
           <div className="row">
-            <div className="col-md-3">             
-                <img className="img-fluid" src={require('./assets/img/All/main-logo-contacto.png')} />        
+            <div className="col-md-3">
+              <img className="img-fluid" src={require('./assets/img/All/main-logo-contacto.png')} />
             </div>
             <div className="col-md-9 mt-5 text-start">
               <div className="row">
@@ -572,7 +572,7 @@ function App() {
               </div>
 
               <div className="row">
-              
+
                 <div className="col-md-3 text-start">
                   <h5 className="text-light " >TELEFONOS</h5>
 
@@ -622,15 +622,17 @@ function App() {
 
               <div className="row text-light d-sm-flex justify-content-sm-end m-3">
                 <div className=" col-1 WithForece">
-                  <a type="button" className="btn btn-outline-light noBorder" onClick={() => setModalShowContact(true)} >                  
-                     <img className="img-fluid" src={require('./assets/img/All/esquema-de-correo-electronico (1).png')} />        
+
+                  <a type="button" className="btn btn-outline-light noBorder" onClick={() => setModalShowContact(true)} >
+                    <img className="img-fluid" src={require('./assets/img/All/esquema-de-correo-electronico (1).png')} />
                   </a>
                 </div>
-                
+
                 <div className="col-1 WithForece2">
-                  
-                  <img className="img-fluid" src={require('./assets/img/All/line.png')} />   
-                  
+
+                  <img className="img-fluid" src={require('./assets/img/All/line.png')} />
+
+
                 </div>
                 <div className="col col-sm-1">
                   <a type="button" className="btn btn-outline-light noBorder" href="https://www.facebook.com/NT-Link-105356365428787" target="_blank">
@@ -707,12 +709,12 @@ function App() {
       <MyVerticallyCenteredModalContact
         show={modalShowContact}
         onHide={() => setModalShowContact(false)}
-      /*     handle={ContactRequest} */
+
       />
       <MyVerticallyCenteredModalDISTRIBUIDORES
         show={modalShowDistribuidores}
         onHide={() => setModalShowDistribuidores(false)}
-
+        setmodalshowcontact={() => setModalShowContact(true)}
       />
       <MyVerticallyCenteredModalPLANESDETIMBRADO
         show={modalShowPlanes}
@@ -742,9 +744,9 @@ function MyVerticallyCenteredModal(props) {
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       centered
-      
+
     >
-     
+
       <Modal.Body className='preciosBackPop'>
         <div className="container ">
           <div className="row justify-content-center text-center">
@@ -1175,7 +1177,7 @@ function MyVerticallyCenteredModal(props) {
             </div>
             <div className="col-5"></div>
           </div>
-         
+
         </div>
       </Modal.Body>
       <Modal.Footer>
@@ -1197,55 +1199,62 @@ function MyVerticallyCenteredModalMASCOMPLEMENTOS(props) {
 
       centered
     >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          <div className="container m-3">
-            <div className="row">
-              <div className="col-md-10">
-                <h2 className="text-light text-start">
-                  MAS INFORMACIÓN DE COMPLEMENTOS
-                </h2>
-              </div>
-              <div className="col-md-2 d-flex justify-content-end"><Button onClick={props.onHide}><h3 className="mb-0">Cerrar</h3> </Button></div>
-            </div>
-          </div>
-        </Modal.Title>
-      </Modal.Header>
+
       <Modal.Body>
         <div className="container">
-          <div className="row text-center">
-            <h3 className="text-success">NUESTROS COMPLEMENTOS: </h3>
-          </div>
-          <div className="row text-center">
-            <div className="col">
-              <ul className="list-unstyled text-small">
-                <li><span className="text-light" >• Recibo electrónico de pagos (Complemento de pagos)</span></li>
-                <li><span className="text-light" >• Instituciones Educativas Privadas (Complemento IUEDU)</span></li>
-                <li><span className="text-light" >• Donatarias </span></li>
-                <li><span className="text-light" >• Complemento INE</span></li>
-                <li><span className="text-light" >• Complemento servicio parcial de construcción</span></li>
-                <li><span className="text-light" >• Complemento vehículos usados</span></li>
-                <li><span className="text-light" >• Complemento Comercio exterior</span></li>
-                <li><span className="text-light" >• Recibo de Nómina</span></li>
-                <li><span className="text-light" >• Generar CFDI C/Retenciones</span></li>
-                <li><span className="text-light" >• CFDI Aduanal</span></li>
-                <li><span className="text-light" >• CFDI con Firmas</span></li>
-                <li><span className="text-light" >• Carta traslado</span></li>
-                <li><span className="text-light" >• Carta Porte</span></li>
-                <li><span className="text-light" >• Comisionistas</span></li>
-                <li><span className="text-light" >• Cfdi complementos</span></li>
-              </ul>
+          <div className="row justify-content-center">
+            <img src={require('./assets/img/All/Complementos-head.png')} className="img-fluid" alt="..." />
+            <div className="col-md-9">
+              <div className="row">
+                <div className="col-md-10 mb-3">
+                  <h4 className="text-success text-start">
+                    MAS INFORMACIÓN DE NUESTROS COMPLEMENTOS:
+                  </h4>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-md-6">
+                  <ul className="list-unstyled text-small">
+                    <li><span className="text-light" >• Recibo electrónico de pagos (Complemento de pagos)</span></li>
+                    <li><span className="text-light" >• Instituciones Educativas Privadas (Complemento IUEDU)</span></li>
+                    <li><span className="text-light" >• Donatarias </span></li>
+                    <li><span className="text-light" >• Complemento INE</span></li>
+                    <li><span className="text-light" >• Complemento servicio parcial de construcción</span></li>
+                    <li><span className="text-light" >• Complemento vehículos usados</span></li>
+                    <li><span className="text-light" >• Complemento Comercio exterior</span></li>
+                    <li><span className="text-light" >• Recibo de Nómina</span></li>
+                    <li><span className="text-light" >• Generar CFDI C/Retenciones</span></li>
+                    <li><span className="text-light" >• CFDI Aduanal</span></li>
+                    <li><span className="text-light" >• CFDI con Firmas</span></li>
+                    <li><span className="text-light" >• Carta traslado</span></li>
+                    <li><span className="text-light" >• Carta Porte</span></li>
+                    <li><span className="text-light" >• Comisionistas</span></li>
+                    <li><span className="text-light" >• Cfdi complementos</span></li>
+                  </ul>
+                </div>
+                <div className="col-md-6 text-center">
+                  <img src={require('./assets/img/All/Complementos-image.png')} className="img-fluid" alt="..." />
+                </div>
+              </div>
+              <div className="row bg-info mt-3">
+                <h6 className="text-light">
+                  <small className="text-success h4">
+                    ¡PROMOCIÓN!:
+                  </small> en caso de que sea nuevo cliente, los complementos se activaran de manera gratuita, en la compra de 100 folios.
+                  Ponte en contacto con nuestro equipo de ventas para mas información del desarrollo de cualquier complemento bajo demanda.
+                </h6>
+              </div>
+              <div className="row">
+                <div className="col-md-12 d-flex justify-content-center align-items-center">
+                  <a className="mbtn-sm" onClick={props.onHide} ><span className="mb-0 mbtnSpanBlack">Cerrar</span></a>
+                </div>
+              </div>
             </div>
+          </div>
 
-          </div>
-          <div className="row">
-            <h6 className="text-success">¡PROMOCIÓN!: en caso de que sea nuevo cliente, los complementos se activaran de manera gratuita, en la compra de 100 folios.
-              Ponte en contacto con nuestro equipo de ventas para mas información del desarrollo de cualquier complemento bajo demanda.
-            </h6>
-          </div>
         </div>
       </Modal.Body>
-      
+
     </Modal >
   );
 }
@@ -1257,130 +1266,164 @@ function MyVerticallyCenteredModalMASConvertidor(props) {
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-10">
-                <h1 className="text-light text-start">
-                  Convertidor Ntlink
-                </h1>
-              </div>
-              <div className="col-md-2 d-flex justify-content-end"><Button onClick={props.onHide}><h3 className="mb-0">Cerrar</h3> </Button></div>
-            </div>
-          </div>
-        </Modal.Title>
-      </Modal.Header>
+
       <Modal.Body>
         <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-md-9">
+              <div className="row text-start text-light">
 
-          <div className="row text-start text-light">
-            <p className="font-weight-normal">Software desarrollado por el equipo de NTlink con el propósito de ofrecer a nuestros clientes una alternativa mas para el timbrado de sus comprantes, ya que es ideal para cualquier integración con ERPs. </p>
-            <p className="font-weight-normal">El convertidor NTlink permite el timbrado de cualquier tipo de CFDI, Complementos y addendas (Consulte nuestro catálogo de complementos y addendas disponibles).</p>
-          </div>
-          <div className="row text-start text-light">
-            <h5 className="text-success">
-              Contratación.
-            </h5>
-            <p className="font-weight-normal">Para hacer uso de nuestro convertidor será necesario pague por la licencia de este y que además contrate un paquete de timbres (Consulte nuestra lista de costos)</p>
-            <p className="font-weight-normal">La licencia es única por convertidor Ntlink, en caso de que requiera múltiples instalaciones de este consulte con nuestros ejecutivos los paquetes de licencias. </p>
+                <div className=" headerCf pt15 pf">
+                  <a href="#Contratación" className='text-decorationNone'>
+                    <h5 className="text-success pt-2">
+                      Apartado Contratación.
+                    </h5>
+                  </a>
+                  <a href="#Funcionamiento" className='text-decorationNone' >
+                    <h5 className="text-success pt-2">
+                      Apartado Funcionamiento
+                    </h5>
+                  </a>
+                  <a href="#EjemplodeLayout" className='text-decorationNone'>
+                    <h5 className="text-success pt-2">
+                      Sección Ejemplo de Layout
+                    </h5>
+                  </a>
+                  <a href="#EjemploXMLgenerado" className='text-decorationNone' >
+                    <h5 className="text-success pt-2">
+                      Apartado Ejemplo XML generado
+                    </h5>
+                  </a>
+                  <a href="#Requerimientosmínimosparalainstalación" className='text-decorationNone'>
+                    <h5 className="text-success pt-2">
+                      Sección de Requerimientos mínimos para la instalación
+                    </h5>
+                  </a>
+                  <a href="#Versióndepruebas" className='text-decorationNone'>
+                    <h5 className="text-success pt-2">
+                      Sección de Versión de pruebas
+                    </h5>
+                  </a>
+                  <div className="col-md-12 pt-2 d-flex justify-content-start align-items-center">
+                    <a className="mbtn-sm" onClick={props.onHide} ><span className="mb-0 mbtnSpanBlack">Cerrar</span></a>
+                  </div>
+                </div>
+                <div className="col-md-4"></div>
+                <div className="col-md-8">
+                  <h5 className="text-success pt-5">
+                    Convertidor Ntlink
+                  </h5>
+                  <div className="row text-start text-light">
+                    <p className="font-weight-normal">Software desarrollado por el equipo de NTlink con el propósito de ofrecer a nuestros clientes una alternativa mas para el timbrado de sus comprantes, ya que es ideal para cualquier integración con ERPs. </p>
+                    <p className="font-weight-normal">El convertidor NTlink permite el timbrado de cualquier tipo de CFDI, Complementos y addendas (Consulte nuestro catálogo de complementos y addendas disponibles).</p>
+                  </div>
+                  <div className="row text-start text-light">
+                    <h5 id='Contratación' className="text-success">
+                      Contratación.
+                    </h5>
+                    <p className="font-weight-normal">Para hacer uso de nuestro convertidor será necesario pague por la licencia de este y que además contrate un paquete de timbres (Consulte nuestra lista de costos)</p>
+                    <p className="font-weight-normal">La licencia es única por convertidor Ntlink, en caso de que requiera múltiples instalaciones de este consulte con nuestros ejecutivos los paquetes de licencias. </p>
 
 
-          </div>
-          <div className="row text-start text-light">
-            <h5 className="text-success">
-              Funcionamiento
-            </h5>
-            <p className="font-weight-normal">El Convertidor Ntlink se instala de manera local en el equipo/servidor que usted desee y funciona mediante carpetas en donde se depositarán los txt correspondientes para la generación de los comprantes deseados. </p>
-            <p className="font-weight-normal">Cada una de las carpetas generadas tiene una función especifica en el Convertidor Ntlink, las carpetas se pueden vincular o “mapear” de la forma que deseemos en el las dentro de las configuraciones del aplicativo. </p>
-            <img src={require('./assets/img/All/image1.png')} className="d-block img-fluid" alt="..." />
-            <p className="font-italic">Ejemplo directorio de carpetas.</p>
+                  </div>
+                  <div className="row text-start text-light">
+                    <h5 id='Funcionamiento' className="text-success">
+                      Funcionamiento
+                    </h5>
+                    <p className="font-weight-normal">El Convertidor Ntlink se instala de manera local en el equipo/servidor que usted desee y funciona mediante carpetas en donde se depositarán los txt correspondientes para la generación de los comprantes deseados. </p>
+                    <p className="font-weight-normal">Cada una de las carpetas generadas tiene una función especifica en el Convertidor Ntlink, las carpetas se pueden vincular o “mapear” de la forma que deseemos en el las dentro de las configuraciones del aplicativo. </p>
+                    <img src={require('./assets/img/All/image1.png')} className="d-block img-fluid" alt="..." />
+                    <p className="font-italic">Ejemplo directorio de carpetas.</p>
 
-            <p className="font-italic"></p>
-
-
-            <ul className="list-unstyled">
-              <li>Carpetas
-                <ul>
-                  <li>	Entrada: En esta se depositarán los txt que se deseen convertir y timbrar</li>
-                  <li>	Error: En esta carpeta se depositarán los txt que tengan errores de estructura y/o de validación en el llenado </li>
-                  <li>	Respaldo: en esta carpeta una vez timbrados los txt se quedarán guardados para futuras referencias</li>
-                  <li>	Salida: una vez procesados los archivos txt dentro de esta carpeta encontraremos los archivos XML y PDF de los comprobantes.</li>
-                  <li>	Cancela: En esta carpeta se depositan los txt de cancelación que se deseen procesar.</li>
-                </ul>
-              </li>
-            </ul>
+                    <p className="font-italic"></p>
 
 
-          </div>
-          <div className="row text-start text-light">
+                    <ul className="list-unstyled">
+                      <li>Carpetas
+                        <ul>
+                          <li>	Entrada: En esta se depositarán los txt que se deseen convertir y timbrar</li>
+                          <li>	Error: En esta carpeta se depositarán los txt que tengan errores de estructura y/o de validación en el llenado </li>
+                          <li>	Respaldo: en esta carpeta una vez timbrados los txt se quedarán guardados para futuras referencias</li>
+                          <li>	Salida: una vez procesados los archivos txt dentro de esta carpeta encontraremos los archivos XML y PDF de los comprobantes.</li>
+                          <li>	Cancela: En esta carpeta se depositan los txt de cancelación que se deseen procesar.</li>
+                        </ul>
+                      </li>
+                    </ul>
 
-            <p className="font-weight-normal">Uno de los beneficios del Convertidor Ntlink es que es multiempresa, es decir, permite el timbrado con las razones sociales que deseemos siempre que cuenten con un paquete de timbrado (consulte nuestra lista de precios). </p>
-            <p className="font-weight-normal">Del mismo modo se permite la precarga del logo de cada una de las razones sociales para que estos aparezcan en la representación impresa de sus comprobantes PDF. </p>
-            <img src={require('./assets/img/All/image3.png')} className="d-block img-fluid" alt="..." />
-            <p className="font-italic">Interfaz gráfica Convertidor Ntlink</p>
-            <p className="font-weight-normal">Nuestro aplicativo trabaja con plantillas de archivos txt, que al cumplir con la estructura correcta y las validaciones correspondientes, entregan al cliente su XML timbrado y sellado así como la representación gráfica del cfdi (PDF). </p>
-            <p className="font-weight-bold">Cabe mencionar que el Convertidor NTlink permite el timbrado masivo de txt, procesando archivos txt en un tiempo estimado de 5 segundos por archivo</p>
 
-            <p className="font-weight-normal">El archivo layout txt está dividido por líneas que representan un grupo de datos del comprobante cfdi. Las atributos correspondientes a cada línea se separan por el carácter pipe ( | ) y deben cumplir estrictamente con el orden definido en el diccionario de datos.</p>
-            <h5 className="text-success">Ejemplo de Layout</h5>
-            <p className="font-weight-bold">COMP||00001|43767|04100|I|01|PUE|0|100.56||116.65|MXN|||||Factura|||
-              E|EKU9003173C9|NTLINK PRUEBA|601||||||
-              R|XAXX010101000|RAZON SOCIAL CLIENTE|G01|||soporte@ntlink.com.mx|soporte3@ntlink.com.mx|DIRECCION CLIENTE|
-              C|1|76111500||1|H87|Pza|Prueba de llenado|100.56|100.56|||||
-              ITC|1|100.56|002|Tasa|0.160000|16.09|
-              IT|002|Tasa|0.160000|16.09|
-              TIMP|16.09||
-              AD|0|0|0|0|0|0|0|0||||||
-              FIN
-            </p>
-          </div>
-          <div className="row text-start text-light">
+                  </div>
+                  <div className="row text-start text-light">
 
-            <p className="font-weight-normal">Una vez estructurado y procesado el archivo txt el Convertidor Ntlink deposita dentro de la carpeta de Salida los archivos XML y PDF correspondientes a nuestro archivo. </p>
-            <img src={require('./assets/img/All/image2.png')} className="d-block img-fluid" alt="..." />
-            <p className="font-italic">Ejemplo archivos procesados</p>
-            <img src={require('./assets/img/All/image4.png')} className="d-block img-fluid" alt="..." />
-            <p className="font-weight-italic">
-              Ejemplo XML generado
-            </p>
-            <h5 className="text-success">Ejemplo XML generado</h5>
-          </div>
-          <div className="row text-start text-light">
-            <p className="font-italic">
-              {code}
-            </p>
-          </div>
-          <div className="row text-start text-light">
-            <h5 className="text-success">
-              Requerimientos mínimos para la instalación
-            </h5>
-            <ul className="list-unstyled">
-              <li>
-                <ul>
-                  <li>	Sistema operativo Windows 32 o 64 bits (Win 7, Win 8, Win 10, Win Server 12, Win Server 16) </li>
-                  <li>	Memoria RAM 512 Mb</li>
-                  <li>	50 MB libres de espacio en Disco duro </li>
-                </ul>
-              </li>
-            </ul>
-            <h5 className="text-success">
-              Proceso de instalación
-            </h5>
-            <p className="font-weight-normal">
-              Una vez realizada la compra de la licencia del Convertidor Ntlink se entregará el codigo de licencia y uno de nuestros ejecutivos de atención a clientes se pondrá en contacto con usted para la instalación y configuración de nuestra aplicación.
-            </p>
-            <h5 className="text-success">
-              Versión de pruebas
-            </h5>
-            <p className="font-weight-normal">
-              Si desea evaluar el Convertidor NTlink puede solicitar le instalemos la versión gratuita de nuestro aplicativo en el siguiente correo: soporte.tecnico@ntlink.com.mx donde uno de nuestros agentes de atención a clientes se pondrá en contacto con usted para acordar la instalación de nuestra versión de pruebas. </p>
+                    <p className="font-weight-normal">Uno de los beneficios del Convertidor Ntlink es que es multiempresa, es decir, permite el timbrado con las razones sociales que deseemos siempre que cuenten con un paquete de timbrado (consulte nuestra lista de precios). </p>
+                    <p className="font-weight-normal">Del mismo modo se permite la precarga del logo de cada una de las razones sociales para que estos aparezcan en la representación impresa de sus comprobantes PDF. </p>
+                    <img src={require('./assets/img/All/image3.png')} className="d-block img-fluid" alt="..." />
+                    <p className="font-italic">Interfaz gráfica Convertidor Ntlink</p>
+                    <p className="font-weight-normal">Nuestro aplicativo trabaja con plantillas de archivos txt, que al cumplir con la estructura correcta y las validaciones correspondientes, entregan al cliente su XML timbrado y sellado así como la representación gráfica del cfdi (PDF). </p>
+                    <p className="font-weight-bold">Cabe mencionar que el Convertidor NTlink permite el timbrado masivo de txt, procesando archivos txt en un tiempo estimado de 5 segundos por archivo</p>
 
+                    <p className="font-weight-normal">El archivo layout txt está dividido por líneas que representan un grupo de datos del comprobante cfdi. Las atributos correspondientes a cada línea se separan por el carácter pipe ( | ) y deben cumplir estrictamente con el orden definido en el diccionario de datos.</p>
+                    <h5 id='EjemplodeLayout' className="text-success">Ejemplo de Layout</h5>
+                    <p className="font-weight-bold">COMP||00001|43767|04100|I|01|PUE|0|100.56||116.65|MXN|||||Factura|||
+                      E|EKU9003173C9|NTLINK PRUEBA|601||||||
+                      R|XAXX010101000|RAZON SOCIAL CLIENTE|G01|||soporte@ntlink.com.mx|soporte3@ntlink.com.mx|DIRECCION CLIENTE|
+                      C|1|76111500||1|H87|Pza|Prueba de llenado|100.56|100.56|||||
+                      ITC|1|100.56|002|Tasa|0.160000|16.09|
+                      IT|002|Tasa|0.160000|16.09|
+                      TIMP|16.09||
+                      AD|0|0|0|0|0|0|0|0||||||
+                      FIN
+                    </p>
+                  </div>
+                  <div className="row text-start text-light">
+
+                    <p className="font-weight-normal">Una vez estructurado y procesado el archivo txt el Convertidor Ntlink deposita dentro de la carpeta de Salida los archivos XML y PDF correspondientes a nuestro archivo. </p>
+                    <img src={require('./assets/img/All/image2.png')} className="d-block img-fluid" alt="..." />
+                    <p className="font-italic">Ejemplo archivos procesados</p>
+                    <img src={require('./assets/img/All/image4.png')} className="d-block img-fluid" alt="..." />
+                    <p className="font-weight-italic">
+                      Ejemplo XML generado
+                    </p>
+                    <h5 id='EjemploXMLgenerado' className="text-success">Ejemplo XML generado</h5>
+                  </div>
+                  <div className="row text-start text-light">
+                    <p className="font-italic">
+                      {code}
+                    </p>
+                  </div>
+                  <div className="row text-start text-light">
+                    <h5 id='Requerimientosmínimosparalainstalación' className="text-success">
+                      Requerimientos mínimos para la instalación
+                    </h5>
+                    <ul className="list-unstyled">
+                      <li>
+                        <ul>
+                          <li>	Sistema operativo Windows 32 o 64 bits (Win 7, Win 8, Win 10, Win Server 12, Win Server 16) </li>
+                          <li>	Memoria RAM 512 Mb</li>
+                          <li>	50 MB libres de espacio en Disco duro </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <h5 id='Procesodeinstalación' className="text-success">
+                      Proceso de instalación
+                    </h5>
+                    <p className="font-weight-normal">
+                      Una vez realizada la compra de la licencia del Convertidor Ntlink se entregará el codigo de licencia y uno de nuestros ejecutivos de atención a clientes se pondrá en contacto con usted para la instalación y configuración de nuestra aplicación.
+                    </p>
+                    <h5 id='Versióndepruebas' className="text-success">
+                      Versión de pruebas
+                    </h5>
+                    <p className="font-weight-normal">
+                      Si desea evaluar el Convertidor NTlink puede solicitar le instalemos la versión gratuita de nuestro aplicativo en el siguiente correo: soporte.tecnico@ntlink.com.mx donde uno de nuestros agentes de atención a clientes se pondrá en contacto con usted para acordar la instalación de nuestra versión de pruebas. </p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </Modal.Body>
       <Modal.Footer>
-        <div className="col-md-2 d-flex justify-content-end"><Button onClick={props.onHide}><h3 className="mb-0">Cerrar</h3> </Button></div>
+        <div className="col-md-2 d-flex justify-content-end"> <a className="mbtn-sm" onClick={props.onHide} ><span className="mb-0 mbtnSpanBlack">Cerrar</span></a></div>
       </Modal.Footer>
     </Modal >
   );
@@ -1393,80 +1436,86 @@ function MyVerticallyCenteredModalMASADDENDAS(props) {
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-10">
-                <h1 className="text-light text-start">
-                  MAS INFORMACIÓN ADDENDAS
-                </h1>
-              </div>
-              <div className="col-md-2 d-flex justify-content-end"><Button onClick={props.onHide} className="buttonchico"><h3 className="mb-0  ">Cerrar</h3> </Button></div>
-            </div>
-          </div>
-        </Modal.Title>
-      </Modal.Header>
+
       <Modal.Body>
         <div className="container">
-          <div className="row m-3">
-            <h3 className="text-success">
-              NUESTRAS ADDENDAS:
-            </h3>
-          </div>
-          <div className="row m-3">
+          <div className="row justify-content-center">
+            <img src={require('./assets/img/All/Addendas-head.png')} className="img-fluid" alt="..." />
+            <div className="col-md-9">
+              <div className="row">
+                <div className="col-md-10 mb-3">
+                  <h4 className="text-success text-start">
+                    MAS INFORMACIÓN ADDENDAS:
+                  </h4>
+                </div>
+              </div>
 
-            <ul className="list-unstyled text-small">
-              <li><span className="text-light" >• Addenda 1888</span></li>
-              <li><span className="text-light" >• Addenda ADO </span></li>
-              <li><span className="text-light" >• Addenda Vallen  </span></li>
-              <li><span className="text-light" >• Addenda Asonioscoc </span></li>
-              <li><span className="text-light" >• Addenda Asofarma </span></li>
-              <li><span className="text-light" >• Addenda Cinepolis </span></li>
-              <li><span className="text-light" >• Addenda Disney</span></li>
-              <li><span className="text-light" >• Addenda Nadro</span></li>
-              <li><span className="text-light" >• Addenda Neto</span></li>
-              <li><span className="text-light" >• Addenda SKY</span></li>
-              <li><span className="text-light" >• Addenda Calsonic</span></li>
-              <li><span className="text-light" >• Addenda IUSACELL</span></li>
-              <li><span className="text-light" >• Addenda BIC</span></li>
-              <li><span className="text-light" >• Addenda Jumex</span></li>
-              <li><span className="text-light" >• Addenda Mabe</span></li>
-              <li><span className="text-light" >• Addenda Pilgrims                </span></li>
-              <li><span className="text-light" >• Addenda Elektra   </span></li>
-              <li><span className="text-light" >• Addenda Pemex</span></li>
-              <li><span className="text-light" >• Addenda Vallen</span></li>
-              <li><span className="text-light" >• Addenda Super Farmacia  </span></li>
-              <li><span className="text-light" >• Addenda Mondelez</span></li>
-              <li><span className="text-light" >• Addenda Liverpool</span></li>
-              <li><span className="text-light" >• Addenda Jumex</span></li>
-              <li><span className="text-light" >• Addenda Honda</span></li>
-              <li><span className="text-light" >• Addenda Nissan</span></li>
-              <li><span className="text-light" >• Addenda Volskwagen </span></li>
-              <li><span className="text-light" >• Addenda  Chrysler (PUA, PPY) </span></li>
-              <li><span className="text-light" >• Addenda GM</span></li>
-              <li><span className="text-light" >• Addenda Soriana</span></li>
-              <li><span className="text-light" >• Addenda Tridonex</span></li>
-              <li><span className="text-light" >• Addenda Copel</span></li>
-              <li><span className="text-light" >• Addenda FEMSA</span></li>
-              <li><span className="text-light" >• Addenda sunchemical </span></li>
-            </ul>
-
-
-            <div className="row">
-              <h6 className="text-light">
-                ¡PROMOCIÓN!: en caso de que sea nuevo cliente, los complementos se activaran de manera gratuita, en la compra de 100 folios.
-                Ponte en contacto con nuestro equipo de ventas para mas información del desarrollo de cualquier complemento bajo demanda.
-
-              </h6>
+              <div className="row m-3">
+                <div className="col-md-4">
+                  <ul className="list-unstyled text-small">
+                    <li><span className="text-light" >• Addenda 1888</span></li>
+                    <li><span className="text-light" >• Addenda ADO </span></li>
+                    <li><span className="text-light" >• Addenda Vallen  </span></li>
+                    <li><span className="text-light" >• Addenda Asonioscoc </span></li>
+                    <li><span className="text-light" >• Addenda Asofarma </span></li>
+                    <li><span className="text-light" >• Addenda Cinepolis </span></li>
+                    <li><span className="text-light" >• Addenda Disney</span></li>
+                    <li><span className="text-light" >• Addenda Nadro</span></li>
+                    <li><span className="text-light" >• Addenda Neto</span></li>
+                    <li><span className="text-light" >• Addenda SKY</span></li>
+                    <li><span className="text-light" >• Addenda Calsonic</span></li>
+                  </ul>
+                </div>
+                <div className="col-md-4">
+                  <ul className="list-unstyled text-small">
+                    <li><span className="text-light" >• Addenda IUSACELL</span></li>
+                    <li><span className="text-light" >• Addenda BIC</span></li>
+                    <li><span className="text-light" >• Addenda Jumex</span></li>
+                    <li><span className="text-light" >• Addenda Mabe</span></li>
+                    <li><span className="text-light" >• Addenda Pilgrims                </span></li>
+                    <li><span className="text-light" >• Addenda Elektra   </span></li>
+                    <li><span className="text-light" >• Addenda Pemex</span></li>
+                    <li><span className="text-light" >• Addenda Vallen</span></li>
+                    <li><span className="text-light" >• Addenda Super Farmacia  </span></li>
+                    <li><span className="text-light" >• Addenda Mondelez</span></li>
+                    <li><span className="text-light" >• Addenda Liverpool</span></li>
+                  </ul>
+                </div>
+                <div className="col-md-4">
+                  <ul className="list-unstyled text-small">
+                    <li><span className="text-light" >• Addenda Jumex</span></li>
+                    <li><span className="text-light" >• Addenda Honda</span></li>
+                    <li><span className="text-light" >• Addenda Nissan</span></li>
+                    <li><span className="text-light" >• Addenda Volskwagen </span></li>
+                    <li><span className="text-light" >• Addenda  Chrysler (PUA, PPY) </span></li>
+                    <li><span className="text-light" >• Addenda GM</span></li>
+                    <li><span className="text-light" >• Addenda Soriana</span></li>
+                    <li><span className="text-light" >• Addenda Tridonex</span></li>
+                    <li><span className="text-light" >• Addenda Copel</span></li>
+                    <li><span className="text-light" >• Addenda FEMSA</span></li>
+                    <li><span className="text-light" >• Addenda sunchemical </span></li>
+                  </ul>
+                </div>
+              </div>
+              <div className="row bg-info mt-3">
+                <h6 className="text-light">
+                  <small className="text-success h4">
+                    ¡PROMOCIÓN!:
+                  </small>  en caso de que sea nuevo cliente, los complementos se activaran de manera gratuita, en la compra de 100 folios.
+                  Ponte en contacto con nuestro equipo de ventas para mas información del desarrollo de cualquier complemento bajo demanda.
+                </h6>
+              </div>
+              <div className="row ">
+                <div className="col-md-12 d-flex justify-content-center align-items-center">
+                  <a className="mbtn-sm" onClick={props.onHide} ><span className="mb-0 mbtnSpanBlack">Cerrar</span></a>
+                </div>
+              </div>
             </div>
-
-
           </div>
         </div>
 
       </Modal.Body>
-     
+
     </Modal >
   );
 }
@@ -1479,7 +1528,7 @@ function MyVerticallyCenteredModalPRIVACIDAD(props) {
       centered
     >
       <Modal.Header closeButton>
-        
+
 
 
 
@@ -1771,7 +1820,7 @@ function MyVerticallyCenteredModalPRIVACIDAD(props) {
                 de privacidad es el siguiente: Se publicará en la página web de NT Link, dando a conocer la actualización del aviso de
                 privacidad.
               </p>
-              <div class="row justify-content-center">
+              <div className="row justify-content-center">
                 <a className="mbtn-sm" onClick={props.onHide} ><span className="mb-0 mbtnSpanBlack">Cerrar</span></a>
               </div>
             </div>
@@ -2083,7 +2132,7 @@ function MyVerticallyCenteredModalTERMINOS(props) {
                 de privacidad es el siguiente: Se publicará en la página web de NT Link, dando a conocer la actualización del aviso de
                 privacidad.
               </p>
-              <div class="row justify-content-center">
+              <div className="row justify-content-center">
                 <a className="mbtn-sm" onClick={props.onHide} ><span className="mb-0 mbtnSpanBlack">Cerrar</span></a>
               </div>
             </div>
@@ -2099,7 +2148,7 @@ function MyVerticallyCenteredModalTERMINOS(props) {
   );
 }
 function MyVerticallyCenteredModalContact(props) {
-  /*  var handleChange =  */
+
   const [emailSucces, setModalShowSucces] = React.useState(false);
   const [state, setname] = React.useState({ nombre: '', nombreEmpresa: '', email: '', telefono: '', comentarios: '' });
   return (
@@ -2109,7 +2158,7 @@ function MyVerticallyCenteredModalContact(props) {
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-     
+
       <Modal.Body>
         <div className="container">
           {emailSucces &&
@@ -2161,7 +2210,7 @@ function MyVerticallyCenteredModalContact(props) {
                 <div className="row mt-3">
                   <div className="col-md-2">
                     <h6 className="text-light text-end m-0">
-                    Nombre de la Empresa:
+                      Nombre de la Empresa:
                     </h6>
                   </div>
                   <div className="col-md-10">
@@ -2173,7 +2222,7 @@ function MyVerticallyCenteredModalContact(props) {
                 <div className="row mt-3">
                   <div className="col-md-2">
                     <h6 className="text-light text-end m-0">
-                    Correo:
+                      Correo:
                     </h6>
                   </div>
                   <div className="col-md-10">
@@ -2185,7 +2234,7 @@ function MyVerticallyCenteredModalContact(props) {
                 <div className="row mt-3">
                   <div className="col-md-2">
                     <h6 className="text-light text-end m-0">
-                    Telefono:
+                      Telefono:
                     </h6>
                   </div>
                   <div className="col-md-10">
@@ -2197,7 +2246,7 @@ function MyVerticallyCenteredModalContact(props) {
                 <div className="row mt-3">
                   <div className="col-md-2">
                     <h6 className="text-light text-end m-0">
-                    Comentarios:
+                      Comentarios:
                     </h6>
                   </div>
                   <div className="col-md-10">
@@ -2207,16 +2256,16 @@ function MyVerticallyCenteredModalContact(props) {
                   </div>
                 </div>
                 <div className="row">
-                  
-               
+
+
                   <div className="col-md-2">
-                    
+
                   </div>
                   <div className="col-md-5 d-flex justify-content-center">
-                  <button className="mbtn-sm" type="submit" > <span className='mbtnSpanBlack'> Enviar </span> </button>
+                    <button className="mbtn-sm" type="submit" > <span className='mbtnSpanBlack'> Enviar </span> </button>
                   </div>
                   <div className="col-md-5 d-flex justify-content-center">
-                  <a className="mbtn-sm" onClick={props.onHide} ><span className="mb-0 mbtnSpanBlack">Cerrar</span></a>
+                    <a className="mbtn-sm" onClick={props.onHide} ><span className="mb-0 mbtnSpanBlack">Cerrar</span></a>
                   </div>
                 </div>
               </form>
@@ -2229,7 +2278,7 @@ function MyVerticallyCenteredModalContact(props) {
 
         </div>
       </Modal.Body>
-      
+
     </Modal >
   );
 }
@@ -2241,44 +2290,46 @@ function MyVerticallyCenteredModalDISTRIBUIDORES(props) {
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-10">
-                <h3 className="text-light text-start">
-                  DISTRIBUIDORES/ DESARROLLADORES:
-                </h3>
-              </div>
-              <div className="col-md-2 d-flex justify-content-end"><Button onClick={props.onHide}><h3 className="mb-0">Cerrar</h3> </Button></div>
-            </div>
-          </div>
-        </Modal.Title>
-      </Modal.Header>
+
       <Modal.Body>
         <div className="container">
-          <div className="row m-3 ">
-            <section className="author-area">
-              <div className="container">
-                <div className="row justify-content-center">
-                  <div className="col-md-8">
-                    <div className="row">
+          <div className="row justify-content-center">
+            <img src={require('./assets/img/All/Distribuidoresdesarrolladores-head.png')} className="img-fluid" alt="..." />
+            <div className="col-md-9">
+              <div className="row justify-content-center mt-3">
+                <div className="col-md-7">
+                  <div className="row">
+                    <p className="text-light">
+                      <small className="text-success h4">
+                        Como distribuidor, podrás obtener ganancias mediante la reventa de nuestros productos,
+                      </small>
+                      ya que tenemos atractivos planes para que puedas obtener ganancias y crecer junto a nosotros. Contacta al equipo de ventas para más información.
+                      Para los desarrolladores, tenemos planes interesantes para apoyarte con tu nueva aplicación, te podemos apoyar con un numero de timbres adecuados a tu proyecto en un esquema pospago, ponte en contacto para mas información.
+                    </p>
+                  </div>
+                  <div className="row">
+                    <div className="col-md-6 d-flex justify-content-center align-items-center">
+                      <a className="mbtn-sm" onClick={props.setmodalshowcontact} ><span className="mb-0 mbtnSpanBlack">Contacto</span></a>
+                    </div>
+                    <div className="col-md-6 d-flex justify-content-center align-items-center">
+                      <a className="mbtn-sm" onClick={props.onHide} ><span className="mb-0 mbtnSpanBlack">Cerrar</span></a>
                     </div>
 
-                    <h6 className="text-light">
-                      Como distribuidor, podrás obtener ganancias mediante la reventa de nuestros productos, ya que tenemos atractivos planes para que puedas obtener ganancias y crecer junto a nosotros. Contacta al equipo de ventas para más información.
-                      Para los desarrolladores, tenemos planes interesantes para apoyarte con tu nueva aplicación, te podemos apoyar con un numero de timbres adecuados a tu proyecto en un esquema pospago, ponte en contacto para mas información.
-                    </h6>
                   </div>
 
+
+                </div>
+                <div className="col-md-5 text-center">
+                  <img src={require('./assets/img/All/Distribuidoresdesarrolladores-image02.png')} className="img-fluid" alt="..." />
                 </div>
               </div>
-            </section>
+            </div>
+
           </div>
         </div>
 
       </Modal.Body>
-    
+
     </Modal >
   );
 }
@@ -2340,7 +2391,7 @@ function MyVerticallyCenteredModalPLANESDETIMBRADO(props) {
         </div>
 
       </Modal.Body >
- 
+
     </Modal >
   );
 }
@@ -2352,156 +2403,170 @@ function MyVerticallyCenteredModalNomina(props) {
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-10">
-                <h1 className="text-light text-start">
-                  Portal de Nómina
-                </h1>
-              </div>
-              <div className="col-md-2 d-flex justify-content-end"><Button onClick={props.onHide}><h3 className="mb-0">Cerrar</h3> </Button></div>
-            </div>
-          </div>
-        </Modal.Title>
-      </Modal.Header>
+
       <Modal.Body>
         <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-md-9">
+              <div className="row text-start text-light">
 
-          <div className="row text-start text-light">
-            <p className="font-weight-normal">El portal de nómina 1.2 te permitirá realizar tu recibo cuando efectúes pagos a tus trabajadores por sueldos, salarios y en general por la prestación de un servicio personal, timbra tus recibos en minutos.
-              Te permite elaborar tus recibos desde cualquier equipo con acceso a internet y un navegador.
-            </p>
-            <p className="font-weight-normal">Podrás emitir, consultar, descargar, reenviar y cancelar tus recibos desde tu perfil.
-            </p>
-          </div>
-          <div className="row text-start text-light">
-            <h5 className="text-success">
-              Contratación.
-            </h5>
-            <p className="font-weight-normal">Para ingresar completa el registro, realiza el pago por un paquete de folios (Consulte nuestra lista de costos).
-              El correo que proporciones será tu usuario de ingreso a la plataforma, recibirás una contraseña temporal (esta debe ingresarse respetando números, mayúsculas, minúsculas y caracteres especiales) y liga de acceso. El sistema se bloqueará por seguridad después del tercer intento erróneo.
-            </p>
-            <p className="font-weight-normal">Siendo la primera vez que ingrese se solicita definir su contraseña y la confirmación de esta. La nueva contraseña debe ser mayor a 8 caracteres, tener mayúsculas, minúsculas, carácter especial y algún número.
-              Recuerda que es importante tener vigente ante hacienda el CSD (Certificado de Sello Digital).
-            </p>
+                <div className=" headerCf pt15 pf">
+                  <a href="#Contratación" className='text-decorationNone'>
+                    <h5 className="text-success pt-2">
+                      Apartado Contratación
+                    </h5>
+                  </a>
+                  <a href="#Funcionamiento" className='text-decorationNone' >
+                    <h5 className="text-success pt-2">
+                      Apartado Funcionamiento
+                    </h5>
+                  </a>
 
+                  <div className="col-md-12 pt-2 d-flex justify-content-start align-items-center">
+                    <a className="mbtn-sm" onClick={props.onHide} ><span className="mb-0 mbtnSpanBlack">Cerrar</span></a>
+                  </div>
+                </div>
+                <div className="col-md-4"></div>
+                <div className="col-md-8 pt-3">
+                  <h5 id='Funcionamiento' className="text-success">
+                    Portal de Nómina
+                  </h5>
+                  <p className="font-weight-normal">El portal de nómina 1.2 te permitirá realizar tu recibo cuando efectúes pagos a tus trabajadores por sueldos, salarios y en general por la prestación de un servicio personal, timbra tus recibos en minutos.
+                    Te permite elaborar tus recibos desde cualquier equipo con acceso a internet y un navegador.
+                  </p>
+                  <p className="font-weight-normal">Podrás emitir, consultar, descargar, reenviar y cancelar tus recibos desde tu perfil.
+                  </p>
 
-          </div>
-          <div className="row text-start text-light">
-            <h5 className="text-success">
-              Funcionamiento
-            </h5>
-            <p className="font-weight-normal">Una vez ya registrado y contando con tu usuario y contraseña comienza a configurar los datos de tu empresa. </p>
-            <p className="font-weight-normal">En el Menú de Empresas, selecciona la opción de Editar
-            </p>
-            <img src={require('./assets/img/All/PLACEHOLDER_image4.jpg')} className="d-block img-fluid" alt="..." />
-            <p className="font-weight-normal">
-              Aquí podremos actualizar o editar los datos de la empresa como el Régimen fiscal, direcciono fiscal y el logotipo de la empresa (debe pesar máximo 50Kb y ser un archivo *jpeg y *png) etc.
-            </p>
-            <p className="font-italic">También puedes consultar nuestro <a href='https://www.youtube.com/watch?v=iTdQAs_KAbE' target="_blank">video tutorial</a> en nuestro canal de YouTube.
-            </p>
-
-            <p className="font-weight-normal">
-              Dentro de este mismo menú podremos cargar el Certificado de Sello Digital el cual es indispensable tener vigente para generar nuestros recibos.
-
-            </p>
-
-
-            <ul className="list-unstyled">
-              <li>
-                <ul>
-                  <li> En el sistema deberemos cargar el archivo .CER, .KEY y la contraseña de la Llave. Seleccionamos el botón de Validar y Guardar
-
-                  </li>
-                  <li>	los archivos son correctos nos arrojara el mensaje de CSD cargado Exitosamente y se actualizara la fecha de vigencia.
-                    <img src={require('./assets/img/All/image.1.png')} className="d-block img-fluid" alt="..." />
-                  </li>
-                </ul>
-              </li>
-            </ul>
-
-            <p className="font-italic">También puedes consultar nuestro <a href='https://www.youtube.com/watch?v=EfpO8uumw2k' target="_blank">video tutorial</a> en nuestro canal de YouTube.
-            </p>
-
-          </div>
-          <div className="row text-start text-light">
-
-            <p className="font-weight-normal">Otra sección que debemos completar son los Centros de Trabajo, lo podemos encontrar en el menú de empresas, seleccionando la opción de Centros de trabajo.
-              Aquí podremos agregar nuevos o editar los ya cargados.
-              Es importante completar los campos que tengan * Una vez actualizada esta información solo deberemos seleccionar el botón de guardar.
-            </p>
-            <img src={require('./assets/img/All/PLACEHOLDER_image1.jpg')} className="d-block img-fluid" alt="..." />
-
-            <p className="font-weight-normal">
-              La siguiente sección que debemos completar es el Catálogo de Empleados.
-            </p>
-            <p className="font-weight-normal">En esta registraremos los empleados de la empresa, podremos agregar, editar o  eliminar la información del empleado en caso de ser necesario. Para el registro de un empleado nuevo comenzamos en la sección de Datos de  empleado asegurándonos que los campos con * sean completados y  seleccionamos agregar Subcontratación. </p>
-            <img src={require('./assets/img/All/PLACEHOLDER_image2.jpg')} className="d-block img-fluid" alt="..." />
-
-            <p className="font-weight-normal">
-              Posteriormente completaremos los datos de Nómina del Empleado, también  asegurándonos de completar los campos con * y al terminar seleccionamos guardar
-            </p>
-            <img src={require('./assets/img/All/PLACEHOLDER_image3.jpg')} className="d-block img-fluid" alt="..." />
-
-            <p className="font-weight-normal">Una vez completada la información de la empresa y cargados los empleados podremos comenzar a realizar los recibos de Nómina.</p>
-            <p className="font-weight-normal">Comenzamos seleccionando el Centro de Trabajo, la Periodicidad, tipo de Nomina y el empleado al que se genera el recibo ya que estos son campos requeridos.
-              Posteriormente continuamos con el llenado de Datos de Nómina.
-              Fecha de pago, días pagados, fecha de inicio y final del pago.
-            </p>
-            <img src={require('./assets/img/All/PLACEHOLDER_image6.jpg')} className="d-block img-fluid" alt="..." />
+                  <div className="row text-start text-light">
+                    <h5 id='Contratación' className="text-success">
+                      Contratación.
+                    </h5>
+                    <p className="font-weight-normal">Para ingresar completa el registro, realiza el pago por un paquete de folios (Consulte nuestra lista de costos).
+                      El correo que proporciones será tu usuario de ingreso a la plataforma, recibirás una contraseña temporal (esta debe ingresarse respetando números, mayúsculas, minúsculas y caracteres especiales) y liga de acceso. El sistema se bloqueará por seguridad después del tercer intento erróneo.
+                    </p>
+                    <p className="font-weight-normal">Siendo la primera vez que ingrese se solicita definir su contraseña y la confirmación de esta. La nueva contraseña debe ser mayor a 8 caracteres, tener mayúsculas, minúsculas, carácter especial y algún número.
+                      Recuerda que es importante tener vigente ante hacienda el CSD (Certificado de Sello Digital).
+                    </p>
 
 
+                  </div>
+                  <div className="row text-start text-light">
+                    <h5 id='Funcionamiento' className="text-success">
+                      Funcionamiento
+                    </h5>
+                    <p className="font-weight-normal">Una vez ya registrado y contando con tu usuario y contraseña comienza a configurar los datos de tu empresa. </p>
+                    <p className="font-weight-normal">En el Menú de Empresas, selecciona la opción de Editar
+                    </p>
+                    <img src={require('./assets/img/All/PLACEHOLDER_image4.jpg')} className="d-block img-fluid" alt="..." />
+                    <p className="font-weight-normal">
+                      Aquí podremos actualizar o editar los datos de la empresa como el Régimen fiscal, direcciono fiscal y el logotipo de la empresa (debe pesar máximo 50Kb y ser un archivo *jpeg y *png) etc.
+                    </p>
+                    <p className="font-italic">También puedes consultar nuestro <a href='https://www.youtube.com/watch?v=iTdQAs_KAbE' target="_blank">video tutorial</a> en nuestro canal de YouTube.
+                    </p>
 
-            <p className="font-weight-normal">
-              Agregamos las percepciones recordando completar los campos con * y seleccionamos agregar percepción.
-            </p>
-            <img src={require('./assets/img/All/PLACEHOLDER_image8.jpg')} className="d-block img-fluid" alt="..." />
-            <p className="font-weight-normal">
-              Agregamos las deducciones recordando completar los campos con * y seleccionamos agregar deducciones.
-            </p>
-            <img src={require('./assets/img/All/PLACEHOLDER_image5.jpg')} className="d-block img-fluid" alt="..." />
-            <p className="font-weight-normal">
-              Una vez agregado podemos generar la vista previa y/o generar el Recibo.
-              El sistema nos arrojara el mensaje de Comprobante generado correctamente y enviado por correo
-            </p>
-            <img src={require('./assets/img/All/PLACEHOLDER_image7.jpg')} className="d-block img-fluid" alt="..." />
+                    <p className="font-weight-normal">
+                      Dentro de este mismo menú podremos cargar el Certificado de Sello Digital el cual es indispensable tener vigente para generar nuestros recibos.
 
-            <p className="font-weight-normal">
-              Uno de los beneficios del Portal de Nómina es que podremos Consultar Recibos, desde este menú se puede realizar la búsqueda de los recibos emitidos filtrando por:
-            </p>
+                    </p>
 
-            <ul className="list-unstyled">
-              <li>
-                <ul>
-                  <li>
-                    Empleado
-                  </li>
-                  <li>
-                    Fecha (siempre y cuando la fecha de inicio y la fecha final no sea mayor a 93 días)
-                  </li>
-                  <li>
-                    Realizar Cancelaciones
-                  </li>
-                  <li>
-                    Descargar un reporte de la búsqueda en un archivo Excel.
-                  </li>
-                  <li>
-                    Descargar y/o renviar por correo los archivos PDF y XML.
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <img src={require('./assets/img/All/PLACEHOLDER_image9.jpg')} className="d-block img-fluid" alt="..." />
-            <p className="font-weight-normal">
-              Otro beneficio es que es multiusuario, es decir que permite registrar diferentes correos para ingresar al perfil de la cuenta permitiendo editar el perfil del correo, agregar nuevos y cambiar la contraseña. </p>
-            <img src={require('./assets/img/All/PLACEHOLDER_image10.jpg')} className="d-block img-fluid" alt="..." />
+
+                    <ul className="list-unstyled">
+                      <li>
+                        <ul>
+                          <li> En el sistema deberemos cargar el archivo .CER, .KEY y la contraseña de la Llave. Seleccionamos el botón de Validar y Guardar
+
+                          </li>
+                          <li>	los archivos son correctos nos arrojara el mensaje de CSD cargado Exitosamente y se actualizara la fecha de vigencia.
+                            <img src={require('./assets/img/All/PLACEHOLDER_image4.jpg')} className="d-block img-fluid" alt="..." />
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+
+                    <p className="font-italic">También puedes consultar nuestro <a href='https://www.youtube.com/watch?v=EfpO8uumw2k' target="_blank">video tutorial</a> en nuestro canal de YouTube.
+                    </p>
+
+                  </div>
+                  <div className="row text-start text-light">
+
+                    <p className="font-weight-normal">Otra sección que debemos completar son los Centros de Trabajo, lo podemos encontrar en el menú de empresas, seleccionando la opción de Centros de trabajo.
+                      Aquí podremos agregar nuevos o editar los ya cargados.
+                      Es importante completar los campos que tengan * Una vez actualizada esta información solo deberemos seleccionar el botón de guardar.
+                    </p>
+                    <img src={require('./assets/img/All/PLACEHOLDER_image1.jpg')} className="d-block img-fluid" alt="..." />
+
+                    <p className="font-weight-normal">
+                      La siguiente sección que debemos completar es el Catálogo de Empleados.
+                    </p>
+                    <p className="font-weight-normal">En esta registraremos los empleados de la empresa, podremos agregar, editar o  eliminar la información del empleado en caso de ser necesario. Para el registro de un empleado nuevo comenzamos en la sección de Datos de  empleado asegurándonos que los campos con * sean completados y  seleccionamos agregar Subcontratación. </p>
+                    <img src={require('./assets/img/All/PLACEHOLDER_image2.jpg')} className="d-block img-fluid" alt="..." />
+
+                    <p className="font-weight-normal">
+                      Posteriormente completaremos los datos de Nómina del Empleado, también  asegurándonos de completar los campos con * y al terminar seleccionamos guardar
+                    </p>
+                    <img src={require('./assets/img/All/PLACEHOLDER_image3.jpg')} className="d-block img-fluid" alt="..." />
+
+                    <p className="font-weight-normal">Una vez completada la información de la empresa y cargados los empleados podremos comenzar a realizar los recibos de Nómina.</p>
+                    <p className="font-weight-normal">Comenzamos seleccionando el Centro de Trabajo, la Periodicidad, tipo de Nomina y el empleado al que se genera el recibo ya que estos son campos requeridos.
+                      Posteriormente continuamos con el llenado de Datos de Nómina.
+                      Fecha de pago, días pagados, fecha de inicio y final del pago.
+                    </p>
+                    <img src={require('./assets/img/All/PLACEHOLDER_image6.jpg')} className="d-block img-fluid" alt="..." />
+
+
+
+                    <p className="font-weight-normal">
+                      Agregamos las percepciones recordando completar los campos con * y seleccionamos agregar percepción.
+                    </p>
+                    <img src={require('./assets/img/All/PLACEHOLDER_image8.jpg')} className="d-block img-fluid" alt="..." />
+                    <p className="font-weight-normal">
+                      Agregamos las deducciones recordando completar los campos con * y seleccionamos agregar deducciones.
+                    </p>
+                    <img src={require('./assets/img/All/PLACEHOLDER_image5.jpg')} className="d-block img-fluid" alt="..." />
+                    <p className="font-weight-normal">
+                      Una vez agregado podemos generar la vista previa y/o generar el Recibo.
+                      El sistema nos arrojara el mensaje de Comprobante generado correctamente y enviado por correo
+                    </p>
+                    <img src={require('./assets/img/All/PLACEHOLDER_image7.jpg')} className="d-block img-fluid" alt="..." />
+
+                    <p className="font-weight-normal">
+                      Uno de los beneficios del Portal de Nómina es que podremos Consultar Recibos, desde este menú se puede realizar la búsqueda de los recibos emitidos filtrando por:
+                    </p>
+
+                    <ul className="list-unstyled">
+                      <li>
+                        <ul>
+                          <li>
+                            Empleado
+                          </li>
+                          <li>
+                            Fecha (siempre y cuando la fecha de inicio y la fecha final no sea mayor a 93 días)
+                          </li>
+                          <li>
+                            Realizar Cancelaciones
+                          </li>
+                          <li>
+                            Descargar un reporte de la búsqueda en un archivo Excel.
+                          </li>
+                          <li>
+                            Descargar y/o renviar por correo los archivos PDF y XML.
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <img src={require('./assets/img/All/PLACEHOLDER_image9.jpg')} className="d-block img-fluid" alt="..." />
+                    <p className="font-weight-normal">
+                      Otro beneficio es que es multiusuario, es decir que permite registrar diferentes correos para ingresar al perfil de la cuenta permitiendo editar el perfil del correo, agregar nuevos y cambiar la contraseña. </p>
+                    <img src={require('./assets/img/All/PLACEHOLDER_image10.jpg')} className="d-block img-fluid" alt="..." />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </Modal.Body>
       <Modal.Footer>
-        <div className="col-md-2 d-flex justify-content-end"><Button onClick={props.onHide}><h3 className="mb-0">Cerrar</h3> </Button></div>
+        <div className="col-md-2 d-flex justify-content-end">  <a className="mbtn-sm" onClick={props.onHide} ><span className="mb-0 mbtnSpanBlack">Cerrar</span></a></div>
       </Modal.Footer>
     </Modal >
   );
@@ -2514,120 +2579,154 @@ function MyVerticallyCenteredModalCFDI(props) {
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-10">
-                <h1 className="text-light text-start">
-                  Introducción al portal de facturación NT link 3.3
-                </h1>
-              </div>
-              <div className="col-md-2 d-flex justify-content-end"><Button onClick={props.onHide}><h3 className="mb-0">Cerrar</h3> </Button></div>
-            </div>
-          </div>
-        </Modal.Title>
-      </Modal.Header>
+
       <Modal.Body>
         <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-md-9">
+              <div className="row text-start text-light">
 
-          <div className="row text-start text-light">
-            <p className="font-weight-normal">
-              Al iniciar sesión en el portal la primera sección que encontraremos es la de  “Empresas”. En esta sección se podrán modificar los datos de la empresa,  crear más empresas si es que se está a cargo de mas, crear sucursales e introducir los conceptos que serán usados en sus facturas.
-            </p>
-            <img src={require('./assets/img/All/image.0.png')} className="d-block img-fluid" alt="..." />
-            <h5 className="text-success">
-              Apartado “Editar”
-            </h5>
-            <p className="font-weight-normal">
-              En este apartado se pueden llenar todos los datos de la empresa que son  necesarios para poder facturar, aquí también se debe cargar el CSD (Sello  digital)
-            </p>
-            <img src={require('./assets/img/All/image.11.png')} className="d-block img-fluid" alt="..." />
-          </div>
-          <div className="row text-start text-light">
+                <div className=" headerCf pt15 pf">
+                  <a href="#Editar" className='text-decorationNone'>
+                    <h5 className="text-success pt-2">
+                      Apartado “Editar”
+                    </h5>
+                  </a>
+                  <a href="#Sucursales" className='text-decorationNone' >
+                    <h5 className="text-success pt-2">
+                      Apartado “Sucursales”
+                    </h5>
+                  </a>
+                  <a href="#Clientes" className='text-decorationNone' >
+                    <h5 className="text-success pt-2">
+                      Apartado “Clientes”
+                    </h5>
+                  </a>
+                  <a href="#Facturación" className='text-decorationNone'>
+                    <h5 className="text-success pt-2">
+                      Sección “Facturación”
+                    </h5>
+                  </a>
+                  <a href="#Reportes" className='text-decorationNone'>
+                    <h5 className="text-success pt-2">
+                      Sección de “Reportes”
+                    </h5>
+                  </a>
+                  <a href="#Usuarios" className='text-decorationNone'>
+                    <h5 className="text-success pt-2">
+                      Sección de “Usuarios”
+                    </h5>
+                  </a>
+                  <div className="col-md-12 pt-2 d-flex justify-content-start align-items-center">
+                    <a className="mbtn-sm" onClick={props.onHide} ><span className="mb-0 mbtnSpanBlack">Cerrar</span></a>
+                  </div>
+                </div>
+                <div className="col-md-4"></div>
+                <div className="col-md-8">
+                  <h5 className="text-success pt-4">
+                    Introducción al portal de facturación NT link 3.3
+                  </h5>
+                  <p className="font-weight-normal">
+                    Al iniciar sesión en el portal la primera sección que encontraremos es la de  “Empresas”. En esta sección se podrán modificar los datos de la empresa,  crear más empresas si es que se está a cargo de mas, crear sucursales e introducir los conceptos que serán usados en sus facturas.
+                  </p>
+                  <img src={require('./assets/img/All/d1.PNG')} className="img-fluid" alt="..." />
 
-            <p className="font-weight-normal">
-              Los archivos que se deben cargarse en el portal son los que tienen  terminacion .cer (certificado) y .key (llave privada). Los dos son archivos del  CSD (sello digital).
+                  <h5 id="Editar" className="text-success">
+                    Apartado “Editar”
+                  </h5>
+                  <p className="font-weight-normal">
+                    En este apartado se pueden llenar todos los datos de la empresa que son  necesarios para poder facturar, aquí también se debe cargar el CSD (Sello  digital)
+                  </p>
+                  <img src={require('./assets/img/All/d2.PNG')} className="d-block img-fluid" alt="..." />
+                  <p className="font-weight-normal">
+                    Los archivos que se deben cargarse en el portal son los que tienen  terminacion .cer (certificado) y .key (llave privada). Los dos son archivos del  CSD (sello digital).
+                  </p>
+                  <h5 id="Sucursales" className="text-success ">
+                    Apartado “Sucursales”
+                  </h5>
+                  <p className="font-weight-normal">
+                    Aqui se pueden crear nuevas sucursales o editar las ya existentes si es  necesario.
+                  </p>
+                  <img src={require('./assets/img/All/d3.PNG')} className="d-block img-fluid" alt="..." />
+                  <h5 id='Clientes' className="text-success">
+                    Seccion de “Clientes”
+                  </h5>
+                  <p className="font-weight-normal">
+                    Aqui encontraremos a todos nuestros clientes a los que se les genera  factura. Se podran crear nuevos clientes y tambien eliminar a los que ya no  se necesiten.
+                  </p>
+                  <img src={require('./assets/img/All/d4.PNG')} className="d-block img-fluid" alt="..." />
+                  <p className="font-weight-normal">
+                    En la opción "Editar" se deben introducir todos los datos del cliente para que  se pueda generar la factura correctamente.
+                  </p>
+                  <img src={require('./assets/img/All/d5.PNG')} className="d-block img-fluid" alt="..." />
+                  <h5 id='Facturación' className="text-success">
+                    Sección “Facturación”
+                  </h5>
+                  <p className="font-weight-normal">
+                    Es donde podremos crear nuestra factura, al colocar el cursor se mostrarán  los tipos de factura que se hayan contratado.
+                    Algunos complementos son:
+                  </p>
 
+                  <ul className="list-unstyled">
+                    <li>
+                      <ul>
+                        <li>
+                          Complemento Carta Porte
+                        </li>
+                        <li>
+                          Complemento de pago
+                        </li>
+                        <li>
+                          Complemento INE
+                        </li>
+                        <li>
+                          Complemento Comercio exterior
+                        </li>
 
-            </p>
-            <h5 className="text-success">
-              Apartado “Sucursales”
-            </h5>
-            <p className="font-weight-normal">
-              Aqui se pueden crear nuevas sucursales o editar las ya existentes si es  necesario.
-            </p>
-            <img src={require('./assets/img/All/image.2.png')} className="d-block img-fluid" alt="..." />
-            <h5 className="text-success">
-              Seccion de “Clientes”
-            </h5>
-            <p className="font-weight-normal">
-              Aqui encontraremos a todos nuestros clientes a los que se les genera  factura. Se podran crear nuevos clientes y tambien eliminar a los que ya no  se necesiten.
-            </p>
-            <img src={require('./assets/img/All/image.3.png')} className="d-block img-fluid" alt="..." />
-            <p className="font-weight-normal">
-              En la opción "Editar" se deben introducir todos los datos del cliente para que  se pueda generar la factura correctamente.
-            </p>
-            <img src={require('./assets/img/All/image.4.png')} className="d-block img-fluid" alt="..." />
-            <h5 className="text-success">
-              Sección “Facturación”
-            </h5>
-            <p className="font-weight-normal">
-              Es donde podremos crear nuestra factura, al colocar el cursor se mostrarán  los tipos de factura que se hayan contratado.
-              Algunos complementos son:
-            </p>
+                      </ul>
+                    </li>
+                  </ul>
+                  <img src={require('./assets/img/All/d6.PNG')} className="d-block img-fluid" alt="..." />
+                  <p className="font-weight-normal">
+                    Esta es la primera parte de nuestra factura a elaborar, se introduce la  información del cliente, el tipo de documento y tipo de pago.
+                  </p>
+                  <img src={require('./assets/img/All/d7.PNG')} className="d-block img-fluid" alt="..." />
+                  <p className="font-weight-normal">
+                    Esta es la segunda parte de nuestra factura donde se deben de introducir  los datos del producto o servicio, cantidades, impuestos y descripciones. Los  campos con un asterisco rojo deben ser llenados obligatoriamente.
+                  </p>
+                  <img src={require('./assets/img/All/d8.PNG')} className="d-block img-fluid" alt="..." />
+                  <p className="font-weight-normal">
+                    La tercera y última parte es opcional, es la introducción de impuestos que  pueden modificarse. Esta última parte es importante para los clientes con  Régimen Simplificado de Confianza por la retención del ISR.
+                  </p>
+                  <img src={require('./assets/img/All/d9.PNG')} className="d-block img-fluid" alt="..." />
+                  <h5 id='Reportes' className="text-success">
+                    Sección de “Reportes”
+                  </h5>
+                  <p className="font-weight-normal">
+                    Aquí podremos encontrar nuestro historial de facturación. Se podrá ver el  estado de nuestras facturas y se podrán realizar otras actividades como  cancelaciones, reenvío de facturas y descarga de archivos.
+                  </p>
+                  <img src={require('./assets/img/All/d10.PNG')} className="d-block img-fluid" alt="..." />
+                  <h5 id="Usuarios" className="text-success">
+                    Sección de “Usuarios”
+                  </h5>
+                  <p className="font-weight-normal">
+                    En esta sección se podrá manejar la información de los usuarios que tengan  control de la cuenta, se podrá editar información y crear nuevos usuarios.
+                  </p>
+                  <img src={require('./assets/img/All/d11.PNG')} className="d-block img-fluid" alt="..." />
+                </div>
 
-            <ul className="list-unstyled">
-              <li>
-                <ul>
-                  <li>
-                    Complemento Carta Porte
-                  </li>
-                  <li>
-                    Complemento de pago
-                  </li>
-                  <li>
-                    Complemento INE
-                  </li>
-                  <li>
-                    Complemento Comercio exterior
-                  </li>
+              </div>
+              <div className="row text-start text-light">
 
-                </ul>
-              </li>
-            </ul>
-            <img src={require('./assets/img/All/image.5.png')} className="d-block img-fluid" alt="..." />
-            <p className="font-weight-normal">
-              Esta es la primera parte de nuestra factura a elaborar, se introduce la  información del cliente, el tipo de documento y tipo de pago.
-            </p>
-            <img src={require('./assets/img/All/image.6.png')} className="d-block img-fluid" alt="..." />
-            <p className="font-weight-normal">
-              Esta es la segunda parte de nuestra factura donde se deben de introducir  los datos del producto o servicio, cantidades, impuestos y descripciones. Los  campos con un asterisco rojo deben ser llenados obligatoriamente.
-            </p>
-            <img src={require('./assets/img/All/image.7.png')} className="d-block img-fluid" alt="..." />
-            <p className="font-weight-normal">
-              La tercera y última parte es opcional, es la introducción de impuestos que  pueden modificarse. Esta última parte es importante para los clientes con  Régimen Simplificado de Confianza por la retención del ISR.
-            </p>
-            <img src={require('./assets/img/All/image.8.png')} className="d-block img-fluid" alt="..." />
-            <h5 className="text-success">
-              Sección de “Reportes”
-            </h5>
-            <p className="font-weight-normal">
-              Aquí podremos encontrar nuestro historial de facturación. Se podrá ver el  estado de nuestras facturas y se podrán realizar otras actividades como  cancelaciones, reenvío de facturas y descarga de archivos.
-            </p>
-            <img src={require('./assets/img/All/image.9.png')} className="d-block img-fluid" alt="..." />
-            <h5 className="text-success">
-              Sección de “Usuarios”
-            </h5>
-            <p className="font-weight-normal">
-              En esta sección se podrá manejar la información de los usuarios que tengan  control de la cuenta, se podrá editar información y crear nuevos usuarios.
-            </p>
-            <img src={require('./assets/img/All/image.10.png')} className="d-block img-fluid" alt="..." />
+              </div>
+            </div>
           </div>
         </div>
       </Modal.Body>
       <Modal.Footer>
-        <div className="col-md-2 d-flex justify-content-end"><Button onClick={props.onHide}><h3 className="mb-0">Cerrar</h3> </Button></div>
+
+        <a className="mbtn-sm" onClick={props.onHide} ><span className="mb-0 mbtnSpanBlack">Cerrar</span></a>
+
       </Modal.Footer>
     </Modal >
   );

@@ -382,6 +382,7 @@ body {
   font-weight: 400;
 }
 
+
 .form-control:focus{
   background-color: #d2d2d2 !important;
 }
@@ -392,4 +393,32 @@ body {
 
 .WithForece2{
   width: 65px;
+
 }
+.text-decorationNone{
+  text-decoration: none !important;
+}
+
+.headerCf{
+  background-image: url("./assets/img/All/PortalCFDI-head.png") !important;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+
+}
+.pt15{
+  padding-top: 15rem !important;
+}
+.pf{
+  position: fixed;
+  width: 297px;
+
+}
+
+@media(max-width: 992px){
+  .pf{
+   position: initial;
+  }
+}
+
+}
+
