@@ -24,6 +24,7 @@ function App() {
   const [modalShowPlanes, setModalShowPlanes] = React.useState(false);
   const [modalShowNomina, setModalShowNomina] = React.useState(false);
   const [modalShowCFDI, setModalShowCFDI] = React.useState(false);
+  const [modalShowExito, setModalShowExito] = React.useState(false);
 
   const preciosFolios = [{ folio: 25, precio: 330.00 }, { folio: 50, precio: 445.00 }, { folio: 100, precio: 590.00 }, { folio: 200, precio: 1065.00 }, { folio: 500, precio: 2391.00 }, { folio: 1000, precio: 4305.00 }, { folio: 2000, precio: 7745.00 }, { folio: 5000, precio: 17430.00 }];
   const preciosTimbre = [{ timbre: 1000, precio: 1392.00 }, { timbre: 3000, precio: 3480.00 }, { timbre: 5000, precio: 4640.00 }, { timbre: 10000, precio: 8120.00 }, { timbre: 15000, precio: 12760.00 }, { timbre: 20000, precio: 16820.00 }, { timbre: 50000, precio: 31320.00 }, { timbre: 100000, precio: 46400.00 }];
@@ -155,8 +156,6 @@ function App() {
       }
       < div className="container justify-content-center gradeintBlack bg-transparent a-b-2 pb-6">
         <div className="row p-5 ">
-
-
           <div className="col-md-3 d-flex justify-content-center h-50 ">
             <img src={require('./assets/img/All/PAC-logo.gif')} className="d-block img-fluid " alt="..." />
           </div>
@@ -193,17 +192,24 @@ function App() {
             <img src={require('./assets/img/All/main-icono-agratuito.png')} className="d-block img-fluid" alt="..." />
           </div>
           <div className="col-sm-2 d-block col2">
-
-
             <div className="col d-flex justify-content-center align-items-center">
               <a href="https://cfdi33.ntlink.com.mx/ntfacturacion/wfrLogin.aspx" target="_blank" className="mbtn"><span className="mb-0">ACCESO GRATUITO</span></a>
             </div>
             <div className="col p-2 d-flex justify-content-center align-items-center">
-              <footer className=" text-success  "> Date de alta y obten 5 folios gratis para generar facturas.</footer>
+              <footer className=" text-light  ">
+                Date de alta y obten
+                <small className="text-success h5 ">
+                  {'\u00A0'}5 folios gratis para generar facturas.
+                </small>
+              </footer>
             </div>
-
-
           </div>
+        </div>
+      </div>
+
+      <div className="container justify-content-center a-b-2 pb-6 ">
+        <div className="row mt-4">
+          <img src={require('./assets/img/All/5 folios gratis.gif')} className="d-block img-fluid " alt="..." />
         </div>
       </div>
       {
@@ -709,7 +715,7 @@ function App() {
       <MyVerticallyCenteredModalContact
         show={modalShowContact}
         onHide={() => setModalShowContact(false)}
-
+        onshowexito={() => setModalShowExito(true)}
       />
       <MyVerticallyCenteredModalDISTRIBUIDORES
         show={modalShowDistribuidores}
@@ -727,6 +733,10 @@ function App() {
       <MyVerticallyCenteredModalCFDI
         show={modalShowCFDI}
         onHide={() => setModalShowCFDI(false)}
+      />
+      <MyVerticallyCenteredExito
+        show={modalShowExito}
+        onHide={() => setModalShowExito(false)}
       />
       {
         //#endregion
@@ -2150,7 +2160,18 @@ function MyVerticallyCenteredModalTERMINOS(props) {
 function MyVerticallyCenteredModalContact(props) {
 
   const [emailSucces, setModalShowSucces] = React.useState(false);
-  const [state, setname] = React.useState({ nombre: '', nombreEmpresa: '', email: '', telefono: '', comentarios: '' });
+  const initialState = {
+    nombre: "",
+    nombreEmpresa: "",
+    email: "",
+    telefono: "",
+    comentarios: ""
+  };
+  const [state, setname] = React.useState(initialState);
+  const clearState = () => {
+    setname({ ...initialState });
+  };
+
   return (
     <Modal
       {...props}
@@ -2188,10 +2209,12 @@ function MyVerticallyCenteredModalContact(props) {
                     'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
                   }
                 }).then(res => {
-                  { setModalShowSucces(true) }
-                  console.log(res)
+                  props.onshowexito();
+                  clearState();
+                  console.log(res);
                 }).catch(err => {
-                  console.log(err)
+                  console.log(err);
+                  clearState();
                 });
               }
               } >
@@ -2255,7 +2278,7 @@ function MyVerticallyCenteredModalContact(props) {
                     </div>
                   </div>
                 </div>
-                <div className="row">
+                <div className="row mt-3">
 
 
                   <div className="col-md-2">
@@ -2629,7 +2652,7 @@ function MyVerticallyCenteredModalCFDI(props) {
                   <p className="font-weight-normal">
                     Al iniciar sesión en el portal la primera sección que encontraremos es la de  “Empresas”. En esta sección se podrán modificar los datos de la empresa,  crear más empresas si es que se está a cargo de mas, crear sucursales e introducir los conceptos que serán usados en sus facturas.
                   </p>
-                  <img src={require('./assets/img/All/d1.PNG')} className="img-fluid" alt="..." />
+                  <img src={require('./assets/img/All/d1.png')} className="img-fluid" alt="..." />
 
                   <h5 id="Editar" className="text-success">
                     Apartado “Editar”
@@ -2637,7 +2660,7 @@ function MyVerticallyCenteredModalCFDI(props) {
                   <p className="font-weight-normal">
                     En este apartado se pueden llenar todos los datos de la empresa que son  necesarios para poder facturar, aquí también se debe cargar el CSD (Sello  digital)
                   </p>
-                  <img src={require('./assets/img/All/d2.PNG')} className="d-block img-fluid" alt="..." />
+                  <img src={require('./assets/img/All/d2.png')} className="d-block img-fluid" alt="..." />
                   <p className="font-weight-normal">
                     Los archivos que se deben cargarse en el portal son los que tienen  terminacion .cer (certificado) y .key (llave privada). Los dos son archivos del  CSD (sello digital).
                   </p>
@@ -2647,18 +2670,18 @@ function MyVerticallyCenteredModalCFDI(props) {
                   <p className="font-weight-normal">
                     Aqui se pueden crear nuevas sucursales o editar las ya existentes si es  necesario.
                   </p>
-                  <img src={require('./assets/img/All/d3.PNG')} className="d-block img-fluid" alt="..." />
+                  <img src={require('./assets/img/All/d3.png')} className="d-block img-fluid" alt="..." />
                   <h5 id='Clientes' className="text-success">
                     Seccion de “Clientes”
                   </h5>
                   <p className="font-weight-normal">
                     Aqui encontraremos a todos nuestros clientes a los que se les genera  factura. Se podran crear nuevos clientes y tambien eliminar a los que ya no  se necesiten.
                   </p>
-                  <img src={require('./assets/img/All/d4.PNG')} className="d-block img-fluid" alt="..." />
+                  <img src={require('./assets/img/All/d4.png')} className="d-block img-fluid" alt="..." />
                   <p className="font-weight-normal">
                     En la opción "Editar" se deben introducir todos los datos del cliente para que  se pueda generar la factura correctamente.
                   </p>
-                  <img src={require('./assets/img/All/d5.PNG')} className="d-block img-fluid" alt="..." />
+                  <img src={require('./assets/img/All/d5.png')} className="d-block img-fluid" alt="..." />
                   <h5 id='Facturación' className="text-success">
                     Sección “Facturación”
                   </h5>
@@ -2686,33 +2709,33 @@ function MyVerticallyCenteredModalCFDI(props) {
                       </ul>
                     </li>
                   </ul>
-                  <img src={require('./assets/img/All/d6.PNG')} className="d-block img-fluid" alt="..." />
+                  <img src={require('./assets/img/All/d6.png')} className="d-block img-fluid" alt="..." />
                   <p className="font-weight-normal">
                     Esta es la primera parte de nuestra factura a elaborar, se introduce la  información del cliente, el tipo de documento y tipo de pago.
                   </p>
-                  <img src={require('./assets/img/All/d7.PNG')} className="d-block img-fluid" alt="..." />
+                  <img src={require('./assets/img/All/d7.png')} className="d-block img-fluid" alt="..." />
                   <p className="font-weight-normal">
                     Esta es la segunda parte de nuestra factura donde se deben de introducir  los datos del producto o servicio, cantidades, impuestos y descripciones. Los  campos con un asterisco rojo deben ser llenados obligatoriamente.
                   </p>
-                  <img src={require('./assets/img/All/d8.PNG')} className="d-block img-fluid" alt="..." />
+                  <img src={require('./assets/img/All/d8.png')} className="d-block img-fluid" alt="..." />
                   <p className="font-weight-normal">
                     La tercera y última parte es opcional, es la introducción de impuestos que  pueden modificarse. Esta última parte es importante para los clientes con  Régimen Simplificado de Confianza por la retención del ISR.
                   </p>
-                  <img src={require('./assets/img/All/d9.PNG')} className="d-block img-fluid" alt="..." />
+                  <img src={require('./assets/img/All/d9.png')} className="d-block img-fluid" alt="..." />
                   <h5 id='Reportes' className="text-success">
                     Sección de “Reportes”
                   </h5>
                   <p className="font-weight-normal">
                     Aquí podremos encontrar nuestro historial de facturación. Se podrá ver el  estado de nuestras facturas y se podrán realizar otras actividades como  cancelaciones, reenvío de facturas y descarga de archivos.
                   </p>
-                  <img src={require('./assets/img/All/d10.PNG')} className="d-block img-fluid" alt="..." />
+                  <img src={require('./assets/img/All/d10.png')} className="d-block img-fluid" alt="..." />
                   <h5 id="Usuarios" className="text-success">
                     Sección de “Usuarios”
                   </h5>
                   <p className="font-weight-normal">
                     En esta sección se podrá manejar la información de los usuarios que tengan  control de la cuenta, se podrá editar información y crear nuevos usuarios.
                   </p>
-                  <img src={require('./assets/img/All/d11.PNG')} className="d-block img-fluid" alt="..." />
+                  <img src={require('./assets/img/All/d11.png')} className="d-block img-fluid" alt="..." />
                 </div>
 
               </div>
@@ -2731,7 +2754,57 @@ function MyVerticallyCenteredModalCFDI(props) {
     </Modal >
   );
 }
+function MyVerticallyCenteredExito(props) {
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
 
+      <Modal.Body>
+        <div className="container headerExito">
+          <div className="row justify-content-center">
+            <div className="col-md-9 padingExito">
+              <div className="row ">
+                <div className="col-md-2">
+                </div>
+                <div className="col-md-8">
+                  <div className="row text-start">
+                    <h1 className="text-success pt-2 text-success titleExito">
+                      Gracias por contactarnos
+                    </h1>
+                    <p className="font-weight-normal text-light">
+                      Su mensaje ha sido enviado con éxito.
+
+                    </p>
+                    <p className="font-weight-normal text-light">
+
+                      En breve uno de nuestros ejecutivos atenderá a su solicitud.
+                    </p>
+                    <p className="font-weight-normal text-light">
+                      Gracias por su preferencia
+                    </p>
+
+                  </div>
+                  <div className="row ">
+                    <div className="col text-center d-flex justify-content-center align-items-center">
+                      <a className="mbtn-sm  m-0" onClick={props.onHide} ><span className="mb-0 mbtnSpanBlack">Cerrar</span></a>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-2">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </Modal.Body>
+    </Modal >
+  );
+}
 //#endregion
 
 const code = '<?xml version="1.0" encoding="utf-8"?><cfdi:Comprobante xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd" Version="3.3" Folio="3873" Fecha="2022-01-14T09:54:32" FormaPago="03"  SubTotal="1.00" Descuento="0.00" Moneda="MXN" TipoCambio="1" Total="1.16" TipoDeComprobante="I" MetodoPago="PUE" LugarExpedicion="04100" xmlns:cfdi="http://www.sat.gob.mx/cfd/3"><cfdi:Emisor Rfc="NLC091211KC6" Nombre="PRUEBAS" RegimenFiscal="601" /><cfdi:Receptor Rfc="XAXX010101000" Nombre=" PRUEBA" UsoCFDI="G01" /><cfdi:Conceptos><cfdi:Concepto ClaveProdServ="84111506" NoIdentificacion="ANTICIPO" Cantidad="1.00" ClaveUnidad="ACT" Descripcion="PRUEBA" ValorUnitario="1.00" Importe="1.00" Descuento="0.00"><cfdi:Impuestos><cfdi:Traslados><cfdi:Traslado Base="1.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="0.16" /></cfdi:Traslados></cfdi:Impuestos></cfdi:Concepto></cfdi:Conceptos><cfdi:Impuestos TotalImpuestosTrasladados="0.16"><cfdi:Traslados><cfdi:Traslado Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="0.16" /></cfdi:Traslados></cfdi:Impuestos><cfdi:Complemento><tfd:TimbreFiscalDigital xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="AFAD91C2-1888-4BD8-8803-B5ED958F4122" FechaTimbrado="2022-01-14T09:54:35" RfcProvCertif="NLC091211KC6" SelloCFD="Af3lvLAQHiQYG25nFzfypWToHQ==" NoCertificadoSAT="00001000000504447535" SelloSAT="Jd2SF+ppPkQP2sodVFkhxg==" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" /></cfdi:Complemento></cfdi:Comprobante>';
