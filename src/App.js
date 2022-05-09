@@ -618,8 +618,8 @@ function App() {
                   <div className="row">
                     <h5 className="text-light">HORARIO</h5>
                     <ul className="list-unstyled text-small">
-                      <li><span className="text-light" >LUNES A VIERNES 09:00 18:00</span></li>
-                      <li><span className="text-light" >SABADO 9 A 3 AM</span></li>
+                      <li><span className="text-light" >LUNES A VIERNES 09:00 AM A 18:00 PM</span></li>
+                      <li><span className="text-light" >SABADO 9:00 AM A 3:00 PM</span></li>
                     </ul>
                   </div>
                 </div>
