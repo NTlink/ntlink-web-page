@@ -1178,6 +1178,11 @@ function MyVerticallyCenteredModal(props) {
               </div>
             </div>
           </div>
+          <div className="row justify-content-center text-center">
+            <div className="col mb-4">
+              <h3 className="text-success text-start">Los precios ya incluyen IVA</h3>
+            </div>
+          </div>
           <div className="row">
             <div className="col-7">
               <p className="text-light">
