@@ -26,6 +26,9 @@ export class Products extends Component {
                             <a href="https://dev-cfdi4.ntlink.com.mx" target="_blank" className="mbtn buttonexapnd"  ><span className="mb-0">MÁS INFORMACIÓN</span></a>
                         </div>
                     </div>
+                    <div className="container justify-content-center bg-dark m-0 p-0">
+                         <div className="stripe stripe-2 m-2 p-0"></div>
+                    </div>
                     <div className="row align-items-center ">
                         <div className="col-md-2 d-flex justify-content-center">
                             <img src={require('../assets/img/All/main-icono-CFDI.png')} className="d-block img-fluid" alt="..." />
