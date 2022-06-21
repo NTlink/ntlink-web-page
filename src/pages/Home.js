@@ -89,9 +89,10 @@ export class Home extends Component {
                 </div>
                 
                 
-                    (getCookieConsentValue("myAwesomeCookieName2") === undefined) &&
-                    <div className="navbar fixed-bottom">
-                        <CookieConsent
+                {
+                        (getCookieConsentValue("myAwesomeCookieName2") === undefined) &&
+                        <div className="navbar fixed-bottom">
+                          <CookieConsent
 
                             location="bottom"
                             buttonText="Aceptar"
@@ -99,10 +100,11 @@ export class Home extends Component {
                             style={{ background: "#005250" }}
                             buttonStyle={{ color: "#FFFFFF", fontSize: "18px", background: "#00b3ff", fontWeight: "bold", }}
                             expires={150}
-                        >
+                          >
                             <p className="font-weight-normal">Las cookies de este sitio web se usan para personalizar el contenido y los anuncios, ofrecer funciones de redes sociales y analizar el tráfico. Además, compartimos información sobre el uso que haga del sitio web con nuestros partners de redes sociales.</p>
-                        </CookieConsent>
-                    </div>
+                          </CookieConsent>
+                        </div>
+                      }
                 
                 
                 <footer id="CONTACTO" className="pt-4 pt-md-5 border-top gradeintBlack bg-dark a-b-2">
