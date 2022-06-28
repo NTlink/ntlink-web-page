@@ -46,6 +46,7 @@ export class Home extends Component {
                     </nav>
                 </header>
 
+                <div className="container">
                 <section id="CAROUSEL">
                     <br/>
                     <Corousel />
@@ -87,6 +88,9 @@ export class Home extends Component {
                         </div>
                     </div>
                 </div>
+                </div>
+
+                
                 
                 
                 {
