@@ -103,9 +103,14 @@ body {
 }
 
 .web-service-header-text {
-  font-size: 2em !important;
+  font-size: 3em !important;
   font-family: $thech-mono;
-  font-weight: normal;
+  font-weight: bold;
+}
+
+.tech-font {
+  font-family: $thech-mono;
+  font-weight: bold;
 }
 
 .textSpanBody{
