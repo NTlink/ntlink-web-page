@@ -22,6 +22,7 @@ import { Precios } from 'pages/Precios';
 import { Contacto } from 'pages/Contacto';
 import { PlanesTimbrado } from 'pages/PlanesTimbrado';
 import { Distribuidores } from 'pages/Distribuidores';
+import { WebService } from 'pages/WebService';
 
 TagManager.initialize({ gtmId: 'GTM-MZ2ZVDV' })
 ReactGA.initialize('UA-223081313-1', { debug: false });
@@ -37,7 +38,6 @@ function App() {
   return (
     <>
       <Router>
-        <div className="container">
         <Routes >
           <Route path="/" element={<Home />} />
           <Route path="/cfdi-portal" element={<PortalCfdi />} />
@@ -51,69 +51,11 @@ function App() {
           <Route path="/planes-timbrado" element={<PlanesTimbrado />} />
           <Route path="/distribuidores" element={<Distribuidores />} />
           <Route path="/contacto" element={<Contacto />} />
+          <Route path="/web-service" element={<WebService />} />
         </Routes >
-        </div>
       </Router>
       </>
   );
 }
 
-
 export default App;
-
-/*
-
-
-
-function MyVerticallyCenteredExito(props) {
-  return (
-    <Modal
-      {...props}
-      size="lg"
-      aria-labelledby="contained-modal-title-vcenter"
-      centered
-    >
-
-      <Modal.Body>
-        <div className="container headerExito">
-          <div className="row justify-content-center">
-            <div className="col-md-9 padingExito">
-              <div className="row ">
-                <div className="col-md-2">
-                </div>
-                <div className="col-md-8">
-                  <div className="row text-start">
-                    <h1 className="text-success pt-2 text-success titleExito">
-                      Gracias por contactarnos
-                    </h1>
-                    <p className="font-weight-normal text-light">
-                      Su mensaje ha sido enviado con éxito.
-
-                    </p>
-                    <p className="font-weight-normal text-light">
-
-                      En breve uno de nuestros ejecutivos atenderá a su solicitud.
-                    </p>
-                    <p className="font-weight-normal text-light">
-                      Gracias por su preferencia
-                    </p>
-
-                  </div>
-                  <div className="row ">
-                    <div className="col text-center d-flex justify-content-center align-items-center">
-                      <a className="mbtn-sm  m-0" onClick={props.onHide} ><span className="mb-0 mbtnSpanBlack">Cerrar</span></a>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-2">
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </Modal.Body>
-    </Modal >
-  );
-} */
-//#endregion

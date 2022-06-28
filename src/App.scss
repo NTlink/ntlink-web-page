@@ -1,15 +1,17 @@
-/* $primary: rebeccapurple;
-$danger: #dd0000;
-$success: lime;
-$warning: orange;
-$info: aqua; */
 $secondary: #414141;
 $success: #9ef029;
 $dark: rgb(8, 8, 8);
 $info: #005250;
 $body-bg: #f5f5f500;
 @import url(//db.onlinewebfonts.com/c/cd68e6d62f6e479dfa42d1f16613ce16?family=URWJayGothicW01-ExtraBold);
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
 @import "bootstrap";
+
+
+// Font Variables
+$thech-mono: 'Share Tech Mono', monospace;   
 
 .ico{
   height: 30px;
@@ -45,6 +47,14 @@ body {
   background-position: 100% 50%;
   background-repeat: no-repeat;
  /*  font-family: sans-serif; */
+}
+
+.ws-back {
+  background-image: url("./assets/img/All/web-service-back.png") !important;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
 .custom-toggler .navbar-toggler-icon {
@@ -91,37 +101,17 @@ body {
   padding-right: 0px !important;
   /* max-height: 700px; */
 }
-/*
-.modal-body {
-  padding-bottom: 0px;
-  padding: 0px;
-}
-.modal-title {
-  width: 100%;
+
+.web-service-header-text {
+  font-size: 3em !important;
+  font-family: $thech-mono;
+  font-weight: bold;
 }
 
-.modal-header {
-  border-bottom: 0px solid #005250;
+.tech-font {
+  font-family: $thech-mono;
+  font-weight: bold;
 }
-.modal-footer {
-  border-top: 0px solid #005250;
-}
-
-.modal-lg{
-  max-width: 100%;
-}
-.modal-dialog{
-  margin: 0px;
-}
-.modal-content {
- 
-  background: black;
-  border-top: 3px solid #9cef2b;
-  border-bottom: 3px solid #9cef2b;
- 
-    border-radius: 0px;
-}*/
-
 
 .textSpanBody{
   font-size: 18px;
@@ -416,7 +406,7 @@ body {
 }
 .pf{
   position: fixed;
-  width: 297px;
+  width: 100%;
 
 }
 

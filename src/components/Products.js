@@ -23,7 +23,7 @@ export class Products extends Component {
                             </div>
                         </div>
                         <div className="col-md-2 d-flex justify-content-center align-items-center">
-                            <a href="https://dev-cfdi4.ntlink.com.mx" target="_blank" className="mbtn buttonexapnd"  ><span className="mb-0">MÁS INFORMACIÓN</span></a>
+                            <a href="/web-service" className="mbtn buttonexapnd"  ><span className="mb-0">MÁS INFORMACIÓN</span></a>
                         </div>
                     </div>
                     <div className="container justify-content-center bg-dark m-0 p-0">

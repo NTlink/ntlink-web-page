@@ -8,152 +8,151 @@ export class Convertidor extends Component {
 
         return (
             <>
-                <div className="row justify-content-center">
-                    <div className="col-md-11">
-                        <div className="row text-start text-light">
+                <nav class="site-header sticky-top py-1 bg-dark">
+                    <div class="container d-flex flex-column flex-md-row justify-content-between">
+                        <a href="#Contratación" className="text-decorationNone py-2 d-none d-md-inline-block">
+                            <h5 className="text-success pt-2">
+                                Contratación.
+                            </h5>
+                        </a>
+                        <a href="#Funcionamiento" className="text-decorationNone py-2 d-none d-md-inline-block" >
+                            <h5 className="text-success pt-2">
+                                Funcionamiento
+                            </h5>
+                        </a>
+                        <a href="#EjemplodeLayout" className="text-decorationNone py-2 d-none d-md-inline-block">
+                            <h5 className="text-success pt-2">
+                                Ejemplo de Layout
+                            </h5>
+                        </a>
+                        <a href="#EjemploXMLgenerado" className="text-decorationNone py-2 d-none d-md-inline-block" >
+                            <h5 className="text-success pt-2">
+                                Ejemplo XML
+                            </h5>
+                        </a>
+                        <a href="#Versióndepruebas" className="text-decorationNone py-2 d-none d-md-inline-block">
+                            <h5 className="text-success pt-2">
+                                Versión de pruebas
+                            </h5>
+                        </a>
 
-                            <div className=" headerCf pt15 pf">
-                                <a href="#Contratación" className='text-decorationNone'>
-                                    <h5 className="text-success pt-2">
-                                        Apartado Contratación.
+                        <a href="/#PRODUCTOS" className="mbtn-sm"><span className="mb-0 mbtnSpanBlack">REGRESAR</span></a>
+
+                    </div>
+                </nav>
+                <div className="container-xl">
+                    <div className="row justify-content-center">
+                        <div className="col-md-11">
+                            <div className="row text-start text-light">
+
+
+                                <div className="col-md-12">
+                                    <h5 className="text-success pt-5">
+                                        Convertidor Ntlink
                                     </h5>
-                                </a>
-                                <a href="#Funcionamiento" className='text-decorationNone' >
-                                    <h5 className="text-success pt-2">
-                                        Apartado Funcionamiento
-                                    </h5>
-                                </a>
-                                <a href="#EjemplodeLayout" className='text-decorationNone'>
-                                    <h5 className="text-success pt-2">
-                                        Sección Ejemplo de Layout
-                                    </h5>
-                                </a>
-                                <a href="#EjemploXMLgenerado" className='text-decorationNone' >
-                                    <h5 className="text-success pt-2">
-                                        Apartado Ejemplo XML generado
-                                    </h5>
-                                </a>
-                                <a href="#Requerimientosmínimosparalainstalación" className='text-decorationNone'>
-                                    <h5 className="text-success pt-2">
-                                        Sección de Requerimientos mínimos para la instalación
-                                    </h5>
-                                </a>
-                                <a href="#Versióndepruebas" className='text-decorationNone'>
-                                    <h5 className="text-success pt-2">
-                                        Sección de Versión de pruebas
-                                    </h5>
-                                </a>
-                                <div className="col-md-12 pt-2 d-flex justify-content-start align-items-center">
-                                    <a href="/#PRODUCTOS" className="mbtn-sm"><span className="mb-0 mbtnSpanBlack">REGRESAR</span></a>
-                                </div>
-                            </div>
-                            <div className="col-md-4"></div>
-                            <div className="col-md-8">
-                                <h5 className="text-success pt-5">
-                                    Convertidor Ntlink
-                                </h5>
-                                <div className="row text-start text-light">
-                                    <p className="font-weight-normal">Software desarrollado por el equipo de NTlink con el propósito de ofrecer a nuestros clientes una alternativa mas para el timbrado de sus comprantes, ya que es ideal para cualquier integración con ERPs. </p>
-                                    <p className="font-weight-normal">El convertidor NTlink permite el timbrado de cualquier tipo de CFDI, Complementos y addendas (Consulte nuestro catálogo de complementos y addendas disponibles).</p>
-                                </div>
-                                <div className="row text-start text-light">
-                                    <h5 id='Contratación' className="text-success">
-                                        Contratación.
-                                    </h5>
-                                    <p className="font-weight-normal">Para hacer uso de nuestro convertidor será necesario pague por la licencia de este y que además contrate un paquete de timbres (Consulte nuestra lista de costos)</p>
-                                    <p className="font-weight-normal">La licencia es única por convertidor Ntlink, en caso de que requiera múltiples instalaciones de este consulte con nuestros ejecutivos los paquetes de licencias. </p>
+                                    <div className="row text-start text-light">
+                                        <p className="font-weight-normal">Software desarrollado por el equipo de NTlink con el propósito de ofrecer a nuestros clientes una alternativa mas para el timbrado de sus comprantes, ya que es ideal para cualquier integración con ERPs. </p>
+                                        <p className="font-weight-normal">El convertidor NTlink permite el timbrado de cualquier tipo de CFDI, Complementos y addendas (Consulte nuestro catálogo de complementos y addendas disponibles).</p>
+                                    </div>
+                                    <div className="row text-start text-light">
+                                        <h5 id='Contratación' className="text-success">
+                                            Contratación.
+                                        </h5>
+                                        <p className="font-weight-normal">Para hacer uso de nuestro convertidor será necesario pague por la licencia de este y que además contrate un paquete de timbres (Consulte nuestra lista de costos)</p>
+                                        <p className="font-weight-normal">La licencia es única por convertidor Ntlink, en caso de que requiera múltiples instalaciones de este consulte con nuestros ejecutivos los paquetes de licencias. </p>
 
 
-                                </div>
-                                <div className="row text-start text-light">
-                                    <h5 id='Funcionamiento' className="text-success">
-                                        Funcionamiento
-                                    </h5>
-                                    <p className="font-weight-normal">El Convertidor Ntlink se instala de manera local en el equipo/servidor que usted desee y funciona mediante carpetas en donde se depositarán los txt correspondientes para la generación de los comprantes deseados. </p>
-                                    <p className="font-weight-normal">Cada una de las carpetas generadas tiene una función especifica en el Convertidor Ntlink, las carpetas se pueden vincular o “mapear” de la forma que deseemos en el las dentro de las configuraciones del aplicativo. </p>
-                                    <img src={require('../assets/img/All/image1.png')} className="d-block img-fluid" alt="..." />
-                                    <p className="font-italic">Ejemplo directorio de carpetas.</p>
+                                    </div>
+                                    <div className="row text-start text-light">
+                                        <h5 id='Funcionamiento' className="text-success">
+                                            Funcionamiento
+                                        </h5>
+                                        <p className="font-weight-normal">El Convertidor Ntlink se instala de manera local en el equipo/servidor que usted desee y funciona mediante carpetas en donde se depositarán los txt correspondientes para la generación de los comprantes deseados. </p>
+                                        <p className="font-weight-normal">Cada una de las carpetas generadas tiene una función especifica en el Convertidor Ntlink, las carpetas se pueden vincular o “mapear” de la forma que deseemos en el las dentro de las configuraciones del aplicativo. </p>
+                                        <img src={require('../assets/img/All/image1.png')} className="d-block img-fluid" alt="..." />
+                                        <p className="font-italic">Ejemplo directorio de carpetas.</p>
 
-                                    <p className="font-italic"></p>
-
-
-                                    <ul className="list-unstyled">
-                                        <li>Carpetas
-                                            <ul>
-                                                <li>	Entrada: En esta se depositarán los txt que se deseen convertir y timbrar</li>
-                                                <li>	Error: En esta carpeta se depositarán los txt que tengan errores de estructura y/o de validación en el llenado </li>
-                                                <li>	Respaldo: en esta carpeta una vez timbrados los txt se quedarán guardados para futuras referencias</li>
-                                                <li>	Salida: una vez procesados los archivos txt dentro de esta carpeta encontraremos los archivos XML y PDF de los comprobantes.</li>
-                                                <li>	Cancela: En esta carpeta se depositan los txt de cancelación que se deseen procesar.</li>
-                                            </ul>
-                                        </li>
-                                    </ul>
+                                        <p className="font-italic"></p>
 
 
-                                </div>
-                                <div className="row text-start text-light">
+                                        <ul className="list-unstyled">
+                                            <li>Carpetas
+                                                <ul>
+                                                    <li>	Entrada: En esta se depositarán los txt que se deseen convertir y timbrar</li>
+                                                    <li>	Error: En esta carpeta se depositarán los txt que tengan errores de estructura y/o de validación en el llenado </li>
+                                                    <li>	Respaldo: en esta carpeta una vez timbrados los txt se quedarán guardados para futuras referencias</li>
+                                                    <li>	Salida: una vez procesados los archivos txt dentro de esta carpeta encontraremos los archivos XML y PDF de los comprobantes.</li>
+                                                    <li>	Cancela: En esta carpeta se depositan los txt de cancelación que se deseen procesar.</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
 
-                                    <p className="font-weight-normal">Uno de los beneficios del Convertidor Ntlink es que es multiempresa, es decir, permite el timbrado con las razones sociales que deseemos siempre que cuenten con un paquete de timbrado (consulte nuestra lista de precios). </p>
-                                    <p className="font-weight-normal">Del mismo modo se permite la precarga del logo de cada una de las razones sociales para que estos aparezcan en la representación impresa de sus comprobantes PDF. </p>
-                                    <img src={require('../assets/img/All/image3.png')} className="d-block img-fluid" alt="..." />
-                                    <p className="font-italic">Interfaz gráfica Convertidor Ntlink</p>
-                                    <p className="font-weight-normal">Nuestro aplicativo trabaja con plantillas de archivos txt, que al cumplir con la estructura correcta y las validaciones correspondientes, entregan al cliente su XML timbrado y sellado así como la representación gráfica del cfdi (PDF). </p>
-                                    <p className="font-weight-bold">Cabe mencionar que el Convertidor NTlink permite el timbrado masivo de txt, procesando archivos txt en un tiempo estimado de 5 segundos por archivo</p>
 
-                                    <p className="font-weight-normal">El archivo layout txt está dividido por líneas que representan un grupo de datos del comprobante cfdi. Las atributos correspondientes a cada línea se separan por el carácter pipe ( | ) y deben cumplir estrictamente con el orden definido en el diccionario de datos.</p>
-                                    <h5 id='EjemplodeLayout' className="text-success">Ejemplo de Layout</h5>
-                                    <p className="font-weight-bold">COMP||00001|43767|04100|I|01|PUE|0|100.56||116.65|MXN|||||Factura|||
-                                        E|EKU9003173C9|NTLINK PRUEBA|601||||||
-                                        R|XAXX010101000|RAZON SOCIAL CLIENTE|G01|||soporte@ntlink.com.mx|soporte3@ntlink.com.mx|DIRECCION CLIENTE|
-                                        C|1|76111500||1|H87|Pza|Prueba de llenado|100.56|100.56|||||
-                                        ITC|1|100.56|002|Tasa|0.160000|16.09|
-                                        IT|002|Tasa|0.160000|16.09|
-                                        TIMP|16.09||
-                                        AD|0|0|0|0|0|0|0|0||||||
-                                        FIN
-                                    </p>
-                                </div>
-                                <div className="row text-start text-light">
+                                    </div>
+                                    <div className="row text-start text-light">
 
-                                    <p className="font-weight-normal">Una vez estructurado y procesado el archivo txt el Convertidor Ntlink deposita dentro de la carpeta de Salida los archivos XML y PDF correspondientes a nuestro archivo. </p>
-                                    <img src={require('../assets/img/All/image2.png')} className="d-block img-fluid" alt="..." />
-                                    <p className="font-italic">Ejemplo archivos procesados</p>
-                                    <img src={require('../assets/img/All/image4.png')} className="d-block img-fluid" alt="..." />
-                                    <p className="font-weight-italic">
-                                        Ejemplo XML generado
-                                    </p>
-                                    <h5 id='EjemploXMLgenerado' className="text-success">Ejemplo XML generado</h5>
-                                </div>
-                                <div className="row text-start text-light">
-                                    <p className="font-italic">
-                                        {code}
-                                    </p>
-                                </div>
-                                <div className="row text-start text-light">
-                                    <h5 id='Requerimientosmínimosparalainstalación' className="text-success">
-                                        Requerimientos mínimos para la instalación
-                                    </h5>
-                                    <ul className="list-unstyled">
-                                        <li>
-                                            <ul>
-                                                <li>	Sistema operativo Windows 32 o 64 bits (Win 7, Win 8, Win 10, Win Server 12, Win Server 16) </li>
-                                                <li>	Memoria RAM 512 Mb</li>
-                                                <li>	50 MB libres de espacio en Disco duro </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                    <h5 id='Procesodeinstalación' className="text-success">
-                                        Proceso de instalación
-                                    </h5>
-                                    <p className="font-weight-normal">
-                                        Una vez realizada la compra de la licencia del Convertidor Ntlink se entregará el codigo de licencia y uno de nuestros ejecutivos de atención a clientes se pondrá en contacto con usted para la instalación y configuración de nuestra aplicación.
-                                    </p>
-                                    <h5 id='Versióndepruebas' className="text-success">
-                                        Versión de pruebas
-                                    </h5>
-                                    <p className="font-weight-normal">
-                                        Si desea evaluar el Convertidor NTlink puede solicitar le instalemos la versión gratuita de nuestro aplicativo en el siguiente correo: soporte.tecnico@ntlink.com.mx donde uno de nuestros agentes de atención a clientes se pondrá en contacto con usted para acordar la instalación de nuestra versión de pruebas. </p>
+                                        <p className="font-weight-normal">Uno de los beneficios del Convertidor Ntlink es que es multiempresa, es decir, permite el timbrado con las razones sociales que deseemos siempre que cuenten con un paquete de timbrado (consulte nuestra lista de precios). </p>
+                                        <p className="font-weight-normal">Del mismo modo se permite la precarga del logo de cada una de las razones sociales para que estos aparezcan en la representación impresa de sus comprobantes PDF. </p>
+                                        <img src={require('../assets/img/All/image3.png')} className="d-block img-fluid" alt="..." />
+                                        <p className="font-italic">Interfaz gráfica Convertidor Ntlink</p>
+                                        <p className="font-weight-normal">Nuestro aplicativo trabaja con plantillas de archivos txt, que al cumplir con la estructura correcta y las validaciones correspondientes, entregan al cliente su XML timbrado y sellado así como la representación gráfica del cfdi (PDF). </p>
+                                        <p className="font-weight-bold">Cabe mencionar que el Convertidor NTlink permite el timbrado masivo de txt, procesando archivos txt en un tiempo estimado de 5 segundos por archivo</p>
 
+                                        <p className="font-weight-normal">El archivo layout txt está dividido por líneas que representan un grupo de datos del comprobante cfdi. Las atributos correspondientes a cada línea se separan por el carácter pipe ( | ) y deben cumplir estrictamente con el orden definido en el diccionario de datos.</p>
+                                        <h5 id='EjemplodeLayout' className="text-success">Ejemplo de Layout</h5>
+                                        <p className="font-weight-bold">COMP||00001|43767|04100|I|01|PUE|0|100.56||116.65|MXN|||||Factura|||
+                                            E|EKU9003173C9|NTLINK PRUEBA|601||||||
+                                            R|XAXX010101000|RAZON SOCIAL CLIENTE|G01|||soporte@ntlink.com.mx|soporte3@ntlink.com.mx|DIRECCION CLIENTE|
+                                            C|1|76111500||1|H87|Pza|Prueba de llenado|100.56|100.56|||||
+                                            ITC|1|100.56|002|Tasa|0.160000|16.09|
+                                            IT|002|Tasa|0.160000|16.09|
+                                            TIMP|16.09||
+                                            AD|0|0|0|0|0|0|0|0||||||
+                                            FIN
+                                        </p>
+                                    </div>
+                                    <div className="row text-start text-light">
+
+                                        <p className="font-weight-normal">Una vez estructurado y procesado el archivo txt el Convertidor Ntlink deposita dentro de la carpeta de Salida los archivos XML y PDF correspondientes a nuestro archivo. </p>
+                                        <img src={require('../assets/img/All/image2.png')} className="d-block img-fluid" alt="..." />
+                                        <p className="font-italic">Ejemplo archivos procesados</p>
+                                        <img src={require('../assets/img/All/image4.png')} className="d-block img-fluid" alt="..." />
+                                        <p className="font-weight-italic">
+                                            Ejemplo XML generado
+                                        </p>
+                                        <h5 id='EjemploXMLgenerado' className="text-success">Ejemplo XML generado</h5>
+                                    </div>
+                                    <div className="row text-start text-light">
+                                        <p className="font-italic">
+                                            {code}
+                                        </p>
+                                    </div>
+                                    <div className="row text-start text-light">
+                                        <h5 id='Requerimientosmínimosparalainstalación' className="text-success">
+                                            Requerimientos mínimos para la instalación
+                                        </h5>
+                                        <ul className="list-unstyled">
+                                            <li>
+                                                <ul>
+                                                    <li>	Sistema operativo Windows 32 o 64 bits (Win 7, Win 8, Win 10, Win Server 12, Win Server 16) </li>
+                                                    <li>	Memoria RAM 512 Mb</li>
+                                                    <li>	50 MB libres de espacio en Disco duro </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <h5 id='Procesodeinstalación' className="text-success">
+                                            Proceso de instalación
+                                        </h5>
+                                        <p className="font-weight-normal">
+                                            Una vez realizada la compra de la licencia del Convertidor Ntlink se entregará el codigo de licencia y uno de nuestros ejecutivos de atención a clientes se pondrá en contacto con usted para la instalación y configuración de nuestra aplicación.
+                                        </p>
+                                        <h5 id='Versióndepruebas' className="text-success">
+                                            Versión de pruebas
+                                        </h5>
+                                        <p className="font-weight-normal">
+                                            Si desea evaluar el Convertidor NTlink puede solicitar le instalemos la versión gratuita de nuestro aplicativo en el siguiente correo: soporte.tecnico@ntlink.com.mx donde uno de nuestros agentes de atención a clientes se pondrá en contacto con usted para acordar la instalación de nuestra versión de pruebas. </p>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
