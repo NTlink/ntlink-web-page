@@ -49,7 +49,7 @@ export class WebService extends Component {
                                 <li className="text-light"> Carga de empresas</li>
                             </ul>
                         </div>
-                        <div class=" col-sm-6 col-md-4 d-flex flex-column">
+                        <div class=" col-sm-6 col-md-3 d-flex flex-column">
                             <h5 className="text-success font-weight-bold tech-font">BENEFICIOS</h5>
                             <ul>
                                 <li className="text-light"> Servicio de alta disponibilidad</li>
@@ -62,7 +62,9 @@ export class WebService extends Component {
                                 <li className="text-light"> Ambiente de pruebas gratuito</li>
                             </ul>
                         </div>
-                        <div className="col col-md-2"></div>
+                        <div className=" col-sm-12 col-md-3">
+                            <img src={require('../assets/img/All/cfdi-4-pc.png')} className="w-100" alt="..." />
+                        </div>
                     </div>
 
                     <div className="row d-flex justify-content-center">
