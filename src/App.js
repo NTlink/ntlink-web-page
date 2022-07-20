@@ -23,6 +23,7 @@ import { Contacto } from 'pages/Contacto';
 import { PlanesTimbrado } from 'pages/PlanesTimbrado';
 import { Distribuidores } from 'pages/Distribuidores';
 import { WebService } from 'pages/WebService';
+import { FreePortal } from 'pages/FreePortal';
 
 TagManager.initialize({ gtmId: 'GTM-MZ2ZVDV' })
 ReactGA.initialize('UA-223081313-1', { debug: false });
@@ -52,6 +53,7 @@ function App() {
           <Route path="/distribuidores" element={<Distribuidores />} />
           <Route path="/contacto" element={<Contacto />} />
           <Route path="/web-service" element={<WebService />} />
+          <Route path="/ntfacturacion" element={<FreePortal />} />
         </Routes >
       </Router>
       </>
