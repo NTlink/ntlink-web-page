@@ -19,7 +19,8 @@ export class Products extends Component {
                                 <h3 className="text-success">WEB SERVICE</h3>
                             </div>
                             <div className="col">
-                                <p className="lead text-light ">Usa nuestro Web service,es muy sencillo y puede ser conectado a cualquier tipo de lenguaje de programacion o herramienta.</p>
+                                <p className="lead text-light ">Nuestro web service servicio realiza una serie de validaciones antes de certificar el documento, como, por ejemplo: la validez del Sello de la Factura, que el Emisor pueda facturar, que el RFC sea válido, que el Certificado corresponda al Emisor, entre otras. Todas las validaciones mencionadas se encuentran definidas en la Matriz de Validaciones proporcionada por el SAT.
+                                    El Web Service (WS) puede ser consumido por cualquier lenguaje de programación, ya que las peticiones se hacen con XML y actualmente todos los lenguajes de programación soportan el manejo de XML. Algunas de las pruebas realizadas para consumir el WS contemplaron el uso de los siguientes lenguajes de programación: VB .NET, C# y Java, todos con resultados satisfactorios..</p>
                             </div>
                         </div>
                         <div className="col-md-2 d-flex justify-content-center align-items-center">
@@ -27,7 +28,7 @@ export class Products extends Component {
                         </div>
                     </div>
                     <div className="container justify-content-center bg-dark m-0 p-0">
-                         <div className="stripe stripe-2 m-2 p-0"></div>
+                        <div className="stripe stripe-2 m-2 p-0"></div>
                     </div>
                     <div className="row align-items-center ">
                         <div className="col-md-2 d-flex justify-content-center">
@@ -67,7 +68,7 @@ export class Products extends Component {
                             </div>
                         </div>
                         <div className="col-md-2 d-flex justify-content-center align-items-center">
-                        <a href="/nomina-portal" className="mbtn"><span className="mb-0">MÁS INFORMACIÓN</span></a>
+                            <a href="/nomina-portal" className="mbtn"><span className="mb-0">MÁS INFORMACIÓN</span></a>
                         </div>
                     </div>
 
