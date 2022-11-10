@@ -174,7 +174,7 @@ export class Home extends Component {
                                 <div className="row text-light d-sm-flex justify-content-sm-end m-3">
                                     <div className=" col-1 WithForece">
 
-                                        <a type="button" className="btn btn-outline-light noBorder" href="/contacto" >
+                                        <a type="button" className="btn btn-outline-light noBorder" href="https://nt-invoice.ntlink.com.mx/#/support-request/*" >
                                             <img className="img-fluid" src={require('../assets/img/All/esquema-de-correo-electronico (1).png')} />
                                         </a>
                                     </div>
