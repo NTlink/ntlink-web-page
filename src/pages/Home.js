@@ -81,7 +81,7 @@ export class Home extends Component {
                 <div className=" justify-content-center a-b-2" >
                     <div className="row ">
                         <div className="col d-flex justify-content-center">
-                            <a href="https://ntlinkcfdi.com/publicaciones-blog" target="_blank" className="mbtn buttonexapnd"  ><span className="mb-0">BLOG</span></a>
+                            <a href="https://ntlinkcfdi.com/blog-ntlink" target="_blank" className="mbtn buttonexapnd"  ><span className="mb-0">BLOG</span></a>
                         </div>
                         <div className="col d-flex justify-content-center">
                             <a href="https://dev-cfdi4.ntlink.com.mx" target="_blank" className="mbtn buttonexapnd"  ><span className="mb-0">DOCUMENTACIÓN</span></a>
