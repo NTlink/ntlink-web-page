@@ -26,16 +26,16 @@ import { WebService } from 'pages/WebService';
 import { FreePortal } from 'pages/FreePortal';
 
 TagManager.initialize({ gtmId: 'GTM-MZ2ZVDV' })
-ReactGA.initialize('UA-223081313-1', { debug: false });
+ReactGA.initialize('UA-254098962-1', { debug: false });
 
 function App() {
 
-  
- 
+
+
   useEffect(() => {
     ReactGA.pageview(window.location.pathname + window.location.search);
   });
- 
+
   return (
     <>
       <Router>
@@ -56,7 +56,7 @@ function App() {
           <Route path="/ntfacturacion" element={<FreePortal />} />
         </Routes >
       </Router>
-      </>
+    </>
   );
 }
 
