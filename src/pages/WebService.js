@@ -6,31 +6,31 @@ export class WebService extends Component {
         return (
             <>
                 <div className="container-fluid ws-back">
-                <nav class="site-header sticky-top py-1 bg-dark">
-                    <div class="container d-flex flex-column flex-md-row justify-content-between">
-                        <a href="/precios" className="text-decorationNone py-2 d-none d-md-inline-block" >
-                            <h5 className="text-success pt-2 tech-font">
-                                Precios
-                            </h5>
-                        </a>
-                        <a href="https://dev-cfdi4.ntlink.com.mx" target="_blank" className="text-decorationNone py-2 d-none d-md-inline-block">
-                            <h5 className="text-success pt-2 tech-font">
-                                Documentación
-                            </h5>
-                        </a>
-                        <a href="/" className="text-decorationNone py-2 d-none d-md-inline-block">
-                            <h5 className="text-success pt-2 tech-font">
-                                Regresar
-                            </h5>
-                        </a>
+                    <nav class="site-header sticky-top py-1 bg-dark">
+                        <div class="container d-flex flex-column flex-md-row justify-content-between">
+                            <a href="/precios" className="text-decorationNone py-2 d-none d-md-inline-block" >
+                                <h5 className="text-success pt-2 tech-font">
+                                    Precios
+                                </h5>
+                            </a>
+                            <a href="https://dev-cfdi4.ntlink.com.mx" target="_blank" className="text-decorationNone py-2 d-none d-md-inline-block">
+                                <h5 className="text-success pt-2 tech-font">
+                                    Documentación
+                                </h5>
+                            </a>
+                            <a href="/" className="text-decorationNone py-2 d-none d-md-inline-block">
+                                <h5 className="text-success pt-2 tech-font">
+                                    Regresar
+                                </h5>
+                            </a>
 
-                    </div>
-                </nav>
+                        </div>
+                    </nav>
                     <div className="row my-5">
                         <div className="col"></div>
                         <div class=" col-6 d-flex flex-column align-content-center">
-                            <h1 className="text-light web-service-header-text"> WEB SERVICE DE TIMBRADO MASIVO</h1>
-                            <h1 className="text-light web-service-header-text"> NTLINK COMUNICACIONES</h1>
+                            <h2 className="text-light web-service-header-text"> WEB SERVICE DE TIMBRADO MASIVO</h2>
+                            <h2 className="text-light web-service-header-text"> NTLINK COMUNICACIONES</h2>
                         </div>
                         <div className="col"></div>
                     </div>
@@ -78,6 +78,9 @@ export class WebService extends Component {
                             <p className="text-light bg-info pt-4 pb-4"> <strong> Todos nuestros servicios de timbrado por web service son post pago.</strong>
                                 &nbsp;Esto quiere decir que podrás pagar a mes vencido dependiendo de lo que utilices, siendo una tarifa ajustada a tus necesidades
                             </p>
+                            <div className="col d-flex justify-content-center">
+                                <a href="https://dev-cfdi4.ntlink.com.mx" target="_blank" className="mbtn buttonexapnd"  ><span className="mb-0">DOCUMENTACIÓN</span></a>
+                            </div>
                         </div>
                         <div className="col-sm-1 col-md-1"></div>
                         <div class="col-sm-10 col-md-4 d-flex flex-column ml-5 mr-5">
