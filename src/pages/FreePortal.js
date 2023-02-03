@@ -39,7 +39,7 @@ export class FreePortal extends Component {
                     <div className="row my-5">
                         <div className="col"></div>
                         <div class=" col-6 d-flex flex-column align-content-center">
-                            <h1 className="text-light web-service-header-text">NTLINK PORTAL GRATUITO</h1>
+                            <h2 className="text-light web-service-header-text">NTLINK PORTAL GRATUITO</h2>
                         </div>
                         <div className="col"></div>
                     </div>

@@ -9,10 +9,10 @@ export class Products extends Component {
         return (
             <>
                 <div className="container">
-                    <h1 className="text-light" >PRODUCTOS</h1>
+                    <h2 className="text-light" >PRODUCTOS</h2>
                     <div className="row align-items-center ">
                         <div className="col-md-2 d-flex justify-content-center">
-                            <img src={require('../assets/img/All/main-icono-01.png')} className="d-block img-fluid" alt="..." />
+                            <img src={require('../assets/img/All/main-icono-01.png')} className="d-block img-fluid" alt="NTLINK web service" />
                         </div>
                         <div className="col-md-8 ">
                             <div className="col">
@@ -32,7 +32,7 @@ export class Products extends Component {
                     </div>
                     <div className="row align-items-center ">
                         <div className="col-md-2 d-flex justify-content-center">
-                            <img src={require('../assets/img/All/main-icono-CFDI.png')} className="d-block img-fluid" alt="..." />
+                            <img src={require('../assets/img/All/main-icono-CFDI.png')} className="d-block img-fluid" alt="NTLINK CFDI" />
                         </div>
                         <div className="col-md-8 ">
                             <div className="col">
@@ -55,7 +55,7 @@ export class Products extends Component {
                     </div>
                     <div className="row align-items-center">
                         <div className="col-md-2 d-flex justify-content-center" >
-                            <img src={require('../assets/img/All/main-icono-nomina.png')} className="d-block img-fluid" alt="..." />
+                            <img src={require('../assets/img/All/main-icono-nomina.png')} className="d-block img-fluid" alt="NTLINK NOMINA" />
                         </div>
                         <div className="col-md-8 justify-content-center">
                             <div className="col">
@@ -79,7 +79,7 @@ export class Products extends Component {
 
                     <div className="row align-items-center">
                         <div className="col-md-2 d-flex justify-content-center">
-                            <img src={require('../assets/img/All/main-icono-compsCFDI.png')} className="d-block img-fluid" alt="..." />
+                            <img src={require('../assets/img/All/main-icono-compsCFDI.png')} className="d-block img-fluid" alt="NTLINK CMPLEMENTOS" />
                         </div>
                         <div className="col-md-8 justify-content-center">
                             <div className="col">
@@ -142,7 +142,7 @@ export class Products extends Component {
 
                     <div className="row align-items-center">
                         <div className="col-md-2 d-flex justify-content-center">
-                            <img src={require('../assets/img/All/main-icono-adendas.png')} className="d-block img-fluid" alt="..." />
+                            <img src={require('../assets/img/All/main-icono-adendas.png')} className="d-block img-fluid" alt="NTLINK-ADENDAS" />
                         </div>
                         <div className="col-md-8 justify-content-center">
                             <div className="col">
@@ -217,7 +217,7 @@ export class Products extends Component {
                     </div>
                     <div className="row align-items-center">
                         <div className="col-md-2 d-flex justify-content-center">
-                            <img src={require('../assets/img/All/main-icono-convertidor.png')} className="d-block img-fluid" alt="..." />
+                            <img src={require('../assets/img/All/main-icono-convertidor.png')} className="d-block img-fluid" alt="NTLINK CONVERTIDOR" />
                         </div>
                         <div className="col-md-8 justify-content-center">
                             <div className="col">

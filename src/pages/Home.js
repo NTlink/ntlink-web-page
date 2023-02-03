@@ -1,8 +1,8 @@
 import { Component } from "react";
 import CookieConsent, { getCookieConsentValue } from "react-cookie-consent";
 
-import {Corousel } from '../components/Carousel';
-import { NtOverview } from '../components/NtOverview'; 
+import { Corousel } from '../components/Carousel';
+import { NtOverview } from '../components/NtOverview';
 import { Products } from '../components/Products';
 import { Prices } from "components/Prices";
 import { Promotions } from "components/Promotions";
@@ -47,56 +47,56 @@ export class Home extends Component {
                 </header>
 
                 <div className="container">
-                <section id="CAROUSEL">
-                    <br/>
-                    <Corousel />
-                    <NtOverview />
-                </section>
+                    <section id="CAROUSEL">
+                        <br />
+                        <Corousel />
+                        <NtOverview />
+                    </section>
 
 
 
 
-                <div className=" justify-content-center a-b-2 pb-4 ">
-                    <div className="row mt-4">
-                        <img src={require('../assets/img/All/5 folios gratis.gif')} className="d-block img-fluid " alt="..." />
+                    <div className=" justify-content-center a-b-2 pb-4 ">
+                        <div className="row mt-4">
+                            <img src={require('../assets/img/All/5 folios gratis.gif')} className="d-block img-fluid " alt="..." />
+                        </div>
+                    </div>
+
+                    <section id="PRODUCTOS" className="py-5 bg-transparent a-b-2" >
+                        <br />
+                        <Products />
+                    </section>
+
+                    <section id="PRECIOS" className="py-5 bg-transparent  a-b-2 p-0" >
+                        <br />
+                        <Prices />
+                    </section>
+
+
+                    <section id="PROMOCIONES" className="py-5 bg-transparent a-b-2" >
+                        <br />
+                        <Promotions />
+                    </section>
+
+                    <div className=" justify-content-center a-b-2" >
+                        <div className="row ">
+                            <div className="col d-flex justify-content-center">
+                                <a href="https://ntlinkcfdi.com/blog-ntlink" target="_blank" className="mbtn buttonexapnd"  ><span className="mb-0">BLOG</span></a>
+                            </div>
+                            <div className="col d-flex justify-content-center">
+                                <a href="https://dev-cfdi4.ntlink.com.mx" target="_blank" className="mbtn buttonexapnd"  ><span className="mb-0">DOCUMENTACIÓN</span></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <section id="PRODUCTOS" className="py-5 bg-transparent a-b-2" >
-                    <br/>
-                    <Products />
-                </section>
 
-                <section id="PRECIOS" className="py-5 bg-transparent  a-b-2 p-0" >
-                    <br/>
-                    <Prices />
-                </section>
-                
-                
-                <section id="PROMOCIONES" className="py-5 bg-transparent a-b-2" >
-                    <br/>
-                    <Promotions />
-                </section>
 
-                <div className=" justify-content-center a-b-2" >
-                    <div className="row ">
-                        <div className="col d-flex justify-content-center">
-                            <a href="https://ntlinkcfdi.com/blog-ntlink" target="_blank" className="mbtn buttonexapnd"  ><span className="mb-0">BLOG</span></a>
-                        </div>
-                        <div className="col d-flex justify-content-center">
-                            <a href="https://dev-cfdi4.ntlink.com.mx" target="_blank" className="mbtn buttonexapnd"  ><span className="mb-0">DOCUMENTACIÓN</span></a>
-                        </div>
-                    </div>
-                </div>
-                </div>
 
-                
-                
-                
                 {
-                        (getCookieConsentValue("myAwesomeCookieName2") === undefined) &&
-                        <div className="navbar fixed-bottom">
-                          <CookieConsent
+                    (getCookieConsentValue("myAwesomeCookieName2") === undefined) &&
+                    <div className="navbar fixed-bottom">
+                        <CookieConsent
 
                             location="bottom"
                             buttonText="Aceptar"
@@ -104,13 +104,13 @@ export class Home extends Component {
                             style={{ background: "#005250" }}
                             buttonStyle={{ color: "#FFFFFF", fontSize: "18px", background: "#00b3ff", fontWeight: "bold", }}
                             expires={150}
-                          >
+                        >
                             <p className="font-weight-normal">Las cookies de este sitio web se usan para personalizar el contenido y los anuncios, ofrecer funciones de redes sociales y analizar el tráfico. Además, compartimos información sobre el uso que haga del sitio web con nuestros partners de redes sociales.</p>
-                          </CookieConsent>
-                        </div>
-                      }
-                
-                
+                        </CookieConsent>
+                    </div>
+                }
+
+
                 <footer id="CONTACTO" className="pt-4 pt-md-5 border-top gradeintBlack bg-dark a-b-2">
                     <div className="bg-trasparent">
                         <div className="row">
@@ -119,7 +119,7 @@ export class Home extends Component {
                             </div>
                             <div className="col-md-9 mt-5 text-start">
                                 <div className="row">
-                                    <h1 className="text-light" >CONTACTO Y SOPORTE</h1>
+                                    <h2 className="text-light" >CONTACTO Y SOPORTE</h2>
                                 </div>
 
                                 <div className="row">
