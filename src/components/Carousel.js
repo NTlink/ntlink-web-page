@@ -5,7 +5,7 @@ export class Corousel extends Component {
 
 
   render() {
-    const carruselPicturesURL = [{ href: '', urlImage: 'CRRSL_cont_01' }, { href: '', urlImage: 'CRRSL_cont_02' }, { href: '', urlImage: 'CRRSL_cont_03' }, { href: '', urlImage: 'CRRSL_cont_04' }, { href: '', urlImage: 'CRRSL_cont_05' }, { href: '', urlImage: 'CRRSL_cont_06' }];
+    const carruselPicturesURL = [{ href: '', urlImage: 'CRRSL_cont_00' },{ href: '', urlImage: 'nuevo_portal' },{ href: '', urlImage: 'CRRSL_cont_01' }, { href: '', urlImage: 'CRRSL_cont_02' }, { href: '', urlImage: 'CRRSL_cont_03' }, { href: '', urlImage: 'CRRSL_cont_04' }, { href: '', urlImage: 'CRRSL_cont_05' }, { href: '', urlImage: 'CRRSL_cont_06' }];
 
     return (
 
@@ -23,11 +23,11 @@ export class Corousel extends Component {
                 Object.keys(carruselPicturesURL).map((picturesUrl, index) => (
                   index == 0 ?
                     <div key={`${carruselPicturesURL[index].urlImage}-${index}`} className="carousel-item active">
-                      <a target="_blank" href={carruselPicturesURL[index].href}><img src={require('../assets/img/All/' + carruselPicturesURL[index].urlImage + '.gif')} className="img-fluid" alt="..." /></a>
+                      <a target="_blank" href={carruselPicturesURL[index].href}><img src={require('../assets/img/All/' + carruselPicturesURL[index].urlImage + '.png')} className="img-fluid" alt="..." /></a>
                     </div>
                     :
                     <div key={`${carruselPicturesURL[index].urlImage}-${index}`} className="carousel-item">
-                      <a target="_blank" href={carruselPicturesURL[index].href}><img src={require('../assets/img/All/' + carruselPicturesURL[index].urlImage + '.gif')} className="img-fluid" alt="..." /></a>
+                      <a target="_blank" href={carruselPicturesURL[index].href}><img src={require('../assets/img/All/' + carruselPicturesURL[index].urlImage + '.png')} className="img-fluid" alt="..." /></a>
                     </div>
                 ))
               }
