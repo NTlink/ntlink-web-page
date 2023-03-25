@@ -60,7 +60,7 @@ export class NtOverview extends Component {
 
                         <div className="col d-flex justify-content-center align-items-center">
                             <img src={require('../assets/img/All/main-icono-agratuito.png')} className="d-block img-fluid" alt="NTLINK PORTAL GRATUITO" style={{ height: "80px" }} />
-                            <a href="https://cfdi33.ntlink.com.mx/ntfacturacion/wfrLogin.aspx" target="_blank" className="mbtn"><span className="mb-0">ACCESO GRATUITO</span></a>
+                            <a href="https://cfdi33.ntlink.com.mx/FacturaGratuito40" target="_blank" className="mbtn"><span className="mb-0">ACCESO GRATUITO</span></a>
                         </div>
                         <div className="col p-2 d-flex justify-content-center align-items-center">
                             <footer className=" text-light  ">

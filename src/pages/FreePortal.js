@@ -59,7 +59,7 @@ export class FreePortal extends Component {
                         </div>
                         <div class="col-sm-3 col-md-4 d-flex flex-column ml-5 mr-5">
                             <div className="col d-flex justify-content-start align-items-center">
-                                <a href="https://cfdi33.ntlink.com.mx/ntfacturacion/wfrLogin.aspx" target="_blank" className="mbtn"><span className="mb-0">PORTAL GRATUITO</span></a>
+                                <a href="https://cfdi33.ntlink.com.mx/FacturaGratuito40" target="_blank" className="mbtn"><span className="mb-0">PORTAL GRATUITO</span></a>
                             </div>
                         </div>
                     </div>
