@@ -46,7 +46,7 @@ export class NtOverview extends Component {
                 <div className="row p-3">
                     <div className="col-md-6 col-lg-4  d-flex justify-content-center">
                         <img src={require('../assets/img/All/main-icono-compsCFDI.png')} className="d-block img-fluid" alt="NTLINK CFDI 4.0" style={{ height: "80px" }} />
-                        <a href="hFttps://cfdi33.ntlink.com.mx/Facturacion40" target="_blank" className="mbtn"><span className="mb-0">ACCESO CFDI 4.0</span></a>
+                        <a href="https://cfdi33.ntlink.com.mx/Facturacion40" target="_blank" className="mbtn"><span className="mb-0">ACCESO CFDI 4.0</span></a>
                     </div>
                     <div className="col-md-6 col-lg-4 d-flex justify-content-center">
                         <img src={require('../assets/img/All/main-icono-nomina.png')} className="d-block img-fluid" alt="NTLINK NOMINA" style={{ height: "80px" }} />
