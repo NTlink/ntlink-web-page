@@ -13,7 +13,7 @@ export class FreePortal extends Component {
                                     Precios
                                 </h5>
                             </a>
-                            <a href="https://cfdi33.ntlink.com.mx/Facturacion3.3/wfrLogin.aspx" target="_blank" className="text-decorationNone py-2 d-none d-md-inline-block">
+                            <a href="https://cfdi33.ntlink.com.mx/Facturacion40" target="_blank" className="text-decorationNone py-2 d-none d-md-inline-block">
                                 <h5 className="text-success pt-2 tech-font">
                                     Portal CFDI
                                 </h5>

@@ -44,19 +44,15 @@ export class NtOverview extends Component {
                     </div>
                 </div>
                 <div className="row p-3">
-                    <div className="col-md-6 col-lg-3  d-flex justify-content-center">
-                        <img src={require('../assets/img/All/main-icono-CFDI.png')} className="d-block img-fluid" alt="NTLINK CFDI 3.3" style={{ height: "80px" }} />
-                        <a href="https://cfdi33.ntlink.com.mx/Facturacion3.3/wfrLogin.aspx" target="_blank" className="mbtn"><span className="mb-0">ACCESO CFDI 3.3</span></a>
-                    </div>
-                    <div className="col-md-6 col-lg-3  d-flex justify-content-center">
+                    <div className="col-md-6 col-lg-4  d-flex justify-content-center">
                         <img src={require('../assets/img/All/main-icono-compsCFDI.png')} className="d-block img-fluid" alt="NTLINK CFDI 4.0" style={{ height: "80px" }} />
-                        <a href="https://cfdi33.ntlink.com.mx/Facturacion40" target="_blank" className="mbtn"><span className="mb-0">ACCESO CFDI 4.0</span></a>
+                        <a href="hFttps://cfdi33.ntlink.com.mx/Facturacion40" target="_blank" className="mbtn"><span className="mb-0">ACCESO CFDI 4.0</span></a>
                     </div>
-                    <div className="col-md-6 col-lg-3 d-flex justify-content-center">
+                    <div className="col-md-6 col-lg-4 d-flex justify-content-center">
                         <img src={require('../assets/img/All/main-icono-nomina.png')} className="d-block img-fluid" alt="NTLINK NOMINA" style={{ height: "80px" }} />
                         <a href="https://cfdi33.ntlink.com.mx/NominaLocal3.3/wfrLogin.aspx" target="_blank" className="mbtn"><span className="mb-0">ACCESO NÓMINA </span></a>
                     </div>
-                    <div className="col-md-6 col-lg-3 d-block col2">
+                    <div className="col-md-6 col-lg-4 d-block col2">
 
                         <div className="col d-flex justify-content-center align-items-center">
                             <img src={require('../assets/img/All/main-icono-agratuito.png')} className="d-block img-fluid" alt="NTLINK PORTAL GRATUITO" style={{ height: "80px" }} />
