@@ -28,7 +28,7 @@ export class FreePortal extends Component {
                                     Pagina NT link
                                 </h5>
                             </a>
-                            <a href="/contacto" className="text-decorationNone py-2 d-none d-md-inline-block">
+                            <a href="https://nt-invoice.ntlink.com.mx/#/support-request/*" target="_blank" className="text-decorationNone py-2 d-none d-md-inline-block">
                                 <h5 className="text-success pt-2 tech-font">
                                     Contacto
                                 </h5>
