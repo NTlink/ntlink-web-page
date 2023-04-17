@@ -4,7 +4,7 @@ export class Promotions extends Component {
 
     render() {
         return (
-            <>
+            <><div className="container">
                 <div className="row">
                     <h2 className="text-light mb-5 text-center" >PROMOCIONES ESPECIALES</h2>
                 </div>
@@ -42,6 +42,8 @@ export class Promotions extends Component {
                         </div>
                     </div>
                 </div>
+            </div>
+
             </>)
     }
 }
