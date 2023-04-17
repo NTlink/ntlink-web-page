@@ -5,7 +5,7 @@ export class Corousel extends Component {
 
 
   render() {
-    const carruselPicturesURL = [{ href: '', urlImage: 'CRRSL_cont_00' },{ href: '', urlImage: 'nuevo_portal' },{ href: '', urlImage: 'CRRSL_cont_01' }, { href: '', urlImage: 'CRRSL_cont_02' }, { href: '', urlImage: 'CRRSL_cont_03' }, { href: '', urlImage: 'CRRSL_cont_04' }, { href: '', urlImage: 'CRRSL_cont_05' }, { href: '', urlImage: 'CRRSL_cont_06' }];
+    const carruselPicturesURL = [{ href: '', urlImage: 'CRRSL_cont_00' }, { href: '', urlImage: 'CRRSL_cont_01' }, { href: '', urlImage: 'CRRSL_cont_02' }, { href: '', urlImage: 'CRRSL_cont_03' }, { href: '', urlImage: 'CRRSL_cont_04' }, { href: '', urlImage: 'CRRSL_cont_05' }, { href: '', urlImage: 'CRRSL_cont_06' }];
 
     return (
 
