@@ -87,7 +87,7 @@ export class Precios extends Component {
                                             <div className="card-body p-0 bg-white text-light">
                                                 <h2 className="card-title text-info pricing-card-title">{preciosFolios[0].folio}</h2>
                                                 <ul className="list-unstyled  text-info mt-0 mb-0">
-                                                    <li>FOLIOS</li>
+                                                    <li>TIMBRES</li>
                                                 </ul>
                                             </div>
                                             <div className="card-footer bg-secondary text-light">
@@ -109,7 +109,7 @@ export class Precios extends Component {
                                                 </h2>
                                                 <ul className="list-unstyled  text-info mt-0 mb-0">
                                                     <li>
-                                                        FOLIOS
+                                                        TIMBRES
                                                     </li>
                                                 </ul>
                                             </div>
@@ -135,7 +135,7 @@ export class Precios extends Component {
                                                 </h2>
                                                 <ul className="list-unstyled  text-info mt-0 mb-0">
                                                     <li>
-                                                        FOLIOS
+                                                        TIMBRES
                                                     </li>
                                                 </ul>
                                             </div>
@@ -159,7 +159,7 @@ export class Precios extends Component {
                                                 </h2>
                                                 <ul className="list-unstyled  text-info mt-0 mb-0">
                                                     <li>
-                                                        FOLIOS
+                                                        TIMBRES
                                                     </li>
                                                 </ul>
                                             </div>
@@ -185,7 +185,7 @@ export class Precios extends Component {
                                                 </h2>
                                                 <ul className="list-unstyled  text-info mt-0 mb-0">
                                                     <li>
-                                                        FOLIOS
+                                                        TIMBRES
                                                     </li>
                                                 </ul>
                                             </div>
@@ -209,7 +209,7 @@ export class Precios extends Component {
                                                 </h2>
                                                 <ul className="list-unstyled  text-info mt-0 mb-0">
                                                     <li>
-                                                        FOLIOS
+                                                        TIMBRES
                                                     </li>
                                                 </ul>
                                             </div>
@@ -235,7 +235,7 @@ export class Precios extends Component {
                                                 </h2>
                                                 <ul className="list-unstyled  text-info mt-0 mb-0">
                                                     <li>
-                                                        FOLIOS
+                                                        TIMBRES
                                                     </li>
                                                 </ul>
                                             </div>
@@ -259,7 +259,7 @@ export class Precios extends Component {
                                                 </h2>
                                                 <ul className="list-unstyled  text-info mt-0 mb-0">
                                                     <li>
-                                                        FOLIOS
+                                                        TIMBRES
                                                     </li>
                                                 </ul>
                                             </div>
