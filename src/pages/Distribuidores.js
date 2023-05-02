@@ -11,11 +11,14 @@ export class Distribuidores extends Component {
             <div className="row justify-content-center mt-3">
               <div className="col-md-7">
                 <div className="row">
+                  <small className="text-success h4">
+                    Obten ganancias mediante la reventa de nuestros productos.
+                  </small>
+                </div>
+                <div className="row">
                   <p className="text-light">
-                    <small className="text-success h4">
-                      Como distribuidor, podrás obtener ganancias mediante la reventa de nuestros productos,
-                    </small>
-                    ya que tenemos atractivos planes para que puedas obtener ganancias y crecer junto a nosotros. Contacta al equipo de ventas para más información.
+
+                    Tenemos atractivos planes para que puedas obtener ganancias y crecer junto a nosotros. Contacta al equipo de ventas para más información.
                     Para los desarrolladores, tenemos planes interesantes para apoyarte con tu nueva aplicación, te podemos apoyar con un numero de timbres adecuados a tu proyecto en un esquema pospago, ponte en contacto para mas información.
                   </p>
                 </div>

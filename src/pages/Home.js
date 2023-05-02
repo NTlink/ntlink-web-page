@@ -36,13 +36,13 @@ export class Home extends Component {
                                         <a className="nav-link m-2 p-0" href="#PROMOCIONES"><p className=" text-light underline h5 font-weight-bold weight">PROMOCIONES</p></a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link m-2 p-0" href="https://dev-cfdi4.ntlink.com.mx" target="_blank"><p className="text-light underline h5 font-weight-bold weight">DOCUMENTACION</p></a>
+                                        <a className="nav-link m-2 p-0" href="https://dev-cfdi4.ntlink.com.mx" target="_blank"><p className="text-light underline h5 font-weight-bold weight">DOCUMENTACIÓN</p></a>
                                     </li>
                                     <li className="nav-item">
                                         <a className="nav-link m-2 p-0" href="https://cfdi33.ntlink.com.mx/Facturacion40" target="_blank"><p className="text-light underline h5 font-weight-bold weight">CFDI</p></a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link m-2 p-0" href="https://cfdi33.ntlink.com.mx/NominaLocal3.3/wfrLogin.aspx" target="_blank"><p className="text-light underline h5 font-weight-bold weight">NOMINA</p></a>
+                                        <a className="nav-link m-2 p-0" href="https://cfdi33.ntlink.com.mx/NominaLocal3.3/wfrLogin.aspx" target="_blank"><p className="text-light underline h5 font-weight-bold weight">NÓMINA</p></a>
                                     </li>
                                 </ul>
                                 <div className="text-light d-sm-flex justify-content-sm-end m-3">
@@ -129,7 +129,7 @@ export class Home extends Component {
                         </div>
                         <div className="col p-2 d-flex justify-content-center align-items-center">
                             <footer className=" text-light  ">
-                                Da click en la imagen de arriba, completa el registro y obten
+                                Da click en la imagen de arriba, completa el registro y obtén
                                 <small className="text-success h5 ">
                                     {'\u00A0'}5 folios gratis para generar facturas.
                                 </small>
@@ -196,7 +196,7 @@ export class Home extends Component {
                             buttonStyle={{ color: "#FFFFFF", fontSize: "18px", background: "#00b3ff", fontWeight: "bold", }}
                             expires={150}
                         >
-                            <p className="font-weight-normal">Las cookies de este sitio web se usan para personalizar el contenido y los anuncios, ofrecer funciones de redes sociales y analizar el tráfico. Además, compartimos información sobre el uso que haga del sitio web con nuestros partners de redes sociales.</p>
+                            <p className="font-weight-normal">Las cookies de este sitio web se usan para personalizar el contenido y los anuncios, ofrecer funciones de redes sociales y analizar el tráfico. Además, compartimos información sobre el uso que haga del sitio web con nuestros colaboradores de redes sociales.</p>
                         </CookieConsent>
                     </div>
                 }
