@@ -15,7 +15,7 @@ export class NtOverview extends Component {
                     </div>
                     <div className="col-md-9">
                         <div className="text-left py-4">
-                            <h1 className="text-success a-r">NTLINK Provedor CFDI Certificado SAT, Servicios de facturación y timbrado másivo</h1>
+                            <h1 className="text-success a-r">NTLINK Proveedor CFDI Certificado SAT, Servicios de facturación y timbrado masivo</h1>
                         </div>
                         <p className="lead text-light a-r-2">Como proveedor autorizado por el SAT (PAC con número de autorización: 57202) NTLINK Comunicaciones SA de CV.
                             Es una empresa mexicana fundada en diciembre de 2009 con la idea de proporcionar servicios integrales en soluciones de facturación y tecnologías

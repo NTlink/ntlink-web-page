@@ -40,7 +40,7 @@ export class WebService extends Component {
                         <div class=" col-sm-6 col-md-4 d-flex flex-column">
                             <h5 className="text-success font-weight-bold tech-font"> ¿QUÉ ES EL TIMBRADO CFDI CON WEB SERVICE?</h5>
                             <p className="text-light"> EL timbrado a través del web service es un servicio de Facturación Electrónica o Nómina
-                                y requiren timbrar su CFDI con base en la última especificación del Anexo 20 de la Miscelánea Fiscal.</p>
+                                y requieren timbrar su CFDI con base en la última especificación del Anexo 20 de la Miscelánea Fiscal.</p>
                             <ul>
                                 <li className="text-light"> Servicio de timbrado</li>
                                 <li className="text-light"> Servicio de cancelación</li>

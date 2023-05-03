@@ -52,7 +52,7 @@ export class PortalCfdi extends Component {
                     Introducción al portal de facturación NT link 4.0
                   </h5>
                   <p className="font-weight-normal">
-                    Al iniciar sesión en el portal la primera sección que encontraremos es la de  “Empresas”. En esta sección se podrán modificar los datos de la empresa,  crear más empresas si es que se está a cargo de mas, crear sucursales e introducir los conceptos que serán usados en sus facturas.
+                    Al iniciar sesión en el portal la primera sección que encontraremos es la de  “Empresas”. En esta sección se podrán modificar los datos de la empresa,  crear más empresas si es requerido, crear sucursales e introducir los conceptos que serán usados en sus facturas.
                   </p>
                   <img src={require('../assets/img/empresas-portal.jpg')} className="img-fluid" alt="..." />
 

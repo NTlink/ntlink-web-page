@@ -20,7 +20,7 @@ export class Products extends Component {
                             </div>
                             <div className="col">
                                 <p className="lead text-light ">Nuestro web service servicio realiza una serie de validaciones antes de certificar el documento, como, por ejemplo: la validez del Sello de la Factura, que el Emisor pueda facturar, que el RFC sea válido, que el Certificado corresponda al Emisor, entre otras. Todas las validaciones mencionadas se encuentran definidas en la Matriz de Validaciones proporcionada por el SAT.
-                                    El Web Service (WS) puede ser consumido por cualquier lenguaje de programación, ya que las peticiones se hacen con XML y actualmente todos los lenguajes de programación soportan el manejo de XML. Algunas de las pruebas realizadas para consumir el WS contemplaron el uso de los siguientes lenguajes de programación: VB .NET, C# y Java, todos con resultados satisfactorios..</p>
+                                    El Web Service (WS) puede ser consumido por cualquier lenguaje de programación, ya que las peticiones se hacen con XML y actualmente todos los lenguajes de programación soportan el manejo de XML. Algunas de las pruebas realizadas para consumir el WS contemplaron el uso de los siguientes lenguajes de programación: VB .NET, C# y Java, todos con resultados satisfactorios.</p>
                             </div>
                         </div>
                         <div className="col-md-2 d-flex justify-content-center align-items-center">
@@ -59,12 +59,12 @@ export class Products extends Component {
                         </div>
                         <div className="col-md-8 justify-content-center">
                             <div className="col">
-                                <h3 className="text-success">PORTAL NOMINAS</h3>
+                                <h3 className="text-success">PORTAL NÓMINA</h3>
                             </div>
                             <div className="col">
-                                <p className="lead text-light ">Dentro del portal de nomina, podrás llevar el registro y control de tus empleados dados de alta,
+                                <p className="lead text-light ">Dentro del portal de nómina, podrás llevar el registro y control de tus empleados dados de alta,
                                     así como el control de sus días trabajados. Podrás generar el calculo de percepciones, deducciones, incapacidades, etc.
-                                    Tendrás reportes listos para consultar, así como almacenar y descargar tus recibos de nomina, además de timbrarlos de manera sencilla o masiva.</p>
+                                    Tendrás reportes listos para consultar, así como almacenar y descargar tus recibos de nómina, además de timbrarlos de manera sencilla o masiva.</p>
                             </div>
                         </div>
                         <div className="col-md-2 d-flex justify-content-center align-items-center">
@@ -224,7 +224,7 @@ export class Products extends Component {
                                 <h3 className="text-success">CONVERTIDOR</h3>
                             </div>
                             <div className="col">
-                                <p className="lead text-light ">Software diseñado para plataformas Windows desarrollado por ntlink mediante el cual podrás generar
+                                <p className="lead text-light ">Software diseñado para plataformas Windows desarrollado por NTLINK mediante el cual podrás generar
                                     la carga masiva de tu facturación, mediante archivos ya sea txt o xls podrás automatizar tu facturación,
                                     obteniendo de respuesta los archivos xml y pdf sellados por el SAT</p>
 
