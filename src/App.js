@@ -7,7 +7,7 @@ import {
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 
-import ReactGA from 'react-ga';
+
 import TagManager from 'react-gtm-module'
 import { Home } from './pages/Home'
 import "./App.scss";
@@ -25,17 +25,10 @@ import { Distribuidores } from 'pages/Distribuidores';
 import { WebService } from 'pages/WebService';
 import { FreePortal } from 'pages/FreePortal';
 
-TagManager.initialize({ gtmId: 'GTM-MZ2ZVDV' })
-ReactGA.initialize('UA-254098962-1', { debug: false });
+TagManager.initialize({ gtmId: 'AW-10869575825' })
+
 
 function App() {
-
-
-
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  });
-
   return (
     <>
       <Router>
