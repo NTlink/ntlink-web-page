@@ -147,21 +147,21 @@ export class Home extends Component {
 
                     <div className="container justify-content-center a-b-2 pb-4 ">
                         <div className="row p-3">
-                            <div className="col-md-6 col-lg-4  d-flex justify-content-center">
+                            <div className="col-md-6 col-lg-3  d-flex justify-content-center">
                                 <img src={require('../assets/img/All/main-icono-compsCFDI.png')} className="d-block img-fluid" alt="NTLINK CFDI 4.0" style={{ height: "80px" }} />
                                 <a href="https://cfdi33.ntlink.com.mx/Facturacion40" target="_blank" className="mbtn"><span className="mb-0">ACCESO CFDI 4.0</span></a>
                             </div>
-                            <div className="col-md-6 col-lg-4 d-flex justify-content-center">
+                            <div className="col-md-6 col-lg-3 d-flex justify-content-center">
                                 <img src={require('../assets/img/All/main-icono-nomina.png')} className="d-block img-fluid" alt="NTLINK NOMINA" style={{ height: "80px" }} />
                                 <a href="https://cfdi33.ntlink.com.mx/NominaLocal3.3/wfrLogin.aspx" target="_blank" className="mbtn"><span className="mb-0">ACCESO NÓMINA </span></a>
                             </div>
-                            <div className="col-md-6 col-lg-4 d-block col2">
-
-                                <div className="col d-flex justify-content-center align-items-center">
-                                    <img src={require('../assets/img/All/main-icono-agratuito.png')} className="d-block img-fluid" alt="NTLINK PORTAL GRATUITO" style={{ height: "80px" }} />
-                                    <a href="https://cfdi33.ntlink.com.mx/FacturaGratuito40" target="_blank" className="mbtn"><span className="mb-0">ACCESO GRATUITO</span></a>
-                                </div>
-
+                            <div className="col-md-6 col-lg-3 d-flex justify-content-center">
+                                <img src={require('../assets/img/All/main-icono-CFDI.png')} className="d-block img-fluid" alt="NTLINK PORTAL GRATUITO" style={{ height: "80px" }} />
+                                <a href="https://cfdi33.ntlink.com.mx/FacturaGratuito40" target="_blank" className="mbtn"><span className="mb-0">ACCESO GRATUITO</span></a>
+                            </div>
+                            <div className="col-md-6 col-lg-3 d-flex justify-content-center">
+                                <img src={require('../assets/img/All/main-icono-agratuito.png')} className="d-block img-fluid" alt="BLOG NTLINK" style={{ height: "80px" }} />
+                                <a href="https://ntlinkcfdi.com/blog-ntlink" target="_blank" className="mbtn"><span className="mb-0">BLOG NTLINK</span></a>
                             </div>
                         </div>
                     </div>
@@ -178,7 +178,6 @@ export class Home extends Component {
                         <br />
                         <Promotions />
                     </section>
-
                 </div>
 
 
