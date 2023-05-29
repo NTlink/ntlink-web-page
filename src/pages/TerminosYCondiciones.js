@@ -6,7 +6,7 @@ export class TerminosYCondiciones extends Component {
         return (
             <>
                 <div className="row">
-                    <img src={require('../assets/img/All/pdp-head.png')} className="img-fluid" alt="..." />
+                    <img src={require('../assets/img/All/terminosycondiciones-head.png')} className="img-fluid" alt="..." />
                     <p className="font-weight-normal text-light">
                         El presente Política de Privacidad establece los términos en que usa y protege la información que es proporcionada por sus usuarios al
                         momento de utilizar su sitio web. Esta compañía está comprometida con la seguridad de los datos de sus usuarios. Cuando le pedimos
