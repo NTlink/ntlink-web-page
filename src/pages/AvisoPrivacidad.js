@@ -1,6 +1,6 @@
 import { Component } from "react";
 
-export class PoliticaPrivacidad extends Component{
+export class AvisoPrivacidad extends Component{
 
     render(){
         return (

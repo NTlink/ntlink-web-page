@@ -16,7 +16,7 @@ import { PortalNomina } from 'pages/PortalNomina';
 import { ComplementosCfdi } from 'pages/ComplementosCfdi';
 import { AdendasCfdi } from 'pages/AdendasCfdi';
 import { Convertidor } from 'pages/Convertidor';
-import { PoliticaPrivacidad } from 'pages/PoliticaPrivacidad';
+import { AvisoPrivacidad } from 'pages/AvisoPrivacidad';
 import { TerminosYCondiciones } from 'pages/TerminosYCondiciones';
 import { Precios } from 'pages/Precios';
 import { Contacto } from 'pages/Contacto';
@@ -39,7 +39,7 @@ function App() {
           <Route path="/complementos" element={<ComplementosCfdi />} />
           <Route path="/adendas" element={<AdendasCfdi />} />
           <Route path="/convertidor" element={<Convertidor />} />
-          <Route path="/politica-privacidad" element={<PoliticaPrivacidad />} />
+          <Route path="/aviso-privacidad" element={<AvisoPrivacidad />} />
           <Route path="/terminos-condiciones" element={<TerminosYCondiciones />} />
           <Route path="/precios" element={<Precios />} />
           <Route path="/planes-timbrado" element={<PlanesTimbrado />} />
