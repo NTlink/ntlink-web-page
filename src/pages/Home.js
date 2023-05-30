@@ -311,7 +311,7 @@ export class Home extends Component {
 
                             </div>
                         </div>
-                        <div className="text-center py-4 text-light mt-4">Copyright © 2021 NTLINK COMUNICACIONES - Todos los derechos reservados | <a href="politica-privacidad" className='text-light'>POLITICA DE PRIVACIDAD</a> | <a href="/terminos-condiciones" className='text-light'> TERMINOS Y CONDICIONES</a> </div>
+                        <div className="text-center py-4 text-light mt-4">Copyright © 2021 NTLINK COMUNICACIONES - Todos los derechos reservados | <a href="aviso-privacidad" className='text-light'>AVISO DE PRIVACIDAD</a> | <a href="/terminos-condiciones" className='text-light'> TERMINOS Y CONDICIONES</a> </div>
                     </div>
                     <img className="rounded mx-auto d-block" src={require('../assets/img/All/pie_remate-circuitos.gif')} />
                 </footer>
