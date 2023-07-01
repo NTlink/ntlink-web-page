@@ -42,7 +42,7 @@ export class Home extends Component {
                                         <a className="nav-link m-2 p-0" href="https://cfdi33.ntlink.com.mx/Facturacion40" target="_blank"><p className="text-light underline h5 font-weight-bold weight">CFDI</p></a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link m-2 p-0" href="https://cfdi33.ntlink.com.mx/NominaLocal3.3/wfrLogin.aspx" target="_blank"><p className="text-light underline h5 font-weight-bold weight">NÓMINA</p></a>
+                                        <a className="nav-link m-2 p-0" href="https://cfdi33.ntlink.com.mx/NominaLocal40/wfrLogin.aspx" target="_blank"><p className="text-light underline h5 font-weight-bold weight">NÓMINA</p></a>
                                     </li>
                                 </ul>
                                 <div className="text-light d-sm-flex justify-content-sm-end m-3">
@@ -153,7 +153,7 @@ export class Home extends Component {
                             </div>
                             <div className="col-md-6 col-lg-3 d-flex justify-content-center">
                                 <img src={require('../assets/img/All/main-icono-nomina.png')} className="d-block img-fluid" alt="NTLINK NOMINA" style={{ height: "80px" }} />
-                                <a href="https://cfdi33.ntlink.com.mx/NominaLocal3.3/wfrLogin.aspx" target="_blank" className="mbtn"><span className="mb-0">ACCESO NÓMINA </span></a>
+                                <a href="https://cfdi33.ntlink.com.mx/NominaLocal40/wfrLogin.aspx" target="_blank" className="mbtn"><span className="mb-0">ACCESO NÓMINA </span></a>
                             </div>
                             <div className="col-md-6 col-lg-3 d-flex justify-content-center">
                                 <img src={require('../assets/img/All/main-icono-CFDI.png')} className="d-block img-fluid" alt="NTLINK PORTAL GRATUITO" style={{ height: "80px" }} />

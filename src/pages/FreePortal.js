@@ -18,7 +18,7 @@ export class FreePortal extends Component {
                                     Portal CFDI
                                 </h5>
                             </a>
-                            <a href="https://cfdi33.ntlink.com.mx/NominaLocal3.3/wfrLogin.aspx" target="_blank" className="text-decorationNone py-2 d-none d-md-inline-block">
+                            <a href="https://cfdi33.ntlink.com.mx/NominaLocal40/wfrLogin.aspx" target="_blank" className="text-decorationNone py-2 d-none d-md-inline-block">
                                 <h5 className="text-success pt-2 tech-font">
                                     Portal Nomina
                                 </h5>
