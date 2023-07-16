@@ -1,5 +1,6 @@
 import { Component } from "react";
 import CookieConsent, { getCookieConsentValue } from "react-cookie-consent";
+import ReactGA from "react-ga4";
 
 import { Corousel } from '../components/Carousel';
 import { NtOverview } from '../components/NtOverview';
@@ -8,6 +9,55 @@ import { Prices } from "components/Prices";
 import { Promotions } from "components/Promotions";
 
 export class Home extends Component {
+
+
+    openHome() {
+        ReactGA.send({ hitType: "pageview", page: "/home", title: "Carrusel" });
+    }
+
+    openProducts() {
+        ReactGA.send({ hitType: "pageview", page: "/products", title: "Productos" });
+    }
+
+    openPrices() {
+        ReactGA.send({ hitType: "pageview", page: "/precios", title: "Precios" });
+    }
+
+    openWS() {
+        ReactGA.send({ hitType: "pageview", page: "/web-service", title: "Documentacion WS" });
+    }
+
+    openCfdi() {
+        ReactGA.send({ hitType: "pageview", page: "/cfdi", title: "CFDI 4.0" });
+    }
+
+    openNomina() {
+        ReactGA.send({ hitType: "pageview", page: "/nomina", title: "Nomina 1.2" });
+    }
+
+    openGratuito() {
+        ReactGA.send({ hitType: "pageview", page: "/gratuito", title: "Gratuito 4.0" });
+    }
+
+    openFacebook() {
+        ReactGA.send({ hitType: "pageview", page: "/facebook", title: "Facebook NT" });
+    }
+
+    openWhatsapp() {
+        ReactGA.send({ hitType: "pageview", page: "/whatsapp", title: "WhatsApp NT" });
+    }
+
+    openYoutube() {
+        ReactGA.send({ hitType: "pageview", page: "/youtube", title: "Youtube NT" });
+    }
+
+    openBlog() {
+        ReactGA.send({ hitType: "pageview", page: "/blog", title: "Blog NT link" });
+    }
+
+    openSupport() {
+        ReactGA.send({ hitType: "pageview", page: "/support", title: "Contacto NT link" });
+    }
 
 
     render() {
@@ -24,45 +74,45 @@ export class Home extends Component {
                             <div className="collapse navbar-collapse justify-content-center" id="navbarText">
                                 <ul className="navbar-nav justify-content-center">
                                     <li className="nav-item active">
-                                        <a className="nav-link m-2 p-0" href="#CAROUSEL"> <p className="text-light underline h5 font-weight-bold weight">INICIO</p></a>
+                                        <a className="nav-link m-2 p-0" href="#CAROUSEL" onClick={this.openHome}> <p className="text-light underline h5 font-weight-bold weight">INICIO</p></a>
                                     </li>
                                     <li className="nav-item ">
-                                        <a className="nav-link m-2 p-0" href="#PRODUCTOS"><p className="text-light underline h5 font-weight-bold weight">PRODUCTOS</p></a>
+                                        <a className="nav-link m-2 p-0" href="#PRODUCTOS" onClick={this.openProducts}><p className="text-light underline h5 font-weight-bold weight">PRODUCTOS</p></a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link m-2 p-0" href="#PRECIOS"><p className="text-light underline h5 font-weight-bold weight">PRECIOS</p></a>
+                                        <a className="nav-link m-2 p-0" href="/precios" onClick={this.openPrices}><p className="text-light underline h5 font-weight-bold weight">PRECIOS</p></a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link m-2 p-0" href="https://dev-cfdi4.ntlink.com.mx" target="_blank"><p className="text-light underline h5 font-weight-bold weight">DOCUMENTACIÓN</p></a>
+                                        <a className="nav-link m-2 p-0" href="https://dev-cfdi4.ntlink.com.mx" target="_blank" onClick={this.openWS}><p className="text-light underline h5 font-weight-bold weight">DOCUMENTACIÓN</p></a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link m-2 p-0" href="https://cfdi33.ntlink.com.mx/Facturacion40" target="_blank"><p className="text-light underline h5 font-weight-bold weight">CFDI</p></a>
+                                        <a className="nav-link m-2 p-0" href="https://cfdi33.ntlink.com.mx/Facturacion40" target="_blank" onClick={this.openCfdi}><p className="text-light underline h5 font-weight-bold weight">CFDI</p></a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link m-2 p-0" href="https://cfdi33.ntlink.com.mx/NominaLocal40/wfrLogin.aspx" target="_blank"><p className="text-light underline h5 font-weight-bold weight">NÓMINA</p></a>
+                                        <a className="nav-link m-2 p-0" href="https://cfdi33.ntlink.com.mx/NominaLocal40/wfrLogin.aspx" target="_blank" onClick={this.openNomina}><p className="text-light underline h5 font-weight-bold weight">NÓMINA</p></a>
                                     </li>
                                     <li className="nav-item">
-                                         <a className="nav-link m-2 p-0" href="https://cfdi33.ntlink.com.mx/FacturaGratuito40" target="_blank"><p className="text-light underline h5 font-weight-bold weight">GRATUITO</p></a>
+                                        <a className="nav-link m-2 p-0" href="https://cfdi33.ntlink.com.mx/FacturaGratuito40" target="_blank" onClick={this.openGratuito}><p className="text-light underline h5 font-weight-bold weight">GRATUITO</p></a>
                                     </li>
                                 </ul>
                                 <div className="text-light d-sm-flex justify-content-sm-end m-3">
-                                    <a type="button" className="btn btn-outline-light noBorder" href="https://www.facebook.com/profile.php?id=100091939779817" target="_blank">
+                                    <a type="button" className="btn btn-outline-light noBorder" href="https://www.facebook.com/profile.php?id=100091939779817" target="_blank" onClick={this.openFacebook}>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className='ico' viewBox="0 0 16 16">
                                             <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
                                         </svg>
                                     </a>
-                                    <a type="button" className="btn btn-outline-light noBorder" href="https://wa.me/525591078187" target="_blank">
+                                    <a type="button" className="btn btn-outline-light noBorder" href="https://wa.me/525591078187" target="_blank" onClick={this.openWhatsapp}>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="ico" viewBox="0 0 16 16">
                                             <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
                                         </svg>
                                     </a>
-                                    <a type="button" className="btn btn-outline-light noBorder" href="https://www.youtube.com/@ntlinkcomunicaciones2617" target="_blank">
+                                    <a type="button" className="btn btn-outline-light noBorder" href="https://www.youtube.com/@ntlinkcomunicaciones2617" target="_blank" onClick={this.openYoutube}>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="ico" viewBox="0 0 16 16">
                                             <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
                                         </svg>
                                     </a>
 
-                                    <a type="button" className="btn btn-outline-light noBorder" href="https://ntlinkcfdi.com/blog-ntlink" target="_blank">
+                                    <a type="button" className="btn btn-outline-light noBorder" href="https://ntlinkcfdi.com/blog-ntlink" target="_blank" onClick={this.openBlog}>
                                         <svg version="1.1" width="16" height="16" fill="currentColor" className="ico" xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 512 512">
                                             <g>
@@ -100,7 +150,7 @@ export class Home extends Component {
                                             </g>
                                         </svg>
                                     </a>
-                                    <a type="button" className="btn btn-outline-light noBorder" href="https://nt-invoice.ntlink.com.mx/#/support-request/*" target="_blank">
+                                    <a type="button" className="btn btn-outline-light noBorder" href="https://nt-invoice.ntlink.com.mx/#/support-request/*" target="_blank" onClick={this.openSupport}>
                                         <svg fill="currentColor" className="ico" width="30" height="30" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M29.000,22.000 L3.000,22.000 C1.346,22.000 -0.000,20.654 -0.000,19.000 L-0.000,3.000 C-0.000,1.346 1.346,-0.000 3.000,-0.000 L29.000,-0.000 C30.654,-0.000 32.000,1.346 32.000,3.000 L32.000,19.000 C32.000,20.654 30.654,22.000 29.000,22.000 ZM3.000,20.000 L29.000,20.000 C29.551,20.000 30.000,19.552 30.000,19.000 L30.000,3.317 L16.651,14.759 C16.463,14.920 16.232,15.000 16.000,15.000 C15.768,15.000 15.537,14.920 15.349,14.759 L2.000,3.317 L2.000,19.000 C2.000,19.552 2.449,20.000 3.000,20.000 ZM28.464,2.000 L3.536,2.000 L16.000,12.683 L28.464,2.000 Z" />
                                         </svg>
@@ -124,25 +174,25 @@ export class Home extends Component {
                         <div className="row p-3">
                             <div className="col-md-6 col-lg-3  d-flex justify-content-center">
                                 <img src={require('../assets/img/All/main-icono-compsCFDI.png')} className="d-block img-fluid" alt="NTLINK CFDI 4.0" style={{ height: "80px" }} />
-                                <a href="https://cfdi33.ntlink.com.mx/Facturacion40" target="_blank" className="mbtn"><span className="mb-0">ACCESO CFDI 4.0</span></a>
+                                <a href="https://cfdi33.ntlink.com.mx/Facturacion40" target="_blank" onClick={this.openCfdi} className="mbtn"><span className="mb-0">ACCESO CFDI 4.0</span></a>
                             </div>
                             <div className="col-md-6 col-lg-3 d-flex justify-content-center">
                                 <img src={require('../assets/img/All/main-icono-nomina.png')} className="d-block img-fluid" alt="NTLINK NOMINA 1.2" style={{ height: "80px" }} />
-                                <a href="https://cfdi33.ntlink.com.mx/NominaLocal40/wfrLogin.aspx" target="_blank" className="mbtn"><span className="mb-0">ACCESO NÓMINA </span></a>
+                                <a href="https://cfdi33.ntlink.com.mx/NominaLocal40/wfrLogin.aspx" target="_blank" onClick={this.openNomina} className="mbtn"><span className="mb-0">ACCESO NÓMINA </span></a>
                             </div>
                             <div className="col-md-6 col-lg-3 d-flex justify-content-center">
                                 <img src={require('../assets/img/All/main-icono-CFDI.png')} className="d-block img-fluid" alt="NTLINK PORTAL GRATUITO" style={{ height: "80px" }} />
-                                <a href="https://cfdi33.ntlink.com.mx/FacturaGratuito40" target="_blank" className="mbtn"><span className="mb-0">ACCESO GRATUITO</span></a>
+                                <a href="https://cfdi33.ntlink.com.mx/FacturaGratuito40" target="_blank" onClick={this.openGratuito} className="mbtn"><span className="mb-0">ACCESO GRATUITO</span></a>
                             </div>
                             <div className="col-md-6 col-lg-3 d-flex justify-content-center">
                                 <img src={require('../assets/img/All/main-icono-agratuito.png')} className="d-block img-fluid" alt="BLOG NTLINK" style={{ height: "80px" }} />
-                                <a href="https://ntlinkcfdi.com/blog-ntlink" target="_blank" className="mbtn"><span className="mb-0">BLOG NTLINK</span></a>
+                                <a href="https://ntlinkcfdi.com/blog-ntlink" target="_blank" onClick={this.openBlog} className="mbtn"><span className="mb-0">BLOG NTLINK</span></a>
                             </div>
                         </div>
                     </div>
                     <div className="container justify-content-center a-b-2 pb-4 ">
                         <div className="row mt-4">
-                            <a href="https://cfdi33.ntlink.com.mx/FacturaGratuito40" target="_blank">
+                            <a href="https://cfdi33.ntlink.com.mx/FacturaGratuito40" target="_blank" onClick={this.openGratuito}>
                                 <img src={require('../assets/img/All/5 folios gratis.gif')} className="d-block img-fluid " alt="..." />
                             </a>
                         </div>
@@ -264,7 +314,7 @@ export class Home extends Component {
                                 <div className="row text-light d-sm-flex justify-content-sm-end m-3">
                                     <div className=" col-1 WithForece">
 
-                                        <a type="button" className="btn btn-outline-light noBorder" href="https://nt-invoice.ntlink.com.mx/#/support-request/*" target="_blank">
+                                        <a type="button" className="btn btn-outline-light noBorder" href="https://nt-invoice.ntlink.com.mx/#/support-request/*" target="_blank" onClick={this.openSupport}>
                                             <img className="img-fluid" src={require('../assets/img/All/esquema-de-correo-electronico (1).png')} />
                                         </a>
                                     </div>
@@ -276,7 +326,7 @@ export class Home extends Component {
 
                                     </div>
                                     <div className="col col-sm-1">
-                                        <a type="button" className="btn btn-outline-light noBorder" href="https://www.facebook.com/profile.php?id=100091939779817" target="_blank">
+                                        <a type="button" className="btn btn-outline-light noBorder" href="https://www.facebook.com/profile.php?id=100091939779817" target="_blank" onClick={this.openFacebook}>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className='ico' viewBox="0 0 16 16">
                                                 <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
                                             </svg>
@@ -284,7 +334,7 @@ export class Home extends Component {
                                     </div>
 
                                     <div className="col col-sm-1">
-                                        <a type="button" className="btn btn-outline-light noBorder" href="https://wa.me/525591078187" target="_blank">
+                                        <a type="button" className="btn btn-outline-light noBorder" href="https://wa.me/525591078187" target="_blank" onClick={this.openWhatsapp}>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="ico" viewBox="0 0 16 16">
                                                 <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
                                             </svg>
@@ -292,7 +342,7 @@ export class Home extends Component {
                                     </div>
 
                                     <div className="col col-sm-1">
-                                        <a type="button" className="btn btn-outline-light noBorder" href="https://www.youtube.com/channel/UCO2QUWGKwXMQ8XegdABjAyA" target="_blank">
+                                        <a type="button" className="btn btn-outline-light noBorder" href="https://www.youtube.com/channel/UCO2QUWGKwXMQ8XegdABjAyA" target="_blank" onClick={this.openYoutube}>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="ico" viewBox="0 0 16 16">
                                                 <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
                                             </svg>

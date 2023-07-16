@@ -28,6 +28,11 @@ export class Precios extends Component {
                                     Portal Nomina
                                 </h5>
                             </a>
+                            <a href="https://cfdi33.ntlink.com.mx/FacturaGratuito40" target="_blank" className="text-decorationNone py-2 d-none d-md-inline-block">
+                                <h5 className="text-success pt-2 tech-font">
+                                    Portal Gratuito
+                                </h5>
+                            </a>
 
                             <a href="https://nt-invoice.ntlink.com.mx/#/support-request/*" target="_blank" className="text-decorationNone py-2 d-none d-md-inline-block">
                                 <h5 className="text-success pt-2 tech-font">
@@ -45,19 +50,22 @@ export class Precios extends Component {
                         <div className="col"></div>
                     </div>
                     <br></br>
-                    <div className="container bg-info" >
-                        <div className="row text-center align-self-center justify-content-center pt-1">
-                            <h5 className="text-light">
-                                Datos para Depósito Bancario
-                            </h5>
-                            <h6 className="font-weight-normal text-light ">
-                                NT LINK Comunicaciones S.A. DE C.V.
-                                Banco: HSBC
-                                Número de cuenta: 4047150404
-                                Clabe Interbancaria: 021180040471504049
-                            </h6>
+                    <div className="container justify-content-center a-b-2 pb-4 ">
+                        <div className="row mt-4">
+                            <a href="https://cfdi33.ntlink.com.mx/FacturaGratuito40" target="_blank">
+                                <img src={require('../assets/img/All/5 folios gratis.gif')} className="d-block img-fluid " alt="..." />
+                            </a>
+                        </div>
+                        <div className="col p-2 d-flex justify-content-center align-items-center">
+                            <footer className=" text-light  ">
+                                Da click en la imagen de arriba, completa el registro y obtén
+                                <small className="text-success h5 ">
+                                    {'\u00A0'}5 folios gratis para generar facturas.
+                                </small>
+                            </footer>
                         </div>
                     </div>
+
                     <div class="row">
                         <div class="col"></div>
                         <div class="col-md-8">
@@ -482,6 +490,19 @@ export class Precios extends Component {
                             <div className="row justify-content-center text-center">
                                 <div className="col mb-4">
                                     <h3 className="text-success text-start">Los precios ya incluyen IVA</h3>
+                                </div>
+                            </div>
+                            <div className="container bg-info" >
+                                <div className="row text-center align-self-center justify-content-center pt-1">
+                                    <h5 className="text-light">
+                                        Datos para Depósito Bancario
+                                    </h5>
+                                    <h6 className="font-weight-normal text-light ">
+                                        NT LINK Comunicaciones S.A. DE C.V.
+                                        Banco: HSBC
+                                        Número de cuenta: 4047150404
+                                        Clabe Interbancaria: 021180040471504049
+                                    </h6>
                                 </div>
                             </div>
                             <div className="row">
