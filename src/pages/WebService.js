@@ -5,34 +5,13 @@ export class WebService extends Component {
     render() {
         return (
             <>
-                <div className="container-fluid ws-back">
-                    <nav class="site-header sticky-top py-1 bg-dark">
-                        <div class="container d-flex flex-column flex-md-row justify-content-between">
-                            <a href="/precios" className="text-decorationNone py-2 d-none d-md-inline-block" >
-                                <h5 className="text-success pt-2 tech-font">
-                                    Precios
-                                </h5>
-                            </a>
-                            <a href="https://dev-cfdi4.ntlink.com.mx" target="_blank" className="text-decorationNone py-2 d-none d-md-inline-block">
-                                <h5 className="text-success pt-2 tech-font">
-                                    Documentación
-                                </h5>
-                            </a>
-                            <a href="/" className="text-decorationNone py-2 d-none d-md-inline-block">
-                                <h5 className="text-success pt-2 tech-font">
-                                    Regresar
-                                </h5>
-                            </a>
+                <div className="container ws-back">
 
-                        </div>
-                    </nav>
                     <div className="row my-5">
-                        <div className="col"></div>
                         <div class=" col-6 d-flex flex-column align-content-center">
                             <h2 className="text-light web-service-header-text"> WEB SERVICE DE TIMBRADO MASIVO</h2>
                             <h2 className="text-light web-service-header-text"> NTLINK COMUNICACIONES</h2>
                         </div>
-                        <div className="col"></div>
                     </div>
                     <br></br>
                     <div className="row my-5">
