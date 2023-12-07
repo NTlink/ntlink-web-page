@@ -10,41 +10,44 @@ export class Home extends Component {
         return (
             <>
                 <Carousel>
-                    <Carousel.Item>
-                        <img src={require('../assets/banners/BANNER-1.jpg')} className="w-100" alt="..." />
-                        <Carousel.Caption>
-
-                            <h3>First slide label</h3>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <Carousel.Item className="carousel-height">
+                        <img src={require('../assets/banners/BANNER-A.jpg')} className="w-100" alt="..." />
+                        <Carousel.Caption className="carousel-labels">
+                            <h3 className="text-success">DESCUBRE</h3>
+                            <h3 className="text-success">NUESTROS PLANES</h3>
+                            <p className="text-light">Precios especiales para distribuidores</p>
+                            <a class="btn btn-sm btn-success" href="/distribuidores">Saber mas</a>
                         </Carousel.Caption>
                     </Carousel.Item>
-                    <Carousel.Item>
-                        <img src={require('../assets/banners/BANNER-2.jpg')} className="w-100" alt="..." />
-                        <Carousel.Caption>
-                            <h3>Second slide label</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <Carousel.Item className="carousel-height">
+                        <img src={require('../assets/banners/BANNER-B.jpg')} className="w-100" alt="..." />
+                        <Carousel.Caption className="carousel-labels">
+                            <h3 className="text-success">ADENDAS GRATUITAS</h3>
+                            <p>Las adendas no tienen algun costo extra</p>
+                            <a class="btn btn-sm btn-success" href="/adendas">Saber mas</a>
                         </Carousel.Caption>
                     </Carousel.Item>
-                    <Carousel.Item>
-                        <img src={require('../assets/banners/BANNER-3.jpg')} className="w-100" alt="..." />
-                        <Carousel.Caption>
-                            <h3>Third slide label</h3>
-                            <p>
-                                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                            </p>
+                    <Carousel.Item className="carousel-height">
+                        <img src={require('../assets/banners/BANNER-C.jpg')} className="w-100" alt="..." />
+                        <Carousel.Caption className="carousel-labels">
+                            <h3 className="text-success">CONSULTORIA</h3>
+                            <p>Asesoria y desarrollo en tecnologías</p>
+                            <p>de la información</p>
+                            <a class="btn btn-sm btn-success" href="/">Saber mas</a>
                         </Carousel.Caption>
                     </Carousel.Item>
-                    <Carousel.Item>
+                    {/*<Carousel.Item className="carousel-height">
                         <img src={require('../assets/img/office-workers.gif')} className="w-100" alt="..." />
-                        <Carousel.Caption>
+                        <Carousel.Caption className="carousel-labels">
                             <h3>Fouth slide label</h3>
                             <button className="btn btn-lg btn-primary"> test</button>
                         </Carousel.Caption>
-                    </Carousel.Item>
+                    </Carousel.Item>*/}
                 </Carousel>
                 <div>
-                    <h1 className="text-center text-white">LA CONTABILIDAD NUNCA FUE TAN FACIL</h1>
+                    <h1 className="text-center text-white fs-1">LA CONTABILIDAD NUNCA FUE TAN FACIL</h1>
                 </div>
+                <hr class="text-light" />
                 <div className="container justify-content-center">
                     <div className="row mt-4">
                         <a href="https://cfdi33.ntlink.com.mx/FacturaGratuito40" target="_blank" onClick={this.openGratuito}>
@@ -135,10 +138,10 @@ export class Home extends Component {
 
                 <div id="shield">
                     <div className="row">
-                        <div className="col-md-4 d-none d-lg-block">
-                            <img className="img-fluid h-100 w-100" src={require('../assets/img/ESCUDO.png')} alt="ntlink security" />
+                        <div className="col-md-3 d-none d-lg-block">
+                            <img className="img-fluid h-100 w-100" src={require('../assets/ESCUDO-1.png')} alt="ntlink security" />
                         </div>
-                        <div className="col-md-7 text-center">
+                        <div className="col-md-6 text-center">
                             <h4 className="text-center text-success fw-bold my-4">EXCELENCIA, CALIDAD Y PROGRESO CONTINUO</h4>
                             <h4 className="text-center text-light fw-bold my-4">GARANTIZANDO LA SEGURIDAD DE LA INFORMACIÓN</h4>
                             <p className="text-start text-light">
@@ -153,6 +156,9 @@ export class Home extends Component {
                             <p className="text-start text-light">
                                 Nuestro compromiso es brindar servicios de excelencia, calidad y progreso continuo, garantizando la seguridad de la información durante los procesos.
                             </p>
+                        </div>
+                        <div className="col-md-3">
+                            <img src={require('../assets/pack_logo.gif')} className="w-100" alt="sello-pac" />
                         </div>
                     </div>
 

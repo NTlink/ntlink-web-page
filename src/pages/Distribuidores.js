@@ -5,8 +5,9 @@ export class Distribuidores extends Component {
   render() {
     return (
       <>
+        <br></br>
+        <br></br>
         <div className="row justify-content-center">
-          <img src={require('../assets/img/All/Distribuidoresdesarrolladores-head.png')} className="img-fluid" alt="..." />
           <div className="col-md-9">
             <div className="row justify-content-center mt-3">
               <div className="col-md-7">
@@ -24,10 +25,10 @@ export class Distribuidores extends Component {
                 </div>
                 <div className="row">
                   <div className="col-md-6 d-flex justify-content-center align-items-center">
-                    <a href="https://nt-invoice.ntlink.com.mx/#/support-request/*" target="_blank" className="mbtn-sm"><span className="mb-0 mbtnSpanBlack">CONTACTO</span></a>
+                    <a href="https://nt-invoice.ntlink.com.mx/#/support-request/*" target="_blank" className="btn btn-sm btn-success"><span>CONTACTO</span></a>
                   </div>
                   <div className="col-md-6 d-flex justify-content-center align-items-center">
-                    <a href="/#PROMOCIONES" className="mbtn-sm"><span className="mb-0 mbtnSpanBlack">REGRESAR</span></a>
+                    <a href="/" className="btn btn-sm btn-success"><span>REGRESAR</span></a>
                   </div>
 
                 </div>

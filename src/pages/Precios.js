@@ -240,7 +240,7 @@ export class Precios extends Component {
                             <div className="col-md-2 ">
                                 <div className="row mb-4 justify-content-center">
 
-                                    <div className="card border-0 text-center">
+                                    <div className="card border-0 mx-4 text-center">
                                         <div className="card-header bg-info text-light">
                                             <h5 className="my-0 font-weight-normal">PAQUETE</h5>
                                         </div>

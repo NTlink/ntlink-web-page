@@ -143,16 +143,23 @@ html {
   height: 350px;
 }
 
+.carousel-labels {
+  text-align: left !important;
+}
+
+.carousel-height {
+  height: 23rem !important;
+}
+
 /*
 #shield {
-  background-image: url("./assets/textura2.jpg") !important;
+  background-image: url("./assets/textura1.jpg") !important;
   background-repeat: no-repeat;
   background-size: cover;
 }*/
 
 #root {
-  background-image: url("./assets/textura1.jpg") !important;
-  background-repeat: no-repeat;
-  background-size: auto;
+  background-image: url("./assets/circuteria2.jpg") !important;
+  background-size: contain;
   background-repeat-y: repeat;
 }
