@@ -11,28 +11,30 @@ export class Home extends Component {
             <>
                 <Carousel>
                     <Carousel.Item className="carousel-height">
-                        <img src={require('../assets/banners/BANNER-A.jpg')} className="w-100" alt="..." />
+                        <img src={require('../assets/banners/BANNER_A.jpg')} className="w-100" alt="..." />
                         <Carousel.Caption className="carousel-labels">
-                            <h3 className="text-success">DESCUBRE</h3>
-                            <h3 className="text-success">NUESTROS PLANES</h3>
-                            <p className="text-light">Precios especiales para distribuidores</p>
+                            <h3 className="text-success fs-1">DESCUBRE</h3>
+                            <h3 className="text-success fs-1">NUESTROS PLANES</h3>
+                            <p className="text-light fs-3 my-1">Precios especiales para distribuidores</p>
                             <a class="btn btn-sm btn-success" href="/distribuidores">Saber mas</a>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item className="carousel-height">
-                        <img src={require('../assets/banners/BANNER-B.jpg')} className="w-100" alt="..." />
+                        <img src={require('../assets/banners/BANNER_B.jpg')} className="w-100" alt="..." />
                         <Carousel.Caption className="carousel-labels">
-                            <h3 className="text-success">ADENDAS GRATUITAS</h3>
-                            <p>Las adendas no tienen algun costo extra</p>
+                            <h3 className="text-success fs-1">ADENDAS</h3>
+                            <h3 className="text-success fs-1">GRATUITAS</h3>
+                            <p className="text-light fs-3 my-1">Las adendas no tienen</p>
+                            <p className="text-light fs-3 my-1">costo extra</p>
                             <a class="btn btn-sm btn-success" href="/adendas">Saber mas</a>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item className="carousel-height">
-                        <img src={require('../assets/banners/BANNER-C.jpg')} className="w-100" alt="..." />
+                        <img src={require('../assets/banners/BANNER_C.jpg')} className="w-100" alt="..." />
                         <Carousel.Caption className="carousel-labels">
-                            <h3 className="text-success">CONSULTORIA</h3>
-                            <p>Asesoria y desarrollo en tecnologías</p>
-                            <p>de la información</p>
+                            <h3 className="text-success fs-1">CONSULTORIA</h3>
+                            <p className="text-light fs-3 my-1">Asesoría y desarrollo en tecnologías</p>
+                            <p className="text-light fs-3 my-1">de la información</p>
                             <a class="btn btn-sm btn-success" href="/">Saber mas</a>
                         </Carousel.Caption>
                     </Carousel.Item>
@@ -45,7 +47,7 @@ export class Home extends Component {
                     </Carousel.Item>*/}
                 </Carousel>
                 <div>
-                    <h1 className="text-center text-white fs-1">LA CONTABILIDAD NUNCA FUE TAN FACIL</h1>
+                    <h1 className="text-center text-white principal-text">LA CONTABILIDAD NUNCA FUE TAN FACIL</h1>
                 </div>
                 <hr class="text-light" />
                 <div className="container justify-content-center">

@@ -59,7 +59,7 @@ export class Header extends Component {
             <>
                 <header>
                     <nav class="navbar navbar-expand-lg bg-dark nav-masthead site-header fixed-top">
-                        <div class="container-xl">
+                        <div class="container-xxl">
                             <a class="navbar-brand" href="/">
                                 <img src={require('../assets/ntlink_logo.png')} style={{ height: "100px" }} alt="..." />
                             </a>

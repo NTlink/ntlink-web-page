@@ -41,7 +41,7 @@ export class App extends Component {
         <main role="main" id="mainpage">
           <br></br>
           <br></br>
-          <div class="container-xl">
+          <div class="container-xxl">
             <Router>
               <Routes >
                 <Route path="/" element={<Home />} />

@@ -57,9 +57,9 @@ export class Footer extends Component {
     render() {
         return (
             <>
-                <footer>
+                <footer className="my-5">
 
-                    <div class="container-xl text-center bg-secondary">
+                    <div class="container-xxl text-center bg-dark">
                         <h4 className="text-center text-white py-4">CONTACTO Y SOPORTE</h4>
                         <div className="row">
                             <div className="col-md-2 d-none d-lg-block">
