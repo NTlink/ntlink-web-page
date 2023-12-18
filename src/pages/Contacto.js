@@ -44,7 +44,7 @@ export class Contacto extends Component {
     handleSubmit(e) {
         e.preventDefault();
         this.setState({ submited: true })
-        axios.post(`https://nt-invoice.ntlink.com.mx/api/v1/contact/request`, this.state, {
+        axios.post(`https://pruebas.ntlink.com.mx:8443/api/v1/contact/request`, this.state, {
             headers: {
                 'Content-Type': 'application/json',
                 'Access-Control-Allow-Origin': '*',
