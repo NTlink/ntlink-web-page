@@ -39,13 +39,6 @@ export class Home extends Component {
                             <a class="btn btn-sm btn-success" href="/">Saber mas</a>
                         </Carousel.Caption>
                     </Carousel.Item>
-                    {/*<Carousel.Item className="carousel-height">
-                        <img src={require('../assets/img/office-workers.gif')} className="w-100" alt="..." />
-                        <Carousel.Caption className="carousel-labels">
-                            <h3>Fouth slide label</h3>
-                            <button className="btn btn-lg btn-primary"> test</button>
-                        </Carousel.Caption>
-                    </Carousel.Item>*/}
                 </Carousel>
                 <div>
                     <h1 className="text-center text-white principal-text">LA CONTABILIDAD NUNCA FUE TAN FÁCIL</h1>
