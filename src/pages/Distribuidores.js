@@ -25,7 +25,7 @@ export class Distribuidores extends Component {
                 </div>
                 <div className="row">
                   <div className="col-md-6 d-flex justify-content-center align-items-center">
-                    <a href="https://nt-invoice.ntlink.com.mx/#/support-request/*" target="_blank" className="btn btn-sm btn-success"><span>CONTACTO</span></a>
+                    <a href="/contacto" target="_blank" className="btn btn-sm btn-success"><span>CONTACTO</span></a>
                   </div>
                   <div className="col-md-6 d-flex justify-content-center align-items-center">
                     <a href="/" className="btn btn-sm btn-success"><span>REGRESAR</span></a>
