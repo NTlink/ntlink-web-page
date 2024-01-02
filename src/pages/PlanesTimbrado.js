@@ -33,17 +33,17 @@ export class PlanesTimbrado extends Component {
                       </div>
                       <div className="row ">
                         <div className="col-md-6 d-flex justify-content-center align-items-center">
-                          <a href="https://nt-invoice.ntlink.com.mx/#/support-request/*" target="_blank" className="mbtn-sm"><span className="mb-0 mbtnSpanBlack">CONTACTO</span></a>
+                          <a href="/contacto" target="_blank" className="mbtn-sm"><span className="mb-0">CONTACTO</span></a>
                         </div>
                         <div className="col-md-6 d-flex justify-content-center align-items-center">
-                          <a href="/#PROMOCIONES" className="mbtn-sm"><span className="mb-0 mbtnSpanBlack">REGRESAR</span></a>
+                          <a href="/#PROMOCIONES" className="mbtn-sm"><span className="mb-0">REGRESAR</span></a>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="col-md-5">
-                  <img src={require('../assets/img/All/PTPP_personaje.gif')} className="d-block img-fluid" alt="..." />
+                  <img src={require('../assets/img/All/cfdi-4-pc.png')} className="d-block img-fluid" alt="..." />
                 </div>
               </div>
             </div>
