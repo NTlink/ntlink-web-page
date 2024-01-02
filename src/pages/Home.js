@@ -36,14 +36,17 @@ export class Home extends Component {
                             <h3 className="text-success fs-1">CONSULTORIA</h3>
                             <p className="text-light fs-3 my-1">Asesoría y desarrollo en</p>
                             <p className="text-light fs-3 my-1">tecnologías de la información</p>
-                            <a class="btn btn-sm btn-success" href="/">Saber mas</a>
+                            <a class="btn btn-sm btn-success" href="/contacto">Saber mas</a>
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
+                <br></br>
                 <div>
                     <h1 className="text-center text-white principal-text">LA CONTABILIDAD NUNCA FUE TAN FÁCIL</h1>
                 </div>
+
                 <hr class="text-light" />
+                <br></br>
                 <div className="container justify-content-center">
                     <div className="row mt-4">
                         <a href="https://cfdi33.ntlink.com.mx/FacturaGratuito40" target="_blank" onClick={this.openGratuito}>
@@ -59,10 +62,11 @@ export class Home extends Component {
                         </p>
                     </div>
                 </div>
-
+                <br></br>
                 <div>
                     <h2 className="text-center text-primary fw-bold my-4">CONTAMOS CON LA SOLUCIÓN QUE NECESITAS</h2>
                 </div>
+                <br></br>
 
                 <div className="row">
                     <div className="col-lg-4 col-sm-12 col-md-6 my-2">
@@ -131,7 +135,8 @@ export class Home extends Component {
                         </p>
                     </div>
                 </div>
-
+                <br></br>
+                <br></br>
                 <div id="shield">
                     <div className="row">
                         <div className="col-md-3 d-none d-lg-block">

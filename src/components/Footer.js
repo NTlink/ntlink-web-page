@@ -120,7 +120,7 @@ export class Footer extends Component {
                             </div>
                         </div>
                         <div className="d-flex justify-content-center">
-                            <a type="button" className="btn btn-lg bg-dark rounded-circle fs-2 mx-4" href="https://nt-invoice.ntlink.com.mx/#/support-request/*" target="_blank" onClick={this.openSupport}>
+                            <a type="button" className="btn btn-lg bg-dark rounded-circle fs-2 mx-4" href="/contacto" target="_blank" onClick={this.openSupport}>
                                 <FontAwesomeIcon className="text-success" icon={faEnvelope} />
                             </a>
 
@@ -130,7 +130,7 @@ export class Footer extends Component {
                             <a type="button" className="btn btn-lg bg-dark rounded-circle fs-2 mx-4" href="https://wa.me/525591078187" target="_blank" onClick={this.openWhatsapp}>
                                 <FontAwesomeIcon className="text-success" icon={faWhatsapp} />
                             </a>
-                            <a type="button" className="btn btn-lg bg-dark rounded-circle fs-2 mx-4" href="https://www.youtube.com/channel/UCO2QUWGKwXMQ8XegdABjAyA" target="_blank" onClick={this.openYoutube}>
+                            <a type="button" className="btn btn-lg bg-dark rounded-circle fs-2 mx-4" href="https://www.youtube.com/@ntlinkcomunicaciones2617" target="_blank" onClick={this.openYoutube}>
                                 <FontAwesomeIcon className="text-success" icon={faYoutube} />
                             </a>
                             <a type="button" className="btn btn-lg bg-dark rounded-circle fs-2 mx-4" href="skype:ntlink_comunicaciones4?chat" target="_blank">
