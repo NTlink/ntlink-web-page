@@ -1,63 +1,74 @@
 import { Component } from "react";
 
 import axios from "axios";
-import { Alert } from "react-bootstrap";
+import Button from 'react-bootstrap/Button';
+import Col from 'react-bootstrap/Col';
+import Form from 'react-bootstrap/Form';
+import InputGroup from 'react-bootstrap/InputGroup';
+import Row from 'react-bootstrap/Row';
+import { Formik } from "formik";
+import * as yup from 'yup';
+import { Spinner } from "react-bootstrap";
+import Alert from 'react-bootstrap/Alert';
 
 
 export class Contacto extends Component {
 
+
     constructor(props) {
         super(props);
         this.state = {
-            nombre: "",
-            nombreEmpresa: "",
-            email: "",
-            telefono: "",
-            comentarios: "",
-            submited: false,
-            message: ' Estamos enviando tu solicitud ...',
+            submitting: false,
+            submitted: false,
+            message: '',
             variant: 'info'
-        };
+        }
     }
-
-    onNameChange(event) {
-        this.setState({ nombre: event.target.value })
-    }
-
-    onNameCompanyChange(event) {
-        this.setState({ nombreEmpresa: event.target.value })
-    }
-
-    onEmailChange(event) {
-        this.setState({ email: event.target.value })
-    }
-
-    onPhoneChange(event) {
-        this.setState({ telefono: event.target.value })
-    }
-
-    onMessageChange(event) {
-        this.setState({ comentarios: event.target.value })
+    validate = (values) => {
+        const errors = {};
+        if (!values.nombre) {
+            errors.nombre = 'Requerido';
+        }
+        if (!values.email) {
+            errors.email = 'Requerido';
+        }
+        if (!values.nombreEmpresa) {
+            errors.nombreEmpresa = 'Requerido';
+        }
+        if (!values.comentarios) {
+            errors.comentarios = 'Requerido';
+        }
+        return errors;
     }
 
 
-    handleSubmit(e) {
-        e.preventDefault();
-        this.setState({ submited: true })
-        axios.post(`https://pruebas.ntlink.com.mx:8443/api/v1/contact/request`, this.state, {
+
+    handleSubmit(values) {
+
+        this.setState({ submitting: true })
+        axios.post(`https://pruebas.ntlink.com.mx:8443/api/v1/contact/request`, values, {
             headers: {
                 'Content-Type': 'application/json',
                 'Access-Control-Allow-Origin': '*',
                 'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
             }
         }).then(res => {
+            this.setState({ submitting: false })
             this.setState({ variant: 'success' });
             this.setState({ message: 'La solicitud de contacto se envio exitosamente' });
+            this.setState({ submitted: true });
+
         }).catch(err => {
             console.log(err);
+            this.setState({ submitting: false })
             this.setState({ variant: 'danger' });
             this.setState({ message: 'Lo sentimos hubo un error intentalo mas tarde' });
+            this.setState({ submitted: true });
         });
+        setTimeout(() => {
+            this.setState({ submitted: false });
+        }, 10000);
+
     }
 
     render() {
@@ -66,95 +77,165 @@ export class Contacto extends Component {
         return (
             <>
 
-                <div className="row justify-content-center">
-                    <img src={require('../assets/img/All/contacto-head-back.png')} alt="..." />
-                    <div className="col-md-10">
-                        <div className="intro text-center">
+                <div className="my-5">
+                    <div className="row">
+                        <div class=" col-6 d-flex flex-column align-content-center">
+                            <h2 className="text-light web-service-header-text"> CONTACTO</h2>
                         </div>
-                        {!this.state.submited ?
-                            <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST" >
-                                <div className="row mt-3 align-items-center">
-                                    <div className="col-md-2 ">
-                                        <h6 className="text-light text-end m-0">
-                                            Nombre:
-                                        </h6>
-                                    </div>
-                                    <div className="col-md-10 ">
-                                        <div className="form-group ">
-                                            <input type="text" value={this.state.nombre} onChange={this.onNameChange.bind(this)}
-                                                className="form-control input-group-text text-dark" name="nombre" placeholder="" required="required" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="row mt-3">
-                                    <div className="col-md-2">
-                                        <h6 className="text-light text-end m-0">
-                                            Nombre de la Empresa:
-                                        </h6>
-                                    </div>
-                                    <div className="col-md-10">
-                                        <div className="form-group ">
-                                            <input type="text" value={this.state.nombreEmpresa} onChange={this.onNameCompanyChange.bind(this)}
-                                                className="form-control input-group-text text-dark" name="nombreEmpresa" placeholder="" required="required" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="row mt-3">
-                                    <div className="col-md-2">
-                                        <h6 className="text-light text-end m-0">
-                                            Correo:
-                                        </h6>
-                                    </div>
-                                    <div className="col-md-10">
-                                        <div className="form-group ">
-                                            <input type="email" value={this.state.email} onChange={this.onEmailChange.bind(this)}
-                                                className="form-control input-group-text text-dark h4" name="email" placeholder="" required="required" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="row mt-3">
-                                    <div className="col-md-2">
-                                        <h6 className="text-light text-end m-0">
-                                            Telefono:
-                                        </h6>
-                                    </div>
-                                    <div className="col-md-10">
-                                        <div className="form-group ">
-                                            <input type="number" value={this.state.telefono} onChange={this.onPhoneChange.bind(this)}
-                                                className="form-control input-group-text text-dark" name="" placeholder="" required="required" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="row mt-3">
-                                    <div className="col-md-2">
-                                        <h6 className="text-light text-end m-0">
-                                            Comentarios:
-                                        </h6>
-                                    </div>
-                                    <div className="col-md-10">
-                                        <div className="form-group ">
-                                            <textarea type="text" value={this.state.comentarios} onChange={this.onMessageChange.bind(this)}
-                                                className="form-control text-dark input-group-text " name="comentarios" placeholder="" cols={30} rows={3} />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="row mt-3 d-flex justify-content-center">
-
-                                    <button className="mbtn-sm" type="submit" > <span className='mbtnSpanBlack'> Enviar </span> </button>
-
-                                    <a href="/" className="mbtn-sm"><span className="mb-0 mbtnSpanBlack">REGRESAR</span></a>
-                                </div>
-                            </form>
-                            : <div>
-                                <div class="row">
-                                    <Alert variant='success'>{this.state.message}</Alert>
-                                </div>
-                                <div class="row">
-                                    <a href="/" className="mbtn-sm"><span className="mb-0 mbtnSpanBlack">SALIR</span></a>
-                                </div>
-                            </div>}
                     </div>
-                    <img src={require('../assets/img/All/contacto-foot.png')} className="img-fluid" alt="..." />
+                    <div className="row">
+                        <div className="col-md-12 col-lg-7 mx-2 my-3">
+                            <Formik
+                                validationSchema={yup.object().shape({
+                                    telefono: yup.string().required(),
+                                    email: yup.string().required(),
+                                    nombre: yup.string().required(),
+                                    nombreEmpresa: yup.string().required(),
+                                    comentarios: yup.string().required()
+                                })}
+                                onSubmit={(values, { setSubmitting }) => this.handleSubmit(values, setSubmitting)}
+                                initialValues={{
+                                    telefono: '',
+                                    email: '',
+                                    nombre: '',
+                                    nombreEmpresa: 'XAXX010101000',
+                                    comentarios: ''
+                                }}
+                            >
+                                {({ handleSubmit, handleChange, values, touched, errors }) => (
+                                    <Form noValidate onSubmit={handleSubmit}>
+                                        <Row className="mb-3">
+                                            <Form.Group
+                                                as={Col}
+                                                md="12"
+                                                controlId="validationFormik101"
+                                                className="position-relative"
+                                            >
+                                                <Form.Label className="text-white">Nombre del solicitante</Form.Label>
+                                                <Form.Control
+                                                    type="text"
+                                                    name="nombre"
+                                                    value={values.nombre}
+                                                    onChange={handleChange}
+                                                    isValid={touched.nombre && !errors.nombre}
+                                                    className="bg-white"
+                                                />
+                                                <Form.Control.Feedback type="invalid" tooltip>
+                                                    {errors.nombre}
+                                                </Form.Control.Feedback>
+                                            </Form.Group>
+                                        </Row>
+                                        <Row className="mb-3">
+                                            <Form.Group as={Col} md="12" controlId="validationFormikUsername2">
+                                                <Form.Label className="text-white">Correo electronico</Form.Label>
+                                                <InputGroup hasValidation>
+                                                    <InputGroup.Text id="inputGroupPrepend">@</InputGroup.Text>
+                                                    <Form.Control
+                                                        type="text"
+                                                        placeholder="mi-correo@company.com.mx"
+                                                        className="bg-white"
+                                                        aria-describedby="inputGroupPrepend"
+                                                        name="email"
+                                                        value={values.email}
+                                                        onChange={handleChange}
+                                                        isInvalid={!!errors.email}
+                                                    />
+                                                    <Form.Control.Feedback type="invalid" tooltip>
+                                                        {errors.email}
+                                                    </Form.Control.Feedback>
+                                                </InputGroup>
+                                            </Form.Group>
+                                        </Row>
+                                        <Row className="mb-3">
+                                            <Form.Group
+                                                as={Col}
+                                                md="6"
+                                                controlId="validationFormik102"
+                                                className="position-relative"
+                                            >
+                                                <Form.Label className="text-white">Nombre empresa y/o RFC</Form.Label>
+                                                <Form.Control
+                                                    type="text"
+                                                    name="nombreEmpresa"
+                                                    className="bg-white"
+                                                    value={values.nombreEmpresa}
+                                                    onChange={handleChange}
+                                                    isValid={touched.nombreEmpresa && !errors.nombreEmpresa}
+                                                />
+                                                <Form.Control.Feedback type="invalid" tooltip>
+                                                    {errors.nombreEmpresa}
+                                                </Form.Control.Feedback>
+                                            </Form.Group>
+                                            <Form.Group
+                                                as={Col}
+                                                md="6"
+                                                controlId="validationFormik103"
+                                                className="position-relative"
+                                            >
+                                                <Form.Label className="text-white">Telefono</Form.Label>
+                                                <Form.Control
+                                                    type="text"
+                                                    placeholder="telefono"
+                                                    name="telefono"
+                                                    className="bg-white"
+                                                    value={values.telefono}
+                                                    onChange={handleChange}
+                                                    isInvalid={!!errors.telefono}
+                                                />
+
+                                                <Form.Control.Feedback type="invalid" tooltip>
+                                                    {errors.telefono}
+                                                </Form.Control.Feedback>
+                                            </Form.Group>
+                                        </Row>
+                                        <Row className="mb-3">
+
+                                            <Form.Group
+                                                as={Col}
+                                                md="12"
+                                                controlId="validationFormik104"
+                                                className="position-relative"
+                                            >
+                                                <Form.Label className="text-white">Comentarios</Form.Label>
+                                                <Form.Control
+                                                    as="textarea" rows={3}
+                                                    placeholder="Indicanos cual es tu solicitud"
+                                                    name="comentarios"
+                                                    className="bg-white"
+                                                    value={values.comentarios}
+                                                    onChange={handleChange}
+                                                    isInvalid={!!errors.comentarios}
+                                                />
+                                                <Form.Control.Feedback type="invalid" tooltip>
+                                                    {errors.comentarios}
+                                                </Form.Control.Feedback>
+                                            </Form.Group>
+                                        </Row>
+
+                                        {!this.state.submitting ? <Button type="submit">Contactanos</Button> :
+                                            <Button variant="primary" disabled>
+                                                <Spinner
+                                                    as="span"
+                                                    animation="border"
+                                                    size="sm"
+                                                    role="status"
+                                                    aria-hidden="true"
+                                                />
+                                                Enviando . . .
+                                            </Button>}
+                                    </Form>
+                                )}
+                            </Formik>
+                            {this.state.submitted ? <Alert key={this.state.variant} variant={this.state.variant} className="my-5">
+                                {this.state.message}
+                            </Alert> : <p></p>}
+
+                        </div>
+                        <div className="col-md-12 col-lg-4 mx-2 my-3">
+                            <img src={require('../assets/img/All/ubicacion.png')} className="d-block img-fluid" style={{ width: "100%" }} alt="..." />
+                        </div>
+                    </div>
+
                 </div>
             </>
         )

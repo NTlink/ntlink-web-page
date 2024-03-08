@@ -28,6 +28,7 @@ import { FreePortal } from 'pages/FreePortal';
 
 import { Header } from 'components/Header';
 import { Footer } from 'components/Footer';
+import { WSDocumentation } from 'pages/WSDocumentation';
 
 TagManager.initialize({ gtmId: 'AW-10869575825' })
 
@@ -58,6 +59,7 @@ export class App extends Component {
                 <Route path="/contacto" element={<Contacto />} />
                 <Route path="/web-service" element={<WebService />} />
                 <Route path="/ntfacturacion" element={<FreePortal />} />
+                <Route path="/wsdocumentacion" element={<WSDocumentation />} />
               </Routes >
             </Router>
           </div>
