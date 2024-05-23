@@ -21,14 +21,11 @@ export class WSDocumentation extends Component {
                                 </div>
                             </div>
                         </div>
-
-                        <hr></hr>
-
                     </section>
 
                 <div className="row">
 
-                        <div className="col-md-3">
+                        <div className="col-md-3 bg-dark px-3">
                             <nav className="docs-sidebar" data-spy="affix" data-offset-top="300" data-offset-bottom="200" role="navigation">
                                 <ul className="nav">
                                     <li><a href="#introduction">Introducción</a></li>
@@ -51,14 +48,13 @@ export class WSDocumentation extends Component {
                         </div>
 
 
-                    <div className="col-md-9">
+                    <div className="col-md-9 bg-dark px-3">
                         <section id="introduction" className="section">
                             <div className="row">
                                 <div className="col-md-12 left-align">
-                                    <h2 className=" text-white">Introducción <hr/></h2>
+                                    <h2 className="text-white">Introducción <hr/></h2>
                                     <div class="row">
                                         <div class="col-md-12 full text-white">
-                                            <hr />
                                             <div>
                                                 <p>El Servicio de Administración Tributaria recientemente oficializó la nueva versión del CFDI,
                                                    el cual entró en vigor a partir del <b>1 de enero de 2022, siendo  obligatoria la implementación a partir de mayo de 2022.</b>
@@ -85,7 +81,7 @@ export class WSDocumentation extends Component {
 
                                                 <div className="alert alert-primary d-flex align-items-center" role="alert">
                                                     <p><i class="fa fa-exclamation-triangle"></i> Los puntos anteriores solo es un resumen, para mayores detalles consultar
-                                                        <br/> <a href="http://omawww.sat.gob.mx/tramitesyservicios/Paginas/documentos/GuiallenadoCFDIglobal311221.pdf" className="alert-link text-decoration-none"> GUIA DE LLENADO CFDI 4</a>
+                                                        <br/> <a href="http://omawww.sat.gob.mx/tramitesyservicios/Paginas/documentos/GuiallenadoCFDIglobal311221.pdf"> GUIA DE LLENADO CFDI 4</a>
                                                     </p>
                                                 </div>
                                             </div>
@@ -100,7 +96,7 @@ export class WSDocumentation extends Component {
 
                                                 <div className="row">
                                                     <div className="col-md-12 left-align">
-                                                        <h2 className="dark-text">Importar WSDL <hr/></h2>
+                                                        <h2 className="text-white">Importar WSDL <hr/></h2>
                                                     </div>
 
                                                 </div>
