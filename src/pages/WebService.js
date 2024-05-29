@@ -58,7 +58,7 @@ export class WebService extends Component {
                                 &nbsp;Esto quiere decir que podrás pagar a mes vencido dependiendo de lo que utilices, siendo una tarifa ajustada a tus necesidades
                             </p>
                             <div className="col d-flex justify-content-center">
-                                <a href="https://dev-cfdi4.ntlink.com.mx" target="_blank" className="mbtn buttonexapnd"  ><span className="mb-0">DOCUMENTACIÓN</span></a>
+                                <a href="/wsdocumentacion" ><span className="mb-0">DOCUMENTACIÓN</span></a>
                             </div>
                         </div>
                         <div className="col-sm-1 col-md-1"></div>

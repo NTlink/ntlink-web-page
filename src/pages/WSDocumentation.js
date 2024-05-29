@@ -24,7 +24,7 @@ export class WSDocumentation extends Component {
                         </div>
                     </section>
 
-                <div className="row">
+                    <div className="row">
 
                         <div className="col-md-3 bg-dark px-3">
                             <nav className="docs-sidebar affix" data-spy="affix" data-offset-top="300" data-offset-bottom="200" role="navigation">
@@ -49,203 +49,206 @@ export class WSDocumentation extends Component {
                         </div>
 
 
-                    <div className="col-md-9 bg-dark px-3">
-                        <section id="introduction" className="section">
-                            <div className="row">
-                                <div className="col-md-12 left-align">
-                                    <h2 className="text-white">Introducción <hr/></h2>
-                                    <div class="row">
-                                        <div class="col-md-12 full text-white">
-                                            <div>
-                                                <p>El Servicio de Administración Tributaria recientemente oficializó la nueva versión del CFDI,
-                                                   el cual entró en vigor a partir del <b>1 de enero de 2022, siendo  obligatoria la implementación a partir de mayo de 2022.</b>
-                                                </p>
-
-                                                <h4>Pricipales cambios</h4>
-                                                <p>Referente a los cambios principales entre CFDI 3.3 y 4.0 podemos encontrar los siguientes cambios</p>
-
-                                                <br/>
-
-
-                                                <ol>
-                                                    <li>Obligatoriedad del nombre y domicilio fiscal del emisor y del receptor.</li>
-                                                    <li>Campos para identificar las operaciones donde exista una exportación de mercancías.</li>
-                                                    <li>Nuevos apartados para reportar información respecto de las operaciones con el público en general; así como, aquellas que se realicen a cuenta de terceras personas.</li>
-                                                    <li>Retenciones e información de pagos versión 2.0</li>
-                                                    <li>Nuevos campos para identificar sí los pagos de las operaciones que ampara el comprobante son objeto de impuestos.</li>
-                                                    <li>Nuevo apartado con el resumen de los importes totales de los pagos realizados expresados en moneda nacional, así como los impuestos que se trasladan.</li>
-                                                    <li>Motivo de cancelación obligatorio</li>
-                                                </ol>
-
-                                                <br/>
-
-
-                                                <div className="alert alert-primary d-flex align-items-center" role="alert">
-                                                    <p><i class="fa fa-exclamation-triangle"></i> Los puntos anteriores solo es un resumen, para mayores detalles consultar
-                                                        <br/> <a href="http://omawww.sat.gob.mx/tramitesyservicios/Paginas/documentos/GuiallenadoCFDIglobal311221.pdf"> GUIA DE LLENADO CFDI 4</a>
+                        <div className="col-md-9 bg-dark px-3">
+                            <section id="introduction" className="section">
+                                <div className="row">
+                                    <div className="col-md-12 left-align">
+                                        <h2 className="text-white">Introducción <hr /></h2>
+                                        <div class="row">
+                                            <div class="col-md-12 full text-white">
+                                                <div>
+                                                    <p>El Servicio de Administración Tributaria recientemente oficializó la nueva versión del CFDI,
+                                                        el cual entró en vigor a partir del <b>1 de enero de 2022, siendo  obligatoria la implementación a partir de mayo de 2022.</b>
                                                     </p>
+
+                                                    <h4>Pricipales cambios</h4>
+                                                    <p>Referente a los cambios principales entre CFDI 3.3 y 4.0 podemos encontrar los siguientes cambios</p>
+
+                                                    <br />
+
+
+                                                    <ol>
+                                                        <li>Obligatoriedad del nombre y domicilio fiscal del emisor y del receptor.</li>
+                                                        <li>Campos para identificar las operaciones donde exista una exportación de mercancías.</li>
+                                                        <li>Nuevos apartados para reportar información respecto de las operaciones con el público en general; así como, aquellas que se realicen a cuenta de terceras personas.</li>
+                                                        <li>Retenciones e información de pagos versión 2.0</li>
+                                                        <li>Nuevos campos para identificar sí los pagos de las operaciones que ampara el comprobante son objeto de impuestos.</li>
+                                                        <li>Nuevo apartado con el resumen de los importes totales de los pagos realizados expresados en moneda nacional, así como los impuestos que se trasladan.</li>
+                                                        <li>Motivo de cancelación obligatorio</li>
+                                                    </ol>
+
+                                                    <br />
+
+
+                                                    <div className="alert alert-primary d-flex align-items-center" role="alert">
+                                                        <p><i class="fa fa-exclamation-triangle"></i> Los puntos anteriores solo es un resumen, para mayores detalles consultar
+                                                            <br /> <a href="http://omawww.sat.gob.mx/tramitesyservicios/Paginas/documentos/GuiallenadoCFDIglobal311221.pdf"> GUIA DE LLENADO CFDI 4</a>
+                                                        </p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
-                        </section>
+                            </section>
 
-                         <section id="wsdl_import" className="section">
+                            <section id="wsdl_import" className="section">
 
-                                                <div className="row">
-                                                    <div className="col-md-12 left-align">
-                                                        <h2 className="text-white">Importar WSDL <hr/></h2>
-                                                    </div>
+                                <div className="row">
+                                    <div className="col-md-12 left-align">
+                                        <h2 className="text-white">Importar WSDL <hr /></h2>
+                                    </div>
 
-                                                </div>
-
-
-                                                <div className="alert alert-primary d-flex align-items-center">
-                                                    <p><i className="fa fa-exclamation-triangle"></i>  Antes de iniciar es necesario descargar <strong>SOAP UI Open Source </strong>
-                                                        <br/> Liga de descarga SOAP UI ==> <a href="https://www.soapui.org/downloads/soapui/">Descargar</a> </p>
-                                                </div>
-
-                                                <hr/>
-
-                                                <h4>Ubicacion WSDL</h4>
-
-                                                <p>La definición del WSDL la encontrarás en la siguinete ruta <code>/cfdi40/servicio-timbrado/servicio-timbrado.wsdl</code>
-                                                <br/> Para el ambiente de pruebas la ruta completa es : <code>http://dev-cfdi4.ntlink.com.mx/cfdi40/servicio-timbrado/servicio-timbrado.wsdl</code>
-                                                </p>
-                                                <p>
-                                                    Para importar el WSDL solo abrir SOAP UI e ingresar la rita del wsdl
-                                                </p>
-
-                                                <div className="row">
-                                                    <div className="col-md-8 col-md-offset-2">
-                                                        <img src="/img/importWSDL.png" alt="image" className="img-responsive img-thumbnail"/>
-                                                    </div>
-                                                </div>
-                         </section>
-
-                         {/* end section */}
-
-                         <section id="test_users" className="section">
-
-                        <div className="row">
-                            <div className="col-md-12 left-align">
-                                <h2 className="text white">Usuarios de prueba<hr/></h2>
-                            </div>
-                            {/*< end col */}
-                        </div>
-                            {/*< end row */}
-
-                        <p className="text-white"> Para poder realizar timbrado es necesario contar con usuario, contraseña y sellos cargados en nuestro sistema
-                        <br/>  En el ambiente de pruebas es posible usar los siguientes usuarios de prueba
-                        </p>
-
-                        <h4>URE180429TM6</h4>
-
-                        <div className="intro1 text-white">
-                            <ul>
-                                <li><strong>Razon social : </strong>UNIVERSIDAD ROBOTICA ESPAÑOLA</li>
-                                <li><strong>RFC : </strong>URE180429TM6</li>
-                                <li><strong>Usuario ws  : </strong>URE180429TM6@ntlink.com.mx</li>
-                                <li><strong>Contraseña ws : </strong>NTPruebas.2021*?</li>
-                            </ul>
-                        </div>
-
-                        <h4>EKU9003173C9</h4>
-
-                        <div className="intro1 text-white">
-                            <ul>
-                                <li><strong>Razon social : </strong>ESCUELA KEMPER URGATE</li>
-                                <li><strong>RFC : </strong>EKU9003173C9</li>
-                                <li><strong>Usuario ws  : </strong>EKU9003173C9@ntlink.com.mx</li>
-                                <li><strong>Contraseña ws : </strong>Factura.2021*</li>
-                            </ul>
-                        </div>
-
-                    </section>
-
-                    {/* end section */}
-
-                    <section id="prod_access" className="section">
-
-                        <div className="row">
-                            <div className="col-md-12 left-align">
-                                <h2 className="text-white">Solicitud de acceso a producción<hr/></h2>
-                            </div>
-                            {/* end col */}
-                        </div>
-                        {/* end row */}
-
-                        <div className="row text-white">
-                            <div className="col-md-12">
-                                <h4>1.- Completar sellado de CFDI exitoso en ambiente ambiente de pruebas(opcional)</h4>
-                                <p> De acuerdo a sus necesidades  usted prodra requerir hacer pruebas en algunos de los siguientes casos</p>
-                                <ol>
-                                    <li> Factura PUE</li>
-                                    <li> Factura PPD</li>
-                                    <li> Complemento de pago</li>
-                                </ol>
-                            </div>
-                        </div>
-
-                        <div className="row text-white">
-                            <div className="col-md-12">
-                                <h4>2.- Realizar compra de folios</h4>
-                                <p>Concretar la compra de los folios, para mayor información consultar las costos en <a href="https://ntlink.com.mx/"> NT link web page </a></p>
-                            </div>
-                        </div>
-
-                        <div className="row text-white">
-                            <div className="col-md-12">
-                                <h4>3.- Acceso al portal de CFDI </h4>
-                                <p>Una vez concretada la compra de los folios, usted tendra que acceder al <a href="https://ntlink.com.mx/"> Portal CFDI NT Link </a>, en el que tendra que  cargar los sellos y llaves paar el timbrado</p>
-                            </div>
-                        </div>
-
-                        <div className="row text-white">
-                            <div className="col-md-12">
-                                <h4>4.- Carga de sellos y datos emisor</h4>
-                                <p> Una vez ingresando al portal CFDI sera necesario que usted de de alta los datos del emisor u emisores de facturas si tiene dudas puede contactarnos enviando un correo a  <code>soporte@ntlink.com.mx</code></p>
-                                <p> El coreo redactado debe de contener la siguiente información</p>
-                                <ol>
-                                    <li> RFC emisor</li>
-                                    <li> Razon social emisor</li>
-                                    <li> UUID's obtenidos en el ambiente de pruebas</li>
-                                    <li> Como adjuntos los archivos planos de las request exitosas en el ambiente de pruebas</li>
-                                </ol>
-                            </div>
-                        </div>
-
-                        <p className="text-white">Listo, una vez completados los pasos anteriores usted sera capaz de realizar timbrado por  medio del servicio de web service</p>
-
-                    </section>
-
-                    {/* end section */}
+                                </div>
 
 
-                    <section id="ws_ops" class="section">
+                                <div className="alert alert-primary d-flex align-items-center">
+                                    <p><i className="fa fa-exclamation-triangle"></i>  Antes de iniciar es necesario descargar <strong>SOAP UI Open Source </strong>
+                                        <br /> Liga de descarga SOAP UI ==> <a href="https://www.soapui.org/downloads/soapui/">Descargar</a> </p>
+                                </div>
 
-                        <div class="row text-white">
-                            <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Operaciones Web service<hr/></h2>
-                            </div>
-                            {/* end col */}
-                        </div>
-                        {/* end row */}
+                                <hr />
 
-                        <h4 id="ws_ops_1">Timbra CFDI sin sello</h4>
-                        <p class="text-white"> Existen 2 posibles operaciones al timbrar un CFDi sin sello, estas son <code> TimbraCfdiSinSello</code> y <code>TimbraCfdiQrSinSello</code>
-                            A continuación se muestra el ejemplo de como realizar el timbrado sin sello recuperando el codigo QR
-                        </p>
-                        <div class="row">
+                                <h4>Ubicacion WSDL</h4>
 
-                            <div class="col-lg-12">
-                                <strong class="row text-white">Request</strong>
-                                <pre class="brush: xml text-white"> {`
-<textarea>                               
+                                <p className="text-white">La definición del WSDL la encontrarás en la siguinete ruta <code className="bg-white border-0 rounded px-1 py-1">/cfdi40/servicio-timbrado/servicio-timbrado.wsdl</code>
+                                    <br /> Para el ambiente de pruebas la ruta completa es :
+                                    <br />
+                                    <code className="bg-white border-0 rounded px-1 py-1">http://dev-cfdi4.ntlink.com.mx/cfdi40/servicio-timbrado/servicio-timbrado.wsdl</code>
+                                </p>
+                                <p className="text-white">
+                                    Para importar el WSDL solo abrir SOAP UI e ingresar la rita del wsdl
+                                </p>
 
+                                <div className="row">
+                                    <div className="col"></div>
+                                    <div className="col-md-8">
+                                        <img src="/img/importWSDL.png" alt="image" className="img-responsive img-thumbnail" />
+                                    </div>
+                                    <div className="col"></div>
+                                </div>
+                            </section>
+
+                            {/* end section */}
+
+                            <section id="test_users" className="section">
+
+                                <div className="row">
+                                    <div className="col-md-12 left-align">
+                                        <h2 className="text white">Usuarios de prueba<hr /></h2>
+                                    </div>
+                                    {/*< end col */}
+                                </div>
+                                {/*< end row */}
+
+                                <p className="text-white"> Para poder realizar timbrado es necesario contar con usuario, contraseña y sellos cargados en nuestro sistema
+                                    <br />  En el ambiente de pruebas es posible usar los siguientes usuarios de prueba
+                                </p>
+
+                                <h4>URE180429TM6</h4>
+
+                                <div className="intro1 text-white">
+                                    <ul>
+                                        <li><strong>Razon social : </strong>UNIVERSIDAD ROBOTICA ESPAÑOLA  SA DE CV</li>
+                                        <li><strong>RFC : </strong>URE180429TM6</li>
+                                        <li><strong>Usuario ws  : </strong>URE180429TM6@ntlink.com.mx</li>
+                                        <li><strong>Contraseña ws : </strong>NTPruebas.2021*?</li>
+                                    </ul>
+                                </div>
+
+                                <h4>EKU9003173C9</h4>
+
+                                <div className="intro1 text-white">
+                                    <ul>
+                                        <li><strong>Razon social : </strong>ESCUELA KEMPER URGATE  SA DE CV</li>
+                                        <li><strong>RFC : </strong>EKU9003173C9</li>
+                                        <li><strong>Usuario ws  : </strong>EKU9003173C9@ntlink.com.mx</li>
+                                        <li><strong>Contraseña ws : </strong>Factura.2021*</li>
+                                    </ul>
+                                </div>
+
+                            </section>
+
+                            {/* end section */}
+
+                            <section id="prod_access" className="section">
+
+                                <div className="row">
+                                    <div className="col-md-12 left-align">
+                                        <h2 className="text-white">Solicitud de acceso a producción<hr /></h2>
+                                    </div>
+                                    {/* end col */}
+                                </div>
+                                {/* end row */}
+
+                                <div className="row text-white">
+                                    <div className="col-md-12">
+                                        <h4>1.- Completar sellado de CFDI exitoso en ambiente ambiente de pruebas(opcional)</h4>
+                                        <p> De acuerdo a sus necesidades  usted prodra requerir hacer pruebas en algunos de los siguientes casos</p>
+                                        <ol>
+                                            <li> Factura PUE</li>
+                                            <li> Factura PPD</li>
+                                            <li> Complemento de pago</li>
+                                        </ol>
+                                    </div>
+                                </div>
+
+                                <div className="row text-white">
+                                    <div className="col-md-12">
+                                        <h4>2.- Realizar compra de folios</h4>
+                                        <p>Concretar la compra de los folios, para mayor información consultar las costos en <a href="https://www.ntlink.com.mx/precios"> NT link web page </a></p>
+                                    </div>
+                                </div>
+
+                                <div className="row text-white">
+                                    <div className="col-md-12">
+                                        <h4>3.- Acceso al portal de CFDI </h4>
+                                        <p>Una vez concretada la compra de los folios, usted tendra que acceder al <a href="https://cfdi33.ntlink.com.mx/Facturacion40"> Portal CFDI NT Link </a>, en el que tendra que  cargar los sellos y llaves paar el timbrado</p>
+                                    </div>
+                                </div>
+
+                                <div className="row text-white">
+                                    <div className="col-md-12">
+                                        <h4>4.- Carga de sellos y datos emisor</h4>
+                                        <p> Una vez ingresando al portal CFDI sera necesario que usted de de alta los datos del emisor u emisores de facturas si tiene dudas puede contactarnos enviando un correo a  <code className="bg-white border-0 rounded px-1 py-1">soporte@ntlink.com.mx</code></p>
+                                        <p> El coreo redactado debe de contener la siguiente información</p>
+                                        <ol>
+                                            <li> RFC emisor</li>
+                                            <li> Razon social emisor</li>
+                                            <li> UUID's obtenidos en el ambiente de pruebas</li>
+                                            <li> Como adjuntos los archivos planos de las request exitosas en el ambiente de pruebas</li>
+                                        </ol>
+                                    </div>
+                                </div>
+
+                                <p className="text-white">Listo, una vez completados los pasos anteriores usted sera capaz de realizar timbrado por  medio del servicio de web service</p>
+
+                            </section>
+
+                            {/* end section */}
+
+
+                            <section id="ws_ops" class="section">
+
+                                <div class="row text-white">
+                                    <div class="col-md-12 left-align">
+                                        <h2 class="dark-text">Operaciones Web service<hr /></h2>
+                                    </div>
+                                    {/* end col */}
+                                </div>
+                                {/* end row */}
+
+                                <h4 id="ws_ops_1">Timbra CFDI sin sello</h4>
+                                <p class="text-white"> Existen 2 posibles operaciones al timbrar un CFDi sin sello, estas son <code className="bg-white border-0 rounded px-1 py-1"> TimbraCfdiSinSello</code> y <code className="bg-white border-0 rounded px-1 py-1">TimbraCfdiQrSinSello</code>
+                                    &nbsp;&nbsp;A continuación se muestra el ejemplo de como realizar el timbrado sin sello recuperando el codigo QR
+                                </p>
+                                <div class="row">
+
+                                    <div class="col-lg-12">
+                                        <strong class="row text-white">Request</strong>
+                                        <pre class="brush: xml text-success bg-secondary border-0 rounded my-2 px-2">
+                                            {`   
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
     <SOAP-ENV:Header/>
     <SOAP-ENV:Body>
@@ -275,15 +278,12 @@ export class WSDocumentation extends Component {
         </TimbraCfdiQrSinSello>
     </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
-</textarea> `}
-
-
-
-                                </pre>
-                            </div>
-                            <div class="col-lg-12  text-white">
-                                <strong className="text-white">Response</strong>
-                                <pre class="brush : html">  {`
+`}
+                                        </pre>
+                                    </div>
+                                    <div class="col-lg-12  text-white">
+                                        <strong className="text-white">Response</strong>
+                                        <pre class="brush: xml text-success bg-secondary border-0 rounded my-2 px-2">  {`
 
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
 	<SOAP-ENV:Header/>
@@ -306,30 +306,25 @@ export class WSDocumentation extends Component {
 	</SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
 `}
-                                </pre>
-                            </div>
+                                        </pre>
+                                    </div>
 
-                            {/* end col */}
-                        </div>
-                        {/* end row */}
+                                    {/* end col */}
+                                </div>
+                                {/* end row */}
 
-                        <hr/>
+                                <hr />
 
-                        <h4 id="ws_ops_2">Timbra CFDI con sello</h4>
-                        <p className="text-white"> Existen 2 posibles operaciones al timbrar un CFDi con sello, estas son <code> TimbraCfdi</code> y <code>TimbraCfdiQr</code>
-                            A continuación se muestra el ejemplo de como realizar el timbrado con sello recuperando el codigo QR
-                        </p>
-                        <div class="row  text-white">
+                                <h4 id="ws_ops_2">Timbra CFDI con sello</h4>
+                                <p className="text-white"> Existen 2 posibles operaciones al timbrar un CFDi con sello, estas son <code className="bg-white border-0 rounded px-1 py-1"> TimbraCfdi</code> y <code className="bg-white border-0 rounded px-1 py-1">TimbraCfdiQr</code>
+                                    &nbsp;&nbsp;A continuación se muestra el ejemplo de como realizar el timbrado con sello recuperando el codigo QR
+                                </p>
+                                <div class="row  text-white">
 
-                            <div class="col-lg-12">
-                                <strong>Request</strong>
-                                <pre class="brush: xml">
-                                {`
-<textarea>
-
-
-
-    
+                                    <div class="col-lg-12">
+                                        <strong>Request</strong>
+                                        <pre class="brush: xml text-success bg-secondary border-0 rounded my-2 px-2">
+                                            {`
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
     <SOAP-ENV:Header/>
     <SOAP-ENV:Body>
@@ -341,13 +336,12 @@ export class WSDocumentation extends Component {
     </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
 
-</textarea>
 `}
-                                </pre>
-                            </div>
-                            <div class="col-lg-12 text-white">
-                                <strong>Response</strong>
-                                <pre class="brush : html"> {`
+                                        </pre>
+                                    </div>
+                                    <div class="col-lg-12 text-white">
+                                        <strong>Response</strong>
+                                        <pre class="brush: xml text-success bg-secondary border-0 rounded my-2 px-2"> {`
 
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
     <SOAP-ENV:Header/>
@@ -363,25 +357,23 @@ export class WSDocumentation extends Component {
         </ns2:TimbraCfdiQrResponse>
     </SOAP-ENV:Body>
 </SOAP-ENV:Envelope> `}
-                                </pre>
-                            </div>
-                            {/* end col */}
-                        </div>
-                        {/* end row */}
-                        <hr/>
+                                        </pre>
+                                    </div>
+                                    {/* end col */}
+                                </div>
+                                {/* end row */}
+                                <hr />
 
-                        <h4 id="ws_ops_3 text-white">Timbra retencion</h4>
-                        <p className="text-white"> Al igual que se tiene en CFDI, las retenciones pueden ser timbradas con sello o sin el, los metodos soportados son<code>TimbraRetencion</code> , <code>TimbraRetencionQr</code> y <code>TimbraRetencionSinSello</code>
-                            A continuación se muestra el ejemplo de como realizar el timbrado de una retencion
-                        </p>
-                        <div class="row">
+                                <h4 id="ws_ops_3 text-white">Timbra retencion</h4>
+                                <p className="text-white"> Al igual que se tiene en CFDI, las retenciones pueden ser timbradas con sello o sin el, los metodos soportados son<code className="bg-white border-0 rounded px-1 py-1">TimbraRetencion</code> , <code className="bg-white border-0 rounded px-1 py-1">TimbraRetencionQr</code> y <code className="bg-white border-0 rounded px-1 py-1">TimbraRetencionSinSello</code>
+                                    A continuación se muestra el ejemplo de como realizar el timbrado de una retencion
+                                </p>
+                                <div class="row">
 
-                            <div class="col-lg-12 text-white">
-                                <strong>Request</strong>
-                                <pre class="brush: xml">
-                                {`
-<textarea>
-
+                                    <div class="col-lg-12 text-white">
+                                        <strong>Request</strong>
+                                        <pre class="brush: xml text-success bg-secondary border-0 rounded my-2 px-2">
+                                            {`
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
     <SOAP-ENV:Header/>
     <SOAP-ENV:Body>
@@ -404,13 +396,12 @@ export class WSDocumentation extends Component {
     </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
 
-</textarea>
 `}
-                                </pre>
-                            </div>
-                            <div class="col-lg-12 text-white">
-                                <strong>Response</strong>
-                                <pre class="brush : html"> {`
+                                        </pre>
+                                    </div>
+                                    <div class="col-lg-12 text-white">
+                                        <strong>Response</strong>
+                                        <pre class="brush: xml text-success bg-secondary border-0 rounded my-2 px-2"> {`
 
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
     <SOAP-ENV:Header/>
@@ -421,23 +412,21 @@ export class WSDocumentation extends Component {
             </ns2:TimbraRetencionSinSelloResult></ns2:TimbraRetencionSinSelloResponse>
     </SOAP-ENV:Body>
 </SOAP-ENV:Envelope> `}
-                                </pre>
-                            </div>
-                            {/* end col */}
-                        </div>
-                        {/* end row */}
-                        <hr/>
+                                        </pre>
+                                    </div>
+                                    {/* end col */}
+                                </div>
+                                {/* end row */}
+                                <hr />
 
-                        <h4 id="ws_ops_4">Cancela CFDI</h4>
-                        <p className="text-white"> Para cancelar el CFDI solo es necesario lammar el metodo <code>CancelaCfdi</code></p>
-                        <div class="row">
+                                <h4 id="ws_ops_4">Cancela CFDI</h4>
+                                <p className="text-white"> Para cancelar el CFDI solo es necesario lammar el metodo <code className="bg-white border-0 rounded px-1 py-1">CancelaCfdi</code></p>
+                                <div class="row">
 
-                            <div class="col-lg-12 text-white">
-                                <strong>Request</strong>
-                                <pre class="brush: xml">
-                                {`
-<textarea>
-
+                                    <div class="col-lg-12 text-white">
+                                        <strong>Request</strong>
+                                        <pre class="brush: xml text-success bg-secondary border-0 rounded my-2 px-2">
+                                            {`
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
     <SOAP-ENV:Header/>
     <SOAP-ENV:Body>
@@ -453,15 +442,13 @@ export class WSDocumentation extends Component {
       </CancelaCfdi>
    </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
-
-</textarea>
 `}
 
-                                </pre>
-                            </div>
-                            <div class="col-lg-12 text-white">
-                                <strong>Response</strong>
-                                <pre class="brush : html">{`
+                                        </pre>
+                                    </div>
+                                    <div class="col-lg-12 text-white">
+                                        <strong>Response</strong>
+                                        <pre class="brush: xml text-success bg-secondary border-0 rounded my-2 px-2">{`
          <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
             <s:Body>
                 <CancelaCfdiResponse xmlns="https://ntlink.com.mx/IServicioTimbrado">
@@ -471,22 +458,20 @@ export class WSDocumentation extends Component {
                 </CancelaCfdiResponse>
             </s:Body>
         </s:Envelope> `}
-                                </pre>
-                            </div>
-                            {/* end col */}
-                        </div>
-                        {/* end row */}
-                        <hr/>
+                                        </pre>
+                                    </div>
+                                    {/* end col */}
+                                </div>
+                                {/* end row */}
+                                <hr />
 
-                        <h4 id="ws_ops_5">Cancela Retencion</h4>
-                        <p className="text-white "> Para cancelar una Retencion solo es necesario lammar el metodo <code>CancelaRetencion</code></p>
-                        <div class="row">
+                                <h4 id="ws_ops_5">Cancela Retencion</h4>
+                                <p className="text-white "> Para cancelar una Retencion solo es necesario lammar el metodo <code className="bg-white border-0 rounded px-1 py-1">CancelaRetencion</code></p>
+                                <div class="row">
 
-                            <div class="col-lg-12 text-white">
-                                <strong>Request</strong>
-                                <pre class="brush: xml"> {`
-<textarea>
-
+                                    <div class="col-lg-12 text-white">
+                                        <strong>Request</strong>
+                                        <pre class="brush: xml text-success bg-secondary border-0 rounded my-2 px-2"> {`
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
     <SOAP-ENV:Header/>
     <SOAP-ENV:Body>
@@ -500,13 +485,12 @@ export class WSDocumentation extends Component {
         </CancelaRetencion>
     </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
-
-</textarea> `}
-                                </pre>
-                            </div>
-                            <div class="col-lg-12 text-white">
-                                <strong>Response</strong>
-                                <pre class="brush : html"> {`
+ `}
+                                        </pre>
+                                    </div>
+                                    <div class="col-lg-12 text-white">
+                                        <strong>Response</strong>
+                                        <pre class="brush: xml text-success bg-secondary border-0 rounded my-2 px-2"> {`
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
     <SOAP-ENV:Header/>
     <SOAP-ENV:Body>
@@ -515,195 +499,187 @@ export class WSDocumentation extends Component {
         </ns2:CancelaRetencionResponse>
     </SOAP-ENV:Body>
 </SOAP-ENV:Envelope> `}
-                                </pre>
-                            </div>
-                            {/* end col */}
+                                        </pre>
+                                    </div>
+                                    {/* end col */}
+                                </div>
+                                {/* end row */}
+
+                            </section>
+                            {/* end section */}
+
+                            <section id="csharp_example" class="section">
+
+                                <div class="row">
+                                    <div class="col-md-12 left-align">
+                                        <h2 class="text-white">Ejemplos de código</h2>
+                                    </div>
+                                    {/* end col */}
+                                </div>
+                                {/* end row */}
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p> </p>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="row text-white">
+                                    <div class="col-lg-12">
+                                        <strong>EJEMPLO C#</strong>
+                                        <pre class="brush: xml text-success bg-secondary border-0 rounded my-2 px-2"> {`
+using System;
+using System.IO;
+using System.Threading.Tasks;
+
+namespace NTlinkTest
+{
+    class Program
+    {
+        static async Task Main(string[] args)
+        {
+            NTService.ServicioTimbradoClient ws = new NTService.ServicioTimbradoClient();
+
+            Console.WriteLine("Conecting to WS");
+
+            StreamReader fo = new StreamReader("C:\\development\\ntlink-proxy-ws\\src\\test\\resources\\xml\\ingreso-pue.xml");
+            string xmlstring = fo.ReadToEnd();
+            fo.Close();
+            Console.WriteLine(xmlstring);
+            Task<string> result = ws.TimbraCfdiSinSelloAsync("EKU9003173C9@ntlink.com.mx", "Factura.2021*", xmlstring);
+
+            Console.WriteLine("Executing call with xml");
+            string r = await result;
+
+            Console.WriteLine(r);
+
+        }
+    }
+}`}
+                                        </pre>
+                                    </div>
+                                    {/* end col */}
+                                </div>
+                                <div class="intro2 clearfix alert alert-primary d-flex align-items-center">
+                                    <p><i class="fa fa-exclamation-triangle"></i>  Puede encontrar un ejemplo de implementacion <strong> C# </strong>
+                                        en el siguiente  <a href="https://www.youtube.com/watch?v=lRIOCYrEx6s">video de muestra</a> </p>
+                                </div>
+                                <br />
+
+                                <div class="row text-white">
+                                    <div class="col-lg-12">
+                                        <strong>EJEMPLO JAVA</strong>
+                                        <p>Para poder usar el siguiente codigo es necesario importar el SDK del web service de NTlink, el cual puedes descargar en el siguiente <a href="./ntlink-ws-sdk-3.0.1.jar">archivo jar</a> y agregarlo a tu proyecto
+                                            o puedes compilarlo desde nuestro <a href="https://github.com/NTlink/ntlink-ws-sdk">repositorio de git</a> , donde tambien puedes encontrar mas ejemplos de uso.</p>
+                                        <pre class="brush: xml text-success bg-secondary border-0 rounded my-2 px-2"> {`
+import com.mx.ntlink.error.SoapClientException;
+import com.mx.ntlink.models.generated.*;
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLConnection;
+import java.net.URLStreamHandler;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.Optional;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+
+public class NtLinkClientTest {
+
+    private static final String TEST_USER = "EKU9003173C9@ntlink.com.mx";
+    private static final String TEST_PASS = "Factura.2022*";
+    private static final String DATE_REPLACEMENT = "%fecha-timbrado%";
+
+
+        @Test
+        public void timbraPUE_test() throws SoapClientException, IOException {
+
+        String comprobante =
+            new String(Files.readAllBytes(Paths.get("./src/test/resources/cfdi-samples/cfdi-pue.xml")));
+
+        comprobante =
+            comprobante.replace(
+                DATE_REPLACEMENT, formatter.format(LocalDateTime.now().minusMinutes(10)));
+
+        TimbraCfdiQrSinSello cfdiSinSello = new TimbraCfdiQrSinSello();
+        cfdiSinSello.setPassword(TEST_PASS);
+        cfdiSinSello.setUserName(TEST_USER);
+        cfdiSinSello.setComprobante(comprobante);
+        TimbraCfdiQrSinSelloResponse response = client.timbrarSinSelloConQr(cfdiSinSello);
+
+        Assert.assertNotNull(response);
+        Assert.assertNotNull(response.getTimbraCfdiQrSinSelloResult());
+        Assert.assertTrue(response.getTimbraCfdiQrSinSelloResult().getDescripcionError().isEmpty());
+        Assert.assertTrue(
+            "Contains UUID", response.getTimbraCfdiQrSinSelloResult().getCfdi().contains("UUID"));
+        }
+    }`}
+                                        </pre>
+                                    </div>
+                                    {/* end col */}
+                                </div>
+                                {/* end row */}
+
+                            </section>
+                            {/* end section */}
+
+                            <section id="support" class="section">
+
+                                <div class="row">
+                                    <div class="col-md-12 left-align">
+                                        <h2 class="dark-text">Preguntas y soporte</h2>
+                                    </div>
+                                    {/* end col */}
+                                </div>
+                                {/* end row */}
+
+                                <div class="row text-white">
+                                    <div class="col-md-6">
+                                        <p>NTlink cuenta con un profundo sentido de responsabilidad, si usted tiene dudas o preguntas por favor  acercarse a nuestro equipo de soporte técnico .</p>
+
+                                        <p>Usted puede enviar un correo a <a href="mailto:soporte@ntlink.com.mx">soporte@ntlink.com.mx</a>, con sus dudas, preguntas o en caso de encontrar algun error puede notificarlo al mismo medio</p>
+
+                                        <strong>EL soporte del servicio incluye</strong>
+                                        <ul>
+                                            <li> Responder preguntas relacionadas a los mentodos del servicio antes mencionados</li>
+                                            <li> Resolucion de bugs y problemas reportados</li>
+                                            <li> Proveer actualizacion  en nuestra documentación encaso de algun cambio interno o solicitado por el SAT</li>
+                                        </ul>
+                                        <strong>El soporte no incluye</strong>
+                                        <ul>
+                                            <li> Personalización de los servicios</li>
+                                            <li> Soporte de herramientas terceras</li>
+                                            <li> Correciones, cancelaciones u otros temas inherentes a incorrecto uso de la herramienta</li>
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <strong>Antes de preguntar, porfavor</strong>
+                                        <ul>
+                                            <li> Asegurarse que sus credenciales son correctas.</li>
+                                            <li> Se encuentra apuntando al ambiente correcto.</li>
+                                            <li> Consultar nuestros videos de <a>youtube</a>, donde encontrará información util.</li>
+                                            <li> Asegurar el correcto llenado del RFC.</li>
+                                            <li> El 80% de la ocasiones, el problema es resuelto con una busqueda en Google. Si le es posible realize una busqueda rápida, y es posible que resuleva su inconveniente más rápido</li>
+                                            <li> Si envía un correo una pregunta asegurese de enviar su numero de cliente, usuario y RFC de se empresa poara poder ubicarlo mas facilmente.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                {/* end row */}
+
+                            </section>
+
                         </div>
-                        {/* end row */}
-
-                    </section>
-                    {/* end section */}
-
-                    <section id="csharp_example" class="section">
-
-                        <div class="row">
-                            <div class="col-md-12 left-align">
-                                <h2 class="text-white">Ejemplos de código</h2>
-                            </div>
-                            {/* end col */}
-                        </div>
-                        {/* end row */}
-
-                        <div class="row">
-                            <div class="col-md-12">
-                                <p> </p>
-                            </div>
-                        </div>
-
-
-
-                        <div class="row text-white">
-                            <div class="col-lg-12">
-                                <strong>EJEMPLO C#</strong>
-                                <pre class="brush : html"> {`
-                                    <textarea>
-
-                                    using System;
-                                    using System.IO;
-                                    using System.Threading.Tasks;
-
-                                    namespace NTlinkTest
-                                    {
-                                        class Program
-                                        {
-                                            static async Task Main(string[] args)
-                                            {
-                                                NTService.ServicioTimbradoClient ws = new NTService.ServicioTimbradoClient();
-
-                                                Console.WriteLine("Conecting to WS");
-
-                                                StreamReader fo = new StreamReader("C:\\development\\ntlink-proxy-ws\\src\\test\\resources\\xml\\ingreso-pue.xml");
-                                                string xmlstring = fo.ReadToEnd();
-                                                fo.Close();
-                                                Console.WriteLine(xmlstring);
-                                                Task<string> result = ws.TimbraCfdiSinSelloAsync("EKU9003173C9@ntlink.com.mx", "Factura.2021*", xmlstring);
-
-                                                Console.WriteLine("Executing call with xml");
-                                                string r = await result;
-
-                                                Console.WriteLine(r);
-
-                                            }
-                                        }
-                                    }
-
-                                    </textarea> `}
-                                </pre>
-                            </div>
-                            {/* end col */}
-                        </div>
-                        <div class="intro2 clearfix alert alert-primary d-flex align-items-center">
-                            <p><i class="fa fa-exclamation-triangle"></i>  Puede encontrar un ejemplo de implementacion <strong> C# </strong>
-                                en el siguiente  <a href="https://www.youtube.com/watch?v=lRIOCYrEx6s">video de muestra</a> </p>
-                        </div>
-                        <br/>
-
-                        <div class="row text-white">
-                            <div class="col-lg-12">
-                                <strong>EJEMPLO JAVA</strong>
-                                <p>Para poder usar el siguiente codigo es necesario importar el SDK del web service de NTlink, el cual puedes descargar en el siguiente <a href="./ntlink-ws-sdk-3.0.1.jar">archivo jar</a> y agregarlo a tu proyecto
-                                    o puedes compilarlo desde nuestro <a href="https://github.com/NTlink/ntlink-ws-sdk">repositorio de git</a> , donde tambien puedes encontrar mas ejemplos de uso.</p>
-                                <pre class="brush : html"> {`
-                                    <textarea>
-
-                                    import com.mx.ntlink.error.SoapClientException;
-                                    import com.mx.ntlink.models.generated.*;
-                                    import java.io.IOException;
-                                    import java.net.MalformedURLException;
-                                    import java.net.URL;
-                                    import java.net.URLConnection;
-                                    import java.net.URLStreamHandler;
-                                    import java.nio.file.Files;
-                                    import java.nio.file.Paths;
-                                    import java.util.Optional;
-                                    import org.junit.Assert;
-                                    import org.junit.Before;
-                                    import org.junit.Test;
-
-                                    public class NtLinkClientTest {
-
-                                        private static final String TEST_USER = "EKU9003173C9@ntlink.com.mx";
-                                        private static final String TEST_PASS = "Factura.2022*";
-                                        private static final String DATE_REPLACEMENT = "%fecha-timbrado%";
-
-
-                                          @Test
-                                          public void timbraPUE_test() throws SoapClientException, IOException {
-
-                                            String comprobante =
-                                                new String(Files.readAllBytes(Paths.get("./src/test/resources/cfdi-samples/cfdi-pue.xml")));
-
-                                            comprobante =
-                                                comprobante.replace(
-                                                    DATE_REPLACEMENT, formatter.format(LocalDateTime.now().minusMinutes(10)));
-
-                                            TimbraCfdiQrSinSello cfdiSinSello = new TimbraCfdiQrSinSello();
-                                            cfdiSinSello.setPassword(TEST_PASS);
-                                            cfdiSinSello.setUserName(TEST_USER);
-                                            cfdiSinSello.setComprobante(comprobante);
-                                            TimbraCfdiQrSinSelloResponse response = client.timbrarSinSelloConQr(cfdiSinSello);
-
-                                            Assert.assertNotNull(response);
-                                            Assert.assertNotNull(response.getTimbraCfdiQrSinSelloResult());
-                                            Assert.assertTrue(response.getTimbraCfdiQrSinSelloResult().getDescripcionError().isEmpty());
-                                            Assert.assertTrue(
-                                                "Contains UUID", response.getTimbraCfdiQrSinSelloResult().getCfdi().contains("UUID"));
-                                          }
-                                    }
-
-                                    </textarea> `}
-                                </pre>
-                            </div>
-                            {/* end col */}
-                        </div>
-                        {/* end row */}
-
-                    </section>
-                    {/* end section */}
-
-                    <section id="support" class="section">
-
-                        <div class="row">
-                            <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Preguntas y soporte</h2>
-                            </div>
-                            {/* end col */}
-                        </div>
-                        {/* end row */}
-
-                        <div class="row text-white">
-                            <div class="col-md-6">
-                                <p>NTlink cuenta con un profundo sentido de responsabilidad, si usted tiene dudas o preguntas por favor  acercarse a nuestro equipo de soporte técnico .</p>
-
-                                <p>Usted puede enviar un correo a <a href="mailto:soporte@ntlink.com.mx">soporte@ntlink.com.mx</a>, con sus dudas, preguntas o en caso de encontrar algun error puede notificarlo al mismo medio</p>
-
-                                <strong>EL soporte del servicio incluye</strong>
-                                <ul>
-                                    <li> Responder preguntas relacionadas a los mentodos del servicio antes mencionados</li>
-                                    <li> Resolucion de bugs y problemas reportados</li>
-                                    <li> Proveer actualizacion  en nuestra documentación encaso de algun cambio interno o solicitado por el SAT</li>
-                                </ul>
-                                <strong>El soporte no incluye</strong>
-                                <ul>
-                                    <li> Personalización de los servicios</li>
-                                    <li> Soporte de herramientas terceras</li>
-                                    <li> Correciones, cancelaciones u otros temas inherentes a incorrecto uso de la herramienta</li>
-                                </ul>
-
-                            </div>
-
-                            <div class="col-md-6">
-                                <strong>Antes de preguntar, porfavor</strong>
-                                <ul>
-                                    <li> Asegurarse que sus credenciales son correctas.</li>
-                                    <li> Se encuentra apuntando al ambiente correcto.</li>
-                                    <li> Consultar nuestros videos de <a>youtube</a>, donde encontrará información util.</li>
-                                    <li> Asegurar el correcto llenado del RFC.</li>
-                                    <li> El 80% de la ocasiones, el problema es resuelto con una busqueda en Google. Si le es posible realize una busqueda rápida, y es posible que resuleva su inconveniente más rápido</li>
-                                    <li> Si envía un correo una pregunta asegurese de enviar su numero de cliente, usuario y RFC de se empresa poara poder ubicarlo mas facilmente.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        {/* end row */}
-
-                    </section>
-
                     </div>
                 </div>
-            </div>
 
-            <script src="/js/custom.js"></script>
-            <script src="/js/main.js"></script>
+                <script src="/js/custom.js"></script>
+                <script src="/js/main.js"></script>
             </>
         )
     }
