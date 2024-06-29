@@ -11,6 +11,19 @@ export class Home extends Component {
             <>
                 <Carousel>
                     <Carousel.Item className="carousel-height">
+                                        <img src={require('../assets/banners/BANNER_D.jpg')} className="w-100" alt="..." />
+                                        <Carousel.Caption className="carousel-labels">
+                                            <p class="text-white fw-bold fs-6 lh-1 text-justify">Te informamos que en NTLINK como parte de nuestra mejora constante, tenemos programada una ventana de mantenimiento en nuestro servicio de timbrado, la cual se llevará a cabo de acuerdo al siguiente cronograma:</p>
+
+                                            <p class="text-success fs-6 text-center">Cambio a realizar: Migración del dispositivo HSM</p>
+                                            <p class="text-success fs-6 text-center">Fecha de inicio: 05 de Julio 2024, a las 23:00 hrs</p>
+                                            <p class="text-success fs-6 text-center">Fecha de finalización: 06 de Julio 2024, a las 02:00 hrs</p>
+                                            <p class="text-success fs-6 text-center">Duración de la ventana: 3 hrs</p>
+
+                                            <p class="text-white fw-bold fs-6 lh-1 text-justify">Durante la ventana de mantenimiento el servicio no se verá interrumpido, pero podria presentar inconvenientes por eso recomendamos tomal las precauciones que considere necesarias ante esta situación.</p>
+                                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item className="carousel-height">
                         <img src={require('../assets/banners/BANNER_A.jpg')} className="w-100" alt="..." />
                         <Carousel.Caption className="carousel-labels">
                             <h3 className="text-success fs-1">DESCUBRE</h3>
