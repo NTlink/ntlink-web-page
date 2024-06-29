@@ -20,7 +20,7 @@ export class Home extends Component {
                                             <p class="text-success fs-6 text-center">Fecha de finalización: 06 de Julio 2024, a las 02:00 hrs</p>
                                             <p class="text-success fs-6 text-center">Duración de la ventana: 3 hrs</p>
 
-                                            <p class="text-white fw-bold fs-6 lh-1 text-justify">Durante la ventana de mantenimiento el servicio no se verá interrumpido, pero podria presentar inconvenientes por eso recomendamos tomal las precauciones que considere necesarias ante esta situación.</p>
+                                            <p class="text-white fw-bold fs-6 lh-1 text-justify">Durante la ventana de mantenimiento el servicio no se verá interrumpido, pero podria presentar inconvenientes por eso recomendamos tomar las precauciones que considere necesarias ante esta situación.</p>
                                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item className="carousel-height">
