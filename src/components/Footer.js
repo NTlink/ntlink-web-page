@@ -89,7 +89,7 @@ export class Footer extends Component {
                                         <div className="row">
                                             <h5 className="text-light">WHATSAPP</h5>
                                             <ul className="list-unstyled text-small">
-                                                <li><span className="text-light" >5591078187</span></li>
+                                                <li><span className="text-light" >5551966043</span></li>
                                                 <li><span className="text-light" >5524058190</span></li>
                                             </ul>
                                         </div>
@@ -127,7 +127,7 @@ export class Footer extends Component {
                             <a type="button" className="btn btn-lg bg-dark rounded-circle fs-2 mx-4" href="https://www.facebook.com/profile.php?id=100091939779817" target="_blank" onClick={this.openFacebook}>
                                 <FontAwesomeIcon className="text-success" icon={faFacebook} />
                             </a>
-                            <a type="button" className="btn btn-lg bg-dark rounded-circle fs-2 mx-4" href="https://wa.me/525591078187" target="_blank" onClick={this.openWhatsapp}>
+                            <a type="button" className="btn btn-lg bg-dark rounded-circle fs-2 mx-4" href="https://wa.me/5551966043" target="_blank" onClick={this.openWhatsapp}>
                                 <FontAwesomeIcon className="text-success" icon={faWhatsapp} />
                             </a>
                             <a type="button" className="btn btn-lg bg-dark rounded-circle fs-2 mx-4" href="https://www.youtube.com/@ntlinkcomunicaciones2617" target="_blank" onClick={this.openYoutube}>
