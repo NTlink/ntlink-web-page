@@ -110,7 +110,7 @@ export class Header extends Component {
                                     <a type="button" className="btn btn-lg bg-dark rounded-circle mx-1" href="https://www.facebook.com/profile.php?id=100091939779817" target="_blank" onClick={this.openFacebook} data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook">
                                         <FontAwesomeIcon className="text-success" icon={faFacebook} />
                                     </a>
-                                    <a type="button" className="btn btn-lg bg-dark rounded-circle mx-1" href="https://wa.me/525591078187" target="_blank" onClick={this.openWhatsapp} data-bs-toggle="tooltip" data-bs-placement="top" title="Whatsapp">
+                                    <a type="button" className="btn btn-lg bg-dark rounded-circle mx-1" href="https://wa.me/5551966043" target="_blank" onClick={this.openWhatsapp} data-bs-toggle="tooltip" data-bs-placement="top" title="Whatsapp">
                                         <FontAwesomeIcon className="text-success" icon={faWhatsapp} />
                                     </a>
                                     <a type="button" className="btn btn-lg bg-dark rounded-circle mx-1" href="https://www.youtube.com/@ntlinkcomunicaciones2617" target="_blank" onClick={this.openYoutube} data-bs-toggle="tooltip" data-bs-placement="top" title="Youtube">
