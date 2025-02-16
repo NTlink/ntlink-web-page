@@ -36,7 +36,7 @@ export class Home extends Component {
                             <h3 className="text-success fs-1">CONSULTORIA</h3>
                             <p className="text-light fs-3 my-1">Asesoría y desarrollo en</p>
                             <p className="text-light fs-3 my-1">tecnologías de la información</p>
-                            <a class="btn btn-sm btn-success" href="/contacto">Saber mas</a>
+                            <a class="btn btn-sm btn-success" href="https://github.com/NTlink/ntlink-ws-cfdi-documentation/wiki/8.-Soporte-y-Contacto-%F0%9F%93%9E" target="_blank">Saber mas</a>
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>

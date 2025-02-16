@@ -33,7 +33,7 @@ export class PlanesTimbrado extends Component {
                       </div>
                       <div className="row ">
                         <div className="col-md-6 d-flex justify-content-center align-items-center">
-                          <a href="/contacto" target="_blank" className="mbtn-sm"><span className="mb-0">CONTACTO</span></a>
+                          <a href="https://github.com/NTlink/ntlink-ws-cfdi-documentation/wiki/8.-Soporte-y-Contacto-%F0%9F%93%9E" target="_blank" className="mbtn-sm"><span className="mb-0">CONTACTO</span></a>
                         </div>
                         <div className="col-md-6 d-flex justify-content-center align-items-center">
                           <a href="/#PROMOCIONES" className="mbtn-sm"><span className="mb-0">REGRESAR</span></a>

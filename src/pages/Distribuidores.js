@@ -25,7 +25,7 @@ export class Distribuidores extends Component {
                 </div>
                 <div className="row">
                   <div className="col-md-6 d-flex justify-content-center align-items-center">
-                    <a href="/contacto" target="_blank" className="btn btn-sm btn-success"><span>CONTACTO</span></a>
+                    <a href="https://github.com/NTlink/ntlink-ws-cfdi-documentation/wiki/8.-Soporte-y-Contacto-%F0%9F%93%9E" target="_blank" className="btn btn-sm btn-success"><span>CONTACTO</span></a>
                   </div>
                   <div className="col-md-6 d-flex justify-content-center align-items-center">
                     <a href="/" className="btn btn-sm btn-success"><span>REGRESAR</span></a>
